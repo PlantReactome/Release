@@ -8,20 +8,22 @@ use Data::Dumper;
 use Log::Log4perl qw/get_logger/;
 use Data::Dumper;
 
-use lib '/usr/local/gkb/modules';
+#use lib '/usr/local/gkb/modules';
+use lib '/home/preecej/Development/git/PlantReactome/Release/modules';
 use GKB::DBAdaptor;
 use GKB::Config;
 
 Log::Log4perl->init(\$LOG_CONF);
 my $logger = get_logger(__PACKAGE__);
 
-our($pass,$user,$release_db,$slice_db,%seen_id,%species,$release_num);
+our($pass,$user,$host,$release_db,$slice_db,%seen_id,%species,$release_num);
 
-my $usage = "Usage: $0 -user user -pass pass -db test_release_XX -sdb test_slice_XX -release_num XX\n";
+my $usage = "Usage: $0 -user user -pass pass -host host -db test_release_XX -sdb test_slice_XX -release_num XX\n";
 
 GetOptions(
     "user:s"  => \$user,
     "pass:s"  => \$pass,
+    "host:s"   => \$host,
     "db:s"    => \$release_db,
     "sdb:s"    => \$slice_db,
     "release_num:s" => \$release_num,
@@ -46,7 +48,8 @@ for my $db_id (@db_ids) {
     for my $instance (@$children) {
 	my $identifier = $stable_id_name;
 	my $species = species($instance);
-	$identifier =~ s/HSA/$species/;
+	say "Species: " . $species;
+	$identifier =~ s/OSA/$species/;
 	say"$db_id ST_ID $identifier"; 
 
 	$seen_id{$identifier}++;
@@ -80,7 +83,7 @@ sub paternity_test {
     my $instance = shift;
     my $stable_id = shift;
 
-    return undef unless $stable_id =~ /R-HSA/;
+    return undef unless $stable_id =~ /R-OSA/;
 
     my $ortho_events = $instance->attribute_value('orthologousEvent');
     push @$ortho_events, @{$instance->attribute_value('inferredTo')};
@@ -92,11 +95,13 @@ sub get_api_connections {
 
     return 
 	( $release_db => GKB::DBAdaptor->new(
+	  -host    => $host,
 	  -dbname  => $release_db,
 	  -user    => $user,
 	  -pass    => $pass
 	  ),
 	  $slice_db => GKB::DBAdaptor->new(
+              -host    => $host,
 	      -dbname  => $slice_db,
 	      -user    => $user,
 	      -pass    => $pass
@@ -145,13 +150,34 @@ sub species {
     my $name = $instance->displayName;
     my $long = eval{$instance->attribute_value('species')->[0]->displayName};
     $long or return undef;
+    say $long;
     $species{$name} = abbreviate($long);
     return $species{$name};
 }
 
 sub abbreviate {
     local $_ = shift;
-    my $short_name = uc(join('', /^([A-Za-z])[a-z]+\s+([a-z]{2})[a-z]+$/));
+    #say "Species: " . $_;
+    #my $short_name = uc(join('', /^([A-Za-z])[a-z]+\s+([a-z]{2})[a-z]+$/))
+    # expanded regex to include numerals - JP;
+    my $short_name = uc(join('', /^([A-Za-z])[a-z]+\s+([a-z0-9]{2})[a-z0-9]+$/));
+
+    # there are a few duplicate species abbreviations we have to handle in Plant Reactome - JP
+    if ($_ eq "Coffea canephora") { 
+	    $short_name = "CCN";
+	    say "Coffea canephora changed to CCN";
+    }
+    if ($_ eq "Oryza glumaepatula") { 
+	    $short_name = "OGU";
+	    say "Oryza glumaepatula changed to OGU";
+    }
+    if ($_ eq "Oryza sativa Indica") { 
+	    $short_name = "OSI";
+	    say "Oryza sativa Indica changed to OSI";
+	    #<STDIN>;
+    }
+
+    say $short_name;
     return $short_name;
 }
 
