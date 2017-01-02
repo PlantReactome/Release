@@ -8,8 +8,8 @@ use Data::Dumper;
 use Log::Log4perl qw/get_logger/;
 use Data::Dumper;
 
-#use lib '/usr/local/gkb/modules';
-use lib '/home/preecej/Development/git/PlantReactome/Release/modules';
+use lib '/usr/local/gkb/modules';
+#use lib '/home/preecej/Development/git/PlantReactome/Release/modules';
 use GKB::DBAdaptor;
 use GKB::Config;
 
