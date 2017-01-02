@@ -46,7 +46,7 @@ echo "
 echo "
  " > $LOG
 
-nohup java -Xmx8G -Djava.awt.headless=true -jar ProjectSlicingTool.jar &
+nohup java -Xmx2G -Djava.awt.headless=true -jar ProjectSlicingTool.jar &
 
 tail -f SlicingTool.log $LOG 2>/dev/null &
 
