@@ -1,8 +1,8 @@
 #!/usr/local/bin/perl  -w
 
 use lib "/usr/local/gkb/modules";
-use lib "$ENV{HOME}/bioperl-1.0";
-use lib "$ENV{HOME}/GKB/modules";
+#use lib "$ENV{HOME}/bioperl-1.0";
+#use lib "$ENV{HOME}/GKB/modules";
 use GKB::DBAdaptor;
 use GKB::Utils_esther;
 use Data::Dumper;
@@ -37,8 +37,8 @@ my $dba = GKB::DBAdaptor->new
      );
     
 ## Prepare date and author for instanceEdit:
-my $surname = 'Weiser';
-my $initial = 'JD';
+my $surname = 'Preece';
+my $initial = 'JP';
 my $date    = `date \+\%F`;
 chomp $date;
 

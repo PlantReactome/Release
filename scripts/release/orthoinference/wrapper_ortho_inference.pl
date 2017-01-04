@@ -20,12 +20,14 @@ use Log::Log4perl qw/get_logger/;
 Log::Log4perl->init(\$LOG_CONF);
 my $logger = get_logger(__PACKAGE__);
 
-our($opt_r, $opt_from, $opt_sp, $opt_source_db, $opt_debug, $opt_host, $opt_port, $opt_user, $opt_pass);
+our($opt_r, $opt_from, $opt_sp, $opt_source_db, $opt_debug, $opt_host, $opt_port, $opt_user, $opt_pass, $opt_threshold);
 
 @ARGV || die "Usage: $0 -r reactome_version(e.g.14)  -from source species (default = hsap) -sp sp_abbreviation (only for species-specific Reactome) -source_db name of source database (default = test_slice_reactomeversion_myisam)   (optional list of top event ids for limited inference) -debug\n";
 
-&GetOptions("r:i", "from:s", "sp:s", "source_db:s", "debug", "host:s", "port:s", "user:s", "pass:s");
+&GetOptions("r:i", "from:s", "sp:s", "source_db:s", "debug", "host:s", "port:s", "user:s", "pass:s", "threshold:i");
 
+# Set inference threshold default (if needed)
+$opt_threshold || ($opt_threshold = 75);
 
 my %db_options = ("-host" => ($opt_host ||= "localhost"),
 		  "-port" => ($opt_port ||= 3306),
@@ -33,7 +35,6 @@ my %db_options = ("-host" => ($opt_host ||= "localhost"),
 		  "-pass" => $opt_pass		  
 		  );
 my $db_option_string = create_db_option_string(\%db_options);
-
 
 #Define the source database
 my $source = ($opt_source_db) ? $opt_source_db : "test_slice_$opt_r\_myisam";
@@ -51,18 +52,18 @@ if (!$dbc) {
 my $db = construct_db_name($opt_sp, $opt_from, $opt_source_db, $opt_r);
 
 # Create and populate test_reactome_XX from test_slice_XX_myisam
-system("mysql -u$opt_user -p$opt_pass -e 'drop database if exists $db'") == 0 or die "$?";
-system("mysql -u$opt_user -p$opt_pass -e 'create database $db'") == 0 or die "$?";
-run("mysqldump --opt -u$opt_user -p$opt_pass -h$opt_host $source | mysql -u$opt_user -p$opt_pass -h$opt_host $db") == 0 or die "$?";
+#system("mysql -u$opt_user -p$opt_pass -e 'drop database if exists $db'") == 0 or die "$?";
+#system("mysql -u$opt_user -p$opt_pass -e 'create database $db'") == 0 or die "$?";
+#run("mysqldump --opt -u$opt_user -p$opt_pass -h$opt_host $source | mysql -u$opt_user -p$opt_pass -h$opt_host $db") == 0 or die "$?";
 
 #Human is defined as default source species
 $opt_from || ($opt_from = 'hsap');
 
 #Some datamodel changes are required for running the script, mainly to adjust defining attributes in order to avoid either duplication or merging of instances in the inference procedure, plus introduction of some additional attributes
-my $exit_value = run("perl tweak_datamodel.pl -db $db $db_option_string");
-if ($exit_value != 0) {
-    $logger->error_die("problem encountered during tweak_datamodel, aborting\n");
-}
+#my $exit_value = run("perl tweak_datamodel.pl -db $db $db_option_string");
+#if ($exit_value != 0) {
+#    $logger->error_die("problem encountered during tweak_datamodel, aborting\n");
+#}
 
 #run script for each species (order defined in config.pm)
 foreach my $sp (@species) {
@@ -74,7 +75,7 @@ foreach my $sp (@species) {
        next if $sp eq 'mtub';
     }
     $logger->info("wrapper_ortho_inference: running infer_events script\n");
-    run("perl infer_events.pl -db $db -r $opt_r -from $opt_from -sp $sp -thr 75 @ARGV $db_option_string"); #run script with 75% complex threshold
+    run("perl infer_events.pl -db $db -r $opt_r -from $opt_from -sp $sp -thr $opt_threshold @ARGV $db_option_string"); #run script with x% complex threshold (default 75%)
 }
 `chgrp gkb $opt_r/* 2> /dev/null`; # Allows all group members to read/write compara release files
 
@@ -100,7 +101,6 @@ sub create_db_option_string {
      }
 
      $logger->info("$0 db_option_string:$db_option_string\n");
-
      return $db_option_string;
 }
 

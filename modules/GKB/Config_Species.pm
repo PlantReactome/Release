@@ -19,7 +19,7 @@ use Exporter();
 
 %species_info = (
 
-        # # Syncechocystis pcc6803 (Sp/spcc) - MicrobeDB
+        # # Synechocystis pcc6803 (Sp/spcc) - MicrobeDB
                  'spcc' => {'name' => ['Synechocystis pcc6803'],
                             'alt_refdb' => {'dbname' => ['MicrobeDB'],
                                         'url' => 'http://genome.microbedb.jp/cyanobase/Synechocystis',

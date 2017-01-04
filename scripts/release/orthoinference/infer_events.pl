@@ -13,8 +13,9 @@ use strict;
 #One can also limit inference to specific Events by giving the internal id of the upstream event(s) on the command line. Inference will then be performed for these Events and all their downstream Events.
 
 
-use lib "$ENV{HOME}/bioperl-1.0";
-use lib "$ENV{HOME}/GKB/modules";
+#use lib "$ENV{HOME}/bioperl-1.0";
+#use lib "$ENV{HOME}/GKB/modules";
+use lib "/usr/local/gkb/modules";
 
 use GKB::DBAdaptor;
 use GKB::Instance;
@@ -915,7 +916,7 @@ sub infer_complex_polymer {
 #count components to apply thresholds
     my ($total, $inferred, $max) = count_distinct_proteins($cp);
     $logger->info("$total\t$inferred\t$max\n");
-    use integer;
+    #use integer; # JP - pragma not available in current OpenSuse perl (5.20)
     my $perc;
     $total && ($perc = $inferred * 100 / $total);
     unless ($override) {
