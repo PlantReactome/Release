@@ -33,7 +33,7 @@ override 'run_commands' => sub {
     $self->cmd("Running ELV tool to generate diagrams for predicted pathway",
         [
             ["mysqldump --opt -u $user -p$pass $db > $db\_before_pathway_diagram.dump"],
-            ["./WebELVTool/runWebELVTool.sh $host $db $user $pass 3306 $person_id > runWebELVTool.$version.out"]
+            ["./WebELVTool/runWebELVTool.sh $host $db $user $pass 3306 $person_id > runWebELVTool.$version.out 2> runWebELVTool.$version.err"]
         ]
     );
    
@@ -56,7 +56,7 @@ sub _check_pathway_diagram_count {
     my $previous_pathway_diagram_count = get_dba($previous_db)->class_instance_count('PathwayDiagram');
     
     my $pathway_diagram_count_change = $current_pathway_diagram_count - $previous_pathway_diagram_count;
-    return "Pathway Diagram count has gone down from $current_pathway_diagram_count for version $version " .
+    return "Pathway Diagram count has gone down to $current_pathway_diagram_count for version $version " .
         " from $previous_pathway_diagram_count for version $prevver" if $pathway_diagram_count_change < 0;
 }
  

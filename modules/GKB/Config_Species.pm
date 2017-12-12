@@ -33,7 +33,7 @@ use Exporter();
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'},
 	                    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Beta_vulgaris_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
-	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},	
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
 
 	# # Brassica napus (Bn/bnap) - Ensembl
 	         'bnap' => {'name' => ['Brassica napus'],
@@ -43,8 +43,8 @@ use Exporter();
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'},
 	                    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Brassica_napus_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
-	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},	
-	
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
 	# # Trifolium pratense (Tp/tpra) - Ensembl
 	         'tpra' => {'name' => ['Trifolium pratense'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Trifolium_pratense_PROTEIN'],
@@ -53,7 +53,7 @@ use Exporter();
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'},
 	                    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Trifolium_pratense_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
-	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},	
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
 
 	# # Zea mays (Zm/zmay) - MaizeGDB / Ensembl
 	         'zmay' => {'name' => ['Zea mays'],
@@ -63,7 +63,7 @@ use Exporter();
 	                                'ensg_access' => 'http://maizev4.gramene.org/Zea_mays4m/Gene/Summary?g=###ID###'},
 	                    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Zea_mays_PROTEIN'],
 	                                'url' => 'http://maizev4.gramene.org',
-	                                'access' => 'http://maizev4.gramene.org/Zea_mays4m/Gene/Summary?g=###ID###'}},	
+	                                'access' => 'http://maizev4.gramene.org/Zea_mays4m/Gene/Summary?g=###ID###'}},
 
 	# # Zea mays (Zm/zmay) - MaizeGDB / Ensembl
 	#	'zmay' => {'name' => ['Zea mays'],
@@ -74,7 +74,7 @@ use Exporter();
 	#			    'url' => 'http://ensembl.gramene.org',
 	#			    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	#			    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-        
+
 	# # Jatropha curcas (Jc/jcur) - KDRI_Jc
 		'jcur' => {'name' => ['Jatropha curcas'],
 			    'alt_refdb' => {'dbname' => ['KDRI_Jc'],
@@ -86,7 +86,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['Phytozome_Me'],
 					'url' => 'http://phytozome.jgi.doe.gov/',
 					'access' => 'http://phytozome.jgi.doe.gov/pz/portal.html#!results?search=0&crown=1&star=1&method=4988&searchText=###ID###'}},
-	
+
 	# # Eucalyptus grandis (Eg/egra) - Phytozome_Eg
 		'egra' => {'name' => ['Eucalyptus grandis'],
 			    'alt_refdb' => {'dbname' => ['Phytozome_Eg'],
@@ -186,7 +186,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Brassica_oleracea_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Theobroma cacao (Tc/tcac) - Ensembl
 		'tcac' => {'name' => ['Theobroma cacao'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Theobroma_cacao_PROTEIN'],
@@ -196,7 +196,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Theobroma_cacao_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	#
 	# # Arabidopsis thaliana (At/atha) - TAIR / Ensembl
 		'atha' => {'name' => ['Arabidopsis thaliana'],
@@ -207,7 +207,7 @@ use Exporter();
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
    				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		
+
 	# # Medicago truncatula (Mt/mtru) - Ensembl
 		'mtru' => {'name' => ['Medicago truncatula'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Medicago_truncatula_PROTEIN'],
@@ -217,7 +217,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Medicago_truncatula_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Glycine max (Gm/gmax) - Ensembl
 		'gmax' => {'name' => ['Glycine max'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Glycine_max_PROTEIN'],
@@ -227,7 +227,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Glycine_max_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Solanum lycopersicum (Sl/slyc) - Ensembl
 		'slyc' => {'name' => ['Solanum lycopersicum'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Solanum_lycopersicum_PROTEIN'],
@@ -237,7 +237,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Solanum_lycopersicum_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Solanum tuberosum (St/stub) - Ensembl
 		'stub' => {'name' => ['Solanum tuberosum'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Solanum_tuberosum_PROTEIN'],
@@ -247,7 +247,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Solanum_tuberosum_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Populus trichocarpa (Pt/ptri) - Ensembl
 		'ptri' => {'name' => ['Populus trichocarpa'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Populus_trichocarpa_PROTEIN'],
@@ -257,7 +257,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Populus_trichocarpa_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Prunus persica (Pp/pper) - Ensembl
 		'pper' => {'name' => ['Prunus persica'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Prunus_persica_PROTEIN'],
@@ -267,7 +267,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Prunus_persica_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Brassica rapa (Br/brap) - Ensembl
 		'brap' => {'name' => ['Brassica rapa'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Brassica_rapa_PROTEIN'],
@@ -277,7 +277,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Brassica_rapa_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Vitis vinifera (Vv/vvin) - Ensembl
 		'vvin' => {'name' => ['Vitis vinifera'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vitis_vinifera_PROTEIN'],
@@ -287,7 +287,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vitis_vinifera_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	#
 	# # Phoenix dactylifera (Pd/pdac) - Jaiswal
 		'pdac' => {'name' => ['Phoenix dactylifera'],
@@ -311,7 +311,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Triticum_aestivum_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Musa acuminata (Ma/macu) - Ensembl
 		'macu' => {'name' => ['Musa acuminata'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Musa_acuminata_PROTEIN'],
@@ -321,7 +321,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Musa_acuminata_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Setaria italica (Si/sita) - Ensembl
 		'sita' => {'name' => ['Setaria italica'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Setaria_italica_PROTEIN'],
@@ -331,7 +331,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Setaria_italica_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Sorghum bicolor (Sb/sbic) - Ensembl
 		'sbic' => {'name' => ['Sorghum bicolor'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Sorghum_bicolor_PROTEIN'],
@@ -341,7 +341,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Sorghum_bicolor_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Leersia perrieri (Lp/lper) - Ensembl
 		'lper' => {'name' => ['Leersia perrieri'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Leersia_perrieri_PROTEIN'],
@@ -351,7 +351,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Leersia_perrieri_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Brachypodium distachyon (Bd/bdis) - Ensembl
 		'bdis' => {'name' => ['Brachypodium distachyon'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Brachypodium_distachyon_PROTEIN'],
@@ -371,7 +371,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Triticum_urartu_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Aegilops tauschii (Ata/atau) - Ensembl
 		'atau' => {'name' => ['Aegilops tauschii'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Aegilops_tauschii_PROTEIN'],
@@ -381,7 +381,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Aegilops_tauschii_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Hordeum vulgare (Hv/hvul) - Ensembl
 		'hvul' => {'name' => ['Hordeum vulgare'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Hordeum_vulgare_PROTEIN'],
@@ -391,7 +391,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Hordeum_vulgare_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	#
 	# # Picea abies (Pa/pabi) - Congenie
 		'pabi' => {'name' => ['Picea abies'],
@@ -415,7 +415,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Amborella_trichopoda_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	#
 	# # Physcomitrella patens (Ppa/ppat) - Ensembl
 		'ppat' => {'name' => ['Physcomitrella patens'],
@@ -426,7 +426,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Physcomitrella_patens_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Selaginella moellendorffii (Sm/smoe) - Ensembl
 		'smoe' => {'name' => ['Selaginella moellendorffii'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Selaginella_moellendorffii_PROTEIN'],
@@ -436,7 +436,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Selaginella_moellendorffii_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Chlamydomonas reinhardtii (Cr/crei) - Ensembl
 		'crei' => {'name' => ['Chlamydomonas reinhardtii'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Chlamydomonas_reinhardtii_PROTEIN'],
@@ -446,7 +446,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Chlamydomonas_reinhardtii_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Cyanidioschyzon merolae (Cm/cmer) - Ensembl
 		'cmer' => {'name' => ['Cyanidioschyzon merolae'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Cyanidioschyzon_merolae_PROTEIN'],
@@ -456,7 +456,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Cyanidioschyzon_merolae_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Ostreococcus lucimarinus (Olu/oluc) - Ensembl
 		'oluc' => {'name' => ['Ostreococcus lucimarinus'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Ostreococcus_lucimarinus_PROTEIN'],
@@ -466,7 +466,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Ostreococcus_lucimarinus_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	#
 	# # Oryza australiensis (Oa/oaus) - Jaiswal
 		'oaus' => {'name' => ['Oryza australiensis'],
@@ -507,8 +507,8 @@ use Exporter();
 	                            'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'},
 	                    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_longistaminata_PROTEIN'],
 	                            'url' => 'http://ensembl.gramene.org',
-	                            'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},			
-	
+	                            'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
 	# # Oryza meridionalis (Ome/omer) - Ensembl
 		'omer' => {'name' => ['Oryza meridionalis'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_meridionalis_PROTEIN'],
@@ -518,7 +518,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_meridionalis_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza barthii (Oba/obar) - Ensembl
 		'obar' => {'name' => ['Oryza barthii'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_barthii_PROTEIN'],
@@ -528,7 +528,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_barthii_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza nivara (On/oniv) - Ensembl
 		'oniv' => {'name' => ['Oryza nivara'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_nivara_PROTEIN'],
@@ -538,7 +538,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_nivara_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza brachyantha (Obr/obra) - Ensembl
 		'obra' => {'name' => ['Oryza brachyantha'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_brachyantha_PROTEIN'],
@@ -548,7 +548,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_brachyantha_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza glaberrima (Ogla/ogla) - Ensembl
 		'ogla' => {'name' => ['Oryza glaberrima'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_glaberrima_PROTEIN'],
@@ -558,7 +558,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_glaberrima_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza punctata (Op/opun) - Ensembl
 		'opun' => {'name' => ['Oryza punctata'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_punctata_PROTEIN'],
@@ -568,7 +568,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_punctata_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza glumaepatula (Oglu/oglu) - Ensembl
 		'oglu' => {'name' => ['Oryza glumaepatula'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_glumaepatula_PROTEIN'],
@@ -578,7 +578,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_glumaepatula_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza rufipogon (Or/oruf) - Ensembl
 		'oruf' => {'name' => ['Oryza rufipogon'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_rufipogon_PROTEIN'],
@@ -588,7 +588,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_rufipogon_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 	# # Oryza sativa Indica (Osi/osai) - Ensembl
 		'osai' => {'name' => ['Oryza sativa Indica'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_sativa_Indica_PROTEIN'],
@@ -598,7 +598,7 @@ use Exporter();
 			    'alt_refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_sativa_Indica_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-		    
+
 
 	# # Oryza sativa (reference) - UniProt / Ensembl
 		'osat' => {'name' => ['Oryza sativa'],
@@ -615,3 +615,6 @@ use Exporter();
 		);
 
 @EXPORT = qw(@species %species_info);
+
+
+
