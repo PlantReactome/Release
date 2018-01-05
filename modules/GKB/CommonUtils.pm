@@ -287,7 +287,8 @@ sub is_human {
     
     return (
         $instance->species->[0] &&
-        $instance->species->[0]->displayName eq 'Homo sapiens' &&
+	#$instance->species->[0]->displayName eq 'Homo sapiens' &&
+        $instance->species->[0]->displayName eq 'Oryza sativa' &&  # PR
         !($instance->species->[1]) &&
         !(is_chimeric($instance))
     );
