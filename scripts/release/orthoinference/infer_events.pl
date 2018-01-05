@@ -15,7 +15,8 @@ use Carp;
 
 #use lib "$ENV{HOME}/bioperl-1.0";
 #use lib "$ENV{HOME}/GKB/modules";
-use lib "/usr/local/gkb/modules";
+#use lib "/usr/local/gkb/modules";
+use lib "/home/preecej/Development/git/PlantReactome/Release/modules";
 
 use GKB::DBAdaptor;
 use GKB::Instance;
@@ -81,7 +82,9 @@ $logger->info("protein_class=$protein_class\n");
 #These variables should be edited according to the method employed
 ######################################################################
 
-my $orthopairs = "/usr/local/gkbdev/scripts/release/orthopairs";
+#my $orthopairs = "/usr/local/gkbdev/scripts/release/orthopairs";
+my $orthopairs = "/home/preecej/Development/git/PlantReactome/Release/scripts/release/orthopairs";
+
 
 my $file = "$orthopairs/$opt_r\/$opt_from\_$opt_sp\_mapping.txt";
 $file || die "Can't find $file.\n";
@@ -91,7 +94,7 @@ my $note = "inferred events based on ensembl compara"; #added to InstanceEdit
 my $summation_text = "This event has been computationally inferred from an event that has been demonstrated in another species.<p>The inference is based on the homology mapping in Ensembl Compara. Briefly, reactions for which all involved PhysicalEntities (in input, output and catalyst) have a mapped orthologue/paralogue (for complexes at least $opt_thr\% of components must have a mapping) are inferred to the other species. High level events are also inferred for these events to allow for easier navigation.<p><a href='/electronic_inference_compara.html' target = 'NEW'>More details and caveats of the event inference in Reactome.</a> For details on the Ensembl Compara system see also: <a href='http://www.ensembl.org/info/docs/compara/homology_method.html' target='NEW'>Gene orthology/paralogy prediction method.</a>";
 my $complex_text = 'This complex/polymer has been computationally inferred (based on Ensembl Compara) from a complex/polymer involved in an event that has been demonstrated in another species.';
 my @evidence_names = ('inferred by electronic annotation', 'IEA');
-my $instance_edit = GKB::Utils_esther::create_instance_edit($dba, 'Schmidt', 'EE', $note);
+my $instance_edit = GKB::Utils_esther::create_instance_edit($dba, 'Preece', 'J', $note);
 my $int_ar = $dba->fetch_instance_by_attribute('GO_CellularComponent', [['name', ['intracellular'],0]]);
 my $intra = $int_ar->[0]; #will be assigned to inferred cytosolic, nuclear etc. entities in bacteria as this distinction doesn't exist
 my $from_name = $species_info{$opt_from}->{'name'}->[0];
@@ -109,19 +112,26 @@ my %ensg = %{$hr_ensg};
 my $uni_db = $dba->fetch_instance_by_attribute('ReferenceDatabase', [['name', ['UniProt'],0]])->[0];
 $logger->info("UniProt ReferenceDatabase.extended_displayName=" . $uni_db->extended_displayName . "\n");
 
-my $ens_db = create_instance('ReferenceDatabase');
-$ens_db->Name('Ensembl', "ENSEMBL_$species_info{$opt_sp}->{'name'}->[0]\_PROTEIN");
-$ens_db->Url($species_info{$opt_sp}->{'refdb'}->{'url'});
-$ens_db->AccessUrl($species_info{$opt_sp}->{'refdb'}->{'access'});
-$ens_db = check_for_identical_instances($ens_db);
+my $ens_db;
+my $ensg_db;
 
-$logger->info("ENSEMBL ReferenceDatabase.extended_displayName=" . $ens_db->extended_displayName . "\n");
+if ($species_info{$opt_sp}->{'refdb'}) {
 
-my $ensg_db = create_instance('ReferenceDatabase');
-$ensg_db->Name('ENSEMBL', "ENSEMBL_$species_info{$opt_sp}->{'name'}->[0]\_GENE");
-$ensg_db->Url($species_info{$opt_sp}->{'refdb'}->{'url'});
-$ensg_db->AccessUrl($species_info{$opt_sp}->{'refdb'}->{'ensg_access'});
-$ensg_db = check_for_identical_instances($ensg_db);
+	$ens_db = create_instance('ReferenceDatabase');
+	$ens_db->Name('Ensembl', "ENSEMBL_$species_info{$opt_sp}->{'name'}->[0]\_PROTEIN");
+	$ens_db->Url($species_info{$opt_sp}->{'refdb'}->{'url'});
+	$ens_db->AccessUrl($species_info{$opt_sp}->{'refdb'}->{'access'});
+	$ens_db = check_for_identical_instances($ens_db);
+
+	$logger->info("ENSEMBL ReferenceDatabase.extended_displayName=" . $ens_db->extended_displayName . "\n");
+
+	$ensg_db = create_instance('ReferenceDatabase');
+	$ensg_db->Name('ENSEMBL', "ENSEMBL_$species_info{$opt_sp}->{'name'}->[0]\_GENE");
+	$ensg_db->Url($species_info{$opt_sp}->{'refdb'}->{'url'});
+	$ensg_db->AccessUrl($species_info{$opt_sp}->{'refdb'}->{'ensg_access'});
+	$ensg_db = check_for_identical_instances($ensg_db);
+
+}
 
 #create alternative ReferenceDatabase (e.g. SGD for S.cerevisiae, etc)
 my $alt_refdb;
@@ -1149,10 +1159,12 @@ sub infer_ewas {
         unless ($inf_rps) {
 	    $inf_rps = new_inferred_instance($i->ReferenceEntity->[0]);
 	    my $ref_db;
-	    if ($source eq 'ENSP') {
+	    #if ($source eq 'ENSP') {
+	    if ($source eq 'Ensembl') {
 		$ref_db = $ens_db;
 	    } else {
-		$ref_db = $uni_db;
+		#$ref_db = $uni_db;
+		$ref_db = $alt_refdb;
 	    }
 	    $inf_rps->ReferenceDatabase($ref_db);
             $inf_rps->Identifier($inf_id);
@@ -1214,12 +1226,14 @@ sub create_ReferenceDNASequence {
     my @tmp;
     foreach my $ensg (@{$ref_ensg}) {
 #create ensg ReferenceDNASequence
-	my $i = create_instance('ReferenceDNASequence');
-	$i->Identifier($ensg);
-	$i->ReferenceDatabase($ensg_db);
-	$i->Species($taxon);
-	$i = check_for_identical_instances($i);
-	push @tmp, $i;
+	if ($species_info{$opt_sp}->{'refdb'}) {
+            my $i = create_instance('ReferenceDNASequence');
+    	    $i->Identifier($ensg);
+	    $i->ReferenceDatabase($ensg_db);
+	    $i->Species($taxon);
+	    $i = check_for_identical_instances($i);
+	    push @tmp, $i;
+	}
 #create alternative ReferenceDNASequence
 	if ($alt_refdb) {
 	    my $alt_id = $ensg;

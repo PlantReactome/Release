@@ -4,7 +4,8 @@ use strict;
 #This script wraps the various steps needed for inference from one species to another. It creates the ortho database, tweaks the datamodel needed for the inference, and runs the inference script, followed by two clean-up scripts.
 #The standard run (for Reactome releases) only requires the reactome release version on the command line. One can also change the source species, restrict the run to one target species, or indicate a source database other than the default test_slice_reactomeversion_myisam. It's also possible to limit inference to specific Events by giving the internal id of the upstream event(s) on the command line. Inference will then be performed for these Events and all their downstream Events.
 
-use lib "/usr/local/gkb/modules";
+#use lib "/usr/local/gkb/modules";
+use lib "/home/preecej/Development/git/PlantReactome/Release/modules";
 
 use GKB::Config;
 use GKB::DBAdaptor;
@@ -66,6 +67,9 @@ my $exit_value = run("perl tweak_datamodel.pl -db $db $db_option_string");
 if ($exit_value != 0) {
     $logger->error_die("problem encountered during tweak_datamodel, aborting\n");
 }
+
+#print "JP - interrupt";
+#die(0);
 
 #run script for each species (order defined in config.pm)
 foreach my $sp (@species) {

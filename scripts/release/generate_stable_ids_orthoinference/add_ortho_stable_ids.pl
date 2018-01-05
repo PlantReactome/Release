@@ -10,7 +10,8 @@ use Data::Dumper;
 use Log::Log4perl qw/get_logger/;
 use Scalar::Util 'blessed';
 
-use lib '/usr/local/gkb/modules';
+#use lib '/usr/local/gkb/modules';
+use lib '/home/preecej/Development/git/PlantReactome/Release/modules';
 use GKB::DBAdaptor;
 use GKB::CommonUtils;
 use GKB::Config;
@@ -65,8 +66,8 @@ foreach my $db_id (get_db_ids($release_db)) {
         $identifier =~ s/R-[A-Z]{3}/R-$species/;
         #$logger->info("$db_id ST_ID $identifier");
 
-        # say "Species: " . $species; # PR
-        # say"$db_id ST_ID $identifier"; # PR
+         say "Species: " . $species; # PR
+         say"$db_id ST_ID $identifier"; # PR
 
         $seen_id{$identifier}++;
 
@@ -98,7 +99,7 @@ sub get_orthologous_instances {
     my @orthologous_instances;
 
     if ($instance->is_a('Event')) {
-        return unless is_human($instance);
+        return unless is_human($instance); # PR - changed is_human method in CommonUtils.pm to look for 'Oryza sativa'
         push @orthologous_instances, @{$instance->attribute_value('orthologousEvent')};
     } elsif ($instance->is_a('PhysicalEntity') || $instance->is_a('Regulation')) {
         push @orthologous_instances, @{$instance->attribute_value('inferredTo')};
@@ -113,7 +114,8 @@ sub get_orthologous_instances {
 sub get_db_ids {
     my $sth = get_api_connections()->{$release_db}->prepare('SELECT DB_ID FROM DatabaseObject WHERE _class = ?');
     my @db_ids;
-    for my $class (classes_with_stable_ids()) {
+    for my $class (classes_with_stable_ids()) 
+    	{
         $sth->execute($class);
         while (my $db_id = $sth->fetchrow_array) {
             push @db_ids, $db_id;
@@ -195,9 +197,9 @@ sub abbreviate {
 	    $short_name = "OGU";
 	    say "Oryza glumaepatula changed to OGU";
     }
-    if ($_ eq "Oryza sativa Indica") {
+    if ($_ eq "Oryza sativa Indica Group") {
 	    $short_name = "OSI";
-	    say "Oryza sativa Indica changed to OSI";
+	    say "Oryza sativa Indica group changed to OSI";
     }
     if ($_ eq "Populus trichocarpa") {
 	    $short_name = "PTI";
@@ -206,6 +208,22 @@ sub abbreviate {
     if ($_ eq "Vitis vinifera") {
 	    $short_name = "VVN";
 	    say "Vitis vinifera changed to VVN";
+    }
+    if ($_ eq "Oryza meyeriana var. granulata") {
+	    $short_name = "OGR";
+	    say "Oryza meyeriana var. granulata changed to OGR";
+    }
+    if ($_ eq "Oryza sativa aus subgroup") {
+	    $short_name = "OKA";
+	    say "Oryza sativa aus subgroup changed to OKA";
+    }
+    if ($_ eq "Synechocystis sp. PCC 6803") {
+	    $short_name = "SPC";
+	    say "Synechocystis sp. PCC 6803 changed to SPC";
+    }
+    if ($_ eq "Erythranthe guttata") {
+	    $short_name = "MGU";
+	    say "Erythranthe guttata to MGU";
     }
 
     say $short_name;
@@ -235,7 +253,8 @@ sub get_instance_edit {
     (my $dba = get_api_connections()->{$db}) // confess "No database adaptor for $db database available to create instance edit";
     my $date = `date \+\%F`;
     chomp $date;
-    $db_to_instance_edit->{$db} = GKB::Utils_esther::create_instance_edit($dba, 'Weiser', 'JD', $date);
+    #$db_to_instance_edit->{$db} = GKB::Utils_esther::create_instance_edit($dba, 'Weiser', 'JD', $date);
+    $db_to_instance_edit->{$db} = GKB::Utils_esther::create_instance_edit($dba, 'Preece', 'Justin', $date);
         
     return $db_to_instance_edit->{$db};
 }
