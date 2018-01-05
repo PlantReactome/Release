@@ -24,7 +24,7 @@ fi
 
 if [[ -n $DB && -n $USER && -n $PASS ]]
 then
-    if [[ $USER =~ "curator" ]]
+    if [[ $USER =~ "preecej" ]]
     then
 	echo Dropping $DB ...
 	mysql -u$USER -p$PASS -e "drop database if exists $DB"
@@ -33,7 +33,7 @@ then
 #	mysql -u$USER -p$PASS -e "drop database if exists gk_central"
 #	mysql -u$USER -p$PASS -e "create database gk_central"
     else
-	echo "I was expecting the database user to be 'curator'.  Please edit slicingTool.prop and try again"
+	echo "I was expecting the database user to be 'preecej'.  Please edit slicingTool.prop and try again"
     fi
 else
     echo -e "\nMissing parameters!  Please complete slicingTool.prop\n"
