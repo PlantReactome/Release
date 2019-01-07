@@ -11,14 +11,50 @@ use Exporter();
 
 #defines the order in which the species should be handled for orthology inference
 # testing multiple external DBs...
-@species = qw(osat jcur mesc egra mgut grai csin mdom fves ccaj cari ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
-#@species = qw(osat mgut pvul);
+#@species = qw(osat ccaj jcur egra mgut vang dcar mesc grai csin mdom fves cari ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
+@species = qw(osat vrad tdic jcur egra mgut vang dcar mesc grai csin mdom fves cari ccaj ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
+#@species = qw(osat jcur mgut egra);
 #@species = qw(osat jcur mesc egra mgut grai csin mdom fves ccaj cari ccan cann adur aipa pvul alyr bole tcac vvin pdac ttur pabi ptae atri ppat smoe crei cmer oluc);
 #@species = qw(osat tcac alyr bole);
 #@species = qw(osat spcc bvul bnap tpra taes zmay);
 #@species = qw(osat osai oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf lper zmay bdis tura atau hvul sbic sita macu taes atha brap gmax mtru pper ptri slyc stub spcc bvul bnap tpra);
 
 %species_info = (
+
+	# # Cajanus cajan (Cc/ccaj) - Ensembl
+#	         'ccaj' => {'name' => ['Cajanus cajan'],
+#	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Cajanus_cajan_PROTEIN'],
+#	                                'url' => 'http://ensembl.gramene.org',
+#	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+#	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
+	# # Triticum dicoccoides (Td/tdic) - Ensembl
+	         'tdic' => {'name' => ['Triticum dicoccoides'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Triticum_dicoccoides_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+	
+	# # Vigna radiata (Vr/vrad) - Ensembl
+	         'vrad' => {'name' => ['Vigna radiata'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vigna_radiata_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+	
+	# # Vigna angularis (Va/vang) - Ensembl
+	         'vang' => {'name' => ['Vigna angularis'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vigna_angularis_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
+  	# # Daucus carota (Dc/dcar) - Ensembl
+	         'dcar' => {'name' => ['Daucus carota'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Daucus_carota_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
 
         # # Synechocystis pcc6803 (Sp/spcc) - MicrobeDB
                  'spcc' => {'name' => ['Synechocystis pcc6803'],
