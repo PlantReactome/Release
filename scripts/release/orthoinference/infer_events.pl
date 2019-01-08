@@ -1166,9 +1166,14 @@ sub infer_ewas {
 		#$ref_db = $uni_db;
 		$ref_db = $alt_refdb;
 	    }
+
 	    $inf_rps->ReferenceDatabase($ref_db);
             $inf_rps->Identifier($inf_id);
-	    my $ref_gene = create_ReferenceDNASequence($inf_id);
+	    #if ($refdb->name) eq ("miRBase" || "Ensemble-Gramene") {
+	    	my $ref_gene = create_ReferenceDNASequence($inf_id);
+	    #} else {
+	    #	my $ref_gene = create_ReferenceDNASequence($inf_id);
+	    #}
 	    $inf_rps->ReferenceGene(@{$ref_gene});
             $inf_rps->Species($taxon);
             $inf_rps = check_for_identical_instances($inf_rps);
@@ -1252,6 +1257,42 @@ sub create_ReferenceDNASequence {
     }
     return \@tmp;
 }
+
+#creates ReferenceRNASequence instances for the ENSG identifier mapping to the protein, and for some model organisms (for which Ensembl uses their original ids) also a direct "link" to the model organism database - to be filled into the referenceGene slot of the ReferenceGeneProduct
+#Argument: a protein identifier, Returns: an arrayref for the corresponding ReferenceDNASequences
+#sub create_ReferenceRNASequence {
+#    my ($inf_id) = @_;
+#    my $ref_ensg = $ensg{$inf_id};
+#    $ref_ensg->[0] || return;
+#    my @tmp;
+#    foreach my $ensg (@{$ref_ensg}) {
+#create ensg ReferenceRNASequence
+#	if ($species_info{$opt_sp}->{'refdb'}) {
+#            my $i = create_instance('ReferenceRNASequence');
+#    	    $i->Identifier($ensg);
+#	    $i->ReferenceDatabase($ensg_db);
+#	    $i->Species($taxon);
+#	    $i = check_for_identical_instances($i);
+#	    push @tmp, $i;
+#	}
+#create alternative ReferenceRNASequence
+#	if ($alt_refdb) {
+#	    my $alt_id = $ensg;
+#some species need an altered identifier, while others can use the ensg identifier directly
+#	    if ($species_info{$opt_sp}->{'alt_refdb'}->{'alt_id'}) {
+#		my $regex = $species_info{$opt_sp}->{'alt_refdb'}->{'alt_id'};
+#		$alt_id =~ s/$regex//;
+#	    }
+#	    my $alt_i = create_instance('ReferenceRNASequence');
+#	    $alt_i->Identifier($alt_id);
+#	    $alt_i->ReferenceDatabase($alt_refdb);
+#	    $alt_i->Species($taxon);
+#	    $alt_i = check_for_identical_instances($alt_i);
+#	    push @tmp, $alt_i;
+#	}
+#    }
+#    return \@tmp;
+#}
 
 #This method checks for identical instances in the db, based on the defining attributes
 #If an identical instance is found, the incoming instance is replaced by the existing instance, otherwise the instance is stored as a new instance in the db
