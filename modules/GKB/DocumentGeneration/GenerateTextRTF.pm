@@ -36,6 +36,8 @@ use strict;
 use Tie::File;
 use RTF::Writer;
 use Data::Dumper;
+use Carp;
+use CGI::Carp qw/fatalsToBrowser/;
 
 use GKB::Config;
 use GKB::DocumentGeneration::GenerateText;
@@ -342,8 +344,13 @@ sub generate_stylesheet {
 # generate_image_from_file. with no dependency on GD.
 sub generate_image_from_file_basic {
     my ($self, $image_file) = @_;
-    
+
     my $rtf = $self->rtf;
+
+    if ($image_file =~ /\.svg$/) {
+        $image_file =~ s/\.svg$/\.png/;
+    }
+
     $rtf->image_paragraph('filename' => $image_file);
 }
 
@@ -355,7 +362,7 @@ sub generate_image {
 
     if (!(defined $image)) {
         $logger->warn("no image!!");
-	return;
+        return;
     }
 
     # Dump image into temporary file
@@ -365,13 +372,25 @@ sub generate_image {
         $logger->warn("cant do anything with image, skipping");
         return;
     }
-    
-    # Scale the image first, so that it ia i) visible and
-    # ii) not so big that it doesn't fit onto the page.
-    my $percent_scale = 100 * $self->find_scale_to_fit_image_to_page($image);
 
     my $rtf = $self->rtf;
-    $rtf->image_paragraph('filename' => $image_file_name, 'scalex' => $percent_scale, 'scaley' => $percent_scale);
+
+    my $max_width = 6480; # 6480 TWIPS equals 4.5 inches -- width of the RTF report after indentation
+    my $height_to_width_ratio = 2;
+    my $max_height = $max_width * $height_to_width_ratio;
+
+    my ($width, $height) = $image->getBounds();
+    my ($adjusted_width, $adjusted_height);
+    # If the height is the limiting factor, scale the width
+    if (($height / $width) > $height_to_width_ratio) {
+        $adjusted_height = $max_height;
+        $adjusted_width = $adjusted_height / ($height / $width);
+    # Otherwise, width is the limiter and so scale the height
+    } else {
+        $adjusted_width = $max_width;
+        $adjusted_height = $adjusted_width * ($height / $width);
+    }
+    $rtf->image_paragraph('filename' => $image_file_name, 'wgoal' => $adjusted_width, 'hgoal' => $adjusted_height);
 
     unlink($image_file_name); # don't need image file anymore
 }
@@ -393,9 +412,9 @@ sub find_scale_to_fit_image_to_page {
     # Don't enlarge images too drastically, otherwise you get
     # horrible pixel blurring effects
     if ($width <= (1.05 * $max_width) && $width >= 300) {
-	$reactome_scale = 1.0;
+        $reactome_scale = 1.0;
     } elsif ($reactome_scale>1.5) {
-	$reactome_scale = 1.5;
+        $reactome_scale = 1.5;
     }
 
     return $reactome_scale;
@@ -570,32 +589,32 @@ sub generate_hyperlink {
     my $font_size = $self->regular_text_font_size * 2;
     
     $rtf->paragraph(
-    		$self->colortableblue(),
-		    \'\cf2',        # 'Font color: blue
-		    \'\ul',         # 'Underline
-		    \'\f1',         # 'Font 1 (Courier)
-		    \"\\fs$font_size",
-		    \'\li200',      # 'Left indent
-		    \'\fi-200',     # 'Negative indent for 1st line
-		    \'{',			#'
-		    \'\field',		#'
-		    \'{',			#'
-		    \'\*',			#'
-		    \'\fldinst',	#'
-		    \'{',			#'
-		    "HYPERLINK $url",
-			\'}',			#'
-			\'}',			#'
-			\'{',			#'
-		    \'\fldrslt',	#'
-		    \'{',			#'
-		    "$text",
-			\'}',			#'
-			\'}',			#'
-			\'}',			#'
-		    \'\ul0',        # 'Underline off
-		    \'\cf1',        # 'Font color: black
-		    "\n");
+            $self->colortableblue(),
+            \'\cf2',        # 'Font color: blue
+            \'\ul',         # 'Underline
+            \'\f1',         # 'Font 1 (Courier)
+            \"\\fs$font_size",
+            \'\li200',      # 'Left indent
+            \'\fi-200',     # 'Negative indent for 1st line
+            \'{',           #'
+            \'\field',      #'
+            \'{',           #'
+            \'\*',          #'
+            \'\fldinst',    #'
+            \'{',           #'
+            "HYPERLINK $url",
+            \'}',           #'
+            \'}',           #'
+            \'{',           #'
+            \'\fldrslt',    #'
+            \'{',           #'
+            "$text",
+            \'}',           #'
+            \'}',           #'
+            \'}',           #'
+            \'\ul0',        # 'Underline off
+            \'\cf1',        # 'Font color: black
+            "\n");
 }
 
 

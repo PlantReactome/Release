@@ -106,6 +106,69 @@ sub get_dba {
     );
 }
 
+sub restore_database {
+    my $db = shift;
+    my $host = shift;
+    my $source = shift;
+    my $overwrite = shift;
+    my $backup = shift;
+    
+    if (database_exists($db, $host) && $backup) {
+        backup_database($db, $host);
+    }
+    
+    create_database($db, $host, $overwrite);
+    populate_database($db, $host, $source);
+}
+
+sub backup_database {
+    my $db = shift;
+    my $host = shift;
+    
+    my $user = $GKB::Config::GK_DB_USER;
+    my $pass = $GKB::Config::GK_DB_PASS;
+    my $timestamp = localtime(time);
+    
+    return (system("mysqldump -u $user -p$pass -h $host $db > $db.$timestamp.dump") == 0);
+}
+
+sub create_database {
+    my $db = shift;
+    my $host = shift;
+    my $overwrite = shift;
+    
+    if (database_exists($db, $host) && !$overwrite) {
+        confess "Database $db on $host already exists\n";
+    }
+    
+    my $user = $GKB::Config::GK_DB_USER;
+    my $pass = $GKB::Config::GK_DB_PASS;
+    
+    return (system("mysql -u $user -p$pass -h $host -e 'drop database if exists $db; create database $db'") == 0);
+}
+
+sub populate_database {
+    my $db = shift;
+    my $host = shift;
+    my $source = shift;
+    
+    my $user = $GKB::Config::GK_DB_USER;
+    my $pass = $GKB::Config::GK_DB_PASS;
+    
+    my $stream = ($source =~ /\.gz$/) ? 'zcat' : 'cat';
+    return (system("$stream $source | mysql -u $user -p$pass -h $host $db") == 0);
+}
+
+sub database_exists {
+    my $db = shift;
+    my $host = shift;
+    
+    my $user = $GKB::Config::GK_DB_USER;
+    my $pass = $GKB::Config::GK_DB_PASS;
+    
+    return (system("mysql -u $user -p$pass -h $host -e 'use $db' 2> /dev/null") == 0);
+}
+
 sub get_name_and_id {
     my $instance = shift;
     
@@ -132,61 +195,71 @@ sub get_all_species_in_entity {
 }
 
 sub is_electronically_inferred {
-    my $instance = shift;
-                    
-    my $dba = $instance->dba();
-    my $db_name = $dba->db_name();
-    return 0 unless $db_name =~ /^test_reactome_\d+$/ || $db_name eq 'gk_current';
-    
-    if ($instance->is_a('Event')) {
-        return $instance->evidenceType->[0] && $instance->evidenceType->[0]->displayName =~ /electronic/i;
-    } elsif ($instance->is_a('PhysicalEntity')) {
-        # If manually inferred physical entities ever start using the inferredFrom slot, this logic
-        # can be augmented to check the event(s) to which the physical entity is/are attached
-        # to see if the event(s) are electronically inferred
-        return $instance->inferredFrom->[0] &&
-               $instance->inferredFrom->[0]->species->[0] &&
-               $instance->inferredFrom->[0]->species->[0]->displayName =~ /^Homo sapiens$/i;
-    } elsif ($instance->is_a('CatalystActivity')) {
-        return any { is_electronically_inferred($_)} @{$instance->reverse_attribute_value('catalystActivity')};
-    } elsif ($instance->is_a('Regulation')) {
-        return any { is_electronically_inferred($_)} @{$instance->regulatedEntity};
-    }
+	my $instance = shift;
+
+	my $dba = $instance->dba();
+	my $db_name = $dba->db_name();
+	return 0 unless $db_name =~ /^test_reactome_\d+$/ || $db_name eq 'gk_current';
+
+	# first, let's check to see if the "magic" note is in the Created InstanceEdit for this object.
+	my $created = $instance->created->[0];
+	if ($created && $created->note && $created->note eq "inferred events based on ensembl compara")
+	{
+		return 1;
+	}
+	# If there's no note to indicate that the object was created during orthoinference,
+	# try the old logic.
+	if ($instance->is_a('Event')) {
+		return $instance->evidenceType->[0] && $instance->evidenceType->[0]->displayName =~ /electronic/i;
+	} elsif ($instance->is_a('PhysicalEntity')) {
+		# If manually inferred physical entities ever start using the inferredFrom slot, this logic
+		# can be augmented to check the event(s) to which the physical entity is/are attached
+		# to see if the event(s) are electronically inferred
+		return $instance->inferredFrom->[0] &&
+			$instance->inferredFrom->[0]->species->[0] &&
+			#$instance->inferredFrom->[0]->species->[0]->displayName =~ /^Homo sapiens$/i;
+			$instance->inferredFrom->[0]->species->[0]->displayName =~ /^Oryza sativa$/i;
+	} elsif ($instance->is_a('CatalystActivity')) {
+		return any { is_electronically_inferred($_)} @{$instance->reverse_attribute_value('catalystActivity')};
+	} elsif ($instance->is_a('Regulation')) {
+		return any { is_electronically_inferred($_)} @{$instance->reverse_attribute_value('regulatedBy')};
+	}
 }
 
 sub get_source_for_electronically_inferred_instance {
-    my $instance = shift;
-    
-    return unless is_electronically_inferred($instance);
-    
-    if ($instance->is_a('Event') || $instance->is_a('PhysicalEntity')) {
-        return @{$instance->inferredFrom};
-    } elsif ($instance->is_a('CatalystActivity')) {
-        my @source_physical_entities = get_source_for_electronically_inferred_instance($instance->physicalEntity->[0]);
-        
-        # The physical entity of the inferred catalyst activity may not be an electronically inferred instance
-        # but the same instance used by the source catalyst activity (e.g. simple entities without species).
-        # This is assumed when a source physical entity can't be found from the inferred catalyst activity's
-        # physical entity
-        @source_physical_entities = ($instance->physicalEntity->[0]) if scalar @source_physical_entities == 0;        
-        
-        my @potential_source_catalyst_activities =
-            grep {$instance->db_id != $_->db_id} map {@{$_->reverse_attribute_value('physicalEntity')}} @source_physical_entities;
-        return grep {$_->activity->[0]->db_id == $instance->activity->[0]->db_id} @potential_source_catalyst_activities;
-    } elsif ($instance->is_a('Regulation')) {
-        return @{$instance->inferredFrom} if @{$instance->inferredFrom}; # Only present for version 59 and onward
-        
-        my @source_regulated_entities = get_source_for_electronically_inferred($instance->regulatedEntity->[0]);
-        my @source_regulators = get_source_for_electronically_inferred($instance->regulator->[0]);
-        
-        # Source regulation instance(s) will have both a source regulated entity and
-        # a source regulator used to infer the inferred regulation instance passed
-        # to the subroutine
-        return intersection_of_database_instance_lists(
-            [map {@{$_->reverse_attribute_value('regulatedEntity')}} @source_regulated_entities],
-            [map {@{$_->reverse_attribute_value('regulator')}} @source_regulators]
-        );
-    }    
+	my $instance = shift;
+	return unless is_electronically_inferred($instance);
+
+	if ($instance->is_a('Event') || $instance->is_a('PhysicalEntity')) {
+		return @{$instance->inferredFrom};
+	} elsif ($instance->is_a('CatalystActivity')) {
+		my @source_physical_entities = get_source_for_electronically_inferred_instance($instance->physicalEntity->[0]);
+
+		# The physical entity of the inferred catalyst activity may not be an electronically inferred instance
+		# but the same instance used by the source catalyst activity (e.g. simple entities without species).
+		# This is assumed when a source physical entity can't be found from the inferred catalyst activity's
+		# physical entity
+		@source_physical_entities = ($instance->physicalEntity->[0]) if scalar @source_physical_entities == 0;        
+
+		my @potential_source_catalyst_activities = grep {$instance->db_id != $_->db_id} map {@{$_->reverse_attribute_value('physicalEntity')}} @source_physical_entities;
+		return grep {$_->activity->[0]->db_id == $instance->activity->[0]->db_id} @potential_source_catalyst_activities;
+	} elsif ($instance->is_a('Regulation')) {
+		if ($instance->is_valid_attribute('inferredFrom'))
+		{
+			return @{$instance->inferredFrom} if @{$instance->inferredFrom}; # Only present for version 59 and onward
+		}
+
+		my @source_regulated_entities = get_source_for_electronically_inferred($instance->reverse_attribute_value('regulatedBy'));
+		my @source_regulators = get_source_for_electronically_inferred($instance->regulator->[0]);
+
+		# Source regulation instance(s) will have both a source regulated entity and
+		# a source regulator used to infer the inferred regulation instance passed
+		# to the subroutine
+		return intersection_of_database_instance_lists(
+			[map {@{$_->regulatedBy}} @source_regulated_entities],
+			[map {@{$_->reverse_attribute_value('regulator')}} @source_regulators]
+		);
+	}
 }
 
 sub intersection_of_database_instance_lists {
@@ -258,6 +331,38 @@ sub XOR {
     return ($expression1 || $expression2) && (!($expression1 && $expression2));
 }
 
+sub get_components
+{
+	my $composite_entity = shift;
+
+	my @components;
+	if ($composite_entity)
+	{
+		foreach my $component (@{$composite_entity->hasComponent}, @{$composite_entity->hasMember},
+								@{$composite_entity->hasCandidate}, @{$composite_entity->repeatedUnit})
+		{
+			push @components, $component;
+			my @sub_components = grep {defined} get_components($component);
+			if (@sub_components)
+			{
+				push @components, @sub_components;
+			}
+		}
+	}
+
+	return @components;
+}
+
+sub get_instance_creator {
+    my $instance = shift;
+    
+    if ($instance->created->[0] && $instance->created->[0]->author->[0]) {
+        return $instance->created->[0]->author->[0]->displayName || 'Unknown';
+    }
+    
+    return 'Unknown';
+}
+
 sub get_instance_modifier {
     my $instance = shift;
     
@@ -270,17 +375,22 @@ sub get_event_modifier {
 	return 'Unknown' unless $event;
 	
 	my $author_instance;
-    foreach my $modified_instance (reverse @{$event->modified}) {
-        next if $modified_instance->author->[0] && any {$modified_instance->author->[0]->db_id == $_} (140537, 1551959); # Ignore Guanming and Joel's person instance as possible author 
-        
-        $author_instance = $modified_instance->author->[0];
-        last if $author_instance;
-    }
-	$author_instance ||= $event->created->[0]->author->[0] if $event->created->[0];
+	try
+	{
+		foreach my $modified_instance (reverse @{$event->modified})
+		{
+			$author_instance ||= $modified_instance->author->[0] unless $modified_instance->author->[0] && $modified_instance->author->[0]->db_id == 140537;
+		}
+		$author_instance ||= $event->created->[0]->author->[0];
+	}
+	catch
+	{
+		confess "Error caught: $_ \nFor event: ".$event->extended_displayName;
+	}
+	my $author_name = $author_instance->displayName if $author_instance;
 	
-	return $author_instance ? $author_instance->displayName : 'Unknown';
+	return $author_name || 'Unknown';
 }
-
 
 sub is_human {
     my $instance = shift;
@@ -288,10 +398,21 @@ sub is_human {
     return (
         $instance->species->[0] &&
 	#$instance->species->[0]->displayName eq 'Homo sapiens' &&
-        $instance->species->[0]->displayName eq 'Oryza sativa' &&  # PR
+        $instance->species->[0]->displayName eq 'Oryza sativa' &&
         !($instance->species->[1]) &&
         !(is_chimeric($instance))
     );
+}
+
+sub get_unique_instances {
+    my @instances = @_;
+    
+    my %db_id_to_instance;
+    foreach my $instance (@instances) {
+        $db_id_to_instance{$instance->db_id} = $instance;
+    }
+    
+    return values %db_id_to_instance;
 }
 
 sub report {
@@ -331,6 +452,9 @@ sub get_date_time_object {
 
 our @EXPORT = qw/
 get_dba
+backup_database
+restore_database
+database_exists
 get_name_and_id
 get_all_species_in_entity
 is_electronically_inferred
@@ -338,12 +462,16 @@ get_source_for_electronically_inferred_instance
 has_multiple_species
 is_chimeric
 get_unique_species
+get_components
+get_instance_creator
 get_instance_modifier
 get_event_modifier
 is_human
+get_unique_instances
 report
 date_correctly_formatted
 dates_do_not_match
 /;
 
 1;
+>>>>>>> upstream/master

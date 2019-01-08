@@ -1,191 +1,149 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-    <head>
-	<title>Stats</title>
-	<link rel="stylesheet" type="text/css" href="/stylesheet.css" />
-    </head>
-
-    <body>
-	<!--#include virtual="/cgi-bin/navigation_bar" -->
-	<h1 class="frontpage">Reactome Statistics (Version 62)</h1>
-	    
-	<!-- Start of the stats table  -->
-	<table border="0" width="90%" cellpadding="0" cellspacing="0" class="classbrowser">
-	    <td valign="top" align="center">
-		<table class="class attributes">
-		    <tr height="40">
-			<th><b>Species</b></th>
-			<th><b>PROTEINS</b></th>
-			<th><b>COMPLEXES</b></th>
-			<th><b>REACTIONS</b></th>
-			<th><b>PATHWAYS</b></th>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">D. discoideum</td>
-			<td class="own" align="center">2036</td>
-			<td class="own" align="center">1915</td>
-			<td class="own" align="center">1668</td>
-			<td class="own" align="center">826</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">P. falciparum</td>
-			<td class="own" align="center">776</td>
-			<td class="own" align="center">720</td>
-			<td class="own" align="center">589</td>
-			<td class="own" align="center">453</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">S. pombe</td>
-			<td class="own" align="center">1429</td>
-			<td class="own" align="center">1399</td>
-			<td class="own" align="center">1180</td>
-			<td class="own" align="center">676</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">S. cerevisiae</td>
-			<td class="own" align="center">1605</td>
-			<td class="own" align="center">2033</td>
-			<td class="own" align="center">1872</td>
-			<td class="own" align="center">829</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">C. elegans</td>
-			<td class="own" align="center">4952</td>
-			<td class="own" align="center">3220</td>
-			<td class="own" align="center">2784</td>
-			<td class="own" align="center">1115</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">S. scrofa</td>
-			<td class="own" align="center">9802</td>
-			<td class="own" align="center">7428</td>
-			<td class="own" align="center">6356</td>
-			<td class="own" align="center">1529</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">B. taurus</td>
-			<td class="own" align="center">9329</td>
-			<td class="own" align="center">8212</td>
-			<td class="own" align="center">7193</td>
-			<td class="own" align="center">1581</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">C. familiaris</td>
-			<td class="own" align="center">10413</td>
-			<td class="own" align="center">7962</td>
-			<td class="own" align="center">6847</td>
-			<td class="own" align="center">1571</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">M. musculus</td>
-			<td class="own" align="center">11535</td>
-			<td class="own" align="center">9138</td>
-			<td class="own" align="center">8030</td>
-			<td class="own" align="center">1600</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">R. norvegicus</td>
-			<td class="own" align="center">10955</td>
-			<td class="own" align="center">8392</td>
-			<td class="own" align="center">7363</td>
-			<td class="own" align="center">1583</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">*H. sapiens</td>
-			<td class="own" align="center">10712</td>
-			<td class="own" align="center">11284</td>
-			<td class="own" align="center">11302</td>
-			<td class="own" align="center">2176</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">G. gallus</td>
-			<td class="own" align="center">8627</td>
-			<td class="own" align="center">7245</td>
-			<td class="own" align="center">6165</td>
-			<td class="own" align="center">1600</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">T. guttata</td>
-			<td class="own" align="center">7079</td>
-			<td class="own" align="center">6155</td>
-			<td class="own" align="center">5212</td>
-			<td class="own" align="center">1484</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">X. tropicalis</td>
-			<td class="own" align="center">8726</td>
-			<td class="own" align="center">7067</td>
-			<td class="own" align="center">6131</td>
-			<td class="own" align="center">1526</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">D. rerio</td>
-			<td class="own" align="center">14930</td>
-			<td class="own" align="center">7075</td>
-			<td class="own" align="center">6145</td>
-			<td class="own" align="center">1529</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">D. melanogaster</td>
-			<td class="own" align="center">9733</td>
-			<td class="own" align="center">4659</td>
-			<td class="own" align="center">3946</td>
-			<td class="own" align="center">1375</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">A. thaliana</td>
-			<td class="own" align="center">5068</td>
-			<td class="own" align="center">1903</td>
-			<td class="own" align="center">1664</td>
-			<td class="own" align="center">785</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">O. sativa</td>
-			<td class="own" align="center">4701</td>
-			<td class="own" align="center">1801</td>
-			<td class="own" align="center">1576</td>
-			<td class="own" align="center">780</td>
-		    </tr>
-		    
-		    <tr height="18" class="own">
-			<td height="25" class="own">M. tuberculosis</td>
-			<td class="own" align="center">13</td>
-			<td class="own" align="center">50</td>
-			<td class="own" align="center">40</td>
-			<td class="own" align="center">12</td>
-		    </tr>
-		    
-		</table><!-- Close the stat table -->
-	    </td>    
-	    <td valign="top" align="justify">
-		<img height="400" title="" src="stats.png"><br /><br /><br />
-	    </td>
-	</table> <!-- Close the page table --><br />
-
-	<div style="font-size:9pt;text-align:left;color:black;padding-top:10px;width=40%">
-	    *Reactome annotates to protein isoforms when this information is available.<br />
-	    The total number of curated human proteins including isoforms is 10878
-	</div>
-
-	<!--#include virtual="/cgi-bin/footer" -->
-    </body>
-</html>
-
+<div id="r-responsive-table">
+    <table class="reactome margin margin0">
+        <thead>
+            <tr>
+                <th style="text-align: left;">SPECIES</th>
+                <th>PROTEINS</th>
+                <th>COMPLEXES</th>
+                <th>REACTIONS</th>
+                <th>PATHWAYS</th></tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td data-label="SPECIES">D. discoideum</td>
+        <td data-label="">2185</td>
+        <td data-label="">1926</td>
+        <td data-label="">1770</td>
+        <td data-label="">856</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">P. falciparum</td>
+        <td data-label="">771</td>
+        <td data-label="">672</td>
+        <td data-label="">602</td>
+        <td data-label="">472</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">S. pombe</td>
+        <td data-label="">1471</td>
+        <td data-label="">1493</td>
+        <td data-label="">1226</td>
+        <td data-label="">674</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">S. cerevisiae</td>
+        <td data-label="">1652</td>
+        <td data-label="">2135</td>
+        <td data-label="">1873</td>
+        <td data-label="">833</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">C. elegans</td>
+        <td data-label="">5211</td>
+        <td data-label="">3269</td>
+        <td data-label="">2727</td>
+        <td data-label="">1117</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">S. scrofa</td>
+        <td data-label="">18525</td>
+        <td data-label="">8557</td>
+        <td data-label="">7501</td>
+        <td data-label="">1624</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">B. taurus</td>
+        <td data-label="">10016</td>
+        <td data-label="">8702</td>
+        <td data-label="">7577</td>
+        <td data-label="">1629</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">C. familiaris</td>
+        <td data-label="">11304</td>
+        <td data-label="">8521</td>
+        <td data-label="">7353</td>
+        <td data-label="">1615</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">M. musculus</td>
+        <td data-label="">12734</td>
+        <td data-label="">9778</td>
+        <td data-label="">8622</td>
+        <td data-label="">1637</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">R. norvegicus</td>
+        <td data-label="">11780</td>
+        <td data-label="">8914</td>
+        <td data-label="">7776</td>
+        <td data-label="">1630</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">*H. sapiens</td>
+        <td data-label="">10792</td>
+        <td data-label="">11995</td>
+        <td data-label="">12278</td>
+        <td data-label="">2256</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">G. gallus</td>
+        <td data-label="">12377</td>
+        <td data-label="">7517</td>
+        <td data-label="">6436</td>
+        <td data-label="">1637</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">T. guttata</td>
+        <td data-label="">7458</td>
+        <td data-label="">6452</td>
+        <td data-label="">5428</td>
+        <td data-label="">1508</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">X. tropicalis</td>
+        <td data-label="">9439</td>
+        <td data-label="">7553</td>
+        <td data-label="">6453</td>
+        <td data-label="">1582</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">D. rerio</td>
+        <td data-label="">14508</td>
+        <td data-label="">7588</td>
+        <td data-label="">6425</td>
+        <td data-label="">1581</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">D. melanogaster</td>
+        <td data-label="">9888</td>
+        <td data-label="">4676</td>
+        <td data-label="">3990</td>
+        <td data-label="">1386</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">A. thaliana</td>
+        <td data-label="">5102</td>
+        <td data-label="">1878</td>
+        <td data-label="">1716</td>
+        <td data-label="">792</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">O. sativa</td>
+        <td data-label="">4864</td>
+        <td data-label="">1784</td>
+        <td data-label="">1662</td>
+        <td data-label="">789</td>
+    </tr>
+    <tr>
+        <td data-label="SPECIES">M. tuberculosis</td>
+        <td data-label="">13</td>
+        <td data-label="">47</td>
+        <td data-label="">39</td>
+        <td data-label="">12</td>
+    </tr>
+        </tbody>
+    </table>
+</div>
+<p></p>
+<p>*Reactome annotates to protein isoforms when this information is available. The total number of curated human proteins including isoforms is 10966</p>

@@ -112,8 +112,12 @@ $WWW_USER = 'nobody';
 $REACTOME_ROOT_DIR = '/usr/local/reactomes/PlantReactome/development'; # PR
 $GK_ROOT_DIR = '/usr/local/gkb';
 $GK_JAVA_CODEBASE = "/jars";
+
+$GK_TMP_IMG_DIR = "$REACTOME_ROOT_DIR/Website/static/figures";
 #$GK_TMP_IMG_DIR = "$REACTOME_ROOT_DIR/Website/static/cgi-tmp/img-tmp";
-$GK_TMP_IMG_DIR = "$REACTOME_ROOT_DIR/website/static/cgi-tmp/img-tmp";
+#$GK_TMP_IMG_DIR = "$REACTOME_ROOT_DIR/website/static/cgi-tmp/img-tmp";
+#$GK_TMP_IMG_DIR = "/opt/GKB/website/images";
+
 # Place for frontpage images 
 #$FRONTPAGE_IMG_DIR = "$REACTOME_ROOT_DIR/Website/static/cgi-tmp/img-fp";
 $FRONTPAGE_IMG_DIR = "$REACTOME_ROOT_DIR/website/static/cgi-tmp/img-fp";
@@ -296,6 +300,7 @@ log4perl.appender.FullLog.create_at_logtime=1
 log4perl.appender.FullLog.mode=append
 log4perl.appender.FullLog.layout=PatternLayout
 log4perl.appender.FullLog.layout.ConversionPattern=%p %l %d - %m%n
+log4perl.appender.FullLog.utf8=1
 
 log4perl.appender.ErrorLog=Log::Log4perl::Appender::File
 log4perl.appender.ErrorLog.filename='.get_name().'.err
@@ -304,6 +309,7 @@ log4perl.appender.ErrorLog.mode=append
 log4perl.appender.ErrorLog.layout=PatternLayout
 log4perl.appender.ErrorLog.layout.ConversionPattern=%p %l %d - %m%n
 log4perl.appender.ErrorLog.Threshold = WARN
+log4perl.appender.ErrorLog.utf8=1
 ';
 
 $LOG_CONF = '

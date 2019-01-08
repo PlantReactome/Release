@@ -20,7 +20,7 @@ use GKB::Utils_esther;
 Log::Log4perl->init(\$LOG_CONF);
 my $logger = get_logger(__PACKAGE__);
 
-our($pass,$user,$host,$release_db,$slice_db,%seen_id,%species,$release_num,$dry_run);
+our($pass,$user,$release_db,$slice_db,$db_host,%seen_id,%species,$release_num,$dry_run);
 
 my $usage = "Usage: $0 -user user -pass pass -host host -db test_release_XX -sdb test_slice_XX -release_num XX\n";
 
@@ -30,6 +30,7 @@ GetOptions(
     "host:s"   => \$host,
     "db:s"    => \$release_db,
     "sdb:s"    => \$slice_db,
+    "host:s"   => \$db_host,
     "release_num:s" => \$release_num,
     "dry_run" => \$dry_run
 );
@@ -37,7 +38,7 @@ GetOptions(
 ($release_db && $user && $pass && $release_num && $slice_db) || die $usage;
 
 back_up_databases(
-    [$user, $pass, $release_db, $host]
+    [$user, $pass, $release_db, $db_host]
 ) unless $dry_run;
 
 get_api_connections()->{$release_db}->execute("START TRANSACTION") unless $dry_run;
@@ -55,7 +56,6 @@ foreach my $db_id (get_db_ids($release_db)) {
             $logger->warn("Could not get db_id for orthologous instance $orthologous_instance inferred from $db_id");
             next;
         }        
-        
         my $species = species($orthologous_instance);
         if (!$species) {
             $logger->warn("Could not get species for orthologous instance " . $orthologous_instance->db_id);
@@ -101,7 +101,7 @@ sub get_orthologous_instances {
     if ($instance->is_a('Event')) {
         return unless is_human($instance); # PR - changed is_human method in CommonUtils.pm to look for 'Oryza sativa'
         push @orthologous_instances, @{$instance->attribute_value('orthologousEvent')};
-    } elsif ($instance->is_a('PhysicalEntity') || $instance->is_a('Regulation')) {
+	} elsif ($instance->is_a('PhysicalEntity')) {
         push @orthologous_instances, @{$instance->attribute_value('inferredTo')};
     } else {
         $logger->warn($instance->displayName . ' (' . $instance->db_id . ') is a(n) ' .
@@ -135,26 +135,9 @@ sub classes_with_stable_ids {
 sub species {
     my $instance = shift;
     
-    my $species_display_name = $instance->is_a('Regulation') ?
-        get_regulation_instance_species($instance) :
-        eval{$instance->attribute_value('species')->[0]->displayName};
+    my $species_display_name = eval{$instance->attribute_value('species')->[0]->displayName};
     
     return $species_display_name ? abbreviate($species_display_name) : undef;
-}
-
-sub get_regulation_instance_species {
-    my $instance = shift;
-    
-    croak "$instance is not an instance\n" unless blessed($instance) && $instance->isa("GKB::Instance");
-    croak $instance->displayName . ' (' . $instance->db_id . ") is not a regulation instance\n" unless $instance->is_a('Regulation');
-    
-    if ($instance->regulatedEntity->[0]) {
-        return get_species_from_instance($instance->regulatedEntity->[0]);
-    } elsif ($instance->regulator->[0]) {
-        return get_species_from_instance($instance->regulator->[0]);
-    }
-    
-    return undef;
 }
 
 sub get_species_from_instance {
@@ -267,14 +250,16 @@ sub get_api_connections {
 	    -host    => $host,
         -dbname  => $release_db,
         -user    => $user || $GKB::Config::GK_DB_USER,
-        -pass    => $pass || $GKB::Config::GK_DB_PASS
+        -pass    => $pass || $GKB::Config::GK_DB_PASS,
+        -host	 => $GKB::Config::GK_DB_HOST
     );
 
     my $slice_dba = GKB::DBAdaptor->new(
         -host    => $host,
         -dbname  => $slice_db,
         -user    => $user || $GKB::Config::GK_DB_USER,
-        -pass    => $pass || $GKB::Config::GK_DB_PASS
+        -pass    => $pass || $GKB::Config::GK_DB_PASS,
+        -host    => $GKB::Config::GK_DB_HOST
     );
 
     $api_connections = {

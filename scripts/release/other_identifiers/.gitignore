@@ -1,3 +1,5 @@
 archive
 output/
 *ached*
+list_identifiers.pl
+*.txt
