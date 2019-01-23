@@ -4,28 +4,24 @@ Distribute orthology files from both Ensembl Compara and Inparanoid downloads. M
 of projected species abbvs.
 """
 
-# ----------------------------------------------------------------------------------------------------------------------
-# modules
-# ----------------------------------------------------------------------------------------------------------------------
+# modules --------------------------------------------------------------------------------------------------------------
+
 import os
+import shutil
 import sys
 import argparse
 import pprint
 import re
 
-# ----------------------------------------------------------------------------------------------------------------------
-# globals
-# ----------------------------------------------------------------------------------------------------------------------
+# globals --------------------------------------------------------------------------------------------------------------
+
 dict_projected_species = {}
 pp = pprint.PrettyPrinter()
 
-# ----------------------------------------------------------------------------------------------------------------------
-# functions
-# ----------------------------------------------------------------------------------------------------------------------
+# functions ------------------------------------------------------------------------------------------------------------
 
-# ----------------------------------------------------------------------------------------------------------------------
+
 def load_configs(projected_species_path):
-# ----------------------------------------------------------------------------------------------------------------------
     """
     import projected species and abbs from tab file
     """
@@ -69,27 +65,34 @@ def load_configs(projected_species_path):
 
     return dict_projected_species
 
-# ----------------------------------------------------------------------------------------------------------------------
-def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_input_path, slice_version_number):
-# ----------------------------------------------------------------------------------------------------------------------
+
+def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_input_path,
+                      slice_version_number, ensembl_release_number, output_orthopair_path):
     """
     iterate over projected species, get orthology sources, copy (and rename) files according to templates, placing them
      in the appropriate output folder location
     """
     ensembl_species_count = 0
     inparanoid_species_count = 0
+
     for k, v in dict_projected_species.items():
+        genus = k.split(' ')[0]
+        species = k.split(' ')[1].title()  # uc 1st char
         if v[4] == "Compara":
             ensembl_species_count += 1
+            shutil.copy2(ensembl_input_path + "/" + genus + species + "_osj.rtm",
+                      output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/ensembl_plants_"
+                      + str(ensembl_release_number) + "_os_2_" + v[1].lower() + "_sorted.tab")
         else:
             inparanoid_species_count += 1
-        #print(k,v)
+            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP_" + genus + "_" + species.lower() + ".txt",
+                      output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/inparanoid_os_2_" + v[1].lower() + "_sorted.tab")
+
+        print(k,v)
 
     print("ensembl_species_count: " + str(ensembl_species_count) + ", inparanoid_species_count: " + str(inparanoid_species_count))
 
-# ----------------------------------------------------------------------------------------------------------------------
-# main
-# ----------------------------------------------------------------------------------------------------------------------
+# main -----------------------------------------------------------------------------------------------------------------
 
 # process args
 parser = argparse.ArgumentParser(
@@ -99,21 +102,23 @@ parser = argparse.ArgumentParser(
 # input settings
 parser.add_argument('-c', '--projected_species_configs', help='tab file containing projected species and abbvs', required=True)
 parser.add_argument('-e', '--ensembl_input_path', help='path to ensembl compara orthology files')
+#  ~/Documents/projects/plant_reactome/releases/r60/orthology_data/compara/v2/test
 parser.add_argument('-i', '--inparanoid_input_path', help='path to inparanoid supercluster orthology files')
+#  ~/Documents/projects/plant_reactome/releases/r60/orthology_data/inparanoid/test
 parser.add_argument('-s', '--slice_version_number', type=int)
+parser.add_argument('-r', '--ensembl_release_number', type=int)
 parser.add_argument('-v', '--verbose', action='store_true')
-# parser.add_argument('-C', '--confidence_high', help='only use ensembl projections marked as high-confidence', action='store_true')
 
 # output settings
 parser.add_argument('-o', '--output_orthopair_path', help='path to renamed, redistributed orthology files, binned in folders by species abbv')
+#  ~/Documents/projects/plant_reactome/plant_reactome_site/projection/rice_to
 
 args = parser.parse_args()
 if args.verbose:
     print(args)
 
 dict_projected_species = load_configs(args.projected_species_configs)
-rename_and_deploy(dict_projected_species, args.ensembl_input_path, args.inparanoid_input_path, args.slice_version_number)
+rename_and_deploy(dict_projected_species, args.ensembl_input_path, args.inparanoid_input_path,
+                  args.slice_version_number, args.ensembl_release_number, args.output_orthopair_path)
 
-# ----------------------------------------------------------------------------------------------------------------------
-# end
-# ----------------------------------------------------------------------------------------------------------------------
+# end ------------------------------------------------------------------------------------------------------------------

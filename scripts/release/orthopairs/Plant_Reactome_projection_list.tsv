@@ -36,7 +36,7 @@ Oryza meridionalis	OME	Ome	omer	omeridionalis	Compara	40	Ensembl Gramene	Ensembl
 Oryza nivara	ONI	On	oniv	onivara	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Oryza punctata	OPU	Op	opun	opunctata	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Oryza rufipogon	ORU	Or	oruf	orufipogon	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
-Oryza sativa Indica Group	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
+Oryza indica	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m
 Ostreococcus lucimarinus	OLU	Olu	oluc	olucimarinus	Compara	28	Ensembl Gramene	Ensembl Gramene	c		
 Phaseolus vulgaris	PVU	Pv	pvul	pvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3885	
 Physcomitrella patens	PPA	Ppa	ppat	ppatens	Compara	28	Ensembl Gramene	Ensembl Gramene	b		
@@ -69,12 +69,12 @@ Jatropha curcas	JCU	Jc	jcur	jcurcas	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	d
 Malus domestica	MDO	Md	mdom	mdomestica	Inparanoid	-	Phytozome	PMID: 20802477	d		
 Erythranthe guttata	MGU	Mg	mgut	mguttatus	Inparanoid	-	Phytozome	Phytozome	d	4155	
 Oryza australiensis	OAU	Oa	oaus	oaustraliensis	Inparanoid	-	N/A	OMAP/OGE	m		
-Oryza meyeriana var. granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m		
-Oryza sativa aus subgroup	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m		
+Oryza granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m
+Oryza kasalath	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m
 Oryza minuta	OMI	Omi	omin	ominuta	Inparanoid	-	N/A	OMAP/OGE	m		
 Oryza officinalis	OOF	Oo	ooff	oofficinalis	Inparanoid	-	N/A	OMAP/OGE	m		
 Picea abies	PAB	Pa	pabi	pabies	Inparanoid	-	Congenie	Congenie	p		
 Phoenix dactylifera	PDA	Pd	pdac	pdactylifera	Inparanoid	-	N/A	PMID: 23917264	m		
 Pinus taeda	PTA	Pta	ptae	ptaeda	Inparanoid	-	N/A	TreeBase	p		
-Synechocystis sp. PCC 6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b		
+Synechocystis pcc6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b
 Triticum turgidum	TTU	Tt	ttur	tturgidum	Inparanoid	-	N/A	PMID: 23800085	m		
