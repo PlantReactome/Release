@@ -78,8 +78,14 @@ def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_inp
     """
     ensembl_species_count = 0
     inparanoid_species_count = 0
-    #for k, v in dict_projected_species.items():
-    #    pp.print(k,v)
+    for k, v in dict_projected_species.items():
+        if v[4] == "Compara":
+            ensembl_species_count += 1
+        else:
+            inparanoid_species_count += 1
+        #print(k,v)
+
+    print("ensembl_species_count: " + str(ensembl_species_count) + ", inparanoid_species_count: " + str(inparanoid_species_count))
 
 # ----------------------------------------------------------------------------------------------------------------------
 # main
