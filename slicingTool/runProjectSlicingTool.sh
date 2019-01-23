@@ -5,6 +5,7 @@ LOG=$(grep    logFileName slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//')
 DB=$(grep   slicingDbName slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
 USER=$(grep slicingDbUser slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
 PASS=$(grep  slicingDbPwd slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
+HOST=$(grep  slicingDbHost slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
 PREV_DB=$(grep previousSlicingDbName slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
 VER=$(grep releaseNumber slicingTool.prop | perl -pe 's/^\S+=//');
 CURATOR_DB=$(grep dbName slicingTool.prop | grep -v '\#' |perl -pe 's/^\S+=//');
@@ -22,18 +23,18 @@ if [[ $RUN_CHAR_FIX == "true" ]] ; then
     bash ../scripts/fix_characters.sh $CURATOR_DB $CURATOR_HOST $USER $PASS $(pwd) true
 fi
 
-if [[ -n $DB && -n $USER && -n $PASS ]]
+if [[ -n $DB && -n $HOST && -n $USER && -n $PASS ]]
 then
-    if [[ $USER =~ "preecej" ]]
+    if [[ $USER =~ "react-app-user" ]]
     then
 	echo Dropping $DB ...
-	mysql -u$USER -p$PASS -e "drop database if exists $DB"
+	mysql -u$USER -p$PASS -h$HOST -e "drop database if exists $DB"
 #	mysql -u$USER -p$PASS -e "drop database if exists ${DB}_myisam"
 #	mysql -u$USER -p$PASS -e "create database ${DB}_myisam"
 #	mysql -u$USER -p$PASS -e "drop database if exists gk_central"
 #	mysql -u$USER -p$PASS -e "create database gk_central"
     else
-	echo "I was expecting the database user to be 'preecej'.  Please edit slicingTool.prop and try again"
+	echo "I was expecting the database user to be 'react-app-user'.  Please edit slicingTool.prop and try again"
     fi
 else
     echo -e "\nMissing parameters!  Please complete slicingTool.prop\n"
