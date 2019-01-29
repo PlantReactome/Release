@@ -1,527 +1,527 @@
-2019-01-23 18:54:51,224 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Used database: test_slice_oryza_sativa_17_ortho_osat_all
-2019-01-23 18:54:51,226 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Default person: 1385632
-2019-01-23 18:54:51,226 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Starting generating diagrams for other species...
-2019-01-23 18:54:51,242 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:6788019] Salicylic acid signaling
-2019-01-23 18:54:51,244 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640262] Salicylic acid signaling
-2019-01-23 18:54:51,913 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119404] Crocetin biosynthesis
-2019-01-23 18:54:51,916 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119384] NAD biosynthesis I (from aspartate)
-2019-01-23 18:54:51,919 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640113] NAD biosynthesis I (from aspartate)
-2019-01-23 18:54:52,019 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119328] Oleoresin sesquiterpene volatiles biosynthesis
-2019-01-23 18:54:52,021 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640206] Oleoresin sesquiterpene volatiles biosynthesis
-2019-01-23 18:54:52,065 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119267] Phenylalanine degradation III
-2019-01-23 18:54:52,067 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640158] Phenylalanine degradation III
-2019-01-23 18:54:52,152 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119325] Sphingolipid metabolism
-2019-01-23 18:54:52,154 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640162] Sphingolipid metabolism
-2019-01-23 18:54:52,261 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119570] Cytosolic glycolysis
-2019-01-23 18:54:52,263 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640056] Cytosolic glycolysis
-2019-01-23 18:54:52,350 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9610720] Oryzalide A biosynthesis
-2019-01-23 18:54:52,352 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640285] Oryzalide A biosynthesis
-2019-01-23 18:54:52,396 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119265] Tetrahydrofolate biosynthesis I
-2019-01-23 18:54:52,398 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640110] Tetrahydrofolate biosynthesis I
-2019-01-23 18:54:52,486 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119353] Linear furanocoumarin biosynthesis
-2019-01-23 18:54:52,488 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640171] Linear furanocoumarin biosynthesis
-2019-01-23 18:54:52,527 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119262] Threonine biosynthesis from homoserine
-2019-01-23 18:54:52,529 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640167] Threonine biosynthesis from homoserine
-2019-01-23 18:54:52,567 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119452] Galactose degradation II
-2019-01-23 18:54:52,569 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640128] Galactose degradation II
-2019-01-23 18:54:52,638 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654909] Xylan biosynthesis
-2019-01-23 18:54:52,640 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640257] Xylan biosynthesis
-2019-01-23 18:54:52,682 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119612] Cysteine degradation
-2019-01-23 18:54:52,684 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640248] Cysteine degradation
-2019-01-23 18:54:52,786 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119502] Allantoin degradation I
-2019-01-23 18:54:52,788 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640156] Allantoin degradation I
-2019-01-23 18:54:52,840 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119532] CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)
-2019-01-23 18:54:52,842 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640106] CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)
-2019-01-23 18:54:52,879 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119605] Chlorophyll a biosynthesis II
-2019-01-23 18:54:52,882 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640103] Chlorophyll a biosynthesis II
-2019-01-23 18:54:52,926 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119593] Oleoresin monoterpene volatiles biosynthesis
-2019-01-23 18:54:52,928 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640111] Oleoresin monoterpene volatiles biosynthesis
-2019-01-23 18:54:52,972 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119625] Gibberellin biosynthesis I (non C-3, non C-13 hydroxylation)
-2019-01-23 18:54:52,974 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640091] Gibberellin biosynthesis I (non C-3, non C-13 hydroxylation)
-2019-01-23 18:54:53,030 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119523] Tetrahydrofolate biosynthesis II
-2019-01-23 18:54:53,032 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640060] Tetrahydrofolate biosynthesis II
-2019-01-23 18:54:53,081 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119600] Valine biosynthesis
-2019-01-23 18:54:53,085 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640088] Valine biosynthesis
-2019-01-23 18:54:53,132 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119400] Methionine biosynthesis II
-2019-01-23 18:54:53,134 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640169] Methionine biosynthesis II
-2019-01-23 18:54:53,192 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934257] Transition from vegetative to reproductive shoot apical meristem
-2019-01-23 18:54:53,194 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640272] Transition from vegetative to reproductive shoot apical meristem
-2019-01-23 18:54:53,224 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119331] Cysteine biosynthesis I
-2019-01-23 18:54:53,226 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640168] Cysteine biosynthesis I
-2019-01-23 18:54:53,259 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119626] Fructan degradation
-2019-01-23 18:54:53,262 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119622] Arginine biosynthesis II (acetyl cycle)
-2019-01-23 18:54:53,264 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640082] Arginine biosynthesis II (acetyl cycle)
-2019-01-23 18:54:53,350 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9631623] Regulation of embryo development
-2019-01-23 18:54:53,353 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119545] Geranylgeranyldiphosphate biosynthesis II (plastidic)
-2019-01-23 18:54:53,355 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640210] Geranylgeranyldiphosphate biosynthesis II (plastidic)
-2019-01-23 18:54:53,384 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119455] 9-LOX and 9-HPL pathway
-2019-01-23 18:54:53,387 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119260] Cardiolipin biosynthesis
-2019-01-23 18:54:53,389 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640102] Cardiolipin biosynthesis
-2019-01-23 18:54:53,451 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119367] Polyisoprenoid biosynthesis
-2019-01-23 18:54:53,453 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640099] Polyisoprenoid biosynthesis
-2019-01-23 18:54:53,491 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119583] Phytocassane biosynthesis
-2019-01-23 18:54:53,492 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640125] Phytocassane biosynthesis
-2019-01-23 18:54:53,638 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119482] IAA conjugate biosynthesis I
-2019-01-23 18:54:53,641 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119320] Chlorophyll cycle
-2019-01-23 18:54:53,643 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640240] Chlorophyll cycle
-2019-01-23 18:54:53,679 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655149] Nucleotide metabolism
-2019-01-23 18:54:53,682 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640093] Nucleotide metabolism
-2019-01-23 18:54:53,699 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623492] Aleurone layer formation
-2019-01-23 18:54:53,701 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5608118] Auxin signalling
-2019-01-23 18:54:53,703 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640251] Auxin signalling
-2019-01-23 18:54:53,793 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119403] Removal of superoxide radicals
-2019-01-23 18:54:53,795 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640134] Removal of superoxide radicals
-2019-01-23 18:54:53,846 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112991] Translation termination
-2019-01-23 18:54:53,848 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9626305] Regulatory network of nutrient accumulation
-2019-01-23 18:54:53,850 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640117] Regulatory network of nutrient accumulation
-2019-01-23 18:54:53,983 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119389] Phenylalanine biosynthesis I
-2019-01-23 18:54:53,985 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640153] Phenylalanine biosynthesis I
-2019-01-23 18:54:54,021 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119428] GDP-D-rhamnose biosynthesis
-2019-01-23 18:54:54,023 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640202] GDP-D-rhamnose biosynthesis
-2019-01-23 18:54:54,053 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119317] Spermine biosynthesis
-2019-01-23 18:54:54,055 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640172] Spermine biosynthesis
-2019-01-23 18:54:54,087 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119393] Asparagine degradation I
-2019-01-23 18:54:54,089 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640229] Asparagine degradation I
-2019-01-23 18:54:54,119 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119568] Pantothenate biosynthesis III
-2019-01-23 18:54:54,121 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640143] Pantothenate biosynthesis III
-2019-01-23 18:54:54,146 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119484] Folate polyglutamylation II
-2019-01-23 18:54:54,148 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640101] Folate polyglutamylation II
-2019-01-23 18:54:54,177 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119407] Ureide biosynthesis
-2019-01-23 18:54:54,178 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640092] Ureide biosynthesis
-2019-01-23 18:54:54,272 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119449] Carotenoid biosynthesis
-2019-01-23 18:54:54,274 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640100] Carotenoid biosynthesis
-2019-01-23 18:54:54,390 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119586] Cyanate degradation
-2019-01-23 18:54:54,392 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640232] Cyanate degradation
-2019-01-23 18:54:54,425 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119550] Gentiodelphin biosynthesis
-2019-01-23 18:54:54,427 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640131] Gentiodelphin biosynthesis
-2019-01-23 18:54:54,467 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119514] Anthocyanin biosynthesis (delphinidin 3-O-glucoside)
-2019-01-23 18:54:54,469 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640201] Anthocyanin biosynthesis (delphinidin 3-O-glucoside)
-2019-01-23 18:54:54,495 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119402] Phospholipid biosynthesis I
-2019-01-23 18:54:54,496 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640225] Phospholipid biosynthesis I
-2019-01-23 18:54:54,587 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119431] UDP-D-glucuronate biosynthesis (from myo-inositol)
-2019-01-23 18:54:54,589 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640109] UDP-D-glucuronate biosynthesis (from myo-inositol)
-2019-01-23 18:54:54,626 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9618218] Arsenic uptake and detoxification
-2019-01-23 18:54:54,628 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640287] Arsenic uptake and detoxification
-2019-01-23 18:54:54,712 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119509] Histidine biosynthesis I
-2019-01-23 18:54:54,714 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640127] Histidine biosynthesis I
-2019-01-23 18:54:54,797 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119342] Gamma-glutamyl cycle
-2019-01-23 18:54:54,799 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640083] Gamma-glutamyl cycle
-2019-01-23 18:54:54,845 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119419] Lysine biosynthesis VI
-2019-01-23 18:54:54,847 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640250] Lysine biosynthesis VI
-2019-01-23 18:54:54,913 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934108] Short day regulated expression of florigens
-2019-01-23 18:54:54,915 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640271] Short day regulated expression of florigens
-2019-01-23 18:54:54,978 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119287] Vitamin E biosynthesis
-2019-01-23 18:54:54,980 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640166] Vitamin E biosynthesis
-2019-01-23 18:54:55,028 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5679411] Gibberellin signaling
-2019-01-23 18:54:55,030 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640260] Gibberellin signaling
-2019-01-23 18:54:55,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655010] Xylogalacturonan biosynthesis
-2019-01-23 18:54:55,107 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640258] Xylogalacturonan biosynthesis
-2019-01-23 18:54:55,131 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119531] Flavonoid biosynthesis
-2019-01-23 18:54:55,133 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640078] Flavonoid biosynthesis
-2019-01-23 18:54:55,189 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119596] Glutamate biosynthesis I
-2019-01-23 18:54:55,191 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640246] Glutamate biosynthesis I
-2019-01-23 18:54:55,214 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5633340] Citrulline-nitric oxide cycle
-2019-01-23 18:54:55,217 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640212] Citrulline-nitric oxide cycle
-2019-01-23 18:54:55,241 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119283] Lysine biosynthesis II
-2019-01-23 18:54:55,243 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640122] Lysine biosynthesis II
-2019-01-23 18:54:55,320 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025727] Iron uptake and transport in root vascular system
-2019-01-23 18:54:55,322 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640274] Iron uptake and transport in root vascular system
-2019-01-23 18:54:55,436 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9627499] SNAC1 transcription network involved in drought and salinity tolerance
-2019-01-23 18:54:55,439 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119528] Beta-alanine betaine biosynthesis
-2019-01-23 18:54:55,441 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640161] Beta-alanine betaine biosynthesis
-2019-01-23 18:54:55,477 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119349] S-methylmethionine cycle
-2019-01-23 18:54:55,479 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640183] S-methylmethionine cycle
-2019-01-23 18:54:55,499 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119551] Putrescine biosynthesis III
-2019-01-23 18:54:55,501 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640235] Putrescine biosynthesis III
-2019-01-23 18:54:55,523 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119521] Oryzalexin S biosynthesis
-2019-01-23 18:54:55,525 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640219] Oryzalexin S biosynthesis
-2019-01-23 18:54:55,551 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119311] Glycine biosynthesis I
-2019-01-23 18:54:55,553 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640220] Glycine biosynthesis I
-2019-01-23 18:54:55,576 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:4827054] Tetrapyrrole biosynthesis I
-2019-01-23 18:54:55,579 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119443] Ammonia assimilation cycle
-2019-01-23 18:54:55,581 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640049] Ammonia assimilation cycle
-2019-01-23 18:54:55,621 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2894886] Cellular processes
-2019-01-23 18:54:55,624 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119450] Homocysteine biosynthesis
-2019-01-23 18:54:55,626 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640230] Homocysteine biosynthesis
-2019-01-23 18:54:55,650 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119447] Putrescine biosynthesis I
-2019-01-23 18:54:55,652 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640211] Putrescine biosynthesis I
-2019-01-23 18:54:55,674 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119300] Glycolipid desaturation
-2019-01-23 18:54:55,676 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640058] Glycolipid desaturation
-2019-01-23 18:54:55,856 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119524] Homomethionine biosynthesis
-2019-01-23 18:54:55,859 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119308] Momilactone biosynthesis
-2019-01-23 18:54:55,861 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640132] Momilactone biosynthesis
-2019-01-23 18:54:55,901 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119430] Chorismate biosynthesis
-2019-01-23 18:54:55,904 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640108] Chorismate biosynthesis
-2019-01-23 18:54:56,092 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119330] Alanine biosynthesis II
-2019-01-23 18:54:56,097 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030908] Underwater shoot and internode elongation
-2019-01-23 18:54:56,100 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640277] Underwater shoot and internode elongation
-2019-01-23 18:54:56,253 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119553] Asparagine biosynthesis I
-2019-01-23 18:54:56,255 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640182] Asparagine biosynthesis I
-2019-01-23 18:54:56,288 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119438] Secologanin and strictosidine biosynthesis
-2019-01-23 18:54:56,290 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640185] Secologanin and strictosidine biosynthesis
-2019-01-23 18:54:56,339 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119341] Galactosylcyclitol biosynthesis
-2019-01-23 18:54:56,341 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640124] Galactosylcyclitol biosynthesis
-2019-01-23 18:54:56,376 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030860] Response to submergence
-2019-01-23 18:54:56,376 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640278] Response to submergence
-2019-01-23 18:54:56,390 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119472] Wighteone and luteone biosynthesis
-2019-01-23 18:54:56,392 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640148] Wighteone and luteone biosynthesis
-2019-01-23 18:54:56,441 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119281] Aspartate biosynthesis I
-2019-01-23 18:54:56,443 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640179] Aspartate biosynthesis I
-2019-01-23 18:54:56,459 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119378] Myo-inositol biosynthesis
-2019-01-23 18:54:56,461 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640191] Myo-inositol biosynthesis
-2019-01-23 18:54:56,483 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112963] Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
-2019-01-23 18:54:56,486 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9607185] Generation of superoxide radicals
-2019-01-23 18:54:56,488 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640282] Generation of superoxide radicals
-2019-01-23 18:54:56,533 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119434] Lipid-independent phytate biosynthesis
-2019-01-23 18:54:56,535 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640192] Lipid-independent phytate biosynthesis
-2019-01-23 18:54:56,564 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119274] Monoterpene biosynthesis
-2019-01-23 18:54:56,566 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640242] Monoterpene biosynthesis
-2019-01-23 18:54:56,603 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119360] Fructan biosynthesis
-2019-01-23 18:54:56,606 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640149] Fructan biosynthesis
-2019-01-23 18:54:56,638 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8933811] Circadian rhythm
-2019-01-23 18:54:56,639 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640268] Circadian rhythm
-2019-01-23 18:54:56,821 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5225808] Ethylene biosynthesis and signaling
-2019-01-23 18:54:56,821 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640174] Ethylene biosynthesis and signaling
-2019-01-23 18:54:56,923 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8858053] Polar auxin transport
-2019-01-23 18:54:56,925 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640263] Polar auxin transport
-2019-01-23 18:54:56,969 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119348] Ent-kaurene biosynthesis
-2019-01-23 18:54:56,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640160] Ent-kaurene biosynthesis
-2019-01-23 18:54:57,008 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119304] Putrescine biosynthesis II
-2019-01-23 18:54:57,010 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640163] Putrescine biosynthesis II
-2019-01-23 18:54:57,038 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119594] Pyridoxal 5'-phosphate biosynthesis
-2019-01-23 18:54:57,040 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640217] Pyridoxal 5'-phosphate biosynthesis
-2019-01-23 18:54:57,090 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031670] Vegetative structure development
-2019-01-23 18:54:57,092 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640228] Vegetative structure development
-2019-01-23 18:54:57,163 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119418] Suberin biosynthesis
-2019-01-23 18:54:57,165 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640197] Suberin biosynthesis
-2019-01-23 18:54:57,232 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119458] Glutamate degradation
-2019-01-23 18:54:57,234 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640186] Glutamate degradation
-2019-01-23 18:54:57,272 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119557] GA12 biosynthesis
-2019-01-23 18:54:57,274 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640090] GA12 biosynthesis
-2019-01-23 18:54:57,322 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030769] Growth and developmental processes
-2019-01-23 18:54:57,323 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640120] Growth and developmental processes
-2019-01-23 18:54:57,336 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112967] Cap-dependent translation initiation
-2019-01-23 18:54:57,339 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119610] Biotin biosynthesis II
-2019-01-23 18:54:57,340 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640105] Biotin biosynthesis II
-2019-01-23 18:54:57,388 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112959] DNA replication: activation of the pre-replicative complex
-2019-01-23 18:54:57,390 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119263] Arginine biosynthesis I
-2019-01-23 18:54:57,392 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640080] Arginine biosynthesis I
-2019-01-23 18:54:57,414 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119453] Medicarpin biosynthesis
-2019-01-23 18:54:57,416 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640209] Medicarpin biosynthesis
-2019-01-23 18:54:57,452 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119544] Pantothenate biosynthesis II
-2019-01-23 18:54:57,454 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640077] Pantothenate biosynthesis II
-2019-01-23 18:54:57,484 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119624] Methionine salvage pathway
-2019-01-23 18:54:57,485 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640097] Methionine salvage pathway
-2019-01-23 18:54:57,526 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119573] Dolichyl-diphosphooligosaccharide biosynthesis
-2019-01-23 18:54:57,528 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640178] Dolichyl-diphosphooligosaccharide biosynthesis
-2019-01-23 18:54:57,605 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119456] Brassinosteroid biosynthesis II
-2019-01-23 18:54:57,607 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640176] Brassinosteroid biosynthesis II
-2019-01-23 18:54:57,656 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119286] Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)
-2019-01-23 18:54:57,658 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640079] Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)
-2019-01-23 18:54:57,753 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119486] IAA biosynthesis I
-2019-01-23 18:54:57,755 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640063] IAA biosynthesis I
-2019-01-23 18:54:57,827 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119609] Phaseic acid biosynthesis
-2019-01-23 18:54:57,829 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640104] Phaseic acid biosynthesis
-2019-01-23 18:54:57,855 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112987] Translation elongation
-2019-01-23 18:54:57,857 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119295] Homoserine biosynthesis
-2019-01-23 18:54:57,859 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640123] Homoserine biosynthesis
-2019-01-23 18:54:57,876 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119278] PRPP biosynthesis I
-2019-01-23 18:54:57,877 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640196] PRPP biosynthesis I
-2019-01-23 18:54:57,894 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934036] Long day regulated expression of florigens
-2019-01-23 18:54:57,896 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640269] Long day regulated expression of florigens
-2019-01-23 18:54:57,948 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119309] Aminopropanol biosynthesis
-2019-01-23 18:54:57,949 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640280] Aminopropanol biosynthesis
-2019-01-23 18:54:57,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119314] Cellulose biosynthesis
-2019-01-23 18:54:57,973 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640189] Cellulose biosynthesis
-2019-01-23 18:54:57,991 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119559] Cholesterol biosynthesis I
-2019-01-23 18:54:57,993 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640087] Cholesterol biosynthesis I
-2019-01-23 18:54:58,065 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119398] Pterocarpan biosynthesis
-2019-01-23 18:54:58,067 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119291] Nitrate assimilation
-2019-01-23 18:54:58,069 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640233] Nitrate assimilation
-2019-01-23 18:54:58,091 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119477] Starch biosynthesis
-2019-01-23 18:54:58,091 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640116] Starch biosynthesis
-2019-01-23 18:54:58,138 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8868860] Auxin transport
-2019-01-23 18:54:58,140 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640264] Auxin transport
-2019-01-23 18:54:58,154 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8932729] Responses to stimuli: abiotic stimuli and stresses
-2019-01-23 18:54:58,155 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640267] Responses to stimuli: abiotic stimuli and stresses
-2019-01-23 18:54:58,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744345] Metabolism and regulation
-2019-01-23 18:54:58,177 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640051] Metabolism and regulation
-2019-01-23 18:54:58,213 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119620] GDP-L-fucose biosynthesis I (from GDP-D-mannose)
-2019-01-23 18:54:58,215 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640203] GDP-L-fucose biosynthesis I (from GDP-D-mannose)
-2019-01-23 18:54:58,233 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623903] Endosperm morphogenesis
-2019-01-23 18:54:58,236 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119271] Threonine degradation
-2019-01-23 18:54:58,238 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640177] Threonine degradation
-2019-01-23 18:54:58,265 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9627657] Regulation of leaf development
-2019-01-23 18:54:58,266 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640227] Regulation of leaf development
-2019-01-23 18:54:58,403 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119322] Leucodelphinidin biosynthesis
-2019-01-23 18:54:58,406 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640193] Leucodelphinidin biosynthesis
-2019-01-23 18:54:58,443 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119417] Stachyose biosynthesis
-2019-01-23 18:54:58,446 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119566] Divinyl ether biosynthesis II (13-LOX)
-2019-01-23 18:54:58,448 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640184] Divinyl ether biosynthesis II (13-LOX)
-2019-01-23 18:54:58,471 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119413] Trans-zeatin biosynthesis
-2019-01-23 18:54:58,471 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640226] Trans-zeatin biosynthesis
-2019-01-23 18:54:58,727 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119519] Calvin cycle
-2019-01-23 18:54:58,729 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640243] Calvin cycle
-2019-01-23 18:54:58,835 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119506] tyrosine degradation I
-2019-01-23 18:54:58,838 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640070] tyrosine degradation I
-2019-01-23 18:54:58,906 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609102] Flower development
-2019-01-23 18:54:58,909 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119424] Plastid glycolysis
-2019-01-23 18:54:58,911 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640238] Plastid glycolysis
-2019-01-23 18:54:58,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2972871] Protein metabolism: translation
-2019-01-23 18:54:58,974 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119601] Trehalose degradation II
-2019-01-23 18:54:58,976 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640214] Trehalose degradation II
-2019-01-23 18:54:59,004 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119535] Glutamate biosynthesis IV
-2019-01-23 18:54:59,006 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640249] Glutamate biosynthesis IV
-2019-01-23 18:54:59,024 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119412] Chlorophyll a biosynthesis I
-2019-01-23 18:54:59,026 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640224] Chlorophyll a biosynthesis I
-2019-01-23 18:54:59,042 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5096066] Amine and polyamine biosynthesis
-2019-01-23 18:54:59,043 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640157] Amine and polyamine biosynthesis
-2019-01-23 18:54:59,063 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119375] Cytokinins 9-N-glucoside biosynthesis
-2019-01-23 18:54:59,065 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640095] Cytokinins 9-N-glucoside biosynthesis
-2019-01-23 18:54:59,122 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119294] Gibberellin biosynthesis III (early C-13 hydroxylation)
-2019-01-23 18:54:59,123 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640074] Gibberellin biosynthesis III (early C-13 hydroxylation)
-2019-01-23 18:54:59,168 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119602] Phytyl-PP biosynthesis
-2019-01-23 18:54:59,170 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640159] Phytyl-PP biosynthesis
-2019-01-23 18:54:59,199 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119337] Proline degradation
-2019-01-23 18:54:59,201 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640053] Proline degradation
-2019-01-23 18:54:59,230 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119312] Photorespiration
-2019-01-23 18:54:59,231 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640133] Photorespiration
-2019-01-23 18:54:59,330 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9607141] Reactive oxygen species (ROS) homeostasis
-2019-01-23 18:54:59,332 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640135] Reactive oxygen species (ROS) homeostasis
-2019-01-23 18:54:59,347 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119483] Glutathione biosynthesis
-2019-01-23 18:54:59,349 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640146] Glutathione biosynthesis
-2019-01-23 18:54:59,363 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119365] Lysine degradation II
-2019-01-23 18:54:59,365 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640195] Lysine degradation II
-2019-01-23 18:54:59,426 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112965] Recycling of eIF2:GDP
-2019-01-23 18:54:59,428 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934088] Inflorescence development
-2019-01-23 18:54:59,429 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640270] Inflorescence development
-2019-01-23 18:54:59,444 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2883407] Carbohydrate metabolism
-2019-01-23 18:54:59,445 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640057] Carbohydrate metabolism
-2019-01-23 18:54:59,502 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654828] Strigolactone signaling
-2019-01-23 18:54:59,504 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640255] Strigolactone signaling
-2019-01-23 18:54:59,566 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119465] Sucrose biosynthesis
-2019-01-23 18:54:59,567 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640115] Sucrose biosynthesis
-2019-01-23 18:54:59,600 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119273] Lysine biosynthesis I
-2019-01-23 18:54:59,603 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640121] Lysine biosynthesis I
-2019-01-23 18:54:59,625 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:6787011] Jasmonic acid signaling
-2019-01-23 18:54:59,627 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640261] Jasmonic acid signaling
-2019-01-23 18:54:59,760 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609573] Tricin biosynthesis
-2019-01-23 18:54:59,762 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640284] Tricin biosynthesis
-2019-01-23 18:54:59,800 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119446] Lysine degradation I
-2019-01-23 18:54:59,803 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640164] Lysine degradation I
-2019-01-23 18:54:59,822 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119437] Glutathione redox reactions I
-2019-01-23 18:54:59,824 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640155] Glutathione redox reactions I
-2019-01-23 18:54:59,851 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119445] Beta-alanine biosynthesis II
-2019-01-23 18:54:59,853 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640222] Beta-alanine biosynthesis II
-2019-01-23 18:54:59,898 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119534] Pyridoxal 5'-phosphate salvage pathway
-2019-01-23 18:54:59,900 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640200] Pyridoxal 5'-phosphate salvage pathway
-2019-01-23 18:54:59,929 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119516] Trehalose biosynthesis I
-2019-01-23 18:54:59,930 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640221] Trehalose biosynthesis I
-2019-01-23 18:54:59,957 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119321] Glycerol degradation I
-2019-01-23 18:54:59,958 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640147] Glycerol degradation I
-2019-01-23 18:54:59,989 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119569] Kievitone biosynthesis
-2019-01-23 18:54:59,992 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640112] Kievitone biosynthesis
-2019-01-23 18:55:00,017 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119371] Oryzalexin A-F biosynthesis
-2019-01-23 18:55:00,019 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640075] Oryzalexin A-F biosynthesis
-2019-01-23 18:55:00,055 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119354] Asparagine biosynthesis III
-2019-01-23 18:55:00,057 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640181] Asparagine biosynthesis III
-2019-01-23 18:55:00,075 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9612650] Responses to stimuli: biotic stimuli and stresses
-2019-01-23 18:55:00,077 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640138] Responses to stimuli: biotic stimuli and stresses
-2019-01-23 18:55:00,090 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623703] HSFA7/ HSFA6B-regulatory network-induced by drought and ABA. 
-2019-01-23 18:55:00,093 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119410] Ascorbate biosynthesis
-2019-01-23 18:55:00,095 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640151] Ascorbate biosynthesis
-2019-01-23 18:55:00,152 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119501] S-adenosyl-L-methionine cycle
-2019-01-23 18:55:00,154 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640170] S-adenosyl-L-methionine cycle
-2019-01-23 18:55:00,174 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654894] UDP-D-apiose biosynthesis
-2019-01-23 18:55:00,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640256] UDP-D-apiose biosynthesis
-2019-01-23 18:55:00,197 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609352] Lycopene catabolism
-2019-01-23 18:55:00,198 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640283] Lycopene catabolism
-2019-01-23 18:55:00,236 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119618] 13-LOX and 13-HPL pathway
-2019-01-23 18:55:00,238 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640067] 13-LOX and 13-HPL pathway
-2019-01-23 18:55:00,272 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9618278] Response to heavy metals
-2019-01-23 18:55:00,273 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640288] Response to heavy metals
-2019-01-23 18:55:00,286 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119629] Thiamine biosynthesis
-2019-01-23 18:55:00,288 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640213] Thiamine biosynthesis
-2019-01-23 18:55:00,340 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119298] Glutathione redox reactions II
-2019-01-23 18:55:00,342 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640154] Glutathione redox reactions II
-2019-01-23 18:55:00,359 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112968] Ribosomal scanning and start codon recognition
-2019-01-23 18:55:00,362 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744343] Amino acid metabolism
-2019-01-23 18:55:00,362 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640055] Amino acid metabolism
-2019-01-23 18:55:00,383 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119581] Thiosulfate disproportionation III (rhodanese)
-2019-01-23 18:55:00,385 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119479] Valine degradation
-2019-01-23 18:55:00,387 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640286] Valine degradation
-2019-01-23 18:55:00,456 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119580] IAA biosynthesis II
-2019-01-23 18:55:00,458 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640094] IAA biosynthesis II
-2019-01-23 18:55:00,483 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3906998] Fatty acid and lipid metabolism
-2019-01-23 18:55:00,484 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640059] Fatty acid and lipid metabolism
-2019-01-23 18:55:00,512 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119293] Glutamine biosynthesis I
-2019-01-23 18:55:00,514 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640234] Glutamine biosynthesis I
-2019-01-23 18:55:00,527 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119498] Phylloquinone biosynthesis
-2019-01-23 18:55:00,529 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640241] Phylloquinone biosynthesis
-2019-01-23 18:55:00,564 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119261] Salicylate biosynthesis
-2019-01-23 18:55:00,566 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640198] Salicylate biosynthesis
-2019-01-23 18:55:00,605 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119374] Abscisic acid biosynthesis
-2019-01-23 18:55:00,607 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119628] GDP-mannose metabolism
-2019-01-23 18:55:00,608 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640152] GDP-mannose metabolism
-2019-01-23 18:55:00,631 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623902] Seed development
-2019-01-23 18:55:00,632 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640118] Seed development
-2019-01-23 18:55:00,647 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119303] Pyridoxamine anabolism
-2019-01-23 18:55:00,650 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608931] Floral bract development
-2019-01-23 18:55:00,652 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119529] Sulfate activation for sulfonation
-2019-01-23 18:55:00,654 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640085] Sulfate activation for sulfonation
-2019-01-23 18:55:00,674 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655124] Amino acid catabolism
-2019-01-23 18:55:00,675 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640054] Amino acid catabolism
-2019-01-23 18:55:00,696 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119499] Capsidiol biosynthesis
-2019-01-23 18:55:00,698 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031225] Response to phosphate deficiency
-2019-01-23 18:55:00,699 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640279] Response to phosphate deficiency
-2019-01-23 18:55:00,772 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119379] Flavin biosynthesis
-2019-01-23 18:55:00,773 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640175] Flavin biosynthesis
-2019-01-23 18:55:00,833 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119377] Gibberellin biosynthesis II (early C-3 hydroxylation)
-2019-01-23 18:55:00,835 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640107] Gibberellin biosynthesis II (early C-3 hydroxylation)
-2019-01-23 18:55:00,864 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744344] Secondary metabolism
-2019-01-23 18:55:00,865 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640068] Secondary metabolism
-2019-01-23 18:55:00,942 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119513] Pinobanksin biosynthesis
-2019-01-23 18:55:00,942 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640150] Pinobanksin biosynthesis
-2019-01-23 18:55:00,970 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119533] TCA cycle (plant)
-2019-01-23 18:55:00,970 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640048] TCA cycle (plant)
-2019-01-23 18:55:01,044 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9035605] Regulation of seed size
-2019-01-23 18:55:01,045 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640252] Regulation of seed size
-2019-01-23 18:55:01,247 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119297] Beta-alanine biosynthesis III
-2019-01-23 18:55:01,249 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640141] Beta-alanine biosynthesis III
-2019-01-23 18:55:01,278 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119617] Folate polyglutamylation I
-2019-01-23 18:55:01,280 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640062] Folate polyglutamylation I
-2019-01-23 18:55:01,312 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119444] Canavanine biosynthesis
-2019-01-23 18:55:01,314 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640114] Canavanine biosynthesis
-2019-01-23 18:55:01,351 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031669] Reproductive structure development
-2019-01-23 18:55:01,352 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640119] Reproductive structure development
-2019-01-23 18:55:01,369 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119579] Glycine betaine biosynthesis III
-2019-01-23 18:55:01,371 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640204] Glycine betaine biosynthesis III
-2019-01-23 18:55:01,402 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119332] Jasmonic acid biosynthesis
-2019-01-23 18:55:01,404 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640066] Jasmonic acid biosynthesis
-2019-01-23 18:55:01,449 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119631] Proline biosynthesis I
-2019-01-23 18:55:01,451 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640144] Proline biosynthesis I
-2019-01-23 18:55:01,489 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119495] Citrulline biosynthesis
-2019-01-23 18:55:01,491 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640139] Citrulline biosynthesis
-2019-01-23 18:55:01,537 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119436] Peptidoglycan biosynthesis I
-2019-01-23 18:55:01,537 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640207] Peptidoglycan biosynthesis I
-2019-01-23 18:55:01,604 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5367729] Strigolactone biosynthesis
-2019-01-23 18:55:01,606 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640244] Strigolactone biosynthesis
-2019-01-23 18:55:01,802 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9611432] Recognition of fungal and bacterial pathogens and immunity response
-2019-01-23 18:55:01,803 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640137] Recognition of fungal and bacterial pathogens and immunity response
-2019-01-23 18:55:01,964 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119539] Ornithine biosynthesis
-2019-01-23 18:55:01,966 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640081] Ornithine biosynthesis
-2019-01-23 18:55:01,982 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9630286] Cell cycle regulation
-2019-01-23 18:55:01,984 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744341] Hormone signaling, transport, and metabolism
-2019-01-23 18:55:01,985 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640064] Hormone signaling, transport, and metabolism
-2019-01-23 18:55:02,022 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119439] Cholesterol biosynthesis III (via desmosterol)
-2019-01-23 18:55:02,023 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640086] Cholesterol biosynthesis III (via desmosterol)
-2019-01-23 18:55:02,048 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119415] Leucopelargonidin and leucocyanidin biosynthesis
-2019-01-23 18:55:02,048 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640194] Leucopelargonidin and leucocyanidin biosynthesis
-2019-01-23 18:55:02,069 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112998] Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
-2019-01-23 18:55:02,071 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119492] Lactucaxanthin biosynthesis
-2019-01-23 18:55:02,072 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640180] Lactucaxanthin biosynthesis
-2019-01-23 18:55:02,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119448] 6,7,4'-Trihydroxyisoflavone biosynthesis
-2019-01-23 18:55:02,108 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119630] Resveratrol biosynthesis
-2019-01-23 18:55:02,108 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640237] Resveratrol biosynthesis
-2019-01-23 18:55:02,174 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119451] Xylose degradation
-2019-01-23 18:55:02,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640223] Xylose degradation
-2019-01-23 18:55:02,202 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119370] Sterol biosynthesis
-2019-01-23 18:55:02,202 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640073] Sterol biosynthesis
-2019-01-23 18:55:02,313 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119292] Cytokinins 7-N-glucoside biosynthesis
-2019-01-23 18:55:02,313 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640096] Cytokinins 7-N-glucoside biosynthesis
-2019-01-23 18:55:02,373 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8986768] Anther and pollen development
-2019-01-23 18:55:02,374 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640273] Anther and pollen development
-2019-01-23 18:55:02,524 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025714] Response to iron deficiency
-2019-01-23 18:55:02,526 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640275] Response to iron deficiency
-2019-01-23 18:55:02,543 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119494] Tryptophan biosynthesis
-2019-01-23 18:55:02,545 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640071] Tryptophan biosynthesis
-2019-01-23 18:55:02,618 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119284] Coumarin biosynthesis (via 2-coumarate)
-2019-01-23 18:55:02,618 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640236] Coumarin biosynthesis (via 2-coumarate)
-2019-01-23 18:55:02,650 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3899368] ABA biosynthesis and mediated signaling
-2019-01-23 18:55:02,652 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119276] Choline biosynthesis III
-2019-01-23 18:55:02,653 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640187] Choline biosynthesis III
-2019-01-23 18:55:02,691 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119440] Anthocyanin biosynthesis (pelargonidin 3-O-glucoside, cyanidin 3-O-glucoside)
-2019-01-23 18:55:02,691 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640098] Anthocyanin biosynthesis (pelargonidin 3-O-glucoside, cyanidin 3-O-glucoside)
-2019-01-23 18:55:02,725 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112990] Formation of the ternary complex, and subsequently, the 43S complex
-2019-01-23 18:55:02,727 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119473] Cytokinins-O-glucoside biosynthesis
-2019-01-23 18:55:02,728 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640065] Cytokinins-O-glucoside biosynthesis
-2019-01-23 18:55:02,766 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119323] Lipid-A-precursor biosynthesis
-2019-01-23 18:55:02,767 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640208] Lipid-A-precursor biosynthesis
-2019-01-23 18:55:02,807 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608520] Abscisic acid homeostasis
-2019-01-23 18:55:02,809 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9613003] Detoxification
-2019-01-23 18:55:02,810 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640136] Detoxification
-2019-01-23 18:55:02,820 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119350] Calystegine biosynthesis
-2019-01-23 18:55:02,822 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119344] Hydroxycinnamic acid serotonin amides biosynthesis
-2019-01-23 18:55:02,823 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640216] Hydroxycinnamic acid serotonin amides biosynthesis
-2019-01-23 18:55:02,854 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119615] Mevalonate pathway
-2019-01-23 18:55:02,854 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640089] Mevalonate pathway
-2019-01-23 18:55:02,911 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119319] Alanine biosynthesis III
-2019-01-23 18:55:02,913 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640247] Alanine biosynthesis III
-2019-01-23 18:55:02,935 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655122] Amino acid biosynthesis
-2019-01-23 18:55:02,935 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640072] Amino acid biosynthesis
-2019-01-23 18:55:02,992 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119316] Phenylpropanoid biosynthesis
-2019-01-23 18:55:02,992 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640084] Phenylpropanoid biosynthesis
-2019-01-23 18:55:03,091 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8879007] Response to cold temperature
-2019-01-23 18:55:03,092 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640266] Response to cold temperature
-2019-01-23 18:55:03,182 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623744] Response to Drought
-2019-01-23 18:55:03,184 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119388] IAA biosynthesis VI (via indole-3-acetamide)
-2019-01-23 18:55:03,185 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640165] IAA biosynthesis VI (via indole-3-acetamide)
-2019-01-23 18:55:03,208 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119496] Pantothenate biosynthesis I
-2019-01-23 18:55:03,210 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640076] Pantothenate biosynthesis I
-2019-01-23 18:55:03,224 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608575] Reproductive meristem phase change
-2019-01-23 18:55:03,225 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640281] Reproductive meristem phase change
-2019-01-23 18:55:03,365 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119567] Beta-alanine biosynthesis I
-2019-01-23 18:55:03,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623513] Maternal tissue PCD
-2019-01-23 18:55:03,370 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025754] Mugineic acid biosynthesis
-2019-01-23 18:55:03,371 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640276] Mugineic acid biosynthesis
-2019-01-23 18:55:03,429 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112971] Formation of a pool of free 40S subunits
-2019-01-23 18:55:03,431 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2961031] Generation of precursor metabolites and energy
-2019-01-23 18:55:03,432 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640052] Generation of precursor metabolites and energy
-2019-01-23 18:55:03,445 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119386] UDP-N-acetylgalactosamine biosynthesis
-2019-01-23 18:55:03,446 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640130] UDP-N-acetylgalactosamine biosynthesis
-2019-01-23 18:55:03,481 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030654] Primary root development
-2019-01-23 18:55:03,483 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119460] Isoleucine biosynthesis from threonine
-2019-01-23 18:55:03,483 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640126] Isoleucine biosynthesis from threonine
-2019-01-23 18:55:03,523 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119464] Methylerythritol phosphate pathway
-2019-01-23 18:55:03,525 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640129] Methylerythritol phosphate pathway
-2019-01-23 18:55:03,796 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119556] Choline biosynthesis I
-2019-01-23 18:55:03,796 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640188] Choline biosynthesis I
-2019-01-23 18:55:03,859 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3899351] Abscisic acid (ABA) mediated signaling
-2019-01-23 18:55:03,861 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5368291] Inorganic nutrients metabolism
-2019-01-23 18:55:03,862 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640050] Inorganic nutrients metabolism
-2019-01-23 18:55:03,882 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119471] Proanthocyanidin biosynthesis from flavanols
-2019-01-23 18:55:03,884 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655101] Xyloglucan biosynthesis
-2019-01-23 18:55:03,885 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640259] Xyloglucan biosynthesis
-2019-01-23 18:55:03,937 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119351] Mitochondrial pyruvate metabolism
-2019-01-23 18:55:03,938 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640239] Mitochondrial pyruvate metabolism
-2019-01-23 18:55:03,962 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119318] Proline biosynthesis V (from arginine)
-2019-01-23 18:55:03,963 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640140] Proline biosynthesis V (from arginine)
-2019-01-23 18:55:03,990 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2867929] Cofactor biosyntheses
-2019-01-23 18:55:03,991 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640061] Cofactor biosyntheses
-2019-01-23 18:55:04,044 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119574] UDP-L-arabinose biosynthesis I (from UDP-xylose)
-2019-01-23 18:55:04,045 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640205] UDP-L-arabinose biosynthesis I (from UDP-xylose)
-2019-01-23 18:55:04,067 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119395] Maackiain biosynthesis
-2019-01-23 18:55:04,068 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640218] Maackiain biosynthesis
-2019-01-23 18:55:04,098 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119420] Glutamate biosynthesis V
-2019-01-23 18:55:04,099 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640245] Glutamate biosynthesis V
-2019-01-23 18:55:04,122 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119582] Phenylpropanoid biosynthesis, initial reactions
-2019-01-23 18:55:04,123 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640199] Phenylpropanoid biosynthesis, initial reactions
-2019-01-23 18:55:04,136 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119457] Geranyldiphosphate biosynthesis
-2019-01-23 18:55:04,139 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119289] Arginine degradation
-2019-01-23 18:55:04,139 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640253] Arginine degradation
-2019-01-23 18:55:04,191 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5632095] Brassinosteroid signaling
-2019-01-23 18:55:04,192 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640254] Brassinosteroid signaling
-2019-01-23 18:55:04,345 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119623] Acyl-CoA synthetase pathway
-2019-01-23 18:55:04,346 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640190] Acyl-CoA synthetase pathway
-2019-01-23 18:55:04,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119343] Spermidine biosynthesis
-2019-01-23 18:55:04,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640231] Spermidine biosynthesis
-2019-01-23 18:55:04,388 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119540] Leucine biosynthesis
-2019-01-23 18:55:04,389 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640145] Leucine biosynthesis
-2019-01-23 18:55:04,433 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119563] UDP-D-xylose biosynthesis
-2019-01-23 18:55:04,434 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640069] UDP-D-xylose biosynthesis
-2019-01-23 18:55:04,453 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119526] Trans,trans-farnesyl diphosphate biosynthesis
-2019-01-23 18:55:04,455 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119257] UDP-L-arabinose biosynthesis II (from L-arabinose)
-2019-01-23 18:55:04,457 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8868949] Intracellular auxin transport
-2019-01-23 18:55:04,458 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640265] Intracellular auxin transport
-2019-01-23 18:55:04,518 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Starting generate Vertex instances...
-2019-01-23 18:58:01,888 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Finish the whole process!
+2019-01-29 11:28:36,911 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Used database: test_slice_oryza_sativa_17_ortho_osat_all
+2019-01-29 11:28:36,912 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Default person: 1385632
+2019-01-29 11:28:36,912 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Starting generating diagrams for other species...
+2019-01-29 11:28:36,928 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:6788019] Salicylic acid signaling
+2019-01-29 11:28:36,931 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640262] Salicylic acid signaling
+2019-01-29 11:28:37,655 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119404] Crocetin biosynthesis
+2019-01-29 11:28:37,658 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119384] NAD biosynthesis I (from aspartate)
+2019-01-29 11:28:37,661 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640113] NAD biosynthesis I (from aspartate)
+2019-01-29 11:28:37,756 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119328] Oleoresin sesquiterpene volatiles biosynthesis
+2019-01-29 11:28:37,759 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640206] Oleoresin sesquiterpene volatiles biosynthesis
+2019-01-29 11:28:37,797 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119267] Phenylalanine degradation III
+2019-01-29 11:28:37,799 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640158] Phenylalanine degradation III
+2019-01-29 11:28:37,846 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119325] Sphingolipid metabolism
+2019-01-29 11:28:37,848 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640162] Sphingolipid metabolism
+2019-01-29 11:28:37,960 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119570] Cytosolic glycolysis
+2019-01-29 11:28:37,962 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640056] Cytosolic glycolysis
+2019-01-29 11:28:38,054 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9610720] Oryzalide A biosynthesis
+2019-01-29 11:28:38,056 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640285] Oryzalide A biosynthesis
+2019-01-29 11:28:38,101 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119265] Tetrahydrofolate biosynthesis I
+2019-01-29 11:28:38,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640110] Tetrahydrofolate biosynthesis I
+2019-01-29 11:28:38,194 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119353] Linear furanocoumarin biosynthesis
+2019-01-29 11:28:38,196 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640171] Linear furanocoumarin biosynthesis
+2019-01-29 11:28:38,239 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119262] Threonine biosynthesis from homoserine
+2019-01-29 11:28:38,241 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640167] Threonine biosynthesis from homoserine
+2019-01-29 11:28:38,282 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119452] Galactose degradation II
+2019-01-29 11:28:38,284 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640128] Galactose degradation II
+2019-01-29 11:28:38,358 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654909] Xylan biosynthesis
+2019-01-29 11:28:38,360 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640257] Xylan biosynthesis
+2019-01-29 11:28:38,402 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119612] Cysteine degradation
+2019-01-29 11:28:38,404 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640248] Cysteine degradation
+2019-01-29 11:28:38,501 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119502] Allantoin degradation I
+2019-01-29 11:28:38,503 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640156] Allantoin degradation I
+2019-01-29 11:28:38,557 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119532] CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)
+2019-01-29 11:28:38,559 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640106] CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)
+2019-01-29 11:28:38,595 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119605] Chlorophyll a biosynthesis II
+2019-01-29 11:28:38,598 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640103] Chlorophyll a biosynthesis II
+2019-01-29 11:28:38,642 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119593] Oleoresin monoterpene volatiles biosynthesis
+2019-01-29 11:28:38,644 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640111] Oleoresin monoterpene volatiles biosynthesis
+2019-01-29 11:28:38,687 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119625] Gibberellin biosynthesis I (non C-3, non C-13 hydroxylation)
+2019-01-29 11:28:38,690 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640091] Gibberellin biosynthesis I (non C-3, non C-13 hydroxylation)
+2019-01-29 11:28:38,753 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119523] Tetrahydrofolate biosynthesis II
+2019-01-29 11:28:38,755 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640060] Tetrahydrofolate biosynthesis II
+2019-01-29 11:28:38,811 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119600] Valine biosynthesis
+2019-01-29 11:28:38,813 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640088] Valine biosynthesis
+2019-01-29 11:28:38,867 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119400] Methionine biosynthesis II
+2019-01-29 11:28:38,869 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640169] Methionine biosynthesis II
+2019-01-29 11:28:38,936 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934257] Transition from vegetative to reproductive shoot apical meristem
+2019-01-29 11:28:38,938 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640272] Transition from vegetative to reproductive shoot apical meristem
+2019-01-29 11:28:38,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119331] Cysteine biosynthesis I
+2019-01-29 11:28:38,973 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640168] Cysteine biosynthesis I
+2019-01-29 11:28:39,007 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119626] Fructan degradation
+2019-01-29 11:28:39,010 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119622] Arginine biosynthesis II (acetyl cycle)
+2019-01-29 11:28:39,012 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640082] Arginine biosynthesis II (acetyl cycle)
+2019-01-29 11:28:39,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9631623] Regulation of embryo development
+2019-01-29 11:28:39,109 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119545] Geranylgeranyldiphosphate biosynthesis II (plastidic)
+2019-01-29 11:28:39,111 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640210] Geranylgeranyldiphosphate biosynthesis II (plastidic)
+2019-01-29 11:28:39,144 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119455] 9-LOX and 9-HPL pathway
+2019-01-29 11:28:39,147 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119260] Cardiolipin biosynthesis
+2019-01-29 11:28:39,149 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640102] Cardiolipin biosynthesis
+2019-01-29 11:28:39,218 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119367] Polyisoprenoid biosynthesis
+2019-01-29 11:28:39,220 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640099] Polyisoprenoid biosynthesis
+2019-01-29 11:28:39,265 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119583] Phytocassane biosynthesis
+2019-01-29 11:28:39,267 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640125] Phytocassane biosynthesis
+2019-01-29 11:28:39,310 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119482] IAA conjugate biosynthesis I
+2019-01-29 11:28:39,313 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119320] Chlorophyll cycle
+2019-01-29 11:28:39,315 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640240] Chlorophyll cycle
+2019-01-29 11:28:39,352 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655149] Nucleotide metabolism
+2019-01-29 11:28:39,355 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640093] Nucleotide metabolism
+2019-01-29 11:28:39,373 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623492] Aleurone layer formation
+2019-01-29 11:28:39,376 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5608118] Auxin signalling
+2019-01-29 11:28:39,378 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640251] Auxin signalling
+2019-01-29 11:28:39,476 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119403] Removal of superoxide radicals
+2019-01-29 11:28:39,479 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640134] Removal of superoxide radicals
+2019-01-29 11:28:39,535 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112991] Translation termination
+2019-01-29 11:28:39,537 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9626305] Regulatory network of nutrient accumulation
+2019-01-29 11:28:39,540 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640117] Regulatory network of nutrient accumulation
+2019-01-29 11:28:39,679 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119389] Phenylalanine biosynthesis I
+2019-01-29 11:28:39,681 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640153] Phenylalanine biosynthesis I
+2019-01-29 11:28:39,718 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119428] GDP-D-rhamnose biosynthesis
+2019-01-29 11:28:39,720 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640202] GDP-D-rhamnose biosynthesis
+2019-01-29 11:28:39,751 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119317] Spermine biosynthesis
+2019-01-29 11:28:39,754 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640172] Spermine biosynthesis
+2019-01-29 11:28:39,785 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119393] Asparagine degradation I
+2019-01-29 11:28:39,787 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640229] Asparagine degradation I
+2019-01-29 11:28:39,817 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119568] Pantothenate biosynthesis III
+2019-01-29 11:28:39,819 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640143] Pantothenate biosynthesis III
+2019-01-29 11:28:39,845 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119484] Folate polyglutamylation II
+2019-01-29 11:28:39,848 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640101] Folate polyglutamylation II
+2019-01-29 11:28:39,880 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119407] Ureide biosynthesis
+2019-01-29 11:28:39,880 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640092] Ureide biosynthesis
+2019-01-29 11:28:39,986 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119449] Carotenoid biosynthesis
+2019-01-29 11:28:39,988 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640100] Carotenoid biosynthesis
+2019-01-29 11:28:40,117 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119586] Cyanate degradation
+2019-01-29 11:28:40,119 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640232] Cyanate degradation
+2019-01-29 11:28:40,154 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119550] Gentiodelphin biosynthesis
+2019-01-29 11:28:40,156 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640131] Gentiodelphin biosynthesis
+2019-01-29 11:28:40,201 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119514] Anthocyanin biosynthesis (delphinidin 3-O-glucoside)
+2019-01-29 11:28:40,203 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640201] Anthocyanin biosynthesis (delphinidin 3-O-glucoside)
+2019-01-29 11:28:40,231 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119402] Phospholipid biosynthesis I
+2019-01-29 11:28:40,233 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640225] Phospholipid biosynthesis I
+2019-01-29 11:28:40,328 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119431] UDP-D-glucuronate biosynthesis (from myo-inositol)
+2019-01-29 11:28:40,330 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640109] UDP-D-glucuronate biosynthesis (from myo-inositol)
+2019-01-29 11:28:40,370 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9618218] Arsenic uptake and detoxification
+2019-01-29 11:28:40,372 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640287] Arsenic uptake and detoxification
+2019-01-29 11:28:40,458 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119509] Histidine biosynthesis I
+2019-01-29 11:28:40,460 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640127] Histidine biosynthesis I
+2019-01-29 11:28:40,543 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119342] Gamma-glutamyl cycle
+2019-01-29 11:28:40,545 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640083] Gamma-glutamyl cycle
+2019-01-29 11:28:40,593 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119419] Lysine biosynthesis VI
+2019-01-29 11:28:40,595 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640250] Lysine biosynthesis VI
+2019-01-29 11:28:40,667 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934108] Short day regulated expression of florigens
+2019-01-29 11:28:40,669 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640271] Short day regulated expression of florigens
+2019-01-29 11:28:40,734 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119287] Vitamin E biosynthesis
+2019-01-29 11:28:40,737 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640166] Vitamin E biosynthesis
+2019-01-29 11:28:40,787 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5679411] Gibberellin signaling
+2019-01-29 11:28:40,789 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640260] Gibberellin signaling
+2019-01-29 11:28:40,866 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655010] Xylogalacturonan biosynthesis
+2019-01-29 11:28:40,868 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640258] Xylogalacturonan biosynthesis
+2019-01-29 11:28:40,892 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119531] Flavonoid biosynthesis
+2019-01-29 11:28:40,894 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640078] Flavonoid biosynthesis
+2019-01-29 11:28:40,951 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119596] Glutamate biosynthesis I
+2019-01-29 11:28:40,953 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640246] Glutamate biosynthesis I
+2019-01-29 11:28:40,977 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5633340] Citrulline-nitric oxide cycle
+2019-01-29 11:28:40,979 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640212] Citrulline-nitric oxide cycle
+2019-01-29 11:28:41,003 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119283] Lysine biosynthesis II
+2019-01-29 11:28:41,005 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640122] Lysine biosynthesis II
+2019-01-29 11:28:41,185 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025727] Iron uptake and transport in root vascular system
+2019-01-29 11:28:41,188 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640274] Iron uptake and transport in root vascular system
+2019-01-29 11:28:41,305 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9627499] SNAC1 transcription network involved in drought and salinity tolerance
+2019-01-29 11:28:41,308 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119528] Beta-alanine betaine biosynthesis
+2019-01-29 11:28:41,310 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640161] Beta-alanine betaine biosynthesis
+2019-01-29 11:28:41,345 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119349] S-methylmethionine cycle
+2019-01-29 11:28:41,347 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640183] S-methylmethionine cycle
+2019-01-29 11:28:41,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119551] Putrescine biosynthesis III
+2019-01-29 11:28:41,370 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640235] Putrescine biosynthesis III
+2019-01-29 11:28:41,392 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119521] Oryzalexin S biosynthesis
+2019-01-29 11:28:41,394 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640219] Oryzalexin S biosynthesis
+2019-01-29 11:28:41,418 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119311] Glycine biosynthesis I
+2019-01-29 11:28:41,420 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640220] Glycine biosynthesis I
+2019-01-29 11:28:41,444 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:4827054] Tetrapyrrole biosynthesis I
+2019-01-29 11:28:41,447 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119443] Ammonia assimilation cycle
+2019-01-29 11:28:41,449 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640049] Ammonia assimilation cycle
+2019-01-29 11:28:41,487 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2894886] Cellular processes
+2019-01-29 11:28:41,489 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119450] Homocysteine biosynthesis
+2019-01-29 11:28:41,491 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640230] Homocysteine biosynthesis
+2019-01-29 11:28:41,514 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119447] Putrescine biosynthesis I
+2019-01-29 11:28:41,516 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640211] Putrescine biosynthesis I
+2019-01-29 11:28:41,538 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119300] Glycolipid desaturation
+2019-01-29 11:28:41,539 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640058] Glycolipid desaturation
+2019-01-29 11:28:41,710 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119524] Homomethionine biosynthesis
+2019-01-29 11:28:41,713 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119308] Momilactone biosynthesis
+2019-01-29 11:28:41,715 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640132] Momilactone biosynthesis
+2019-01-29 11:28:41,755 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119430] Chorismate biosynthesis
+2019-01-29 11:28:41,757 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640108] Chorismate biosynthesis
+2019-01-29 11:28:41,828 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119330] Alanine biosynthesis II
+2019-01-29 11:28:41,831 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030908] Underwater shoot and internode elongation
+2019-01-29 11:28:41,833 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640277] Underwater shoot and internode elongation
+2019-01-29 11:28:42,098 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119553] Asparagine biosynthesis I
+2019-01-29 11:28:42,100 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640182] Asparagine biosynthesis I
+2019-01-29 11:28:42,136 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119438] Secologanin and strictosidine biosynthesis
+2019-01-29 11:28:42,139 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640185] Secologanin and strictosidine biosynthesis
+2019-01-29 11:28:42,240 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119341] Galactosylcyclitol biosynthesis
+2019-01-29 11:28:42,242 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640124] Galactosylcyclitol biosynthesis
+2019-01-29 11:28:42,281 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030860] Response to submergence
+2019-01-29 11:28:42,282 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640278] Response to submergence
+2019-01-29 11:28:42,294 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119472] Wighteone and luteone biosynthesis
+2019-01-29 11:28:42,296 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640148] Wighteone and luteone biosynthesis
+2019-01-29 11:28:42,343 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119281] Aspartate biosynthesis I
+2019-01-29 11:28:42,345 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640179] Aspartate biosynthesis I
+2019-01-29 11:28:42,360 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119378] Myo-inositol biosynthesis
+2019-01-29 11:28:42,362 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640191] Myo-inositol biosynthesis
+2019-01-29 11:28:42,403 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112963] Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
+2019-01-29 11:28:42,406 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9607185] Generation of superoxide radicals
+2019-01-29 11:28:42,408 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640282] Generation of superoxide radicals
+2019-01-29 11:28:42,450 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119434] Lipid-independent phytate biosynthesis
+2019-01-29 11:28:42,452 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640192] Lipid-independent phytate biosynthesis
+2019-01-29 11:28:42,477 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119274] Monoterpene biosynthesis
+2019-01-29 11:28:42,479 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640242] Monoterpene biosynthesis
+2019-01-29 11:28:42,514 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119360] Fructan biosynthesis
+2019-01-29 11:28:42,516 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640149] Fructan biosynthesis
+2019-01-29 11:28:42,546 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8933811] Circadian rhythm
+2019-01-29 11:28:42,548 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640268] Circadian rhythm
+2019-01-29 11:28:42,712 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5225808] Ethylene biosynthesis and signaling
+2019-01-29 11:28:42,713 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640174] Ethylene biosynthesis and signaling
+2019-01-29 11:28:42,806 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8858053] Polar auxin transport
+2019-01-29 11:28:42,808 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640263] Polar auxin transport
+2019-01-29 11:28:42,849 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119348] Ent-kaurene biosynthesis
+2019-01-29 11:28:42,851 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640160] Ent-kaurene biosynthesis
+2019-01-29 11:28:42,887 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119304] Putrescine biosynthesis II
+2019-01-29 11:28:42,889 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640163] Putrescine biosynthesis II
+2019-01-29 11:28:42,914 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119594] Pyridoxal 5'-phosphate biosynthesis
+2019-01-29 11:28:42,916 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640217] Pyridoxal 5'-phosphate biosynthesis
+2019-01-29 11:28:42,962 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031670] Vegetative structure development
+2019-01-29 11:28:42,964 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640228] Vegetative structure development
+2019-01-29 11:28:42,979 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119418] Suberin biosynthesis
+2019-01-29 11:28:42,981 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640197] Suberin biosynthesis
+2019-01-29 11:28:43,045 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119458] Glutamate degradation
+2019-01-29 11:28:43,047 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640186] Glutamate degradation
+2019-01-29 11:28:43,085 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119557] GA12 biosynthesis
+2019-01-29 11:28:43,087 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640090] GA12 biosynthesis
+2019-01-29 11:28:43,139 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030769] Growth and developmental processes
+2019-01-29 11:28:43,141 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640120] Growth and developmental processes
+2019-01-29 11:28:43,155 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112967] Cap-dependent translation initiation
+2019-01-29 11:28:43,158 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119610] Biotin biosynthesis II
+2019-01-29 11:28:43,160 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640105] Biotin biosynthesis II
+2019-01-29 11:28:43,212 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112959] DNA replication: activation of the pre-replicative complex
+2019-01-29 11:28:43,214 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119263] Arginine biosynthesis I
+2019-01-29 11:28:43,216 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640080] Arginine biosynthesis I
+2019-01-29 11:28:43,241 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119453] Medicarpin biosynthesis
+2019-01-29 11:28:43,243 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640209] Medicarpin biosynthesis
+2019-01-29 11:28:43,284 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119544] Pantothenate biosynthesis II
+2019-01-29 11:28:43,286 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640077] Pantothenate biosynthesis II
+2019-01-29 11:28:43,320 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119624] Methionine salvage pathway
+2019-01-29 11:28:43,322 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640097] Methionine salvage pathway
+2019-01-29 11:28:43,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119573] Dolichyl-diphosphooligosaccharide biosynthesis
+2019-01-29 11:28:43,370 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640178] Dolichyl-diphosphooligosaccharide biosynthesis
+2019-01-29 11:28:43,452 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119456] Brassinosteroid biosynthesis II
+2019-01-29 11:28:43,454 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640176] Brassinosteroid biosynthesis II
+2019-01-29 11:28:43,504 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119286] Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)
+2019-01-29 11:28:43,506 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640079] Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)
+2019-01-29 11:28:43,604 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119486] IAA biosynthesis I
+2019-01-29 11:28:43,605 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640063] IAA biosynthesis I
+2019-01-29 11:28:43,675 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119609] Phaseic acid biosynthesis
+2019-01-29 11:28:43,677 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640104] Phaseic acid biosynthesis
+2019-01-29 11:28:43,702 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112987] Translation elongation
+2019-01-29 11:28:43,706 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119295] Homoserine biosynthesis
+2019-01-29 11:28:43,708 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640123] Homoserine biosynthesis
+2019-01-29 11:28:43,725 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119278] PRPP biosynthesis I
+2019-01-29 11:28:43,726 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640196] PRPP biosynthesis I
+2019-01-29 11:28:43,744 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934036] Long day regulated expression of florigens
+2019-01-29 11:28:43,745 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640269] Long day regulated expression of florigens
+2019-01-29 11:28:43,804 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119309] Aminopropanol biosynthesis
+2019-01-29 11:28:43,806 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640280] Aminopropanol biosynthesis
+2019-01-29 11:28:43,829 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119314] Cellulose biosynthesis
+2019-01-29 11:28:43,831 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640189] Cellulose biosynthesis
+2019-01-29 11:28:43,850 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119559] Cholesterol biosynthesis I
+2019-01-29 11:28:43,852 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640087] Cholesterol biosynthesis I
+2019-01-29 11:28:43,926 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119398] Pterocarpan biosynthesis
+2019-01-29 11:28:43,929 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119291] Nitrate assimilation
+2019-01-29 11:28:43,931 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640233] Nitrate assimilation
+2019-01-29 11:28:43,953 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119477] Starch biosynthesis
+2019-01-29 11:28:43,953 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640116] Starch biosynthesis
+2019-01-29 11:28:44,002 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8868860] Auxin transport
+2019-01-29 11:28:44,004 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640264] Auxin transport
+2019-01-29 11:28:44,122 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8932729] Responses to stimuli: abiotic stimuli and stresses
+2019-01-29 11:28:44,124 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640267] Responses to stimuli: abiotic stimuli and stresses
+2019-01-29 11:28:44,145 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744345] Metabolism and regulation
+2019-01-29 11:28:44,147 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640051] Metabolism and regulation
+2019-01-29 11:28:44,183 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119620] GDP-L-fucose biosynthesis I (from GDP-D-mannose)
+2019-01-29 11:28:44,185 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640203] GDP-L-fucose biosynthesis I (from GDP-D-mannose)
+2019-01-29 11:28:44,205 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623903] Endosperm morphogenesis
+2019-01-29 11:28:44,208 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119271] Threonine degradation
+2019-01-29 11:28:44,210 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640177] Threonine degradation
+2019-01-29 11:28:44,235 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9627657] Regulation of leaf development
+2019-01-29 11:28:44,235 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640227] Regulation of leaf development
+2019-01-29 11:28:44,366 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119322] Leucodelphinidin biosynthesis
+2019-01-29 11:28:44,369 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640193] Leucodelphinidin biosynthesis
+2019-01-29 11:28:44,407 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119417] Stachyose biosynthesis
+2019-01-29 11:28:44,410 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119566] Divinyl ether biosynthesis II (13-LOX)
+2019-01-29 11:28:44,412 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640184] Divinyl ether biosynthesis II (13-LOX)
+2019-01-29 11:28:44,434 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119413] Trans-zeatin biosynthesis
+2019-01-29 11:28:44,434 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640226] Trans-zeatin biosynthesis
+2019-01-29 11:28:44,502 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119519] Calvin cycle
+2019-01-29 11:28:44,504 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640243] Calvin cycle
+2019-01-29 11:28:44,607 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119506] tyrosine degradation I
+2019-01-29 11:28:44,609 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640070] tyrosine degradation I
+2019-01-29 11:28:44,676 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609102] Flower development
+2019-01-29 11:28:44,679 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119424] Plastid glycolysis
+2019-01-29 11:28:44,681 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640238] Plastid glycolysis
+2019-01-29 11:28:44,737 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2972871] Protein metabolism: translation
+2019-01-29 11:28:44,740 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119601] Trehalose degradation II
+2019-01-29 11:28:44,742 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640214] Trehalose degradation II
+2019-01-29 11:28:44,768 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119535] Glutamate biosynthesis IV
+2019-01-29 11:28:44,771 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640249] Glutamate biosynthesis IV
+2019-01-29 11:28:44,789 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119412] Chlorophyll a biosynthesis I
+2019-01-29 11:28:44,792 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640224] Chlorophyll a biosynthesis I
+2019-01-29 11:28:44,808 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5096066] Amine and polyamine biosynthesis
+2019-01-29 11:28:44,809 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640157] Amine and polyamine biosynthesis
+2019-01-29 11:28:44,828 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119375] Cytokinins 9-N-glucoside biosynthesis
+2019-01-29 11:28:44,830 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640095] Cytokinins 9-N-glucoside biosynthesis
+2019-01-29 11:28:44,882 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119294] Gibberellin biosynthesis III (early C-13 hydroxylation)
+2019-01-29 11:28:44,883 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640074] Gibberellin biosynthesis III (early C-13 hydroxylation)
+2019-01-29 11:28:44,926 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119602] Phytyl-PP biosynthesis
+2019-01-29 11:28:44,928 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640159] Phytyl-PP biosynthesis
+2019-01-29 11:28:44,955 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119337] Proline degradation
+2019-01-29 11:28:44,957 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640053] Proline degradation
+2019-01-29 11:28:44,986 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119312] Photorespiration
+2019-01-29 11:28:44,986 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640133] Photorespiration
+2019-01-29 11:28:45,081 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9607141] Reactive oxygen species (ROS) homeostasis
+2019-01-29 11:28:45,083 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640135] Reactive oxygen species (ROS) homeostasis
+2019-01-29 11:28:45,097 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119483] Glutathione biosynthesis
+2019-01-29 11:28:45,099 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640146] Glutathione biosynthesis
+2019-01-29 11:28:45,113 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119365] Lysine degradation II
+2019-01-29 11:28:45,115 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640195] Lysine degradation II
+2019-01-29 11:28:45,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112965] Recycling of eIF2:GDP
+2019-01-29 11:28:45,177 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8934088] Inflorescence development
+2019-01-29 11:28:45,178 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640270] Inflorescence development
+2019-01-29 11:28:45,192 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2883407] Carbohydrate metabolism
+2019-01-29 11:28:45,193 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640057] Carbohydrate metabolism
+2019-01-29 11:28:45,251 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654828] Strigolactone signaling
+2019-01-29 11:28:45,253 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640255] Strigolactone signaling
+2019-01-29 11:28:45,313 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119465] Sucrose biosynthesis
+2019-01-29 11:28:45,313 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640115] Sucrose biosynthesis
+2019-01-29 11:28:45,346 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119273] Lysine biosynthesis I
+2019-01-29 11:28:45,348 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640121] Lysine biosynthesis I
+2019-01-29 11:28:45,371 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:6787011] Jasmonic acid signaling
+2019-01-29 11:28:45,373 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640261] Jasmonic acid signaling
+2019-01-29 11:28:45,499 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609573] Tricin biosynthesis
+2019-01-29 11:28:45,501 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640284] Tricin biosynthesis
+2019-01-29 11:28:45,537 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119446] Lysine degradation I
+2019-01-29 11:28:45,539 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640164] Lysine degradation I
+2019-01-29 11:28:45,560 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119437] Glutathione redox reactions I
+2019-01-29 11:28:45,562 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640155] Glutathione redox reactions I
+2019-01-29 11:28:45,588 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119445] Beta-alanine biosynthesis II
+2019-01-29 11:28:45,590 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640222] Beta-alanine biosynthesis II
+2019-01-29 11:28:45,633 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119534] Pyridoxal 5'-phosphate salvage pathway
+2019-01-29 11:28:45,635 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640200] Pyridoxal 5'-phosphate salvage pathway
+2019-01-29 11:28:45,662 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119516] Trehalose biosynthesis I
+2019-01-29 11:28:45,663 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640221] Trehalose biosynthesis I
+2019-01-29 11:28:45,691 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119321] Glycerol degradation I
+2019-01-29 11:28:45,692 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640147] Glycerol degradation I
+2019-01-29 11:28:45,723 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119569] Kievitone biosynthesis
+2019-01-29 11:28:45,725 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640112] Kievitone biosynthesis
+2019-01-29 11:28:45,749 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119371] Oryzalexin A-F biosynthesis
+2019-01-29 11:28:45,751 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640075] Oryzalexin A-F biosynthesis
+2019-01-29 11:28:45,789 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119354] Asparagine biosynthesis III
+2019-01-29 11:28:45,791 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640181] Asparagine biosynthesis III
+2019-01-29 11:28:45,810 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9612650] Responses to stimuli: biotic stimuli and stresses
+2019-01-29 11:28:45,813 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640138] Responses to stimuli: biotic stimuli and stresses
+2019-01-29 11:28:45,826 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623703] HSFA7/ HSFA6B-regulatory network-induced by drought and ABA. 
+2019-01-29 11:28:45,829 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119410] Ascorbate biosynthesis
+2019-01-29 11:28:45,831 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640151] Ascorbate biosynthesis
+2019-01-29 11:28:45,890 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119501] S-adenosyl-L-methionine cycle
+2019-01-29 11:28:45,892 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640170] S-adenosyl-L-methionine cycle
+2019-01-29 11:28:45,913 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5654894] UDP-D-apiose biosynthesis
+2019-01-29 11:28:45,913 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640256] UDP-D-apiose biosynthesis
+2019-01-29 11:28:45,936 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9609352] Lycopene catabolism
+2019-01-29 11:28:45,938 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640283] Lycopene catabolism
+2019-01-29 11:28:45,976 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119618] 13-LOX and 13-HPL pathway
+2019-01-29 11:28:45,978 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640067] 13-LOX and 13-HPL pathway
+2019-01-29 11:28:46,013 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9618278] Response to heavy metals
+2019-01-29 11:28:46,014 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640288] Response to heavy metals
+2019-01-29 11:28:46,027 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119629] Thiamine biosynthesis
+2019-01-29 11:28:46,029 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640213] Thiamine biosynthesis
+2019-01-29 11:28:46,082 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119298] Glutathione redox reactions II
+2019-01-29 11:28:46,085 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640154] Glutathione redox reactions II
+2019-01-29 11:28:46,102 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112968] Ribosomal scanning and start codon recognition
+2019-01-29 11:28:46,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744343] Amino acid metabolism
+2019-01-29 11:28:46,105 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640055] Amino acid metabolism
+2019-01-29 11:28:46,126 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119581] Thiosulfate disproportionation III (rhodanese)
+2019-01-29 11:28:46,129 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119479] Valine degradation
+2019-01-29 11:28:46,131 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640286] Valine degradation
+2019-01-29 11:28:46,200 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119580] IAA biosynthesis II
+2019-01-29 11:28:46,202 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640094] IAA biosynthesis II
+2019-01-29 11:28:46,226 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3906998] Fatty acid and lipid metabolism
+2019-01-29 11:28:46,227 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640059] Fatty acid and lipid metabolism
+2019-01-29 11:28:46,255 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119293] Glutamine biosynthesis I
+2019-01-29 11:28:46,257 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640234] Glutamine biosynthesis I
+2019-01-29 11:28:46,271 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119498] Phylloquinone biosynthesis
+2019-01-29 11:28:46,273 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640241] Phylloquinone biosynthesis
+2019-01-29 11:28:46,310 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119261] Salicylate biosynthesis
+2019-01-29 11:28:46,312 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640198] Salicylate biosynthesis
+2019-01-29 11:28:46,355 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119374] Abscisic acid biosynthesis
+2019-01-29 11:28:46,357 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119628] GDP-mannose metabolism
+2019-01-29 11:28:46,358 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640152] GDP-mannose metabolism
+2019-01-29 11:28:46,382 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623902] Seed development
+2019-01-29 11:28:46,384 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640118] Seed development
+2019-01-29 11:28:46,399 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119303] Pyridoxamine anabolism
+2019-01-29 11:28:46,401 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608931] Floral bract development
+2019-01-29 11:28:46,404 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119529] Sulfate activation for sulfonation
+2019-01-29 11:28:46,406 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640085] Sulfate activation for sulfonation
+2019-01-29 11:28:46,427 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655124] Amino acid catabolism
+2019-01-29 11:28:46,427 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640054] Amino acid catabolism
+2019-01-29 11:28:46,547 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119499] Capsidiol biosynthesis
+2019-01-29 11:28:46,549 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031225] Response to phosphate deficiency
+2019-01-29 11:28:46,550 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640279] Response to phosphate deficiency
+2019-01-29 11:28:46,631 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119379] Flavin biosynthesis
+2019-01-29 11:28:46,633 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640175] Flavin biosynthesis
+2019-01-29 11:28:46,699 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119377] Gibberellin biosynthesis II (early C-3 hydroxylation)
+2019-01-29 11:28:46,701 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640107] Gibberellin biosynthesis II (early C-3 hydroxylation)
+2019-01-29 11:28:46,731 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744344] Secondary metabolism
+2019-01-29 11:28:46,732 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640068] Secondary metabolism
+2019-01-29 11:28:46,811 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119513] Pinobanksin biosynthesis
+2019-01-29 11:28:46,812 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640150] Pinobanksin biosynthesis
+2019-01-29 11:28:46,843 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119533] TCA cycle (plant)
+2019-01-29 11:28:46,843 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640048] TCA cycle (plant)
+2019-01-29 11:28:46,924 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9035605] Regulation of seed size
+2019-01-29 11:28:46,925 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640252] Regulation of seed size
+2019-01-29 11:28:47,139 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119297] Beta-alanine biosynthesis III
+2019-01-29 11:28:47,141 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640141] Beta-alanine biosynthesis III
+2019-01-29 11:28:47,173 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119617] Folate polyglutamylation I
+2019-01-29 11:28:47,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640062] Folate polyglutamylation I
+2019-01-29 11:28:47,320 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119444] Canavanine biosynthesis
+2019-01-29 11:28:47,323 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640114] Canavanine biosynthesis
+2019-01-29 11:28:47,368 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9031669] Reproductive structure development
+2019-01-29 11:28:47,369 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640119] Reproductive structure development
+2019-01-29 11:28:47,409 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119579] Glycine betaine biosynthesis III
+2019-01-29 11:28:47,411 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640204] Glycine betaine biosynthesis III
+2019-01-29 11:28:47,448 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119332] Jasmonic acid biosynthesis
+2019-01-29 11:28:47,450 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640066] Jasmonic acid biosynthesis
+2019-01-29 11:28:47,501 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119631] Proline biosynthesis I
+2019-01-29 11:28:47,503 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640144] Proline biosynthesis I
+2019-01-29 11:28:47,549 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119495] Citrulline biosynthesis
+2019-01-29 11:28:47,552 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640139] Citrulline biosynthesis
+2019-01-29 11:28:47,604 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119436] Peptidoglycan biosynthesis I
+2019-01-29 11:28:47,605 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640207] Peptidoglycan biosynthesis I
+2019-01-29 11:28:47,676 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5367729] Strigolactone biosynthesis
+2019-01-29 11:28:47,678 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640244] Strigolactone biosynthesis
+2019-01-29 11:28:47,728 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9611432] Recognition of fungal and bacterial pathogens and immunity response
+2019-01-29 11:28:47,729 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640137] Recognition of fungal and bacterial pathogens and immunity response
+2019-01-29 11:28:47,871 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119539] Ornithine biosynthesis
+2019-01-29 11:28:47,873 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640081] Ornithine biosynthesis
+2019-01-29 11:28:47,888 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9630286] Cell cycle regulation
+2019-01-29 11:28:47,890 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2744341] Hormone signaling, transport, and metabolism
+2019-01-29 11:28:47,891 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640064] Hormone signaling, transport, and metabolism
+2019-01-29 11:28:47,926 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119439] Cholesterol biosynthesis III (via desmosterol)
+2019-01-29 11:28:47,927 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640086] Cholesterol biosynthesis III (via desmosterol)
+2019-01-29 11:28:47,949 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119415] Leucopelargonidin and leucocyanidin biosynthesis
+2019-01-29 11:28:47,949 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640194] Leucopelargonidin and leucocyanidin biosynthesis
+2019-01-29 11:28:47,969 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112998] Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
+2019-01-29 11:28:47,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119492] Lactucaxanthin biosynthesis
+2019-01-29 11:28:47,971 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640180] Lactucaxanthin biosynthesis
+2019-01-29 11:28:48,003 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119448] 6,7,4'-Trihydroxyisoflavone biosynthesis
+2019-01-29 11:28:48,005 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119630] Resveratrol biosynthesis
+2019-01-29 11:28:48,006 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640237] Resveratrol biosynthesis
+2019-01-29 11:28:48,031 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119451] Xylose degradation
+2019-01-29 11:28:48,031 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640223] Xylose degradation
+2019-01-29 11:28:48,056 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119370] Sterol biosynthesis
+2019-01-29 11:28:48,057 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640073] Sterol biosynthesis
+2019-01-29 11:28:48,157 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119292] Cytokinins 7-N-glucoside biosynthesis
+2019-01-29 11:28:48,158 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640096] Cytokinins 7-N-glucoside biosynthesis
+2019-01-29 11:28:48,213 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8986768] Anther and pollen development
+2019-01-29 11:28:48,214 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640273] Anther and pollen development
+2019-01-29 11:28:48,356 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025714] Response to iron deficiency
+2019-01-29 11:28:48,358 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640275] Response to iron deficiency
+2019-01-29 11:28:48,374 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119494] Tryptophan biosynthesis
+2019-01-29 11:28:48,376 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640071] Tryptophan biosynthesis
+2019-01-29 11:28:48,448 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119284] Coumarin biosynthesis (via 2-coumarate)
+2019-01-29 11:28:48,448 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640236] Coumarin biosynthesis (via 2-coumarate)
+2019-01-29 11:28:48,479 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3899368] ABA biosynthesis and mediated signaling
+2019-01-29 11:28:48,481 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119276] Choline biosynthesis III
+2019-01-29 11:28:48,482 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640187] Choline biosynthesis III
+2019-01-29 11:28:48,519 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119440] Anthocyanin biosynthesis (pelargonidin 3-O-glucoside, cyanidin 3-O-glucoside)
+2019-01-29 11:28:48,520 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640098] Anthocyanin biosynthesis (pelargonidin 3-O-glucoside, cyanidin 3-O-glucoside)
+2019-01-29 11:28:48,553 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112990] Formation of the ternary complex, and subsequently, the 43S complex
+2019-01-29 11:28:48,555 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119473] Cytokinins-O-glucoside biosynthesis
+2019-01-29 11:28:48,556 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640065] Cytokinins-O-glucoside biosynthesis
+2019-01-29 11:28:48,592 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119323] Lipid-A-precursor biosynthesis
+2019-01-29 11:28:48,593 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640208] Lipid-A-precursor biosynthesis
+2019-01-29 11:28:48,632 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608520] Abscisic acid homeostasis
+2019-01-29 11:28:48,634 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9613003] Detoxification
+2019-01-29 11:28:48,635 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640136] Detoxification
+2019-01-29 11:28:48,646 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119350] Calystegine biosynthesis
+2019-01-29 11:28:48,648 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119344] Hydroxycinnamic acid serotonin amides biosynthesis
+2019-01-29 11:28:48,648 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640216] Hydroxycinnamic acid serotonin amides biosynthesis
+2019-01-29 11:28:48,678 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119615] Mevalonate pathway
+2019-01-29 11:28:48,679 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640089] Mevalonate pathway
+2019-01-29 11:28:48,734 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119319] Alanine biosynthesis III
+2019-01-29 11:28:48,736 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640247] Alanine biosynthesis III
+2019-01-29 11:28:48,757 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655122] Amino acid biosynthesis
+2019-01-29 11:28:48,758 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640072] Amino acid biosynthesis
+2019-01-29 11:28:48,810 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119316] Phenylpropanoid biosynthesis
+2019-01-29 11:28:48,811 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640084] Phenylpropanoid biosynthesis
+2019-01-29 11:28:48,902 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8879007] Response to cold temperature
+2019-01-29 11:28:48,903 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640266] Response to cold temperature
+2019-01-29 11:28:48,986 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623744] Response to Drought
+2019-01-29 11:28:48,988 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119388] IAA biosynthesis VI (via indole-3-acetamide)
+2019-01-29 11:28:48,989 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640165] IAA biosynthesis VI (via indole-3-acetamide)
+2019-01-29 11:28:49,010 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119496] Pantothenate biosynthesis I
+2019-01-29 11:28:49,012 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640076] Pantothenate biosynthesis I
+2019-01-29 11:28:49,023 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9608575] Reproductive meristem phase change
+2019-01-29 11:28:49,024 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640281] Reproductive meristem phase change
+2019-01-29 11:28:49,169 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119567] Beta-alanine biosynthesis I
+2019-01-29 11:28:49,172 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9623513] Maternal tissue PCD
+2019-01-29 11:28:49,175 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9025754] Mugineic acid biosynthesis
+2019-01-29 11:28:49,176 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640276] Mugineic acid biosynthesis
+2019-01-29 11:28:49,234 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1112971] Formation of a pool of free 40S subunits
+2019-01-29 11:28:49,236 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2961031] Generation of precursor metabolites and energy
+2019-01-29 11:28:49,237 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640052] Generation of precursor metabolites and energy
+2019-01-29 11:28:49,249 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119386] UDP-N-acetylgalactosamine biosynthesis
+2019-01-29 11:28:49,250 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640130] UDP-N-acetylgalactosamine biosynthesis
+2019-01-29 11:28:49,289 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:9030654] Primary root development
+2019-01-29 11:28:49,291 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119460] Isoleucine biosynthesis from threonine
+2019-01-29 11:28:49,292 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640126] Isoleucine biosynthesis from threonine
+2019-01-29 11:28:49,333 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119464] Methylerythritol phosphate pathway
+2019-01-29 11:28:49,334 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640129] Methylerythritol phosphate pathway
+2019-01-29 11:28:49,416 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119556] Choline biosynthesis I
+2019-01-29 11:28:49,417 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640188] Choline biosynthesis I
+2019-01-29 11:28:49,476 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:3899351] Abscisic acid (ABA) mediated signaling
+2019-01-29 11:28:49,478 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5368291] Inorganic nutrients metabolism
+2019-01-29 11:28:49,478 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640050] Inorganic nutrients metabolism
+2019-01-29 11:28:49,495 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119471] Proanthocyanidin biosynthesis from flavanols
+2019-01-29 11:28:49,497 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5655101] Xyloglucan biosynthesis
+2019-01-29 11:28:49,497 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640259] Xyloglucan biosynthesis
+2019-01-29 11:28:49,548 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119351] Mitochondrial pyruvate metabolism
+2019-01-29 11:28:49,548 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640239] Mitochondrial pyruvate metabolism
+2019-01-29 11:28:49,571 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119318] Proline biosynthesis V (from arginine)
+2019-01-29 11:28:49,572 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640140] Proline biosynthesis V (from arginine)
+2019-01-29 11:28:49,598 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:2867929] Cofactor biosyntheses
+2019-01-29 11:28:49,598 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640061] Cofactor biosyntheses
+2019-01-29 11:28:49,644 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119574] UDP-L-arabinose biosynthesis I (from UDP-xylose)
+2019-01-29 11:28:49,644 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640205] UDP-L-arabinose biosynthesis I (from UDP-xylose)
+2019-01-29 11:28:49,665 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119395] Maackiain biosynthesis
+2019-01-29 11:28:49,666 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640218] Maackiain biosynthesis
+2019-01-29 11:28:49,694 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119420] Glutamate biosynthesis V
+2019-01-29 11:28:49,695 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640245] Glutamate biosynthesis V
+2019-01-29 11:28:49,715 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119582] Phenylpropanoid biosynthesis, initial reactions
+2019-01-29 11:28:49,716 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640199] Phenylpropanoid biosynthesis, initial reactions
+2019-01-29 11:28:49,728 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119457] Geranyldiphosphate biosynthesis
+2019-01-29 11:28:49,730 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119289] Arginine degradation
+2019-01-29 11:28:49,730 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640253] Arginine degradation
+2019-01-29 11:28:49,776 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:5632095] Brassinosteroid signaling
+2019-01-29 11:28:49,777 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640254] Brassinosteroid signaling
+2019-01-29 11:28:49,916 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119623] Acyl-CoA synthetase pathway
+2019-01-29 11:28:49,917 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640190] Acyl-CoA synthetase pathway
+2019-01-29 11:28:49,937 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119343] Spermidine biosynthesis
+2019-01-29 11:28:49,938 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640231] Spermidine biosynthesis
+2019-01-29 11:28:49,956 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119540] Leucine biosynthesis
+2019-01-29 11:28:49,957 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640145] Leucine biosynthesis
+2019-01-29 11:28:49,999 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119563] UDP-D-xylose biosynthesis
+2019-01-29 11:28:50,000 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640069] UDP-D-xylose biosynthesis
+2019-01-29 11:28:50,019 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119526] Trans,trans-farnesyl diphosphate biosynthesis
+2019-01-29 11:28:50,021 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:1119257] UDP-L-arabinose biosynthesis II (from L-arabinose)
+2019-01-29 11:28:50,023 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Working on pathway [Pathway:8868949] Intracellular auxin transport
+2019-01-29 11:28:50,024 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Predicting pathway diagram for [Pathway:9640265] Intracellular auxin transport
+2019-01-29 11:28:50,082 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Starting generate Vertex instances...
+2019-01-29 11:31:49,351 [main] INFO  org.gk.pathwaylayout.PredictedPathwayDiagramGeneratorFromDB  - Finish the whole process!
