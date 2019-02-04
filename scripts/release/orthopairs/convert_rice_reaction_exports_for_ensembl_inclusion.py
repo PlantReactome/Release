@@ -51,13 +51,14 @@ def load_reactome_reaction_file(uniprot_reactions_file):
 
     if args.verbose:
         pp.pprint(dict_rice)
-        print('count: ' + str(count) + ', Uniprot reactions file loaded.')
+        print('UniProt rxns count: ' + str(count))
+    print('Uniprot reactions file loaded.')
     return dict_rice
 
 
 def load_mapping_file(mapping_file) :
     """
-    load mapping file, ptu the UniProt ID in the key, and the rice gene id(s) in the value, as an array
+    load mapping file, put the UniProt ID in the key, and the rice gene id(s) in the value, as an array
     :param mapping_file:
     :return:
     """
@@ -68,27 +69,27 @@ def load_mapping_file(mapping_file) :
         uniprot_id = cols[1].strip();
         gene_id = cols[0].strip();
         count += 1
-        if dict_mappings[uniprot_id]:  # existing UniProt entry
-            dict_mappings[uniprot_id] = [
-                dict_mappings[uniprot_id].add(gene_id),  # add'l rice gene id
-            ]
+        if uniprot_id in dict_mappings:  # existing UniProt entry
+            dict_mappings[uniprot_id].append(gene_id)  # add'l rice gene id
         else:  # new UniProt entry
             dict_mappings[uniprot_id] = [
-                gene_id,  # first rice gene id
+                gene_id  # first rice gene id
             ]
     fMappings.close()
 
     if args.verbose:
         pp.pprint(dict_mappings)
-        print('rice gene id count: ' + str(count) + ', Uniprot::OS mappings file loaded.')
-    return {}
+        print('Rice gene id count: ' + str(count))
+    print('Uniprot::OS mappings file loaded.')
+    return dict_mappings
 
 
-def map_and_filter(dict_uniprot, dict_mappings):
+def map_data(dict_uniprot, dict_mappings, rice_gene_mode):
     """
-    map and filter OS genes for UniProt reaction entries
+    map OS genes for UniProt reaction entries
     :param dict_uniprot:
     :param dict_mappings:
+    :param rice_gene_mode:
     :return:
     """
     if args.verbose:
@@ -166,7 +167,7 @@ if args.verbose:
 
 dict_rice = load_reactome_reaction_file(args.uniprot_reactions_file)
 dict_mappings = load_mapping_file(args.mapping_file)
-#dict_rice = map_and_filter(dict_rice, dict_mappings, rice_gene_mode)
+dict_rice = map_data(dict_rice, dict_mappings, args.rice_gene_mode)
 #generate_extended_ensembl_file(dict_rice, args.output_expanded_reactions_file)
 print("Done.")
 
