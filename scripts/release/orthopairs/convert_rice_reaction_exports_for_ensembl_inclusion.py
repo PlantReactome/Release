@@ -38,15 +38,31 @@ def load_reactome_reaction_file(uniprot_reactions_file):
         cols = line.rstrip().split('\t')
 
         if cols[0]:  # make sure that UniProt column has a value
+            uniprot_id = cols[0].strip()
+
             if not cols[1].find("-OSA-") < 0:  # filter out any non-rice
+
+                if uniprot_id in dict_rice:  # existing UniProt entry
+                    dict_rice[uniprot_id].append(  # add'l entry
+                        [
+                            cols[1].strip(),  # stable id
+                            cols[2].strip(),  # browser url
+                            cols[3].strip(),  # rxn name
+                            cols[4].strip(),  # discovery method
+                            cols[5].strip()   # species
+                        ]
+                    )
+
+                else:  # new UniProt entry
+                    dict_rice[uniprot_id] = [[  # uniprot id
+                        cols[1].strip(),  # stable id
+                        cols[2].strip(),  # browser url
+                        cols[3].strip(),  # rxn name
+                        cols[4].strip(),  # discovery method
+                        cols[5].strip()   # species
+                    ]]
                 count += 1
-                dict_rice[cols[0].strip()] = [  # uniprot id
-                    cols[1].strip(),  # stable id
-                    cols[2].strip(),  # browser url
-                    cols[3].strip(),  # rxn name
-                    cols[4].strip(),  # discovery method
-                    cols[5].strip()   # species
-                ]
+
     fUniprotRxn.close()
 
     if args.verbose:
@@ -84,22 +100,41 @@ def load_mapping_file(mapping_file) :
     return dict_mappings
 
 
-def map_data(dict_uniprot, dict_mappings, rice_gene_mode):
+def map_data(dict_rice, dict_mappings, rice_gene_mode):
     """
-    map OS genes for UniProt reaction entries
+    map OS genes for UniProt reaction entries; options include MSU entries, RAP entries, or both
     :param dict_uniprot:
     :param dict_mappings:
     :param rice_gene_mode:
     :return:
     """
+    num_mappings = 0
+    for k, v in dict_mappings.items():
+        if k in dict_rice:
+            gene_list = v
+
+            for gene_id in gene_list:
+                if rice_gene_mode == 'RAP':
+                    if gene_id.startswith('OS'):
+                        print(gene_id, dict_rice[k])
+                        num_mappings += 1
+                if rice_gene_mode == 'MSU':
+                    if gene_id.startswith('LOC'):
+                        print(gene_id, dict_rice[k])
+                        num_mappings += 1
+                if rice_gene_mode == 'both':
+                    print(gene_id, dict_rice[k])
+                    num_mappings += 1
+
     if args.verbose:
-        print('IDs filtered and mapped; "left outer join."')
+        print('Mappings to be appended: ' + str(num_mappings))
+    print('IDs filtered and mapped; "left outer join."')
     return {}
 
 
 def generate_extended_ensembl_file(dict_rice, output_expanded_reactions_file):
     """
-    cat mapped uniprot rice data to end of data from copied ensembl file (as new file) - or load ensemble and output both to new file
+    append mapped uniprot rice data to end of data from copied ensembl file (as new file)
     :param dict_rice:
     :param output_expanded_reactions_file:
     :return:
@@ -109,6 +144,7 @@ def generate_extended_ensembl_file(dict_rice, output_expanded_reactions_file):
     return
 
 
+# leftover; code for stealing
 def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_input_path,
                       slice_version_number, ensembl_release_number, output_orthopair_path):
     """
@@ -167,7 +203,7 @@ if args.verbose:
 
 dict_rice = load_reactome_reaction_file(args.uniprot_reactions_file)
 dict_mappings = load_mapping_file(args.mapping_file)
-dict_rice = map_data(dict_rice, dict_mappings, args.rice_gene_mode)
+#dict_rice = map_data(dict_rice, dict_mappings, args.rice_gene_mode)  # expand the contents of the rice rxn dicionary
 #generate_extended_ensembl_file(dict_rice, args.output_expanded_reactions_file)
 print("Done.")
 
