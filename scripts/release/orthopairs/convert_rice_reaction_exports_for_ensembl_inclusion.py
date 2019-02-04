@@ -103,18 +103,22 @@ def load_mapping_file(mapping_file) :
 def map_data(dict_rice, dict_mappings, rice_source_filter):
     """
     map OS genes for UniProt reaction entries; options include MSU entries, RAP entries, or both
-    :param dict_uniprot:
+    :param dict_rice:
     :param dict_mappings:
-    :param rice_gene_mode:
+    :param rice_source_filter:
     :return:
     """
+    choices = {'MSU': 'LOC', 'RAP': 'OS'}
+    rice_id_filter = choices.get(rice_source_filter, '')
+
     num_mappings = 0
+
     for k, v in dict_mappings.items():
         if k in dict_rice:
             gene_list = v
 
             for gene_id in gene_list:
-                    if gene_id.startswith(rice_source_filter):
+                    if gene_id.startswith(rice_id_filter):
                         for rice_entry in dict_rice[k]:
                             print(gene_id, rice_entry)
                             num_mappings += 1
