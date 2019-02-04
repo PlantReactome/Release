@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/orthopairs$convert_rice_reaction_exports_for_ensembl_inclusion.coverage" NAME="convert_rice_reaction_exports_for_ensembl_inclusion Coverage Results" MODIFIED="1549245203371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/orthopairs$convert_rice_reaction_exports_for_ensembl_inclusion.coverage" NAME="convert_rice_reaction_exports_for_ensembl_inclusion Coverage Results" MODIFIED="1549246151751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/orthopairs$move_and_rename_orthology_files.coverage" NAME="move_and_rename_orthology_files Coverage Results" MODIFIED="1549232186013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -44,8 +44,8 @@
       <file leaf-file-name="convert_rice_reaction_exports_for_ensembl_inclusion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/convert_rice_reaction_exports_for_ensembl_inclusion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23616236">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7675277">
+              <caret line="127" column="78" selection-start-line="127" selection-start-column="78" selection-end-line="127" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -391,7 +391,7 @@
       <module name="orthopairs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_rice_reaction_exports_for_ensembl_inclusion.py" />
-      <option name="PARAMETERS" value="-u $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/UniProt2PlantReactomeReactions.txt -e $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/Ensembl2PlantReactomeReactions.txt -m $USER_HOME$/Documents/projects/plant_reactome/plant_reactome_site/projection/loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt -o $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/Ensembl2PlantReactomeReactions_expanded.txt -r both -v" />
+      <option name="PARAMETERS" value="-u $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/UniProt2PlantReactomeReactions.txt -e $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/Ensembl2PlantReactomeReactions.txt -m $USER_HOME$/Documents/projects/plant_reactome/plant_reactome_site/projection/loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt -o $USER_HOME$/Documents/projects/plant_reactome/releases/r60/exports/Ensembl2PlantReactomeReactions_expanded.txt -v" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -498,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/convert_rice_reaction_exports_for_ensembl_inclusion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23616236">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7675277">
+          <caret line="127" column="78" selection-start-line="127" selection-start-column="78" selection-end-line="127" selection-end-column="78" />
           <folding />
         </state>
       </provider>

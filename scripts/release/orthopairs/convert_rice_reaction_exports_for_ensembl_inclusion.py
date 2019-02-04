@@ -100,7 +100,7 @@ def load_mapping_file(mapping_file) :
     return dict_mappings
 
 
-def map_data(dict_rice, dict_mappings, rice_gene_mode):
+def map_data(dict_rice, dict_mappings, rice_source_filter):
     """
     map OS genes for UniProt reaction entries; options include MSU entries, RAP entries, or both
     :param dict_uniprot:
@@ -114,17 +114,10 @@ def map_data(dict_rice, dict_mappings, rice_gene_mode):
             gene_list = v
 
             for gene_id in gene_list:
-                if rice_gene_mode == 'RAP':
-                    if gene_id.startswith('OS'):
-                        print(gene_id, dict_rice[k])
-                        num_mappings += 1
-                if rice_gene_mode == 'MSU':
-                    if gene_id.startswith('LOC'):
-                        print(gene_id, dict_rice[k])
-                        num_mappings += 1
-                if rice_gene_mode == 'both':
-                    print(gene_id, dict_rice[k])
-                    num_mappings += 1
+                    if gene_id.startswith(rice_source_filter):
+                        for rice_entry in dict_rice[k]:
+                            print(gene_id, rice_entry)
+                            num_mappings += 1
 
     if args.verbose:
         print('Mappings to be appended: ' + str(num_mappings))
@@ -191,19 +184,23 @@ parser.add_argument('-m', '--mapping_file', help='path to os-2-uniprot mapping f
 #  ~/Documents/projects/plant_reactome/plant_reactome_site/projection/loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt
 parser.add_argument('-o', '--output_expanded_reactions_file', help='path to expanded ensembl reactions export file, now inlcuding rice entries', required=True)
 #  ~/Documents/projects/plant_reactome/releases/r60/exports/Ensembl2PlantReactomeReactions_expanded.txt
-parser.add_argument('-r', '--rice_gene_mode', default="RAP", choices=['RAP', 'MSU', 'both'])
+parser.add_argument('-r', '--rice_source_filter', choices=['RAP', 'MSU'])  # not required
 
 # other settings
 parser.add_argument('-v', '--verbose', action='store_true')
 
 args = parser.parse_args()
+
+if not args.rice_source_filter:
+    args.rice_source_filter = ''
+
 if args.verbose:
     for arg in vars(args):
         print(arg, "=", getattr(args, arg))
 
 dict_rice = load_reactome_reaction_file(args.uniprot_reactions_file)
 dict_mappings = load_mapping_file(args.mapping_file)
-#dict_rice = map_data(dict_rice, dict_mappings, args.rice_gene_mode)  # expand the contents of the rice rxn dicionary
+dict_rice = map_data(dict_rice, dict_mappings, args.rice_source_filter)  # expand the contents of the rice rxn dictionary
 #generate_extended_ensembl_file(dict_rice, args.output_expanded_reactions_file)
 print("Done.")
 
