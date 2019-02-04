@@ -12,10 +12,8 @@ Output: an expanded Ensembl2PlantReactomeReactions.txt, now including rice entri
 
 import os
 import shutil
-import sys
 import argparse
 import pprint
-import re
 
 # globals --------------------------------------------------------------------------------------------------------------
 
@@ -100,18 +98,24 @@ def load_mapping_file(mapping_file) :
     return dict_mappings
 
 
-def map_data(dict_rice, dict_mappings, rice_source_filter):
+def map_data_and_generate_extended_file(dict_rice, dict_mappings, rice_source_filter, ensembl_reactions_file,
+                                        output_expanded_reactions_file):
     """
-    map OS genes for UniProt reaction entries; options include MSU entries, RAP entries, or both
+    Map OS genes for UniProt reaction entries; options include MSU entries, RAP entries, or both
+    Output results to extended copy of Ensembl2PlantReactomeReactions.txt
     :param dict_rice:
     :param dict_mappings:
     :param rice_source_filter:
     :return:
     """
+    shutil.copy2(ensembl_reactions_file, output_expanded_reactions_file)
+
     choices = {'MSU': 'LOC', 'RAP': 'OS'}
     rice_id_filter = choices.get(rice_source_filter, '')
 
     num_mappings = 0
+
+    ext_out_file = open(output_expanded_reactions_file, 'a');
 
     for k, v in dict_mappings.items():
         if k in dict_rice:
@@ -120,53 +124,19 @@ def map_data(dict_rice, dict_mappings, rice_source_filter):
             for gene_id in gene_list:
                     if gene_id.startswith(rice_id_filter):
                         for rice_entry in dict_rice[k]:
-                            print(gene_id, rice_entry)
+                            if args.verbose:
+                                print(gene_id, rice_entry)
+                            ext_out_file.write(gene_id + '\t' + '\t'.join(map(str, rice_entry)) + '\n')
                             num_mappings += 1
 
     if args.verbose:
         print('Mappings to be appended: ' + str(num_mappings))
     print('IDs filtered and mapped; "left outer join."')
-    return {}
 
-
-def generate_extended_ensembl_file(dict_rice, output_expanded_reactions_file):
-    """
-    append mapped uniprot rice data to end of data from copied ensembl file (as new file)
-    :param dict_rice:
-    :param output_expanded_reactions_file:
-    :return:
-    """
-    if args.verbose:
-        print('New Ensembl file generated: ' + args.output_expanded_reactions_file)
+    ext_out_file.close()
+    print('New Ensembl file generated: ' + args.output_expanded_reactions_file)
     return
 
-
-# leftover; code for stealing
-def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_input_path,
-                      slice_version_number, ensembl_release_number, output_orthopair_path):
-    """
-    iterate over projected species, get orthology sources, copy (and rename) files according to templates, placing them
-     in the appropriate output folder location
-    """
-    ensembl_species_count = 0
-    inparanoid_species_count = 0
-
-    for k, v in dict_projected_species.items():
-        genus = k.split(' ')[0]
-        species = k.split(' ')[1].title()  # uc 1st char
-        if v[4] == "Compara":
-            ensembl_species_count += 1
-            shutil.copy2(ensembl_input_path + "/" + genus + species + "_osj.rtm",
-                      output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/ensembl_plants_"
-                      + str(ensembl_release_number) + "_os_2_" + v[1].lower() + "_sorted.tab")
-        else:
-            inparanoid_species_count += 1
-            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP_" + genus + "_" + species.lower() + ".txt",
-                      output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/inparanoid_os_2_" + v[1].lower() + "_sorted.tab")
-        if args.verbose:
-            print(k,v)
-
-    print("ensembl_species_count: " + str(ensembl_species_count) + ", inparanoid_species_count: " + str(inparanoid_species_count))
 
 # main -----------------------------------------------------------------------------------------------------------------
 
@@ -204,8 +174,12 @@ if args.verbose:
 
 dict_rice = load_reactome_reaction_file(args.uniprot_reactions_file)
 dict_mappings = load_mapping_file(args.mapping_file)
-dict_rice = map_data(dict_rice, dict_mappings, args.rice_source_filter)  # expand the contents of the rice rxn dictionary
-#generate_extended_ensembl_file(dict_rice, args.output_expanded_reactions_file)
+
+map_data_and_generate_extended_file(dict_rice,
+                                    dict_mappings,
+                                    args.rice_source_filter,
+                                    args.ensembl_reactions_file,
+                                    args.output_expanded_reactions_file)  # expand the contents of the rice rxn dictionary
 print("Done.")
 
 # end ------------------------------------------------------------------------------------------------------------------
