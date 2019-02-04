@@ -19,55 +19,93 @@ import re
 
 # globals --------------------------------------------------------------------------------------------------------------
 
-dict_projected_species = {}
+dict_rice = {}
+dict_mappings = {}
 pp = pprint.PrettyPrinter()
 
 # functions ------------------------------------------------------------------------------------------------------------
 
 
-def load_configs(projected_species_path):
+def load_reactome_reaction_file(uniprot_reactions_file):
     """
-    import projected species and abbs from tab file
+    load a reactome_export file; filter out any non-rice entries based on stable_id, or missing a Uniprot value
+    :param uniprot_reactions_file:
+    :return:
     """
-    dict_projected_species = {} # local
-    # read map file, populate dict
-    config = open(projected_species_path)
-    next(config)
-    for line in config:
+    count = 0
+    fUniprotRxn = open(uniprot_reactions_file)
+    for line in fUniprotRxn:
         cols = line.rstrip().split('\t')
 
-        species_name = cols[0]
-        stable_abbv = cols[1]
-        two_digit_abbv = cols[2]
-        four_digit_abbv = cols[3]
-        gspecies_abbv = cols[4]
-        homology_method = cols[5]
-        recip_id = cols[6]
-        ext_ref = cols[7]
-        seq_source = cols[8]
-        clade = cols[9]
-        ncbi_tax_id = int(cols[10]) if (len(cols) == 11 or len(cols) == 12) else ""
-        familiar_name = cols[11] if len(cols) == 12 else ""
+        if cols[0]:  # make sure that UniProt column has a value
+            if not cols[1].find("-OSA-") < 0:  # filter out any non-rice
+                count += 1
+                dict_rice[cols[0].strip()] = [  # uniprot id
+                    cols[1].strip(),  # stable id
+                    cols[2].strip(),  # browser url
+                    cols[3].strip(),  # rxn name
+                    cols[4].strip(),  # discovery method
+                    cols[5].strip()   # species
+                ]
+    fUniprotRxn.close()
 
-        dict_projected_species[species_name] = [
-            stable_abbv,
-            two_digit_abbv,
-            four_digit_abbv,
-            gspecies_abbv,
-            homology_method,
-            recip_id,
-            ext_ref,
-            seq_source,
-            clade,
-            str(ncbi_tax_id),
-            familiar_name
-        ]
-
-    config.close()
     if args.verbose:
-        pp.pprint(dict_projected_species)
+        pp.pprint(dict_rice)
+        print('count: ' + str(count) + ', Uniprot reactions file loaded.')
+    return dict_rice
 
-    return dict_projected_species
+
+def load_mapping_file(mapping_file) :
+    """
+    load mapping file, ptu the UniProt ID in the key, and the rice gene id(s) in the value, as an array
+    :param mapping_file:
+    :return:
+    """
+    count = 0
+    fMappings = open(mapping_file)
+    for line in fMappings:
+        cols = line.rstrip().split('\t')
+        uniprot_id = cols[1].strip();
+        gene_id = cols[0].strip();
+        count += 1
+        if dict_mappings[uniprot_id]:  # existing UniProt entry
+            dict_mappings[uniprot_id] = [
+                dict_mappings[uniprot_id].add(gene_id),  # add'l rice gene id
+            ]
+        else:  # new UniProt entry
+            dict_mappings[uniprot_id] = [
+                gene_id,  # first rice gene id
+            ]
+    fMappings.close()
+
+    if args.verbose:
+        pp.pprint(dict_mappings)
+        print('rice gene id count: ' + str(count) + ', Uniprot::OS mappings file loaded.')
+    return {}
+
+
+def map_and_filter(dict_uniprot, dict_mappings):
+    """
+    map and filter OS genes for UniProt reaction entries
+    :param dict_uniprot:
+    :param dict_mappings:
+    :return:
+    """
+    if args.verbose:
+        print('IDs filtered and mapped; "left outer join."')
+    return {}
+
+
+def generate_extended_ensembl_file(dict_rice, output_expanded_reactions_file):
+    """
+    cat mapped uniprot rice data to end of data from copied ensembl file (as new file) - or load ensemble and output both to new file
+    :param dict_rice:
+    :param output_expanded_reactions_file:
+    :return:
+    """
+    if args.verbose:
+        print('New Ensembl file generated: ' + args.output_expanded_reactions_file)
+    return
 
 
 def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_input_path,
@@ -126,18 +164,10 @@ if args.verbose:
     for arg in vars(args):
         print(arg, "=", getattr(args, arg))
 
-# load reactome_export files - once uniprot
-# load mapping file
-# map (and filter)
-# cat mapped uniprot rice data to end of data from copied ensembl file (as new file) - or load ensemble and output both to new file
-
-dict_uniprot = load_reactome_reaction_file(args.uniprot_reactions_file)
+dict_rice = load_reactome_reaction_file(args.uniprot_reactions_file)
 dict_mappings = load_mapping_file(args.mapping_file)
-map_and_filter(dict_uniprot, dict_mappings)
-generate_extended_ensembl_file(args.output_expanded_reactions_file)
-#rename_and_deploy(dict_projected_species, args.ensembl_input_path, args.inparanoid_input_path,
-#                  args.slice_version_number, args.ensembl_release_number, args.output_orthopair_path)
-
-#print('Files renamed and moved.')
+#dict_rice = map_and_filter(dict_rice, dict_mappings, rice_gene_mode)
+#generate_extended_ensembl_file(dict_rice, args.output_expanded_reactions_file)
+print("Done.")
 
 # end ------------------------------------------------------------------------------------------------------------------
