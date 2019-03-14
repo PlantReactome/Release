@@ -9,22 +9,139 @@ InComparaNoid: Script with different analysis methods used to compare Ensembl an
 import os
 import sys
 import argparse
+import pprint
 import re
-from matplotlib_venn import venn2
-from matplotlib import pyplot as plt
+#from matplotlib_venn import venn2
+#from matplotlib import pyplot as plt
 
 #----------------------------------------------------------------------------------------------------------------------
 # globals
 #----------------------------------------------------------------------------------------------------------------------
+
+pp = pprint.PrettyPrinter()
+dict_projected_species = {}
+dict_genes_to_orthologs = {}
+
 list_stats = []
 dict_uniprot_map = {}
 dict_ens_map = {}
 dict_inp_map = {}
-COUNT_TOTAL_REF_LOCI = 0 # num of TOTAL curated reference loci used to generate orthology projections  
+COUNT_TOTAL_REF_LOCI = 0 # num of TOTAL curated reference loci used to generate orthology projections
 
 #----------------------------------------------------------------------------------------------------------------------
 # functions
 #----------------------------------------------------------------------------------------------------------------------
+
+#----------------------------------------------------------------------------------------------------------------------
+def load_configs(projected_species_path):
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    import projected species and abbs from tab file
+    """
+    dict_projected_species = {} # local
+    # read map file, populate dict
+    config = open(projected_species_path)
+    next(config)
+    for line in config:
+        cols = line.rstrip().split('\t')
+
+        species_name = cols[0]
+        """
+        stable_abbv = cols[1]
+        two_digit_abbv = cols[2]
+        four_digit_abbv = cols[3]
+        gspecies_abbv = cols[4]
+        homology_method = cols[5]
+        recip_id = cols[6]
+        ext_ref = cols[7]
+        seq_source = cols[8]
+        clade = cols[9]
+        ncbi_tax_id = int(cols[10]) if (len(cols) == 11 or len(cols) == 12) else ""
+        familiar_name = cols[11] if len(cols) == 12 else ""
+        """
+        dict_projected_species[species_name] = [0,[]]
+#            stable_abbv,
+#            two_digit_abbv,
+#            four_digit_abbv,
+#            gspecies_abbv,
+#            homology_method,
+#            recip_id,
+#            ext_ref,
+#            seq_source,
+#            clade,
+#            str(ncbi_tax_id),
+#            familiar_name
+#        ]
+    config.close()
+    if args.verbose:
+        pp.pprint(dict_projected_species)
+
+    return dict_projected_species
+
+
+#----------------------------------------------------------------------------------------------------------------------
+def load_genes(filtering_loci_path) :
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    create tuple to hold filtering set of genes and orthologs, load the gene list and the species containers
+    """
+    dict_genes_to_orthologs = {} # local
+    # read map file, populate dict (it is possible to have a many-to-1 LOC-to-Uniprot relationship; this is ok for projection inference)
+    GENES = open(filtering_loci_path)
+    for line in GENES :
+        dict_genes_to_orthologs[line.strip()] = dict_projected_species.copy()
+    GENES.close()
+
+    if args.verbose:
+        pp.pprint(dict_genes_to_orthologs)
+
+    return dict_genes_to_orthologs
+
+
+#----------------------------------------------------------------------------------------------------------------------
+def map_orthologs(file, isInparanoid) :
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    - if ensembl -> load ensembl file and look up
+    - if inparanoid, just extract (can use same code, no harm in looking up what is already filtered in super_ortho_clust.pl)
+    - filter by threshold if provided, and if available
+    """
+    # generate species key from filename
+    filename = os.path.basename(file)
+    if isInparanoid: # format: os_2_Pinus_taeda.txt
+        curr_species = filename.split('_')[2] + " " + filename.split('_')[3].split('.')[0]
+    else: # Ensembl, format: AegilopsTauschii_osj.rtm
+        curr_species = ' '.join(re.findall(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))', filename.split('_')[0]))
+    CURR_ORTHO = open(file)
+    for line in CURR_ORTHO :
+        cols = line.rstrip().split()
+        ref = cols[0]
+        prj = cols[1]
+        print(ref + ", " + prj)
+        if ref in dict_genes_to_orthologs:
+            # TODO: something is wrong with the dict/list lookup and assignments here. you're close...
+            #print(filename + ": " + ref)
+            dict_genes_to_orthologs[ref][curr_species][0] = dict_genes_to_orthologs[ref][curr_species][0] + 1;
+            dict_genes_to_orthologs[ref][curr_species][1].append(prj);
+            print(dict_genes_to_orthologs[ref][curr_species])
+            #break
+#        for ref_locus, prj_loci in dict_cmp_map.iteritems() :
+#            if ref_locus in ref_dict :
+#                ref_dict[ref_locus][0].extend(prj_loci) # add Compara projected loci in the first list slot
+#            else :
+#                ref_dict[ref_locus] = [prj_loci, []]
+        # dict_genes_to_orthologs
+    CURR_ORTHO.close()
+    #pp.pprint(dict_genes_to_orthologs)
+    #quit()
+    return
+#----------------------------------------------------------------------------------------------------------------------
+
+
+#----------------------------------------------------------------------------------------------------------------------
+def write_orthology(displayCounts) :
+#----------------------------------------------------------------------------------------------------------------------
+    return
 
 #----------------------------------------------------------------------------------------------------------------------
 def create_dict_uniprot_map(uniprot_substitution_path) :
@@ -55,7 +172,7 @@ def create_inp_map(inparanoid_input_path, dict_uniprot_map) :
     """
     open the inparanoid file (which is already loci-filtered for curated reference set and does not require RAP-to-MSU back-conversion) and generate a 2-col mapping of PRJ to LOC loci
     """ 
-    dict_inp_map = {} # local ensembl orthology dict
+    dict_inp_map = {} # local inparanoid orthology dict
 
     INP = open(inparanoid_input_path)
     for line in INP :
@@ -388,20 +505,22 @@ def generate_venn(venn_data, list_coverage, colors, is_ref, ref_species, proj_sp
 parser = argparse.ArgumentParser(description='Script with different analysis methods used to compare Ensembl and Inparanoid species projections.')
 
 # input settings
+parser.add_argument('-U', '--universal', help='accept directory location(s) for multiple Inparanoid or Ensembl files; file-type and file-number agnostic', action='store_true')
+parser.add_argument('-S', '--projected_species_configs', help='tab file containing projected species and abbvs')
 parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci user for filtering')
 parser.add_argument('-e', '--ensembl_input_path', help='ensembl compara input file')
 parser.add_argument('-i', '--inparanoid_input_path', help='inparanoid supercluster input file')
 parser.add_argument('-m', '--rap_map_path', help='MSU-RAP mapping file')
-parser.add_argument('-r', '--reciprocal_id', type=int, help='reciprocal identity percentage')
+parser.add_argument('-r', '--reciprocal_id', type=int, help='reciprocal identity percentage; applied to all files if --universal')
 parser.add_argument('-C', '--confidence_high', help='only use ensembl projections marked as high-confidence', action='store_true')
 parser.add_argument('-u', '--uniprot_substitution', help='file path to UniProt substitution data for reference loci')
 parser.add_argument('--ref_species', help='reference species')
 parser.add_argument('--proj_species', help='projection species')
-# TODO: add an "inparanoid super-cluster vs. conventional input" flag
 
 # output settings
 parser.add_argument('-p', '--projection_prefix', help='add a platform-specific prefix to the projected protein identifiers', default='') # e.g. 'MaizeGDB:'
 parser.add_argument('-c', '--comparison_file_path', help='output file containing statistical comparisons')
+parser.add_argument('-s', '--stats_file_path', help='output file containing statistical ortho counts')
 parser.add_argument('-E', '--ensembl_output_path', help='output file containing flat (1-to-many) ensemble ortho pairs')
 parser.add_argument('-I', '--inparanoid_output_path', help='output file containing flat (1-to-many) inparanoid ortho pairs')
 parser.add_argument('-g', '--generate_reactome_output', help='produce ortho_pair files required by Reactome projection inference script for specified projection source', choices=['ensembl', 'inparanoid'])
@@ -410,32 +529,82 @@ parser.add_argument('-P', '--reactome_projection_path', help='output file contai
 parser.add_argument('-V', '--venn_diagram', help='generate Venn diagram', action='store_true')
 parser.add_argument('-v', '--venn_output_path', help='save Venn diagrams to this directory')
 
+# other settings
+parser.add_argument('-Z', '--verbose', action='store_true')
+
 args = parser.parse_args()
-#print args
+if args.verbose:
+    print(args)
 
-# create ref loci::UniProt map, if specified
-if args.uniprot_substitution :
-    dict_uniprot_map = create_dict_uniprot_map(args.uniprot_substitution)
+# Ssample calls:
+#   Directory call:
+#       python incomparanoid.py -U -f <my_custom_gene_list> -i <sorted_ortho_dir> -s <statistical_output_file>
+#   Inparanoid single file:
+#       python incomparanoid.py -f loc_rgp_lists/LOC_RGPs_slice_17.txt -i rice_to/slice_17/Cs/inparanoid_os_2_cs_sorted.tab
+#           -u loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt -p Phytozome_Cs: -g inparanoid
+#          -R rice_to/slice_17/Cs/csin_gene_protein_mapping.txt -P rice_to/slice_17/Cs/osat_csin_mapping.txt
+#   Ensembl single file:
+#       python incomparanoid.py -f loc_rgp_lists/LOC_RGPs_slice_17.txt -e rice_to/slice_17/Dc/ensembl_plants_42_os_2_dc_sorted.tab
+#           -m loc_to_rap/RAP-MSU.txt -r 30 -u loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt -p Ensembl: -g ensembl
+#           -R rice_to/slice_17/Dc/dcar_gene_protein_mapping.txt -P rice_to/slice_17/Dc/osat_dcar_mapping.txt
 
-# create projection maps
-if (args.inparanoid_input_path) :
-    dict_inp_map = create_inp_map(args.inparanoid_input_path, dict_uniprot_map)
-if (args.ensembl_input_path) :
-    dict_ens_map = create_ens_map(args.filtering_loci_path, args.ensembl_input_path, args.rap_map_path, args.reciprocal_id, dict_uniprot_map, 1 if args.confidence_high else 0)
+# I. General orthology counts and lists, binned by species (no Uniprot mapping or id conversion) -----------------------
 
-# generate stats and output them; assumes both inparanoid and ensembl data have been provided
-if (args.comparison_file_path) :
-    all_venn_data = compare_maps(dict_ens_map, dict_inp_map, args.comparison_file_path, args.ensembl_output_path, args.inparanoid_output_path)
+if args.universal:
+    # load species configs
+    dict_projected_species = load_configs(args.projected_species_configs)
 
-if args.generate_reactome_output == 'ensembl' :
-    write_reactome_files(dict_ens_map, args.reactome_gene_protein_path, args.reactome_projection_path, args.projection_prefix)
-if args.generate_reactome_output == 'inparanoid' :
-    write_reactome_files(dict_inp_map, args.reactome_gene_protein_path, args.reactome_projection_path, args.projection_prefix)
+    # read in gene file (even if it's not technically needed for the inparanoid data, which is currently pre-filtered)
+    dict_genes_to_orthologs = load_genes(args.filtering_loci_path)
 
-# NOTE: requires local matplotlib backend configuration
-if args.venn_diagram :
-    generate_venn(all_venn_data[0], all_venn_data[2], ['red', 'yellow', 'orange', 'blue', 'lime'], 1, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
-    generate_venn(all_venn_data[1], all_venn_data[2], ['green', 'yellow', 'lightgreen', 'blue', 'lime'], 0, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
+    #quit()
+
+    # iter: build a map of entries against ortho files (culled from directory)
+    if args.ensembl_input_path:
+        directory = args.ensembl_input_path
+    else:
+        directory = args.inparanoid_input_path
+
+    for entry in os.scandir(directory):
+        if args.verbose:
+            print(entry.path)
+
+        # build via file mapping
+        if str(os.path.split(entry.path)[0]).endswith('inp'):
+            map_orthologs(entry.path, True)
+        else:
+            map_orthologs(entry.path, False)
+        continue
+
+    # write output to tsv, with species names in header and gene names on left col, bool: counts or list orthos
+    write_orthology(True) # to display counts, or False to display orthologs
+
+# II. Release prep and source comparison stats -------------------------------------------------------------------------
+
+else:
+    # create ref loci::UniProt map, if specified
+    if args.uniprot_substitution :
+        dict_uniprot_map = create_dict_uniprot_map(args.uniprot_substitution)
+
+    # create projection maps
+    if (args.inparanoid_input_path):
+        dict_inp_map = create_inp_map(args.inparanoid_input_path, dict_uniprot_map)
+    if (args.ensembl_input_path) :
+        dict_ens_map = create_ens_map(args.filtering_loci_path, args.ensembl_input_path, args.rap_map_path, args.reciprocal_id, dict_uniprot_map, 1 if args.confidence_high else 0)
+
+    # generate stats and output them; assumes both inparanoid and ensembl data have been provided
+    if (args.comparison_file_path) :
+        all_venn_data = compare_maps(dict_ens_map, dict_inp_map, args.comparison_file_path, args.ensembl_output_path, args.inparanoid_output_path)
+
+    if args.generate_reactome_output == 'ensembl' :
+        write_reactome_files(dict_ens_map, args.reactome_gene_protein_path, args.reactome_projection_path, args.projection_prefix)
+    if args.generate_reactome_output == 'inparanoid' :
+        write_reactome_files(dict_inp_map, args.reactome_gene_protein_path, args.reactome_projection_path, args.projection_prefix)
+
+    # NOTE: requires local matplotlib backend configuration
+    if args.venn_diagram :
+        generate_venn(all_venn_data[0], all_venn_data[2], ['red', 'yellow', 'orange', 'blue', 'lime'], 1, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
+        generate_venn(all_venn_data[1], all_venn_data[2], ['green', 'yellow', 'lightgreen', 'blue', 'lime'], 0, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
 
 #----------------------------------------------------------------------------------------------------------------------
 # end
