@@ -7,7 +7,6 @@ InComparaNoid: Script with different analysis methods used to compare Ensembl an
 # modules
 #----------------------------------------------------------------------------------------------------------------------
 import os
-import sys
 import argparse
 import pprint
 import re
