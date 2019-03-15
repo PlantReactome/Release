@@ -11,6 +11,7 @@ import sys
 import argparse
 import pprint
 import re
+import copy
 #from matplotlib_venn import venn2
 #from matplotlib import pyplot as plt
 
@@ -44,34 +45,8 @@ def load_configs(projected_species_path):
     next(config)
     for line in config:
         cols = line.rstrip().split('\t')
-
         species_name = cols[0]
-        """
-        stable_abbv = cols[1]
-        two_digit_abbv = cols[2]
-        four_digit_abbv = cols[3]
-        gspecies_abbv = cols[4]
-        homology_method = cols[5]
-        recip_id = cols[6]
-        ext_ref = cols[7]
-        seq_source = cols[8]
-        clade = cols[9]
-        ncbi_tax_id = int(cols[10]) if (len(cols) == 11 or len(cols) == 12) else ""
-        familiar_name = cols[11] if len(cols) == 12 else ""
-        """
         dict_projected_species[species_name] = [0,[]]
-#            stable_abbv,
-#            two_digit_abbv,
-#            four_digit_abbv,
-#            gspecies_abbv,
-#            homology_method,
-#            recip_id,
-#            ext_ref,
-#            seq_source,
-#            clade,
-#            str(ncbi_tax_id),
-#            familiar_name
-#        ]
     config.close()
     if args.verbose:
         pp.pprint(dict_projected_species)
@@ -89,7 +64,7 @@ def load_genes(filtering_loci_path) :
     # read map file, populate dict (it is possible to have a many-to-1 LOC-to-Uniprot relationship; this is ok for projection inference)
     GENES = open(filtering_loci_path)
     for line in GENES :
-        dict_genes_to_orthologs[line.strip()] = dict_projected_species.copy()
+        dict_genes_to_orthologs[line.strip()] = copy.deepcopy(dict_projected_species)
     GENES.close()
 
     if args.verbose:
@@ -99,7 +74,7 @@ def load_genes(filtering_loci_path) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def map_orthologs(file, isInparanoid) :
+def map_orthologs(file, isInparanoid, threshold) :
 #----------------------------------------------------------------------------------------------------------------------
     """
     - if ensembl -> load ensembl file and look up
@@ -111,36 +86,54 @@ def map_orthologs(file, isInparanoid) :
     if isInparanoid: # format: os_2_Pinus_taeda.txt
         curr_species = filename.split('_')[2] + " " + filename.split('_')[3].split('.')[0]
     else: # Ensembl, format: AegilopsTauschii_osj.rtm
-        curr_species = ' '.join(re.findall(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))', filename.split('_')[0]))
+        curr_species_prep = re.findall(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))', filename.split('_')[0])
+        curr_species_prep[1] = curr_species_prep[1].lower()
+        curr_species = ' '.join(curr_species_prep)
+
     CURR_ORTHO = open(file)
     for line in CURR_ORTHO :
         cols = line.rstrip().split()
-        ref = cols[0]
+        if not isInparanoid:
+            if float(cols[2]) < threshold or float(cols[3]) < threshold:
+                continue
+        ref = cols[0].upper()
         prj = cols[1]
-        print(ref + ", " + prj)
         if ref in dict_genes_to_orthologs:
-            # TODO: something is wrong with the dict/list lookup and assignments here. you're close...
-            #print(filename + ": " + ref)
-            dict_genes_to_orthologs[ref][curr_species][0] = dict_genes_to_orthologs[ref][curr_species][0] + 1;
-            dict_genes_to_orthologs[ref][curr_species][1].append(prj);
-            print(dict_genes_to_orthologs[ref][curr_species])
-            #break
-#        for ref_locus, prj_loci in dict_cmp_map.iteritems() :
-#            if ref_locus in ref_dict :
-#                ref_dict[ref_locus][0].extend(prj_loci) # add Compara projected loci in the first list slot
-#            else :
-#                ref_dict[ref_locus] = [prj_loci, []]
-        # dict_genes_to_orthologs
+            dict_genes_to_orthologs[ref][curr_species][0] = dict_genes_to_orthologs[ref][curr_species][0] + 1
+            dict_genes_to_orthologs[ref][curr_species][1].append(prj)
+
     CURR_ORTHO.close()
-    #pp.pprint(dict_genes_to_orthologs)
-    #quit()
     return
 #----------------------------------------------------------------------------------------------------------------------
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def write_orthology(displayCounts) :
+def write_orthology(output_path, stats_display_format) :
 #----------------------------------------------------------------------------------------------------------------------
+    """
+    :param output_path
+    :param displayCounts: if True, else display comma-del orthologs
+    :return: tsv formatted text to file
+    """
+    ORTHO_STATS_FILE = open(output_path,'w')
+    # write species as header
+    for k in sorted(dict_projected_species):
+        ORTHO_STATS_FILE.write("\t" + k)
+    ORTHO_STATS_FILE.write("\n")
+
+    # iter dict
+    for k, v in sorted(dict_genes_to_orthologs.items()):
+        # write row for each entry, xref species in order of col display
+        ORTHO_STATS_FILE.write(k)
+        # write counts or comma-del list or orthologs in each data cell
+        for l, w in sorted(v.items()):
+            if stats_display_format == 'counts':
+                ORTHO_STATS_FILE.write("\t" + str(w[0]))
+            else:
+                ORTHO_STATS_FILE.write("\t" + ','.join(list(w[1])))
+        ORTHO_STATS_FILE.write("\n")
+
+    ORTHO_STATS_FILE.close()
     return
 
 #----------------------------------------------------------------------------------------------------------------------
@@ -506,6 +499,7 @@ parser = argparse.ArgumentParser(description='Script with different analysis met
 
 # input settings
 parser.add_argument('-U', '--universal', help='accept directory location(s) for multiple Inparanoid or Ensembl files; file-type and file-number agnostic', action='store_true')
+parser.add_argument('-F', '--stats_display_format', help='write out the counts instead of the actual orthologs', choices=['counts', 'orthologs'], default='counts')
 parser.add_argument('-S', '--projected_species_configs', help='tab file containing projected species and abbvs')
 parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci user for filtering')
 parser.add_argument('-e', '--ensembl_input_path', help='ensembl compara input file')
@@ -538,7 +532,7 @@ if args.verbose:
 
 # Ssample calls:
 #   Directory call:
-#       python incomparanoid.py -U -f <my_custom_gene_list> -i <sorted_ortho_dir> -s <statistical_output_file>
+#       python incomparanoid.py -U -S <species_config_file> -f <gene_list> -e <ensembl_dir> -i <inp_dir> -s <output file> -r <recip_id> [-F (counts|orthologs)]
 #   Inparanoid single file:
 #       python incomparanoid.py -f loc_rgp_lists/LOC_RGPs_slice_17.txt -i rice_to/slice_17/Cs/inparanoid_os_2_cs_sorted.tab
 #           -u loc_to_uniprot/os_loc_2_os_uniprot_rice_slice_17_manual.txt -p Phytozome_Cs: -g inparanoid
@@ -560,24 +554,29 @@ if args.universal:
     #quit()
 
     # iter: build a map of entries against ortho files (culled from directory)
-    if args.ensembl_input_path:
-        directory = args.ensembl_input_path
-    else:
-        directory = args.inparanoid_input_path
+    directory_inp = args.inparanoid_input_path
+    directory_ens = args.ensembl_input_path
 
-    for entry in os.scandir(directory):
+    for entry in os.scandir(directory_inp):
         if args.verbose:
             print(entry.path)
-
         # build via file mapping
-        if str(os.path.split(entry.path)[0]).endswith('inp'):
-            map_orthologs(entry.path, True)
-        else:
-            map_orthologs(entry.path, False)
+        map_orthologs(entry.path, True, 0)
         continue
 
+    for entry in os.scandir(directory_ens):
+        if args.verbose:
+            print(entry.path)
+        # build via file mapping
+        #if str(os.path.split(entry.path)[0]).endswith('inp'):
+        map_orthologs(entry.path, False, args.reciprocal_id)
+        continue
+
+    if args.verbose:
+        pp.pprint(dict_genes_to_orthologs)
+
     # write output to tsv, with species names in header and gene names on left col, bool: counts or list orthos
-    write_orthology(True) # to display counts, or False to display orthologs
+    write_orthology(args.stats_file_path, args.stats_display_format) # to display counts, or False to display orthologs
 
 # II. Release prep and source comparison stats -------------------------------------------------------------------------
 
