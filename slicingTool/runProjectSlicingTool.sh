@@ -18,7 +18,15 @@ RUN_CHAR_FIX=$(grep runCharacterFixer slicingTool.prop | grep -v '\#' |perl -pe 
 #    exit
 #fi
 
-if [[ $RUN_CHAR_FIX == "true" ]] ; then
+echo -n "Would you like to run the version topic comparison between this release and last? (y/n): "
+read ver_topic
+if [[ $ver_topic == y* ]] || [[ $ver_topic == Y* ]]
+then
+    java -jar VersionTopicComparer.jar 2>&1 | tee version_topic_comparison.out
+fi
+
+if [[ $RUN_CHAR_FIX == "true" ]]
+then
     echo "Fixing bad character sequences."
     bash ../scripts/fix_characters.sh $CURATOR_DB $CURATOR_HOST $USER $PASS $(pwd) true
 fi
@@ -27,6 +35,7 @@ if [[ -n $DB && -n $HOST && -n $USER && -n $PASS ]]
 then
     if [[ $USER =~ "react-app-user" ]]
     then
+#<<<<<<< HEAD
 	echo Dropping $DB ...
 	mysql -u$USER -p$PASS -h$HOST -e "drop database if exists $DB"
 #	mysql -u$USER -p$PASS -e "drop database if exists ${DB}_myisam"
@@ -35,6 +44,27 @@ then
 #	mysql -u$USER -p$PASS -e "create database gk_central"
     else
 	echo "I was expecting the database user to be 'react-app-user'.  Please edit slicingTool.prop and try again"
+#=======
+        # Attempts to find and use database $DB and if successful it is backed up
+        # before being dropped (errors, if any, stored in $DB_ERROR)
+#        DB_ERROR=$(mysql -u $USER -p$PASS -e "use $DB" 2>&1 > /dev/null)
+#        if [ -z "$DB_ERROR" ]
+#        then
+#            echo Backing up $DB ...
+#            mysqldump -u$USER -p$PASS $DB > $DB.dump
+#        elif [[ $DB_ERROR == *"Unknown database"* ]]
+#        then
+#            echo "Database $DB does not exist - no need to create back up"
+#        else
+#            echo -e "Problem accessing $DB: $DB_ERROR\nAborting slicing"
+#            exit
+#        fi
+
+#        echo Dropping $DB ...
+#        mysql -u$USER -p$PASS -e "drop database if exists $DB"
+#    else
+#        echo "I was expecting the database user to be 'curator'.  Please edit slicingTool.prop and try again"
+#>>>>>>> upstream/master
     fi
 else
     echo -e "\nMissing parameters!  Please complete slicingTool.prop\n"

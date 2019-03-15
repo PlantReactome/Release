@@ -1,0 +1,756 @@
+Instance existence checking:
+Instance with DB_ID "71519" is used but not in table DatabaseObject!
+Instance with DB_ID "1385639" is used but not in table DatabaseObject!
+Instance with DB_ID "1400788" is used but not in table DatabaseObject!
+Instance with DB_ID "1400785" is used but not in table DatabaseObject!
+Instance with DB_ID "1400784" is used but not in table DatabaseObject!
+Instance with DB_ID "1400787" is used but not in table DatabaseObject!
+Instance with DB_ID "8960692" is used but not in table DatabaseObject!
+
+UNLISTED	event	species
+UNLISTED	Reaction	198440	malate [mitochondrial matrix] + alpha-ketoglutarate [cytosol] <=> malate [cytosol] + alpha-ketoglutarate [mitochondrial matrix]	Homo sapiens
+UNLISTED	Reaction	198508	malate + NAD+ <=> oxaloacetate + NADH + H+	Homo sapiens
+UNLISTED	Reaction	264435	Dissociation of the COP1-p53 complex	Homo sapiens
+UNLISTED	Reaction	3149494	MMACHC:cob(II)alamin binds MMADHC	Homo sapiens
+UNLISTED	Reaction	3149560	Unknown reductase reduces cob(II)alamin to cob(I)alamin	Homo sapiens
+UNLISTED	BlackBoxEvent	3149563	MMADHC targets transport of cytosolic cob(II)alamin to mitochondria	Homo sapiens
+UNLISTED	Reaction	3149519	MMACHC decyanates CNCbl	Homo sapiens
+UNLISTED	Reaction	69685	CHEK2 phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	69891	Phosphorylation and activation of CHEK2 by ATM	Homo sapiens
+UNLISTED	Reaction	70241	oxaloacetate + GTP => phosphoenolpyruvate + GDP + CO2 [cytosol]	Homo sapiens
+UNLISTED	Reaction	70272	PGM:Mg2+ isomerise G6P to G1P	Homo sapiens
+UNLISTED	Reaction	70286	UTP + D-glucose 1-phosphate <=> pyrophosphate + UDP-glucose	Homo sapiens
+UNLISTED	Reaction	70333	KHK dimer phosphorylates Fru to Fru 1-P	Homo sapiens
+UNLISTED	Reaction	70342	ALDOB tetramer cleaves Fru-1-P to GA and DHAP	Homo sapiens
+UNLISTED	Reaction	70349	DAK dimer phosphorylates D-glyceraldehyde to form D-glyceraldehyde 3-phosphate	Homo sapiens
+UNLISTED	Reaction	70355	GALK1 phosphorylates Gal to Gal1P	Homo sapiens
+UNLISTED	Reaction	70361	GALT transfers UMP from UDP-Glc to Gal1P to form UDP-Gal	Homo sapiens
+UNLISTED	Reaction	70369	GALE:NAD+ dimer reversibly epimerises UDP-Gal to UDP-Glc	Homo sapiens
+UNLISTED	Reaction	70377	alpha-D-glucose 6-phosphate + NADP+ => D-glucono-1,5-lactone 6-phosphate + NADPH + H+	Homo sapiens
+UNLISTED	Reaction	70420	HK1,2,3,GCK phosphorylate Glc to form G6P	Homo sapiens
+UNLISTED	Reaction	70427	PGM:Mg2+ isomerise G1P to G6P	Homo sapiens
+UNLISTED	Reaction	70449	D-glyceraldehyde 3-phosphate + orthophosphate + NAD+ <=> 1,3-bisphospho-D-glycerate + NADH + H+	Homo sapiens
+UNLISTED	Reaction	70454	dihydroxyacetone phosphate <=> D-glyceraldehyde 3-phosphate	Homo sapiens
+UNLISTED	Reaction	70467	D-fructose 6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP	Homo sapiens
+UNLISTED	Reaction	70471	alpha-D-glucose 6-phosphate <=> D-fructose 6-phosphate	Homo sapiens
+UNLISTED	Reaction	70475	D-fructose 6-phosphate <=> alpha-D-Glucose 6-phosphate	Homo sapiens
+UNLISTED	Reaction	70479	D-fructose 1,6-bisphosphate + H2O => D-fructose 6-phosphate + orthophosphate	Homo sapiens
+UNLISTED	Reaction	70481	D-glyceraldehyde 3-phosphate <=> dihydroxyacetone phosphate	Homo sapiens
+UNLISTED	Reaction	70482	1,3-bisphospho-D-glycerate + NADH + H+ <=> D-glyceraldehyde 3-phosphate + Orthophosphate + NAD+	Homo sapiens
+UNLISTED	Reaction	70486	ATP + 3-Phospho-D-glycerate <=> ADP + 1,3-bisphospho-D-glycerate	Homo sapiens
+UNLISTED	Reaction	70494	Phosphoenolpyruvate + H2O <=> 2-Phospho-D-glycerate	Homo sapiens
+UNLISTED	Reaction	70501	Pyruvate + CO2 + ATP => ADP + Orthophosphate + Oxaloacetate	Homo sapiens
+UNLISTED	Reaction	70510	LDH tetramer oxidises LACT to PYR	Homo sapiens
+UNLISTED	Reaction	70523	alanine + alpha-ketoglutarate <=> pyruvate + glutamate [GPT]	Homo sapiens
+UNLISTED	Reaction	70524	pyruvate + glutamate <=> alanine + alpha-ketoglutarate [GPT]	Homo sapiens
+UNLISTED	Reaction	70542	glutamate + acetyl CoA => N-acetyl glutamate + CoA	Homo sapiens
+UNLISTED	Reaction	70555	2 ATP + NH4+ + HCO3- => 2 ADP + orthophosphate + carbamoyl phosphate [mitochondrial]	Homo sapiens
+UNLISTED	Reaction	70560	carbamoyl phosphate + ornithine => citrulline + orthophosphate	Homo sapiens
+UNLISTED	Reaction	70569	arginine + H2O => ornithine + urea [ARG1]	Homo sapiens
+UNLISTED	Reaction	70573	argininosuccinate <=> fumarate + arginine	Homo sapiens
+UNLISTED	Reaction	70577	ASS1 tetramer:NMRAL1 dimer:NADPH transforms L-Asp and L-Cit to ARSUA	Homo sapiens
+UNLISTED	Reaction	70581	oxaloacetate + glutamate <=> aspartate + alpha-ketoglutarate [GOT1]	Homo sapiens
+UNLISTED	Reaction	70592	aspartate + alpha-ketoglutarate <=> oxaloacetate + glutamate [GOT1]	Homo sapiens
+UNLISTED	Reaction	70596	aspartate + alpha-ketoglutarate <=> oxaloacetate + glutamate [GOT2]	Homo sapiens
+UNLISTED	Reaction	70599	aspartate + glutamine + ATP <=> asparagine + glutamate + AMP + pyrophosphate [ASNS]	Homo sapiens
+UNLISTED	Reaction	70613	oxaloacetate + glutamate <=> aspartate + alpha-ketoglutarate [GOT2]	Homo sapiens
+UNLISTED	Reaction	70634	ornithine (cytosolic) + citrulline (mitochondrial) => ornithine (mitochondrial) + citrulline (cytosolic)	Homo sapiens
+UNLISTED	Reaction	70655	L-glutamate gamma-semialdehyde <=> L-1-pyrroline-5-carboxylate	Homo sapiens
+UNLISTED	Reaction	70654	ornithine + alpha-ketoglutarate <=> glutamate + L-glutamate gamma-semialdehyde [OAT]	Homo sapiens
+UNLISTED	Reaction	70667	1PYR-5COOH spontaneously hydrolyses to L-GluSS	Homo sapiens
+UNLISTED	Reaction	70666	glutamate + L-glutamate gamma-semialdehyde <=> ornithine + alpha-ketoglutarate [OAT]	Homo sapiens
+UNLISTED	Reaction	70670	PRODH oxidises L-Pro to 1PYR-5COOH	Homo sapiens
+UNLISTED	Reaction	70713	BCKDH transfers CoA group from CoA-SH to BCAAs	Homo sapiens
+UNLISTED	Reaction	70724	leu, ile, or val + alpha-ketoglutarate <=> a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate [BCAT2]	Homo sapiens
+UNLISTED	Reaction	70800	alpha-methylbutyryl-CoA + FAD => tiglyl-CoA + FADH2	Homo sapiens
+UNLISTED	Reaction	70830	tiglyl-CoA + H2O <=> alpha-methyl-beta-hydroxybutyryl-CoA	Homo sapiens
+UNLISTED	Reaction	70837	alpha-methyl-beta-hydroxybutyryl-CoA + NAD+ <=> alpha-methylacetoacetyl-CoA + NADH + H+	Homo sapiens
+UNLISTED	Reaction	70844	alpha-methyl-acetoacetyl-CoA + CoA => propionyl-CoA + acetyl-CoA	Homo sapiens
+UNLISTED	Reaction	70859	isobutyryl-CoA + FAD => methacrylyl-CoA + FADH2	Homo sapiens
+UNLISTED	Reaction	70870	methacrylyl-CoA + H2O <=> beta-hydroxyisobutyryl-CoA	Homo sapiens
+UNLISTED	Reaction	70881	beta-hydroxyisobutyryl-CoA + H2O => beta-hydroxyisobutyrate + CoA	Homo sapiens
+UNLISTED	Reaction	70885	beta-hydroxyisobutyrate + NAD+ <=> methylmalonyl semialdehyde + NADH + H+	Homo sapiens
+UNLISTED	Reaction	70893	methylmalonate semialdehyde + NAD+ + CoA => propionyl-CoA + CO2 + NADH + H+	Homo sapiens
+UNLISTED	Reaction	70967	isocitrate + NAD+ => alpha-ketoglutarate + CO2 + NADH + H+ [IDH3]	Homo sapiens
+UNLISTED	Reaction	70971	citrate <=> isocitrate	Homo sapiens
+UNLISTED	Reaction	70975	Acetyl-CoA + H2O + Oxaloacetate => Citrate + CoA	Homo sapiens
+UNLISTED	Reaction	70979	(S)-Malate + NAD+ <=> Oxaloacetate + NADH + H+	Homo sapiens
+UNLISTED	Reaction	70982	Fumarate + H2O <=> (S)-Malate	Homo sapiens
+UNLISTED	Reaction	70994	Succinate <=> Fumarate (with FAD redox reaction on enzyme)	Homo sapiens
+UNLISTED	Reaction	70997	ADP + Orthophosphate + Succinyl-CoA <=> ATP + Succinate + CoA	Homo sapiens
+UNLISTED	Reaction	71010	MUT isomerises L-MM-CoA to SUCC-CoA	Homo sapiens
+UNLISTED	Reaction	71020	D-methylmalonyl-CoA <=> L-methylmalonyl-CoA	Homo sapiens
+UNLISTED	Reaction	71031	propionyl-CoA + CO2 + ATP <=> D-methylmalonyl-CoA + ADP + orthophosphate	Homo sapiens
+UNLISTED	Reaction	1119817	dihydroxy-acetone-phosphate+D-erythrose-4-phosphate->D-sedoheptulose-1,7-bisphosphate	Oryza sativa
+UNLISTED	Reaction	71296	D-glucono-1,5-lactone 6-phosphate + H2O => 6-phospho-D-gluconate	Homo sapiens
+UNLISTED	Reaction	71299	6-phospho-D-gluconate + NADP+ => D-ribulose 5-phosphate + CO2 + NADPH + H+	Homo sapiens
+UNLISTED	Reaction	71306	D-ribulose 5-phosphate <=> ribose 5-phosphate	Homo sapiens
+UNLISTED	Reaction	1119907	Transketolase	Oryza sativa
+UNLISTED	Reaction	71397	lipo-PDH decarboxylates PYR to Ac-CoA	Homo sapiens
+UNLISTED	Reaction	71401	alpha-ketoglutarate + CoASH + NAD+ => succinyl-CoA + CO2 + NADH + H+	Homo sapiens
+UNLISTED	Reaction	71445	2-Phospho-D-glycerate <=> 3-Phospho-D-glycerate	Homo sapiens
+UNLISTED	Reaction	71495	dihydroxyacetone phosphate + D-glyceraldehyde 3-phosphate <=> D-fructose 1,6-bisphosphate	Homo sapiens
+UNLISTED	Reaction	71496	D-fructose 1,6-bisphosphate <=> dihydroxyacetone phosphate + D-glyceraldehyde 3-phosphate	Homo sapiens
+UNLISTED	Reaction	71515	glycogen-glycogenin-1 + n orthophosphate => limit dextrin-glycogenin-1 + n D-glucose 1-phosphate [PYGM,PYGB]	Homo sapiens
+UNLISTED	Reaction	1120078	Transketolase	Oryza sativa
+UNLISTED	Reaction	71541	glycogen phosphorylase (PYGM) dimer b + 2 ATP => glycogen phosphorylase (PYGM) dimer a + 2 ADP	Homo sapiens
+UNLISTED	Reaction	71552	limit dextrin-glycogenin => ((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl) glycogenin	Homo sapiens
+UNLISTED	Reaction	1120156	Phosphoribulokinase	Oryza sativa
+UNLISTED	Reaction	71588	glycogen phosphorylase (PYGL) dimer b + 2 ATP => glycogen phosphorylase (PYGL) dimer a + 2 ADP	Homo sapiens
+UNLISTED	Reaction	71590	glycogen-glycogenin-2 + n orthophosphate => limit dextrin-glycogenin-2 + n D-glucose 1-phosphate [PYGL]	Homo sapiens
+UNLISTED	Reaction	71593	((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)glycogenin => poly{(1,4)-alpha-glucosyl} glycogenin + alpha-D-glucose	Homo sapiens
+UNLISTED	Reaction	1120216	Fructose-bisphosphatase	Oryza sativa
+UNLISTED	Reaction	71654	3-Phospho-D-glycerate <=> 2-Phospho-D-glycerate	Homo sapiens
+UNLISTED	Reaction	71660	2-Phospho-D-glycerate <=> Phosphoenolpyruvate + H2O	Homo sapiens
+UNLISTED	Reaction	71670	phosphoenolpyruvate + ADP => pyruvate + ATP	Homo sapiens
+UNLISTED	Reaction	71691	acetaldehyde + NAD+ => acetate + NADH + H+ [cytosolic]	Homo sapiens
+UNLISTED	Reaction	71707	ethanol + NAD+ => acetaldehyde + NADH + H+	Homo sapiens
+UNLISTED	Reaction	71732	pyrophosphate + H2O => 2 orthophosphate [cytosolic]	Homo sapiens
+UNLISTED	Reaction	71735	acetate + CoA + ATP => acetyl-CoA + AMP + pyrophosphate [cytosolic]	Homo sapiens
+UNLISTED	Reaction	71775	GDP + Orthophosphate + Succinyl-CoA <=> GTP + Succinate + CoA	Homo sapiens
+UNLISTED	Reaction	71783	Oxaloacetate + NADH + H+ <=> (S)-Malate + NAD+	Homo sapiens
+UNLISTED	Reaction	71849	LDH tetramer reduces PYR to LACT	Homo sapiens
+UNLISTED	Reaction	71850	1,3-bisphospho-D-glycerate + ADP <=> 3-phospho-D-glycerate + ADP	Homo sapiens
+UNLISTED	Reaction	1120497	nitrile hydratase	Oryza sativa
+UNLISTED	Reaction	1120946	tetrahydrodipicolinate+L-glutamate+H2O->L,L-diaminopimelate+alpha-ketoglutarate	Oryza sativa
+UNLISTED	Reaction	1120973	Sedoheptulose-bisphosphatase	Oryza sativa
+UNLISTED	BlackBoxEvent	72647	Cap-bound mRNA is activated by helicases 	Homo sapiens
+UNLISTED	Reaction	1121285	Glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) (phosphorylating)	Oryza sativa
+UNLISTED	Reaction	1121314	Ribose 5-phosphate epimerase	Oryza sativa
+UNLISTED	Reaction	203946	PDK isoforms phosphorylate lipo-PDH	Homo sapiens
+UNLISTED	Reaction	1121553	glutamate synthase (NADPH)	Oryza sativa
+UNLISTED	Reaction	1121622	ribulose phosphate 3-epimerase	Oryza sativa
+UNLISTED	Reaction	204169	PDP dephosphorylates p-lipo-PDH	Homo sapiens
+UNLISTED	Reaction	73567	orotate + 5-phospho-alpha-D-ribose 1-diphosphate (PRPP) <=> orotidine 5'-monophosphate (OMP) + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	73569	(S)-dihydroorotate + ubiquinone => orotate + ubiquinol	Homo sapiens
+UNLISTED	Reaction	73571	N-carbamoyl L-aspartate + H+ <=> (S)-dihydroorotate + H2O	Homo sapiens
+UNLISTED	Reaction	73573	carbamoyl phosphate + L-aspartate <=> N-carbamoyl L-aspartate + orthophosphate	Homo sapiens
+UNLISTED	Reaction	73577	L-glutamine + 2 ATP + HCO3- + H2O => carbamoyl phosphate + L-glutamate + 2 ADP + orthophosphate	Homo sapiens
+UNLISTED	Reaction	73580	D-ribose 5-phosphate + ATP => 5-phospho-alpha-D-ribose 1-diphosphate (PRPP) + adenosine 5'-monophosphate	Homo sapiens
+UNLISTED	Reaction	73585	uracil + NADPH + H+ => 5,6-dihydrouracil + NADP+	Homo sapiens
+UNLISTED	Reaction	73589	5,6-dihydrouracil + H2O => beta-ureidopropionate	Homo sapiens
+UNLISTED	Reaction	73591	beta-ureidopropionate + H2O => beta-alanine + NH4+ + CO2	Homo sapiens
+UNLISTED	Reaction	73792	XMP + L-Glutamine + ATP + H2O => GMP + L-Glutamate + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	73794	IMP + H2O + NAD+ => XMP + NADH + H+ [IMPDH1,2]	Homo sapiens
+UNLISTED	Reaction	73797	FAICAR => IMP + H2O	Homo sapiens
+UNLISTED	Reaction	73798	AICAR + 10-Formyl-THF => FAICAR + THF	Homo sapiens
+UNLISTED	Reaction	73800	SAICAR => AICAR + Fumarate	Homo sapiens
+UNLISTED	Reaction	73805	CAIR + Aspartate + ATP => SAICAR + ADP + Pi	Homo sapiens
+UNLISTED	Reaction	73806	AIR + CO2 => CAIR	Homo sapiens
+UNLISTED	Reaction	73810	FGAM + ATP => AIR + ADP + Pi	Homo sapiens
+UNLISTED	Reaction	73813	GAR + 10-Formyl-THF => FGAR + THF	Homo sapiens
+UNLISTED	Reaction	73812	FGAR + L-Glutamine + ATP + H2O => FGAM + L-Glutamate + ADP + Pi	Homo sapiens
+UNLISTED	Reaction	73815	5-phospho-alpha-D-ribose 1-diphosphate (PRPP) + H2O + L-glutamine <=> 5-phosphoribosylamine + L-glutamate +pyrophosphate	Homo sapiens
+UNLISTED	Reaction	73814	5-Phosphoribosylamine + Glycine + ATP => GAR + ADP + Pi	Homo sapiens
+UNLISTED	Reaction	74213	Adenine + PRPP => AMP + PPi	Homo sapiens
+UNLISTED	Reaction	74215	guanine or hypoxanthine + PRPP => GMP or IMP + PPi (HPRT1)	Homo sapiens
+UNLISTED	Reaction	75095	Binding of TFIIE to the growing preinitiation complex	Homo sapiens
+UNLISTED	Reaction	75172	Formation of RAD50:MRE11 complex	Homo sapiens
+UNLISTED	Reaction	75174	Association of RAD50:MRE11A complex with NBN (NBS1) via MRE11A interaction	Homo sapiens
+UNLISTED	BlackBoxEvent	75850	Addition of the third nucleotide on the nascent transcript	Homo sapiens
+UNLISTED	Reaction	75861	NTP Binds Active Site of RNA Polymerase II	Homo sapiens
+UNLISTED	Reaction	75862	Fall Back to Closed Pre-initiation Complex	Homo sapiens
+UNLISTED	Reaction	75864	Newly Formed Phosphodiester Bond Stabilized and PPi Released	Homo sapiens
+UNLISTED	Reaction	75866	Nucleophillic Attack by 3'-hydroxyl Oxygen of nascent transcript on the Alpha Phosphate of NTP	Homo sapiens
+UNLISTED	BlackBoxEvent	75869	Addition of the fourth nucleotide on the Nascent Transcript: Second Transition	Homo sapiens
+UNLISTED	Reaction	75873	Addition of Nucleotides 5 through 9 on the growing Transcript	Homo sapiens
+UNLISTED	Reaction	75949	RNA Polymerase II Promoter Opening: First Transition	Homo sapiens
+UNLISTED	Reaction	76576	Addition of nucleotides 10 and 11 on the growing transcript: Third Transition	Homo sapiens
+UNLISTED	Reaction	77071	Phosphorylation (Ser5) of RNA pol II CTD	Homo sapiens
+UNLISTED	Reaction	3159253	MMAB transfers adenosyl group from ATP to cob(I)alamin	Homo sapiens
+UNLISTED	Reaction	3159259	MMAA:MUT binds AdoCbl	Homo sapiens
+UNLISTED	BlackBoxEvent	211272	FOXOA2-, MAFA-, and PAX6-dependent synthesis of PDX1 protein	Homo sapiens
+UNLISTED	BlackBoxEvent	211346	NEUROD1- and PDX1-dependent synthesis of glucokinase (GCK) protein	Homo sapiens
+UNLISTED	Reaction	3095889	MMACHC reduces Cbl	Homo sapiens
+UNLISTED	Reaction	349444	Phosphorylation of COP1 at Ser-387  by ATM	Homo sapiens
+UNLISTED	Reaction	5659781	BRCA1 forms a heterodimer with BARD1	Homo sapiens
+UNLISTED	Reaction	156808	Formation of translation initiation complexes yielding circularized Ceruloplasmin mRNA in a  'closed-loop' conformation	Homo sapiens
+UNLISTED	Reaction	156823	Association of phospho-L13a with GAIT element of Ceruloplasmin mRNA	Homo sapiens
+UNLISTED	Reaction	156826	Dissociation of L13a from the 60s ribosomal subunit	Homo sapiens
+UNLISTED	Reaction	156832	INF-gamma induced phosphorylation of L13a	Homo sapiens
+UNLISTED	Reaction	163213	Transfer of electrons through the succinate dehydrogenase complex	Homo sapiens
+UNLISTED	Reaction	427555	SLC26A1,2 cotransport SO4(2-), H+ from extracellular region to cytosol	Homo sapiens
+UNLISTED	Reaction	165642	Transfer of electrons through the bovine succinate dehydrogenase complex	Bos taurus
+UNLISTED	Reaction	6787321	DERA cleaves dR5P to GA3P and CH3CHO	Homo sapiens
+UNLISTED	Reaction	2990840	SENP1,2,5 proteolytically process SUMO1	Homo sapiens
+UNLISTED	Reaction	2990833	Conjugation of SUMO1 to UBA2:SAE1	Homo sapiens
+UNLISTED	Reaction	6792712	KAT5 acetylates ATM at shortened telomeres	Homo sapiens
+UNLISTED	Reaction	8955817	PRODH2 oxidises HPRO to 1PYR-5COOH	Homo sapiens
+UNLISTED	Reaction	174392	PAPSS1,2 transfer SO4(2-) group to ATP to form APS	Homo sapiens
+UNLISTED	Reaction	174456	Joining of adjacent Okazaki fragments of the C-strand	Homo sapiens
+UNLISTED	BlackBoxEvent	109339	Linoleoyl-CoA is converted to cis,cis-3,6- dodecadienoyl-CoA by three cycles of beta-oxidation	Homo sapiens
+UNLISTED	Reaction	109338	Isomerization of cis,cis-3,6-Dodecadienoyl-CoA to form trans,cis-Lauro-2,6-dienoyl-CoA	Homo sapiens
+UNLISTED	Reaction	109341	dehydrogenation of 4-cis-decenoyl-CoA to form 2-trans-4-cis-decadienoyl-CoA	Homo sapiens
+UNLISTED	BlackBoxEvent	109342	Trans,cis-lauro-2,6-dienoyl-CoA is converted to cis,cis-3,6- 4-cis-decenoyl-CoA by one cycle of beta-oxidation	Homo sapiens
+UNLISTED	Reaction	109637	Binding of TFIIA and TFIIB to the pol II promoter:TFIID complex	Homo sapiens
+UNLISTED	Reaction	109636	Recognition and Binding of Core Promoter Elements by TFIID	Homo sapiens
+UNLISTED	Reaction	109639	Formation of the closed pre-initiation complex	Homo sapiens
+UNLISTED	Reaction	109638	Recruitment of RNA Polymerase II Holoenzyme by TFIIF to the pol II promoter:TFIID:TFIIA:TFIIB complex	Homo sapiens
+UNLISTED	Reaction	2993780	Transfer of SUMO1 from E1 to UBE2I (UBC9)	Homo sapiens
+UNLISTED	Reaction	372342	MPC1:MPC2 cotransports PYR, H+ from cytosol to mitochondrial matrix	Homo sapiens
+UNLISTED	Reaction	372449	phosphoenolpyruvate [mitochondrial matrix] + citrate [cytosol] => phosphoenolpyruvate [cytosol] + citrate [mitochondrial matrix]	Homo sapiens
+UNLISTED	Reaction	372480	2-oxoglutarate [mitochondrial matrix] + 2-oxoadipate [cytosol] <=> 2-oxoglutarate [cytosol] + 2-oxoadipate [mitochondrial matrix]	Homo sapiens
+UNLISTED	Reaction	372819	oxaloacetate + GTP => phosphoenolpyruvate + GDP + CO2 [mitochondrial matrix]	Homo sapiens
+UNLISTED	Reaction	372843	malate [mitochondrial matrix] + orthophosphate [cytosol] <=> malate [cytosol] + orthophosphate [mitochondrial matrix]	Homo sapiens
+UNLISTED	Reaction	176702	Disassociation of Processive Complex and Completed Telomere End	Homo sapiens
+UNLISTED	Reaction	176700	Incorporation Of Extended And Processed Telomere End Into Higher Order T-Loop And Associated Protein Structure	Homo sapiens
+UNLISTED	Reaction	111215	D-ribose 5-phosphate + 2'-deoxyadenosine 5'-triphosphate (dATP) => 5-Phospho-alpha-D-ribose 1-diphosphate (PRPP) + 2'-deoxyadenosine 5'-monophosphate	Homo sapiens
+UNLISTED	Reaction	111264	Addition of nucleotides between position +11 and +30	Homo sapiens
+UNLISTED	Reaction	5682044	KAT5 acetylates ATM at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5682020	MRN complex binds shortened telomeres	Homo sapiens
+UNLISTED	Reaction	5682018	MRN complex bound to shortened telomeres recruits ATM	Homo sapiens
+UNLISTED	Reaction	5682026	MRN bound to shortened telomeres activates ATM	Homo sapiens
+UNLISTED	Reaction	5682629	HERC2 facilitates UBE2N:UBE2V2 binding to RNF8	Homo sapiens
+UNLISTED	Reaction	5682588	RNF8 binds phosphorylated MDC1 at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5682586	HERC2 and PIAS4 are recruited to DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5682598	ATM phosphorylates HERC2	Homo sapiens
+UNLISTED	Reaction	5682607	PIAS4 SUMOylates HERC2 with SUMO1 at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	177784	ribose 5-phosphate <=> D-ribulose 5-phosphate	Homo sapiens
+UNLISTED	Reaction	5682863	RNF168 binds DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5682858	RNF8 and RNF168 ubiquitinate H2AFX	Homo sapiens
+UNLISTED	Reaction	112383	Hypophosphorylation of RNA Pol II CTD by FCP1P protein	Homo sapiens
+UNLISTED	Reaction	112434	Formation of DSIF complex 	Homo sapiens
+UNLISTED	Reaction	112437	Formation of NELF complex 	Homo sapiens
+UNLISTED	Reaction	5682967	WHSC1 binds DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5682965	WHSC1 dimethylates histone H4 on lysine K21 at DSBs	Homo sapiens
+UNLISTED	Reaction	5682992	KDM4A,B bind H4K20Me2	Homo sapiens
+UNLISTED	Reaction	5682983	ATM phosphorylates WHSC1	Homo sapiens
+UNLISTED	Reaction	5683077	RNF8 and RNF168 ubiquitinate KDM4A,B	Homo sapiens
+UNLISTED	Reaction	5683425	ATM phosphorylates TP53BP1 at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5683384	UIMC1 and FAM175A bind DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5683385	Formation of BRCA1-A complex at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5683792	p-T68-CHEK2 autophosphorylates	Homo sapiens
+UNLISTED	Reaction	5683801	CHEK2 phosphorylates BRCA1	Homo sapiens
+UNLISTED	Reaction	5683735	CHEK2 is recruited to DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5683774	p-T68-CHEK2 dimerizes	Homo sapiens
+UNLISTED	Reaction	5683930	WICH phosphorylates H2AFX on Y142	Homo sapiens
+UNLISTED	Reaction	5683967	EYA1-4 dephosphorylates tyrosine Y142 of H2AFX	Homo sapiens
+UNLISTED	Reaction	5683964	ATM phosphorylates EYA1-4	Homo sapiens
+UNLISTED	Reaction	113402	Formation of DSIF:NELF:early elongation complex	Homo sapiens
+UNLISTED	Reaction	113407	DSIF complex binds to RNA Pol II (hypophosphorylated)	Homo sapiens
+UNLISTED	Reaction	113409	Abortive termination of early transcription elongation by DSIF:NELF	Homo sapiens
+UNLISTED	Reaction	5684052	PIAS4 SUMOylates MDC1	Homo sapiens
+UNLISTED	Reaction	113430	Extrusion of 5'-end of 30 nt long transcript through the pore in Pol II complex	Homo sapiens
+UNLISTED	Reaction	5684081	MRN complex binds CDK2 and RBBP8	Homo sapiens
+UNLISTED	Reaction	5684071	RNF4 ubiquitinates MDC1	Homo sapiens
+UNLISTED	Reaction	5684006	KPNA2 translocates NBN to the nucleus	Homo sapiens
+UNLISTED	Reaction	5684008	NBN binds KPNA2	Homo sapiens
+UNLISTED	Reaction	5684096	CDK2 phosphorylates RBBP8	Homo sapiens
+UNLISTED	Reaction	5684108	BRCA1 binds phosphorylated RBBP8	Homo sapiens
+UNLISTED	Reaction	5684140	ATM phosphorylates RBBP8	Homo sapiens
+UNLISTED	Reaction	5684887	Activation of CHEK1 at resected DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5684882	CHEK1 is recruited to resected DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5684875	Binding of ATR:ATRIP to RPA at resected DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5685011	ATR activation at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	6799332	ATR phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	5685242	CHEK1 phosphorylates BRCA2	Homo sapiens
+UNLISTED	Reaction	5685230	CHEK1 phosphorylates RAD51	Homo sapiens
+UNLISTED	Reaction	6799246	CHEK1 phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	5685156	ATR phosphorylates RPA2	Homo sapiens
+UNLISTED	Reaction	376851	Exchange of alpha-ketoglutarate (2-oxoglutarate) and malate across the inner mitochondrial membrane	Homo sapiens
+UNLISTED	Reaction	508040	glutamate + ATP + NADPH + H+ => L-glutamate gamma-semialdehyde + NADP+ + ADP + orthophosphate [P5CS]	Homo sapiens
+UNLISTED	Reaction	6799604	GNPDA1,2 hexamers deaminate GlcN6P to Fru(6)P	Homo sapiens
+UNLISTED	Reaction	508179	a-ketoisocaproate, a-keto-b-methylvalerate, or a-ketoisovalerate + glutamate <=> leu, ile, or val + alpha-ketoglutarate [BCAT2]	Homo sapiens
+UNLISTED	Reaction	508369	alpha-methylacetoacetyl-CoA + NADH + H+ <=> alpha-methyl-beta-hydroxybutyryl-CoA + NAD+	Homo sapiens
+UNLISTED	Reaction	508473	methylmalonyl semialdehyde + NADH + H+ <=> beta-hydroxyisobutyrate + NAD+	Homo sapiens
+UNLISTED	Reaction	5685953	SIRT6 deacetylates RBBP8	Homo sapiens
+UNLISTED	Reaction	5685985	EXO1 or DNA2 in complex with BLM or WRN binds initially resected DNA DSBs along with BRIP1 recruitment	Homo sapiens
+UNLISTED	Reaction	5685994	Long-range resection of DNA DSBs by EXO1 or DNA2	Homo sapiens
+UNLISTED	BlackBoxEvent	3785704	DSB inducing agents induce double strand DNA breaks	Homo sapiens
+UNLISTED	BlackBoxEvent	3785711	Telomere shortening during replicative exhaustion	Homo sapiens
+UNLISTED	Reaction	3785768	MRN complex binds DNA double strand breaks	Homo sapiens
+UNLISTED	Reaction	181450	Incorporation Of Extended And Processed Telomere End Into Associated Protein Structure	Homo sapiens
+UNLISTED	Reaction	3000103	CUBN:AMN binds GIF:Cbl	Homo sapiens
+UNLISTED	Reaction	3000120	GIF binds Cbl	Homo sapiens
+UNLISTED	Reaction	3000137	CUBN:AMN transports extracellular GIF:Cbl to endosome	Homo sapiens
+UNLISTED	Reaction	3000238	LMBRD1 transports lysosomal Cbl to cytosol	Homo sapiens
+UNLISTED	BlackBoxEvent	3000247	Endosomal GIF:Cbl translocates to lysosome	Homo sapiens
+UNLISTED	BlackBoxEvent	3000243	Unknown protease degrades GIF:Cbl to release Cbl	Homo sapiens
+UNLISTED	Reaction	5687758	PPP4C:PPP4R2 dephosphorylates RPA2	Homo sapiens
+UNLISTED	Reaction	379844	histidine + tRNA(His) + ATP => His-tRNA(His) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379848	phenylalanine + tRNA(Phe) + ATP => Phe-tRNA(Phe) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379861	glutamate + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379865	proline + tRNA(Pro) + ATP => Pro-tRNA(Pro) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379864	alanine + tRNA(Ala) + ATP => Ala-tRNA(Ala) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379867	aspartate + tRNA(Asp) + ATP => Asp-tRNA(Asp) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379887	cysteine + tRNA(Cys) + ATP => Cys-tRNA(Cys) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379893	isoleucine + tRNA(Ile) + ATP => Ile-tRNA(Ile) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379974	leucine + tRNA(Leu) + ATP => Leu-tRNA(Leu) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379982	glutamine + tRNA(Gln) + ATP => Gln-tRNA(Gln) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379977	tryptophan + tRNA(Trp) + ATP => Trp-tRNA(Trp) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379993	arginine + tRNA(Arg) + ATP => Arg-tRNA(Arg) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379992	serine + tRNA(Ser) + ATP => Ser-tRNA(Ser) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	379994	methionine + tRNA(Met) + ATP => Met-tRNA(Met) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380008	lysine + tRNA(Lys) + ATP => Lys-tRNA(Lys) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380042	valine + tRNA(Val) + ATP => Val-tRNA(Val) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380048	glycine + tRNA(Gly) + ATP => Gly-tRNA(Gly) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380157	methionine + tRNA(Met) + ATP => Met-tRNA(Met) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380158	cysteine + tRNA(Cys) + ATP => Cys-tRNA(Cys) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380170	tyrosine + tRNA(Tyr) + ATP => Tyr-tRNA(Tyr) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380177	alanine + tRNA(Ala) + ATP => Ala-tRNA(Ala) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380176	isoleucine + tRNA(Ile) + ATP => Ile-tRNA(Ile) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380200	leucine + tRNA(Leu) + ATP => Leu-tRNA(Leu) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380203	phenylalanine + tRNA(Phe) + ATP => Phe-tRNA(Phe) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380222	tryptophan + tRNA(Trp) + ATP => Trp-tRNA(Trp) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380216	glutamate + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380229	aspartate + tRNA(Asp) + ATP => Asp-tRNA(Asp) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380227	asparagine + tRNA(Asn) + ATP => Asn-tRNA(Asn) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380239	serine + tRNA(Ser) + ATP => Ser-tRNA(Ser) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380233	lysine + tRNA(Lys) + ATP => Lys-tRNA(Lys) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380234	histidine + tRNA(His) + ATP => His-tRNA(His) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380241	glutamine + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	380240	glycine + tRNA(Gly) + ATP => Gly-tRNA(Gly) + AMP + pyrophosphate	Homo sapiens
+UNLISTED	Reaction	3132759	TCN1 binds Cbl	Homo sapiens
+UNLISTED	BlackBoxEvent	3132753	Pancreatic proteases degrade TCN1:Cbl	Homo sapiens
+UNLISTED	Reaction	6804194	PRDM1 binds the TP53 gene	Homo sapiens
+UNLISTED	BlackBoxEvent	6804193	TP53 stimulates PRDM1 expression	Homo sapiens
+UNLISTED	Reaction	6804191	TP53 binds the PRDM1 gene	Homo sapiens
+UNLISTED	BlackBoxEvent	6804188	PRDM1 represses TP53 expression	Homo sapiens
+UNLISTED	Reaction	6804762	TP53 forms homotetramers	Homo sapiens
+UNLISTED	Reaction	6805285	PLK3 phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	6805479	TP53RK phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	6805470	AMPK phosphorylates TP53	Homo sapiens
+UNLISTED	Reaction	5693566	TP53BP1 associates with H4K20Me2 at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5693561	RAD51 binds BRCA2 at resected DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5693542	Association of RPA complexes with ssDNA at resected DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5693540	MRN activates ATM	Homo sapiens
+UNLISTED	Reaction	5693536	ATM phosphorylates MDC1	Homo sapiens
+UNLISTED	Reaction	5693551	Phosphorylation of BRCA1-A complex at multiple sites by ATM	Homo sapiens
+UNLISTED	Reaction	5693549	ATM phosphorylates histone H2AFX on S139 at DNA DSBs	Homo sapiens
+UNLISTED	Reaction	5693598	ATM phosphorylates NBN	Homo sapiens
+UNLISTED	Reaction	5693583	MDC1 associates with gamma-H2AFX at nuclear foci	Homo sapiens
+UNLISTED	Reaction	5693602	ATM recognizes H2AFX-Nucleosomes	Homo sapiens
+UNLISTED	Reaction	5693612	MRN complex bound to DNA ends recruits ATM	Homo sapiens
+UNLISTED	Reaction	5693608	Initial resection of double-strand break ends	Homo sapiens
+UNLISTED	Reaction	5693609	ATM phosphorylates TP53 at S15	Homo sapiens
+UNLISTED	Reaction	451033	(S)-Malate <=> Fumarate + H2O	Homo sapiens
+UNLISTED	BlackBoxEvent	5628901	TP53 stimulates TIGAR expression	Homo sapiens
+UNLISTED	Reaction	5628899	TP53 binds the TIGAR gene	Homo sapiens
+UNLISTED	Reaction	5628905	TIGAR converts D-fructose-2,6-bisphosphate to D-fructose 6-phosphate	Homo sapiens
+UNLISTED	Reaction	453342	PGYM dimer, b form + 2 AMP <=> PGYM b dimer:AMP complex	Homo sapiens
+UNLISTED	Reaction	453338	PGYM b dimer:AMP complex <=> PGYM dimer, b form + 2 AMP	Homo sapiens
+UNLISTED	Reaction	453339	poly((1,4)-alpha-glucosyl) glycogenin-2 + n orthophosphate => glycogenin-2 + n D-glucose 1-phosphate [PYGL]	Homo sapiens
+UNLISTED	Reaction	453337	glycogen phosphorylase (PYGB) dimer b + 2 ATP => glycogen phosphorylase (PYGB) dimer a + 2 ADP	Homo sapiens
+UNLISTED	Reaction	453346	PGYB b dimer:AMP complex <=> PGYB dimer, b form + 2 AMP	Homo sapiens
+UNLISTED	Reaction	453358	poly((1,4)-alpha-glycosyl) glycogenin-1 + n orthophosphate => glycogenin-1 + n D-glucose 1-phosphate [PYGM,PYGB]	Homo sapiens
+UNLISTED	Reaction	453356	PGYB dimer, b form + 2 AMP <=> PGYB b dimer:AMP complex	Homo sapiens
+UNLISTED	Pathway	1112954	Assembly of the ORC complex at the origin of replication	Oryza sativa
+UNLISTED	Pathway	1112956	DNA replication pre-initiation	Oryza sativa
+UNLISTED	Pathway	1112930	CDC6 association with the ORC:origin complex	Oryza sativa
+UNLISTED	Pathway	1112941	Assembly of the pre-replicative complex	Oryza sativa
+UNLISTED	Pathway	1112943	M/G1 Transition	Oryza sativa
+UNLISTED	Pathway	1112976	Cytosolic tRNA aminoacylation	Oryza sativa
+UNLISTED	Pathway	1112977	mRNA Capping	Oryza sativa
+UNLISTED	Pathway	1112978	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening	Oryza sativa
+UNLISTED	Pathway	1112979	tRNA aminoacylation	Oryza sativa
+UNLISTED	Pathway	1112980	Eukaryotic translation initiation	Oryza sativa
+UNLISTED	Pathway	1112981	Processing of capped intronless pre-mRNA	Oryza sativa
+UNLISTED	Pathway	1112982	RNA Polymerase II Transcription Elongation	Oryza sativa
+UNLISTED	Pathway	1112984	RNA Pol II CTD phosphorylation and interaction with CE	Oryza sativa
+UNLISTED	Pathway	1112985	RNA Polymerase II Transcription Initiation And Promoter Clearance	Oryza sativa
+UNLISTED	Pathway	1112988	RNA Polymerase II Pre-transcription Events	Oryza sativa
+UNLISTED	Pathway	1112989	Processing of Intronless Pre-mRNAs	Oryza sativa
+UNLISTED	Pathway	1112961	mRNA Splicing	Oryza sativa
+UNLISTED	Pathway	1112964	RNA Polymerase II Transcription	Oryza sativa
+UNLISTED	Pathway	1112969	RNA Polymerase II Transcription Initiation	Oryza sativa
+UNLISTED	Pathway	1112970	Mitochondrial tRNA aminoacylation	Oryza sativa
+UNLISTED	Pathway	1112972	RNA Polymerase II Promoter Escape	Oryza sativa
+UNLISTED	Pathway	1112973	Processing of capped transcripts	Oryza sativa
+UNLISTED	Pathway	1112974	Processing of capped intron-containing pre-mRNA	Oryza sativa
+UNLISTED	Pathway	1112992	L13a-mediated translational silencing of Ceruloplasmin expression	Oryza sativa
+UNLISTED	Pathway	1112993	Formation of the Early Elongation Complex	Oryza sativa
+UNLISTED	BlackBoxEvent	1113041	CDC6 protein is synthesized under the control of E2F transcription factors	Oryza sativa
+UNLISTED	Reaction	1113074	Orc3 associates with Orc2 constitutively bound at origins of replication	Oryza sativa
+UNLISTED	Reaction	1113080	Orc6 associates with Orc1:Orc4:Orc5:Orc3:Orc2:origin complexes, forming ORC:origin complexes	Oryza sativa
+UNLISTED	Reaction	1113057	Orc5 associates with Orc3:Orc2:origin complexes	Oryza sativa
+UNLISTED	Reaction	1113059	Association of MCM8 with ORC:origin complex	Oryza sativa
+UNLISTED	Reaction	1113065	Orc1 associates with Orc4:Orc5:Orc3:Orc2:origin complexes	Oryza sativa
+UNLISTED	Reaction	1113066	CDC6 association with ORC:origin complexes mediated by MCM8	Oryza sativa
+UNLISTED	Reaction	1113104	Formation of the CE:GMP intermediate complex	Oryza sativa
+UNLISTED	Reaction	1113105	lysine + tRNA(Lys) + ATP => Lys-tRNA(Lys) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113107	alanine + tRNA(Ala) + ATP => Ala-tRNA(Ala) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113108	Internal Methylation of mRNA	Oryza sativa
+UNLISTED	Reaction	1113110	glutamine + tRNA(Gln) + ATP => Gln-tRNA(Gln) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113111	leucine + tRNA(Leu) + ATP => Leu-tRNA(Leu) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113112	Capping complex formation	Oryza sativa
+UNLISTED	Reaction	1113114	Formation of the closed pre-initiation complex	Oryza sativa
+UNLISTED	Reaction	1113115	aspartate + tRNA(Asp) + ATP => Asp-tRNA(Asp) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113089	Orc4 associates with Orc5:Orc3:Orc2:origin complexes	Oryza sativa
+UNLISTED	Reaction	1113094	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)	Oryza sativa
+UNLISTED	Reaction	1113099	Extrusion of 5'-end of 30 nt long transcript through the pore in Pol II complex	Oryza sativa
+UNLISTED	Reaction	1113101	histidine + tRNA(His) + ATP => His-tRNA(His) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113136	asparagine + tRNA(Asn) + ATP => Asn-tRNA(Asn) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113137	RNA Polymerase II CTD (phosphorylated) binds to CE	Oryza sativa
+UNLISTED	Reaction	1113138	methionine + tRNA(Met) + ATP => Met-tRNA(Met) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113139	aspartate + tRNA(Asp) + ATP => Asp-tRNA(Asp) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113141	Abortive termination of early transcription elongation by DSIF:NELF	Oryza sativa
+UNLISTED	Reaction	1113142	cysteine + tRNA(Cys) + ATP => Cys-tRNA(Cys) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113144	phenylalanine + tRNA(Phe) + ATP => Phe-tRNA(Phe) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113145	Dissociation of  transcript with 5'-GMP from GT	Oryza sativa
+UNLISTED	Reaction	1113146	glutamate + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113147	proline + tRNA(Pro) + ATP => Pro-tRNA(Pro) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113150	isoleucine + tRNA(Ile) + ATP => Ile-tRNA(Ile) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113124	glutamate + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113129	tryptophan + tRNA(Trp) + ATP => Trp-tRNA(Trp) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]	Oryza sativa
+UNLISTED	Reaction	1113135	Methylation of GMP-cap by RNA Methyltransferase	Oryza sativa
+UNLISTED	Reaction	1113170	Phosphorylation (Ser5) of RNA pol II CTD	Oryza sativa
+UNLISTED	Reaction	1113175	serine + tRNA(Ser) + ATP => Ser-tRNA(Ser) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113177	cysteine + tRNA(Cys) + ATP => Cys-tRNA(Cys) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113178	Recognition and Binding of Core Promoter Elements by TFIID	Oryza sativa
+UNLISTED	Reaction	1113181	isoleucine + tRNA(Ile) + ATP => Ile-tRNA(Ile) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113182	glutamine + tRNA(Glu) + ATP => Glu-tRNA(Glu) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113183	glycine + tRNA(Gly) + ATP => Gly-tRNA(Gly) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113152	Activation of GT	Oryza sativa
+UNLISTED	Reaction	1113156	leucine + tRNA(Leu) + ATP => Leu-tRNA(Leu) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113157	Formation of cap binding complex (CBC)	Oryza sativa
+UNLISTED	Reaction	1113158	Recruitment of RNA Polymerase II Holoenzyme by TFIIF to the pol II promoter:TFIID:TFIIA:TFIIB complex	Oryza sativa
+UNLISTED	Reaction	1113159	glycine + tRNA(Gly) + ATP => Gly-tRNA(Gly) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113160	Fall Back to Closed Pre-initiation Complex	Oryza sativa
+UNLISTED	Reaction	1113162	serine + tRNA(Ser) + ATP => Ser-tRNA(Ser) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113164	alanine + tRNA(Ala) + ATP => Ala-tRNA(Ala) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113165	Binding of TFIIA and TFIIB to the pol II promoter:TFIID complex	Oryza sativa
+UNLISTED	Reaction	1113166	tryptophan + tRNA(Trp) + ATP => Trp-tRNA(Trp) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113167	RNA Polymerase II Promoter Opening: First Transition	Oryza sativa
+UNLISTED	Reaction	1113200	Transfer of GMP from the capping enzyme GT site to 5'-end of mRNA	Oryza sativa
+UNLISTED	Reaction	1113201	Hydrolysis of the 5'-end of the nascent transcript by the capping enzyme	Oryza sativa
+UNLISTED	Reaction	1113208	phenylalanine + tRNA(Phe) + ATP => Phe-tRNA(Phe) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113210	tyrosine + tRNA(Tyr) + ATP => Tyr-tRNA(Tyr) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113213	Dissociation of L13a from the 60s ribosomal subunit	Oryza sativa
+UNLISTED	Reaction	1113185	SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)	Oryza sativa
+UNLISTED	Reaction	1113189	methionine + tRNA(Met) + ATP => Met-tRNA(Met) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113190	valine + tRNA(Val) + ATP => Val-tRNA(Val) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113191	Association of phospho-L13a with GAIT element of Ceruloplasmin mRNA	Oryza sativa
+UNLISTED	Reaction	1113194	lysine + tRNA(Lys) + ATP => Lys-tRNA(Lys) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113195	arginine + tRNA(Arg) + ATP => Arg-tRNA(Arg) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113196	histidine + tRNA(His) + ATP => His-tRNA(His) + AMP + pyrophosphate	Oryza sativa
+UNLISTED	Reaction	1113197	Recognition and binding of the mRNA cap by the cap-binding complex 	Oryza sativa
+UNLISTED	Reaction	1113199	Formation of DSIF complex 	Oryza sativa
+
+ATTRIBUTE_REMOVED	attClass	attDbId	attName	attribute	class	dbId	name
+ATTRIBUTE_REMOVED	Reaction	1119988	nicotinate riboside+ATP->nicotinate nucleotide+ADP	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121646	Nicotinamide-nucleotide amidase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120353	Nicotinate phosphoribosyltransferase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120353	Nicotinate phosphoribosyltransferase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120055	Adenylylsulfate reductase	precedingEvent	Reaction	1119748	sulfate+ATP->diphosphate+adenosine 5'-phosphosulfate
+ATTRIBUTE_REMOVED	Reaction	1121242	sucrose+H2O->D-fructose+alpha-D-glucose	precedingEvent	Reaction	1119802	alpha-D-glucose + ATP => alpha-D-glucose 6-phosphate + ADP [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	1119907	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121381	Thymidylate synthase	precedingEvent	Reaction	1120019	dihydrofolate reductase
+ATTRIBUTE_REMOVED	Reaction	1121381	Thymidylate synthase	precedingEvent	Reaction	1120019	dihydrofolate reductase
+ATTRIBUTE_REMOVED	Reaction	1120695	Phosphoketolase	precedingEvent	Reaction	1120053	D-glyceraldehyde 3-phosphate + NAD+ + orthophosphate <=> 1,3-bisphospho-D-glycerate + NADH + H+ [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121082	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+H2O+a protein disulfide->2-C-methyl-D-erythritol-2,4-cyclodiphosphate+a protein dithiol	precedingEvent	Reaction	1120070	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+NAD(P)H+H+->dimethylallyl-PP+NAD(P)++H2O
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	1120078	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	1120078	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	1120078	Transketolase
+ATTRIBUTE_REMOVED	EntityWithAccessionedSequence	71519	null	hasComponent	Complex	71520	phosphorylase kinase complex (PHKM) [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121001	carbamoyl-phosphate synthetase I	precedingEvent	Reaction	1120119	ornithine carbamoyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121289	UDP-glucose--hexose-1-phosphate uridylyltransferase	precedingEvent	Reaction	1120124	UDP-glucose 4-epimerase
+ATTRIBUTE_REMOVED	EntityWithAccessionedSequence	71519	null	hasComponent	Complex	71534	phosphorylase kinase complex (PHKL) [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1120933	Glutamate dehydrogenase (NAD(P)+)	precedingEvent	Reaction	1120144	glutamate 5-kinase
+ATTRIBUTE_REMOVED	Reaction	1121116	Quinate dehydrogenase (pyrroloquinoline-quinone)	precedingEvent	Reaction	1120129	3-dehydroquinate dehydratase
+ATTRIBUTE_REMOVED	Reaction	1121230	Glycerophosphodiester phosphodiesterase	precedingEvent	Reaction	1120169	Glycerol-3-phosphate dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121315	Glycolate dehydrogenase	precedingEvent	Reaction	1120212	Tartronate-semialdehyde synthase
+ATTRIBUTE_REMOVED	Reaction	1121399	Glutathione dehydrogenase (ascorbate)	precedingEvent	Reaction	1120206	Glutathione-disulfide reductase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1120978	an oxidized ferroprotein (Fe III)+a ubiquinol->a reduced ferroprotein (Fe II)+a ubiquinone	precedingEvent	Reaction	1120286	succinate + ubiquinone => fumarate + ubiquinol
+ATTRIBUTE_REMOVED	Reaction	1120062	Ubiquinol--cytochrome c reductase	precedingEvent	Reaction	1120286	succinate + ubiquinone => fumarate + ubiquinol
+ATTRIBUTE_REMOVED	Reaction	1119855	PROLINE-MULTI	precedingEvent	Reaction	1120302	ornithine aminotransferase
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121583	5-formyltetrahydrofolate cyclo-ligase	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1120916	Methylenetetrahydrofolate dehydrogenase (NADP+)	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1120916	Methylenetetrahydrofolate dehydrogenase (NADP+)	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1120300	Protein-N(PI)-phosphohistidine-sugar phosphotransferase	precedingEvent	Reaction	1120505	D-fructose-6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP  [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1119695	Fructokinase	precedingEvent	Reaction	1120505	D-fructose-6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP  [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121536	pyruvate synthase	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1119809	acetoacetyl-CoA+NADH->3-hydroxybutyryl-CoA+NAD+	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120368	Acetaldehyde dehydrogenase (acetylating)	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121515	Acetate CoA-transferase	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120568	Cystathionine beta-synthase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120553	O-acetyl-L-homoserine+L-cysteine->cystathionine+acetate	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120553	O-acetyl-L-homoserine+L-cysteine->cystathionine+acetate	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1121211	O-succinylhomoserine (thiol)-lyase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120568	Cystathionine beta-synthase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1119731	Sulfite reductase (NADPH)	precedingEvent	Reaction	1120775	O-acetyl-L-homoserine+hydrogen sulfide->L-homocysteine+acetate
+ATTRIBUTE_REMOVED	Reaction	1120034	Glyceraldehyde-3-phosphate dehydrogenase (NADP+)	precedingEvent	Reaction	1120820	3-phospho-D-glycerate <=> 2-phospho-D-glycerate [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120180	nitrate reductase (NADH)	precedingEvent	Reaction	1120926	nitrite+a reduced ferredoxin->ammonia+H2O+an oxidized ferredoxin
+ATTRIBUTE_REMOVED	Reaction	1120258	Hexokinase	precedingEvent	Reaction	1120975	Glucose-6-phosphate isomerase
+ATTRIBUTE_REMOVED	Reaction	1120195	hypoxanthine+H2O->H++xanthine	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1120852	hypoxanthine+NAD++H2O->xanthine+NADH+H+	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1119668	xanthosine+H2O->D-ribose+xanthine	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121551	Guanine deaminase	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1119801	Pyruvate,water dikinase	precedingEvent	Reaction	1121029	phosphoenolpyruvate + ADP => pyruvate + ATP [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1120486	geranyl-PP+H2O->(-)-alpha-terpineol+diphosphate	precedingEvent	Reaction	1121036	(-)-alpha-terpineol->1,8-cineole
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120242	Sarcosine oxidase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	72635	eIF4F binds to mRNP	precedingEvent	BlackBoxEvent	72647	Cap-bound mRNA is activated by helicases 
+ATTRIBUTE_REMOVED	Reaction	1119694	FADH2+acrylyl-CoA->FAD+propionyl-CoA	precedingEvent	Reaction	1121218	acrylyl-CoA+H2O->3-hydroxypropionyl-CoA
+ATTRIBUTE_REMOVED	Reaction	1119933	Choline kinase	precedingEvent	Reaction	1121268	phosphoryl-choline+CTP->CDP-choline+diphosphate
+ATTRIBUTE_REMOVED	Reaction	1121082	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+H2O+a protein disulfide->2-C-methyl-D-erythritol-2,4-cyclodiphosphate+a protein dithiol	precedingEvent	Reaction	1121343	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+NAD(P)H+H+->delta3-isopentenyl-PP+NAD(P)++H2O
+ATTRIBUTE_REMOVED	Reaction	1121192	Phosphoribosylamine--glycine ligase	precedingEvent	Reaction	1121522	phosphoribosylglycinamide formyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121192	Phosphoribosylamine--glycine ligase	precedingEvent	Reaction	1121522	phosphoribosylglycinamide formyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120435	Homoisocitrate dehydrogenase	precedingEvent	Reaction	1121512	alpha-aminoadipate + alpha-ketoglutarate ---> alpha-ketoadipate + L-Glu
+ATTRIBUTE_REMOVED	Reaction	1120982	Succinate dehydrogenase	precedingEvent	Reaction	1121548	fumarate + H2O <=> malate
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121647	Methionine adenosyltransferase
+ATTRIBUTE_REMOVED	Pathway	73779	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening	precedingEvent	Reaction	75949	RNA Polymerase II Promoter Opening: First Transition
+ATTRIBUTE_REMOVED	Pathway	1428517	The citric acid (TCA) cycle and respiratory electron transport	containedInPathway	PositiveRegulation	210332	'Ac-CoA [mitochondrial matrix]' positively regulates 'PDK isoforms phosphorylate lipo-PDH'
+ATTRIBUTE_REMOVED	Pathway	1428517	The citric acid (TCA) cycle and respiratory electron transport	containedInPathway	NegativeRegulation	210344	'PYR [mitochondrial matrix]' negatively regulates 'PDK isoforms phosphorylate lipo-PDH'
+ATTRIBUTE_REMOVED	Pathway	1428517	The citric acid (TCA) cycle and respiratory electron transport	containedInPathway	PositiveRegulation	210348	'NADH [mitochondrial matrix]' positively regulates 'PDK isoforms phosphorylate lipo-PDH'
+ATTRIBUTE_REMOVED	BlackBoxEvent	186507	FOXa2/HNF3b-, MafA-, and PAX6-dependent synthesis of Pdx1 protein	inferredFrom	BlackBoxEvent	211272	FOXOA2-, MAFA-, and PAX6-dependent synthesis of PDX1 protein
+ATTRIBUTE_REMOVED	BlackBoxEvent	186510	NeuroD1- and Pdx1-dependent synthesis of glucokinase (Gck) protein	inferredFrom	BlackBoxEvent	211346	NEUROD1- and PDX1-dependent synthesis of glucokinase (GCK) protein
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398247	KNApSAcK:C00001179
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398358	KNApSAcK:C00007617
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398385	KNApSAcK:C00000219
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398951	KNApSAcK:C00007519
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398953	KNApSAcK:C00007518
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1399631	KNApSAcK:C00007476
+ATTRIBUTE_REMOVED	Pathway	72766	Translation	inferredFrom	Pathway	2972871	Protein metabolism: translation
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400336	KNApSAcK:C00000365
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400463	KNApSAcK:C00007321
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400611	KNApSAcK:C00000947
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1401031	KNApSAcK:C00007647
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1401337	KNApSAcK:C00007320
+ATTRIBUTE_REMOVED	Reaction	1121694	2-oxoglutarate decarboxylase	precedingEvent	Reaction	4752561	succinate-semialdehyde-thiamine PPi+isochorismate->2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate+thiamine diphosphate+pyruvate
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	5149642	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1120576	Glycerone kinase	precedingEvent	Reaction	5149667	Fructose 1,6-bisphosphate <=> dihydroxyacetone phosphate + glyceraldehyde 3-phosphate
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Pathway	174437	Removal of the Flap Intermediate from the C-strand	precedingEvent	Reaction	174456	Joining of adjacent Okazaki fragments of the C-strand
+ATTRIBUTE_REMOVED	Reaction	372347	Cytosolic PYR is transported to the mitochondrial matrix	inferredFrom	Reaction	372342	MPC1:MPC2 cotransports PYR, H+ from cytosol to mitochondrial matrix
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	77095	Recognition and binding of the mRNA cap by the cap-binding complex 	precedingEvent	Reaction	112383	Hypophosphorylation of RNA Pol II CTD by FCP1P protein
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400788	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400787	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400785	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400784	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	Pathway	1428517	The citric acid (TCA) cycle and respiratory electron transport	containedInPathway	PositiveRegulation	5422946	'RXRA:PPARD:atRA [nucleoplasm]' positively regulates 'PDK isoforms phosphorylate lipo-PDH'
+ATTRIBUTE_REMOVED	Pathway	5362517	Signaling by Retinoic Acid	containedInPathway	PositiveRegulation	5422946	'RXRA:PPARD:atRA [nucleoplasm]' positively regulates 'PDK isoforms phosphorylate lipo-PDH'
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120242	Sarcosine oxidase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	ReferenceDNASequence	8960692	null	referenceGene	ReferenceGeneProduct	250068	UniProt:Q9NSE4 IARS2
+ATTRIBUTE_REMOVED	Pathway	5633007	Regulation of TP53 Activity	containedInPathway	PositiveGeneExpressionRegulation	6804186	p-S15,S20-TP53:PRDM1 Gene [nucleoplasm] TP53 stimulates PRDM1 expression
+ATTRIBUTE_REMOVED	Pathway	5633007	Regulation of TP53 Activity	containedInPathway	NegativeGeneExpressionRegulation	6804227	'PRDM1:TP53 Gene [nucleoplasm]' negatively regulates 'PRDM1 represses TP53 expression'
+ATTRIBUTE_REMOVED	Reaction	1121242	sucrose+H2O->D-fructose+alpha-D-glucose	precedingEvent	Reaction	1168664	alpha-D-glucose + ATP => alpha-D-glucose 6-phosphate + ADP [plastid]
+ATTRIBUTE_REMOVED	Reaction	1121001	carbamoyl-phosphate synthetase I	precedingEvent	Reaction	5633269	ornithine carbamoyltransferase (L-ornithine to L-citrulline)
+ATTRIBUTE_REMOVED	Reaction	1119855	PROLINE-MULTI	precedingEvent	Reaction	5633265	ornithine aminotransferase (L-glutamate-5-semialdehyde to L-ornithine)
+ATTRIBUTE_REMOVED	Pathway	68616	Assembly of the ORC complex at the origin of replication	inferredFrom	Pathway	1112954	Assembly of the ORC complex at the origin of replication
+ATTRIBUTE_REMOVED	Pathway	68616	Assembly of the ORC complex at the origin of replication	orthologousEvent	Pathway	1112954	Assembly of the ORC complex at the origin of replication
+ATTRIBUTE_REMOVED	Pathway	69002	DNA Replication Pre-Initiation	inferredFrom	Pathway	1112956	DNA replication pre-initiation
+ATTRIBUTE_REMOVED	Pathway	69002	DNA Replication Pre-Initiation	orthologousEvent	Pathway	1112956	DNA replication pre-initiation
+ATTRIBUTE_REMOVED	Pathway	68962	Activation of the pre-replicative complex	inferredFrom	Pathway	1112959	DNA replication: activation of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	68962	Activation of the pre-replicative complex	orthologousEvent	Pathway	1112959	DNA replication: activation of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	68689	CDC6 association with the ORC:origin complex	inferredFrom	Pathway	1112930	CDC6 association with the ORC:origin complex
+ATTRIBUTE_REMOVED	Pathway	68689	CDC6 association with the ORC:origin complex	orthologousEvent	Pathway	1112930	CDC6 association with the ORC:origin complex
+ATTRIBUTE_REMOVED	Pathway	68867	Assembly of the pre-replicative complex	inferredFrom	Pathway	1112941	Assembly of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	68867	Assembly of the pre-replicative complex	orthologousEvent	Pathway	1112941	Assembly of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	68874	M/G1 Transition	inferredFrom	Pathway	1112943	M/G1 Transition
+ATTRIBUTE_REMOVED	Pathway	68874	M/G1 Transition	orthologousEvent	Pathway	1112943	M/G1 Transition
+ATTRIBUTE_REMOVED	Pathway	379716	Cytosolic tRNA aminoacylation	inferredFrom	Pathway	1112976	Cytosolic tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	379716	Cytosolic tRNA aminoacylation	orthologousEvent	Pathway	1112976	Cytosolic tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	72086	mRNA Capping	inferredFrom	Pathway	1112977	mRNA Capping
+ATTRIBUTE_REMOVED	Pathway	72086	mRNA Capping	orthologousEvent	Pathway	1112977	mRNA Capping
+ATTRIBUTE_REMOVED	Pathway	73779	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening	inferredFrom	Pathway	1112978	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening
+ATTRIBUTE_REMOVED	Pathway	73779	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening	orthologousEvent	Pathway	1112978	RNA Polymerase II Transcription Pre-Initiation And Promoter Opening
+ATTRIBUTE_REMOVED	Pathway	379724	tRNA Aminoacylation	inferredFrom	Pathway	1112979	tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	379724	tRNA Aminoacylation	orthologousEvent	Pathway	1112979	tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	72613	Eukaryotic Translation Initiation	inferredFrom	Pathway	1112980	Eukaryotic translation initiation
+ATTRIBUTE_REMOVED	Pathway	72613	Eukaryotic Translation Initiation	orthologousEvent	Pathway	1112980	Eukaryotic translation initiation
+ATTRIBUTE_REMOVED	Pathway	75067	Processing of Capped Intronless Pre-mRNA	inferredFrom	Pathway	1112981	Processing of capped intronless pre-mRNA
+ATTRIBUTE_REMOVED	Pathway	75067	Processing of Capped Intronless Pre-mRNA	orthologousEvent	Pathway	1112981	Processing of capped intronless pre-mRNA
+ATTRIBUTE_REMOVED	Pathway	75955	RNA Polymerase II Transcription Elongation	inferredFrom	Pathway	1112982	RNA Polymerase II Transcription Elongation
+ATTRIBUTE_REMOVED	Pathway	75955	RNA Polymerase II Transcription Elongation	orthologousEvent	Pathway	1112982	RNA Polymerase II Transcription Elongation
+ATTRIBUTE_REMOVED	Pathway	77075	RNA Pol II CTD phosphorylation and interaction with CE	inferredFrom	Pathway	1112984	RNA Pol II CTD phosphorylation and interaction with CE
+ATTRIBUTE_REMOVED	Pathway	77075	RNA Pol II CTD phosphorylation and interaction with CE	orthologousEvent	Pathway	1112984	RNA Pol II CTD phosphorylation and interaction with CE
+ATTRIBUTE_REMOVED	Pathway	76042	RNA Polymerase II Transcription Initiation And Promoter Clearance	inferredFrom	Pathway	1112985	RNA Polymerase II Transcription Initiation And Promoter Clearance
+ATTRIBUTE_REMOVED	Pathway	76042	RNA Polymerase II Transcription Initiation And Promoter Clearance	orthologousEvent	Pathway	1112985	RNA Polymerase II Transcription Initiation And Promoter Clearance
+ATTRIBUTE_REMOVED	Pathway	156842	Eukaryotic Translation Elongation	inferredFrom	Pathway	1112987	Translation elongation
+ATTRIBUTE_REMOVED	Pathway	156842	Eukaryotic Translation Elongation	orthologousEvent	Pathway	1112987	Translation elongation
+ATTRIBUTE_REMOVED	Pathway	674695	RNA Polymerase II Pre-transcription Events	inferredFrom	Pathway	1112988	RNA Polymerase II Pre-transcription Events
+ATTRIBUTE_REMOVED	Pathway	674695	RNA Polymerase II Pre-transcription Events	orthologousEvent	Pathway	1112988	RNA Polymerase II Pre-transcription Events
+ATTRIBUTE_REMOVED	Reaction	1113203	Recognition of AAUAAA sequence by CPSF	hasEvent	Pathway	1112989	Processing of Intronless Pre-mRNAs
+ATTRIBUTE_REMOVED	Reaction	1113120	Recruitment of CstF to the CPSF Bound Pre-mRNA	hasEvent	Pathway	1112989	Processing of Intronless Pre-mRNAs
+ATTRIBUTE_REMOVED	Pathway	77595	Processing of Intronless Pre-mRNAs	inferredFrom	Pathway	1112989	Processing of Intronless Pre-mRNAs
+ATTRIBUTE_REMOVED	Pathway	77595	Processing of Intronless Pre-mRNAs	orthologousEvent	Pathway	1112989	Processing of Intronless Pre-mRNAs
+ATTRIBUTE_REMOVED	Pathway	72695	Formation of the ternary complex, and subsequently, the 43S complex	inferredFrom	Pathway	1112990	Formation of the ternary complex, and subsequently, the 43S complex
+ATTRIBUTE_REMOVED	Pathway	72695	Formation of the ternary complex, and subsequently, the 43S complex	orthologousEvent	Pathway	1112990	Formation of the ternary complex, and subsequently, the 43S complex
+ATTRIBUTE_REMOVED	Pathway	72764	Eukaryotic Translation Termination	inferredFrom	Pathway	1112991	Translation termination
+ATTRIBUTE_REMOVED	Pathway	72764	Eukaryotic Translation Termination	orthologousEvent	Pathway	1112991	Translation termination
+ATTRIBUTE_REMOVED	Pathway	1112966	mRNA Splicing - Major Pathway	hasEvent	Pathway	1112961	mRNA Splicing
+ATTRIBUTE_REMOVED	Pathway	1112994	mRNA Splicing - Minor Pathway	hasEvent	Pathway	1112961	mRNA Splicing
+ATTRIBUTE_REMOVED	Pathway	72172	mRNA Splicing	inferredFrom	Pathway	1112961	mRNA Splicing
+ATTRIBUTE_REMOVED	Pathway	72172	mRNA Splicing	orthologousEvent	Pathway	1112961	mRNA Splicing
+ATTRIBUTE_REMOVED	Pathway	72662	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S	inferredFrom	Pathway	1112963	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
+ATTRIBUTE_REMOVED	Pathway	72662	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S	orthologousEvent	Pathway	1112963	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
+ATTRIBUTE_REMOVED	Pathway	73857	RNA Polymerase II Transcription	inferredFrom	Pathway	1112964	RNA Polymerase II Transcription
+ATTRIBUTE_REMOVED	Pathway	73857	RNA Polymerase II Transcription	orthologousEvent	Pathway	1112964	RNA Polymerase II Transcription
+ATTRIBUTE_REMOVED	Pathway	72731	Recycling of eIF2:GDP	inferredFrom	Pathway	1112965	Recycling of eIF2:GDP
+ATTRIBUTE_REMOVED	Pathway	72731	Recycling of eIF2:GDP	orthologousEvent	Pathway	1112965	Recycling of eIF2:GDP
+ATTRIBUTE_REMOVED	Pathway	72737	Cap-dependent Translation Initiation	inferredFrom	Pathway	1112967	Cap-dependent translation initiation
+ATTRIBUTE_REMOVED	Pathway	72737	Cap-dependent Translation Initiation	orthologousEvent	Pathway	1112967	Cap-dependent translation initiation
+ATTRIBUTE_REMOVED	Pathway	72702	Ribosomal scanning and start codon recognition	inferredFrom	Pathway	1112968	Ribosomal scanning and start codon recognition
+ATTRIBUTE_REMOVED	Pathway	72702	Ribosomal scanning and start codon recognition	orthologousEvent	Pathway	1112968	Ribosomal scanning and start codon recognition
+ATTRIBUTE_REMOVED	Reaction	1113122	NTP Binds Active Site of RNA Polymerase II	hasEvent	Pathway	1112969	RNA Polymerase II Transcription Initiation
+ATTRIBUTE_REMOVED	Reaction	1113132	Nucleophillic Attack by 3'-hydroxyl Oxygen of nascent transcript on the Alpha Phosphate of NTP	hasEvent	Pathway	1112969	RNA Polymerase II Transcription Initiation
+ATTRIBUTE_REMOVED	Reaction	1113123	Newly Formed Phosphodiester Bond Stabilized and PPi Released	hasEvent	Pathway	1112969	RNA Polymerase II Transcription Initiation
+ATTRIBUTE_REMOVED	Pathway	75953	RNA Polymerase II Transcription Initiation	inferredFrom	Pathway	1112969	RNA Polymerase II Transcription Initiation
+ATTRIBUTE_REMOVED	Pathway	75953	RNA Polymerase II Transcription Initiation	orthologousEvent	Pathway	1112969	RNA Polymerase II Transcription Initiation
+ATTRIBUTE_REMOVED	Pathway	379726	Mitochondrial tRNA aminoacylation	inferredFrom	Pathway	1112970	Mitochondrial tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	379726	Mitochondrial tRNA aminoacylation	orthologousEvent	Pathway	1112970	Mitochondrial tRNA aminoacylation
+ATTRIBUTE_REMOVED	Pathway	72689	Formation of a pool of free 40S subunits	inferredFrom	Pathway	1112971	Formation of a pool of free 40S subunits
+ATTRIBUTE_REMOVED	Pathway	72689	Formation of a pool of free 40S subunits	orthologousEvent	Pathway	1112971	Formation of a pool of free 40S subunits
+ATTRIBUTE_REMOVED	BlackBoxEvent	1113043	Addition of the third nucleotide on the nascent transcript	hasEvent	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	BlackBoxEvent	1113044	Addition of the fourth nucleotide on the Nascent Transcript: Second Transition	hasEvent	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	Reaction	1113192	Addition of nucleotides 10 and 11 on the growing transcript: Third Transition	hasEvent	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	Reaction	1113180	Addition of nucleotides between position +11 and +30	hasEvent	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	Pathway	73776	RNA Polymerase II Promoter Escape	inferredFrom	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	Pathway	73776	RNA Polymerase II Promoter Escape	orthologousEvent	Pathway	1112972	RNA Polymerase II Promoter Escape
+ATTRIBUTE_REMOVED	Pathway	72203	Processing of Capped Intron-Containing Pre-mRNA	inferredFrom	Pathway	1112974	Processing of capped intron-containing pre-mRNA
+ATTRIBUTE_REMOVED	Pathway	72203	Processing of Capped Intron-Containing Pre-mRNA	orthologousEvent	Pathway	1112974	Processing of capped intron-containing pre-mRNA
+ATTRIBUTE_REMOVED	Pathway	156827	L13a-mediated translational silencing of Ceruloplasmin expression	inferredFrom	Pathway	1112992	L13a-mediated translational silencing of Ceruloplasmin expression
+ATTRIBUTE_REMOVED	Pathway	156827	L13a-mediated translational silencing of Ceruloplasmin expression	orthologousEvent	Pathway	1112992	L13a-mediated translational silencing of Ceruloplasmin expression
+ATTRIBUTE_REMOVED	Reaction	1113102	Hypophosphorylation of RNA Pol II CTD by FCP1P protein	hasEvent	Pathway	1112993	Formation of the Early Elongation Complex
+ATTRIBUTE_REMOVED	Reaction	1113098	DSIF complex binds to RNA Pol II (hypophosphorylated)	hasEvent	Pathway	1112993	Formation of the Early Elongation Complex
+ATTRIBUTE_REMOVED	Pathway	113418	Formation of the Early Elongation Complex	inferredFrom	Pathway	1112993	Formation of the Early Elongation Complex
+ATTRIBUTE_REMOVED	Pathway	113418	Formation of the Early Elongation Complex	orthologousEvent	Pathway	1112993	Formation of the Early Elongation Complex
+ATTRIBUTE_REMOVED	Pathway	204005	COPII-mediated vesicle transport	inferredFrom	Pathway	1112998	Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
+ATTRIBUTE_REMOVED	Pathway	204005	COPII-mediated vesicle transport	orthologousEvent	Pathway	1112998	Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
+ATTRIBUTE_REMOVED	BlackBoxEvent	68637	CDC6 protein is synthesized under the control of E2F transcription factors	inferredFrom	BlackBoxEvent	1113041	CDC6 protein is synthesized under the control of E2F transcription factors
+ATTRIBUTE_REMOVED	BlackBoxEvent	68637	CDC6 protein is synthesized under the control of E2F transcription factors	orthologousEvent	BlackBoxEvent	1113041	CDC6 protein is synthesized under the control of E2F transcription factors
+ATTRIBUTE_REMOVED	Reaction	68595	Orc3 associates with Orc2 constitutively bound at origins of replication	inferredFrom	Reaction	1113074	Orc3 associates with Orc2 constitutively bound at origins of replication
+ATTRIBUTE_REMOVED	Reaction	68595	Orc3 associates with Orc2 constitutively bound at origins of replication	orthologousEvent	Reaction	1113074	Orc3 associates with Orc2 constitutively bound at origins of replication
+ATTRIBUTE_REMOVED	Reaction	68919	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7	inferredFrom	Reaction	1113078	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7
+ATTRIBUTE_REMOVED	Reaction	68919	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7	orthologousEvent	Reaction	1113078	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7
+ATTRIBUTE_REMOVED	Reaction	68615	Orc6 associates with Orc1:Orc4:Orc5:Orc3:Orc2:origin complexes, forming ORC:origin complexes	inferredFrom	Reaction	1113080	Orc6 associates with Orc1:Orc4:Orc5:Orc3:Orc2:origin complexes, forming ORC:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68615	Orc6 associates with Orc1:Orc4:Orc5:Orc3:Orc2:origin complexes, forming ORC:origin complexes	orthologousEvent	Reaction	1113080	Orc6 associates with Orc1:Orc4:Orc5:Orc3:Orc2:origin complexes, forming ORC:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68960	DNA polymerase epsilon binds at the origin	inferredFrom	Reaction	1113084	DNA polymerase epsilon binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68960	DNA polymerase epsilon binds at the origin	orthologousEvent	Reaction	1113084	DNA polymerase epsilon binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68916	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin	inferredFrom	Reaction	1113056	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68916	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin	orthologousEvent	Reaction	1113056	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68603	Orc5 associates with Orc3:Orc2:origin complexes	inferredFrom	Reaction	1113057	Orc5 associates with Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68603	Orc5 associates with Orc3:Orc2:origin complexes	orthologousEvent	Reaction	1113057	Orc5 associates with Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	176973	Association of MCM8 with ORC:origin complex	inferredFrom	Reaction	1113059	Association of MCM8 with ORC:origin complex
+ATTRIBUTE_REMOVED	Reaction	176973	Association of MCM8 with ORC:origin complex	orthologousEvent	Reaction	1113059	Association of MCM8 with ORC:origin complex
+ATTRIBUTE_REMOVED	Reaction	68611	Orc1 associates with Orc4:Orc5:Orc3:Orc2:origin complexes	inferredFrom	Reaction	1113065	Orc1 associates with Orc4:Orc5:Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68611	Orc1 associates with Orc4:Orc5:Orc3:Orc2:origin complexes	orthologousEvent	Reaction	1113065	Orc1 associates with Orc4:Orc5:Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68688	CDC6 association with ORC:origin complexes mediated by MCM8	inferredFrom	Reaction	1113066	CDC6 association with ORC:origin complexes mediated by MCM8
+ATTRIBUTE_REMOVED	Reaction	68688	CDC6 association with ORC:origin complexes mediated by MCM8	orthologousEvent	Reaction	1113066	CDC6 association with ORC:origin complexes mediated by MCM8
+ATTRIBUTE_REMOVED	Reaction	77081	Formation of the CE:GMP intermediate complex	inferredFrom	Reaction	1113104	Formation of the CE:GMP intermediate complex
+ATTRIBUTE_REMOVED	Reaction	77081	Formation of the CE:GMP intermediate complex	orthologousEvent	Reaction	1113104	Formation of the CE:GMP intermediate complex
+ATTRIBUTE_REMOVED	Reaction	72095	Internal Methylation of mRNA	inferredFrom	Reaction	1113108	Internal Methylation of mRNA
+ATTRIBUTE_REMOVED	Reaction	72095	Internal Methylation of mRNA	orthologousEvent	Reaction	1113108	Internal Methylation of mRNA
+ATTRIBUTE_REMOVED	Reaction	156912	Peptide transfer from P-site tRNA to the A-site tRNA	inferredFrom	Reaction	1113109	Peptide transfer from P-site tRNA to the A-site tRNA
+ATTRIBUTE_REMOVED	Reaction	156912	Peptide transfer from P-site tRNA to the A-site tRNA	orthologousEvent	Reaction	1113109	Peptide transfer from P-site tRNA to the A-site tRNA
+ATTRIBUTE_REMOVED	Reaction	77077	Capping complex formation	inferredFrom	Reaction	1113112	Capping complex formation
+ATTRIBUTE_REMOVED	Reaction	77077	Capping complex formation	orthologousEvent	Reaction	1113112	Capping complex formation
+ATTRIBUTE_REMOVED	Reaction	72631	Formation of the cap-binding eIF4F complex	inferredFrom	Reaction	1113118	Formation of the cap-binding eIF4F complex
+ATTRIBUTE_REMOVED	Reaction	72631	Formation of the cap-binding eIF4F complex	orthologousEvent	Reaction	1113118	Formation of the cap-binding eIF4F complex
+ATTRIBUTE_REMOVED	Reaction	68610	Orc4 associates with Orc5:Orc3:Orc2:origin complexes	inferredFrom	Reaction	1113089	Orc4 associates with Orc5:Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68610	Orc4 associates with Orc5:Orc3:Orc2:origin complexes	orthologousEvent	Reaction	1113089	Orc4 associates with Orc5:Orc3:Orc2:origin complexes
+ATTRIBUTE_REMOVED	Reaction	68917	Cdc45 associates with the pre-replicative complex at the origin	inferredFrom	Reaction	1113091	Cdc45 associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68917	Cdc45 associates with the pre-replicative complex at the origin	orthologousEvent	Reaction	1113091	Cdc45 associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68914	DNA polymerase alpha:primase binds at the origin	inferredFrom	Reaction	1113092	DNA polymerase alpha:primase binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68914	DNA polymerase alpha:primase binds at the origin	orthologousEvent	Reaction	1113092	DNA polymerase alpha:primase binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68849	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)	inferredFrom	Reaction	1113094	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)
+ATTRIBUTE_REMOVED	Reaction	68849	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)	orthologousEvent	Reaction	1113094	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)
+ATTRIBUTE_REMOVED	Reaction	1113180	Addition of nucleotides between position +11 and +30	precedingEvent	Reaction	1113099	Extrusion of 5'-end of 30 nt long transcript through the pore in Pol II complex
+ATTRIBUTE_REMOVED	Reaction	77069	RNA Polymerase II CTD (phosphorylated) binds to CE	inferredFrom	Reaction	1113137	RNA Polymerase II CTD (phosphorylated) binds to CE
+ATTRIBUTE_REMOVED	Reaction	77069	RNA Polymerase II CTD (phosphorylated) binds to CE	orthologousEvent	Reaction	1113137	RNA Polymerase II CTD (phosphorylated) binds to CE
+ATTRIBUTE_REMOVED	Reaction	156923	Hydrolysis of eEF1A:GTP	inferredFrom	Reaction	1113143	Hydrolysis of eEF1A:GTP
+ATTRIBUTE_REMOVED	Reaction	156923	Hydrolysis of eEF1A:GTP	orthologousEvent	Reaction	1113143	Hydrolysis of eEF1A:GTP
+ATTRIBUTE_REMOVED	Reaction	77085	Dissociation of  transcript with 5'-GMP from GT	inferredFrom	Reaction	1113145	Dissociation of  transcript with 5'-GMP from GT
+ATTRIBUTE_REMOVED	Reaction	77085	Dissociation of  transcript with 5'-GMP from GT	orthologousEvent	Reaction	1113145	Dissociation of  transcript with 5'-GMP from GT
+ATTRIBUTE_REMOVED	Reaction	72670	Formation of eIF2:GDP:eIF2B intermediate	inferredFrom	Reaction	1113148	Formation of eIF2:GDP:eIF2B intermediate
+ATTRIBUTE_REMOVED	Reaction	72670	Formation of eIF2:GDP:eIF2B intermediate	orthologousEvent	Reaction	1113148	Formation of eIF2:GDP:eIF2B intermediate
+ATTRIBUTE_REMOVED	Reaction	72635	eIF4F binds to mRNP	inferredFrom	Reaction	1113121	eIF4F binds to mRNP
+ATTRIBUTE_REMOVED	Reaction	72635	eIF4F binds to mRNP	orthologousEvent	Reaction	1113121	eIF4F binds to mRNP
+ATTRIBUTE_REMOVED	Reaction	72697	Start codon recognition	inferredFrom	Reaction	1113125	Start codon recognition
+ATTRIBUTE_REMOVED	Reaction	72697	Start codon recognition	orthologousEvent	Reaction	1113125	Start codon recognition
+ATTRIBUTE_REMOVED	Reaction	72669	Met-tRNAi binds to eIF2:GTP to form the ternary complex	inferredFrom	Reaction	1113126	Met-tRNAi binds to eIF2:GTP to form the ternary complex
+ATTRIBUTE_REMOVED	Reaction	72669	Met-tRNAi binds to eIF2:GTP to form the ternary complex	orthologousEvent	Reaction	1113126	Met-tRNAi binds to eIF2:GTP to form the ternary complex
+ATTRIBUTE_REMOVED	Reaction	141673	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex	inferredFrom	Reaction	1113127	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141673	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex	orthologousEvent	Reaction	1113127	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	72673	Release of 40S and 60S subunits from the 80S ribosome 	inferredFrom	Reaction	1113128	Release of 40S and 60S subunits from the 80S ribosome 
+ATTRIBUTE_REMOVED	Reaction	72673	Release of 40S and 60S subunits from the 80S ribosome 	orthologousEvent	Reaction	1113128	Release of 40S and 60S subunits from the 80S ribosome 
+ATTRIBUTE_REMOVED	Reaction	141671	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex	inferredFrom	Reaction	1113130	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141671	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex	orthologousEvent	Reaction	1113130	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	1113198	acetate + CoA + ATP => acetyl-CoA + AMP + pyrophosphate [cytosolic]	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113202	ATP + aspartate + citrulline <=> argininosuccinate + AMP + pyrophosphate	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113188	orotate + 5-phospho-alpha-D-ribose 1-diphosphate (PRPP) <=> orotidine 5'-monophosphate (OMP) + pyrophosphate	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113155	5-phospho-alpha-D-ribose 1-diphosphate (PRPP) + H2O + L-glutamine <=> 5-phosphoribosylamine + L-glutamate +pyrophosphate	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113187	UTP + D-glucose 1-phosphate <=> pyrophosphate + UDP-glucose	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113154	Adenine + PRPP => AMP + PPi	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113149	guanine or hypoxanthine + PRPP => GMP or IMP + PPi [HPRT1]	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113131	XMP + L-Glutamine + ATP + H2O => GMP + L-Glutamate + AMP + pyrophosphate	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	1113168	ATP + sulfate => adenylyl sulfate (APS) + pyrophosphate	precedingEvent	Reaction	1113133	pyrophosphate + H2O => 2 orthophosphate [cytosolic]
+ATTRIBUTE_REMOVED	Reaction	77090	Methylation of GMP-cap by RNA Methyltransferase	inferredFrom	Reaction	1113135	Methylation of GMP-cap by RNA Methyltransferase
+ATTRIBUTE_REMOVED	Reaction	77090	Methylation of GMP-cap by RNA Methyltransferase	orthologousEvent	Reaction	1113135	Methylation of GMP-cap by RNA Methyltransferase
+ATTRIBUTE_REMOVED	Reaction	72621	Ribosomal scanning 	inferredFrom	Reaction	1113169	Ribosomal scanning 
+ATTRIBUTE_REMOVED	Reaction	72621	Ribosomal scanning 	orthologousEvent	Reaction	1113169	Ribosomal scanning 
+ATTRIBUTE_REMOVED	Reaction	72663	De novo formation of eIF2:GTP	inferredFrom	Reaction	1113171	De novo formation of eIF2:GTP
+ATTRIBUTE_REMOVED	Reaction	72663	De novo formation of eIF2:GTP	orthologousEvent	Reaction	1113171	De novo formation of eIF2:GTP
+ATTRIBUTE_REMOVED	Reaction	156909	eEF1A complexes with GTP	inferredFrom	Reaction	1113176	eEF1A complexes with GTP
+ATTRIBUTE_REMOVED	Reaction	156909	eEF1A complexes with GTP	orthologousEvent	Reaction	1113176	eEF1A complexes with GTP
+ATTRIBUTE_REMOVED	Reaction	156930	GTP-binding activates eEF2	inferredFrom	Reaction	1113179	GTP-binding activates eEF2
+ATTRIBUTE_REMOVED	Reaction	156930	GTP-binding activates eEF2	orthologousEvent	Reaction	1113179	GTP-binding activates eEF2
+ATTRIBUTE_REMOVED	Reaction	77068	Activation of GT	inferredFrom	Reaction	1113152	Activation of GT
+ATTRIBUTE_REMOVED	Reaction	77068	Activation of GT	orthologousEvent	Reaction	1113152	Activation of GT
+ATTRIBUTE_REMOVED	Reaction	156907	Aminoacyl-tRNA  binds to the ribosome at the A-site	inferredFrom	Reaction	1113153	Aminoacyl-tRNA  binds to the ribosome at the A-site
+ATTRIBUTE_REMOVED	Reaction	156907	Aminoacyl-tRNA  binds to the ribosome at the A-site	orthologousEvent	Reaction	1113153	Aminoacyl-tRNA  binds to the ribosome at the A-site
+ATTRIBUTE_REMOVED	Reaction	77094	Formation of cap binding complex (CBC)	inferredFrom	Reaction	1113157	Formation of cap binding complex (CBC)
+ATTRIBUTE_REMOVED	Reaction	77094	Formation of cap binding complex (CBC)	orthologousEvent	Reaction	1113157	Formation of cap binding complex (CBC)
+ATTRIBUTE_REMOVED	Reaction	72722	eIF2 activation	inferredFrom	Reaction	1113161	eIF2 activation
+ATTRIBUTE_REMOVED	Reaction	72722	eIF2 activation	orthologousEvent	Reaction	1113161	eIF2 activation
+ATTRIBUTE_REMOVED	Reaction	141691	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex	inferredFrom	Reaction	1113163	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141691	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex	orthologousEvent	Reaction	1113163	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	77083	Transfer of GMP from the capping enzyme GT site to 5'-end of mRNA	inferredFrom	Reaction	1113200	Transfer of GMP from the capping enzyme GT site to 5'-end of mRNA
+ATTRIBUTE_REMOVED	Reaction	77083	Transfer of GMP from the capping enzyme GT site to 5'-end of mRNA	orthologousEvent	Reaction	1113200	Transfer of GMP from the capping enzyme GT site to 5'-end of mRNA
+ATTRIBUTE_REMOVED	Reaction	77078	Hydrolysis of the 5'-end of the nascent transcript by the capping enzyme	inferredFrom	Reaction	1113201	Hydrolysis of the 5'-end of the nascent transcript by the capping enzyme
+ATTRIBUTE_REMOVED	Reaction	77078	Hydrolysis of the 5'-end of the nascent transcript by the capping enzyme	orthologousEvent	Reaction	1113201	Hydrolysis of the 5'-end of the nascent transcript by the capping enzyme
+ATTRIBUTE_REMOVED	Reaction	72676	eIF3 and eIF1A bind to the 40S subunit	inferredFrom	Reaction	1113204	eIF3 and eIF1A bind to the 40S subunit
+ATTRIBUTE_REMOVED	Reaction	72676	eIF3 and eIF1A bind to the 40S subunit	orthologousEvent	Reaction	1113204	eIF3 and eIF1A bind to the 40S subunit
+ATTRIBUTE_REMOVED	Reaction	156915	Translocation of ribosome by 3 bases in the 3' direction	inferredFrom	Reaction	1113205	Translocation of ribosome by 3 bases in the 3' direction
+ATTRIBUTE_REMOVED	Reaction	156915	Translocation of ribosome by 3 bases in the 3' direction	orthologousEvent	Reaction	1113205	Translocation of ribosome by 3 bases in the 3' direction
+ATTRIBUTE_REMOVED	Reaction	72691	Formation of the 43S pre-initiation complex	inferredFrom	Reaction	1113212	Formation of the 43S pre-initiation complex
+ATTRIBUTE_REMOVED	Reaction	72691	Formation of the 43S pre-initiation complex	orthologousEvent	Reaction	1113212	Formation of the 43S pre-initiation complex
+ATTRIBUTE_REMOVED	Reaction	203973	Vesicle budding	inferredFrom	Reaction	1113215	Vesicle budding
+ATTRIBUTE_REMOVED	Reaction	203973	Vesicle budding	orthologousEvent	Reaction	1113215	Vesicle budding
+ATTRIBUTE_REMOVED	Reaction	77073	SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)	inferredFrom	Reaction	1113185	SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)
+ATTRIBUTE_REMOVED	Reaction	77073	SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)	orthologousEvent	Reaction	1113185	SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)
+ATTRIBUTE_REMOVED	Reaction	156908	eEF1A:GTP:aminoacyl tRNA ternary complex formation.	inferredFrom	Reaction	1113186	eEF1A:GTP:aminoacyl tRNA ternary complex formation.
+ATTRIBUTE_REMOVED	Reaction	156908	eEF1A:GTP:aminoacyl tRNA ternary complex formation.	orthologousEvent	Reaction	1113186	eEF1A:GTP:aminoacyl tRNA ternary complex formation.
+ATTRIBUTE_REMOVED	Reaction	77095	Recognition and binding of the mRNA cap by the cap-binding complex 	inferredFrom	Reaction	1113197	Recognition and binding of the mRNA cap by the cap-binding complex 
+ATTRIBUTE_REMOVED	Reaction	77095	Recognition and binding of the mRNA cap by the cap-binding complex 	orthologousEvent	Reaction	1113197	Recognition and binding of the mRNA cap by the cap-binding complex 
+ATTRIBUTE_REMOVED	Reaction	203979	Coat Assembly	inferredFrom	Reaction	1113218	Coat Assembly
+ATTRIBUTE_REMOVED	Reaction	203979	Coat Assembly	orthologousEvent	Reaction	1113218	Coat Assembly
+ATTRIBUTE_REMOVED	Reaction	5694527	Loss of SAR1B GTPase	inferredFrom	Reaction	1113220	Loss of Sar1p GTPase
+ATTRIBUTE_REMOVED	Reaction	204008	SEC31:SEC13 and v-SNARE recruitment	inferredFrom	Reaction	1113221	Cargo, Sec31p:Sec13p, and v-SNARE recruitment
+ATTRIBUTE_REMOVED	Reaction	204008	SEC31:SEC13 and v-SNARE recruitment	orthologousEvent	Reaction	1113221	Cargo, Sec31p:Sec13p, and v-SNARE recruitment
+

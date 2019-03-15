@@ -1,0 +1,710 @@
+Script started on Mon 15 Jan 2018 09:18:46 PM PST
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> xs[K[Kcd scripts/
+7]2;preecej@cord3084-pc7:...me/Release/scripts]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts> ll
+total 232
+-rwxr-xr-x  1 preecej users  1141 Dec  7 17:45 [0m[00;32mall_pathway_logic_tables.pl[0m
+-rwxr-xr-x  1 preecej users  2719 Dec  7 17:45 [00;32marchive_old_database.pl[0m
+-rwxr-xr-x  1 preecej users  1005 Dec  7 17:45 [00;32mbackup_db.pl[0m
+-rwxr-xr-x  1 preecej users  1414 Dec  7 17:45 [00;32mcheck4null_class.pl[0m
+-rwxr-xr-x  1 preecej users  1103 Dec  7 17:45 [00;32mcheck_and_start_reactome_mart.pl[0m
+-rwxr-xr-x  1 preecej users  2031 Dec  7 17:45 [00;32mcheck_attribute_values.pl[0m
+-rwxr-xr-x  1 preecej users  1326 Dec  7 17:45 [00;32mcheck_disk_space.pl[0m
+-rwxr-xr-x  1 preecej users  3640 Dec  7 17:45 [00;32mcheck_instance_classes_in_releases.pl[0m
+-rwxr-xr-x  1 preecej users  2311 Dec  7 17:45 [00;32mcheck_inverse_attributes.pl[0m
+-rwxr-xr-x  1 preecej users  1098 Dec  7 17:46 [00;32mcheck_rest.pl[0m
+-rwxr-xr-x  1 preecej users  5477 Dec  7 17:45 [00;32mcheck_stable_identifiers.pl[0m
+-rwxr-xr-x  1 preecej users  3114 Dec  7 17:45 [00;32mcomplex_export.pl[0m
+-rwxr-xr-x  1 preecej users  4943 Dec  7 17:45 [00;32mcopy_database.pl[0m
+-rwxr-xr-x  1 preecej users  1308 Dec  7 17:45 [00;32mcountInstancesInDB.pl[0m
+-rwxr-xr-x  1 preecej users  1158 Dec  7 17:45 [00;32mcreateDatabase.pl[0m
+drwxr-xr-x  2 preecej users  4096 Dec  7 17:45 [01;34mcsv-heatmap[0m
+-rwxr-xr-x  1 preecej users   877 Dec  7 17:45 [00;32mdeleteByDbId.pl[0m
+-rw-r--r--  1 preecej users  1691 Dec  7 17:45 [00mdelete_refs_with_null_refdb.pl[0m
+-rwxr-xr-x  1 preecej users  1116 Dec  7 17:45 [00;32mefo.pl[0m
+-rw-r--r--  1 preecej users  3442 Dec  7 17:46 [00mfind_fields_with_question_mark.sql[0m
+-rwxr-xr-x  1 preecej users  1689 Dec 12 14:31 [00;32mfix_characters.sh[0m
+-rw-r--r--  1 preecej users 13405 Dec  7 17:46 [00mgeneric_fix_chars_proc.sql[0m
+-rw-r--r--  1 preecej users 23994 Dec  7 17:45 [00mincomparanoid.py[0m
+-rwxr-xr-x  1 preecej users  1956 Dec  7 17:45 [00;32minferred2orthologousEvent.pl[0m
+-rwxr-xr-x  1 preecej users   885 Dec  7 17:46 [00;32minstall_slice_db.sh[0m
+-rwxr-xr-x  1 preecej users  3729 Dec  7 17:45 [00;32minstall_solr.sh[0m
+-rwxr-xr-x  1 preecej users  3748 Dec  7 17:45 [00;32minstancePrint.pl[0m
+-rwxr-xr-x  1 preecej users  2067 Dec  7 17:45 [00;32minternal2stable.pl[0m
+-rwxr-xr-x  1 preecej users  3639 Dec  7 17:45 [00;32mlogs_by_year.sh[0m
+-rwxr-xr-x  1 preecej users   864 Dec  7 17:45 [00;32mmigrate_user_account_source.sh[0m
+-rwxr-xr-x  1 preecej users   482 Dec  7 17:45 [00;32mmigrate_user_account_target.sh[0m
+-rwxr-xr-x  1 preecej users  4099 Dec  7 17:45 [00;32mmonitor_mysql.pl[0m
+-rwxr-xr-x  1 preecej users  3663 Dec  7 17:45 [00;32mmysql.pl[0m
+drwxr-xr-x  2 preecej users  4096 Dec  7 17:45 [01;34morcid[0m
+-rwxr-xr-x  1 preecej users 12500 Dec  7 17:46 [00;32mreaction_logic_table.pl[0m
+drwxr-xr-x 38 preecej users  4096 Dec  7 17:46 [01;34mrelease[0m
+-rwxr-xr-x  1 preecej users  1560 Dec  7 17:45 [00;32mrestore_database.pl[0m
+-rwxr-xr-x  1 preecej users  1062 Dec  7 17:45 [00;32mset_user_credentials.sh[0m
+-rwxr-xr-x  1 preecej users   381 Dec  7 17:45 [00;32mstart_reactome_mart.pl[0m
+-rwxr-xr-x  1 preecej users   269 Dec  7 17:45 [00;32mstop_reactome_mart.pl[0m
+drwxr-xr-x  3 preecej users  4096 Dec  7 17:45 [01;34mtomcat_staging[0m
+-rwxr-xr-x  1 preecej users 11707 Dec  7 17:45 [00;32mupdateDatabase.pl[0m
+7]2;preecej@cord3084-pc7:...me/Release/scripts]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts> cd ../modules/
+7]2;preecej@cord3084-pc7:...me/Release/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules> ll
+total 8
+drwxr-xr-x 20 preecej users 4096 Jan  5 12:10 [0m[01;34mGKB[0m
+-rwxr-xr-x  1 preecej users  728 Dec  7 17:45 [00;32minstall_ensembl_api.pl[0m
+7]2;preecej@cord3084-pc7:...me/Release/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules> cd GKB/mod
+bash: cd: GKB/mod: No such file or directory
+7]2;preecej@cord3084-pc7:...me/Release/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules> cd GKB/mod[K[K[K[K
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> ll
+total 1424
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [0m[01;34mAddLinks[0m
+-rwxr-xr-x 1 preecej users 136360 Dec  7 17:45 [00;32mBioMart.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mClipsAdaptor[0m
+-rwxr-xr-x 1 preecej users  23143 Dec  7 17:45 [00;32mClipsAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  10986 Dec 29 21:22 [00;32mCommonUtils.pm[0m
+-rw-r--r-- 1 preecej users   3970 Dec  7 17:46 [00mCommonUtils.t[0m
+drwxr-xr-x 2 preecej users   4096 Dec 26 16:39 [01;34mCompara[0m
+-rwxr-xr-x 1 preecej users   8102 Dec  7 17:45 [00;32mConfig_Orthomcl.pm[0m
+-rwxr-xr-x 1 preecej users  14150 Jan  5 11:52 [00;32mConfig.pm[0m
+-rw-r--r-- 1 preecej users  30802 Jan  4 01:02 [00mConfig_Species.pm[0m
+-rwxr-xr-x 1 preecej users 153157 Dec  7 17:46 [00;32mDBAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  62191 Dec  7 17:45 [00;32mDissect.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:46 [01;34mDocumentGeneration[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mDTreeMaker[0m
+-rwxr-xr-x 1 preecej users   6569 Dec  7 17:45 [00;32mEFO.pm[0m
+-rwxr-xr-x 1 preecej users   6117 Dec  7 17:46 [00;32mEnsEMBLMartUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3580 Dec  7 17:46 [00;32mEnsEMBLUtils.pm[0m
+-rwxr-xr-x 1 preecej users   4154 Dec  7 17:45 [00;32mFileUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3389 Dec  7 17:45 [00;32mFrontPage3.pm[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mGraphics[0m
+-rwxr-xr-x 1 preecej users   6377 Dec  7 17:45 [00;32mHMDB.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mHtmlTreeMaker[0m
+-rwxr-xr-x 1 preecej users  11471 Dec  7 17:45 [00;32mHtmlTreeMaker.pm[0m
+-rwxr-xr-x 1 preecej users   6686 Dec  7 17:45 [00;32mHTMLUtils.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mIdentifierMapper[0m
+-rwxr-xr-x 1 preecej users   3279 Dec  7 17:45 [00;32mInstanceCache.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mInstanceCreator[0m
+-rwxr-xr-x 1 preecej users  45033 Dec  7 17:46 [00;32mInstance.pm[0m
+-rwxr-xr-x 1 preecej users   4365 Dec  7 17:45 [00;32mIntAct.pm[0m
+-rwxr-xr-x 1 preecej users  86815 Dec  7 17:45 [00;32mInteractionGenerator.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mMatchingInstanceHandler[0m
+-rwxr-xr-x 1 preecej users   5293 Dec  7 17:45 [00;32mMatchingInstanceHandler.pm[0m
+-rwxr-xr-x 1 preecej users  25641 Dec  7 17:46 [00;32mNamedInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mNavigationBar[0m
+-rwxr-xr-x 1 preecej users  18479 Dec  7 17:46 [00;32mNewStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users  34151 Dec  7 17:45 [00;32mOntology.pm[0m
+-rwxr-xr-x 1 preecej users 197727 Dec  7 17:46 [00;32mPrettyInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mPSICQUICIndexers[0m
+-rwxr-xr-x 1 preecej users  50286 Dec  7 17:45 [00;32mReactionMap.pm[0m
+-rwxr-xr-x 1 preecej users   2896 Dec  7 17:45 [00;32mReactomeDBAdaptor.pm[0m
+-rw-r--r-- 1 preecej users   1042 Dec  7 17:45 [00mregistry.xml[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:46 [01;34mRelease[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mRender[0m
+-rwxr-xr-x 1 preecej users   7059 Dec  7 17:45 [00;32mSchemaAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users   1987 Dec  7 17:45 [00;32mSchemaClassAttribute.pm[0m
+-rwxr-xr-x 1 preecej users   2042 Dec  7 17:45 [00;32mSchemaClass.pm[0m
+-rwxr-xr-x 1 preecej users   4473 Dec  7 17:45 [00;32mSchema.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSearchUtils[0m
+-rwxr-xr-x 1 preecej users   7629 Dec  7 17:45 [00;32mSearchUtils.pm[0m
+-rw-r--r-- 1 preecej users    545 Dec 23 17:15 [00mSecrets.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSOAPServer[0m
+-rwxr-xr-x 1 preecej users   4535 Dec  7 17:45 [00;32mStableIdentifierDatabase.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mStableIdentifiers[0m
+-rwxr-xr-x 1 preecej users  71233 Dec  7 17:45 [00;32mStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users   3224 Dec  7 17:46 [00;32mURLMaker.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mUtils[0m
+-rwxr-xr-x 1 preecej users   5258 Dec  7 17:45 [00;32mUtils_esther.pm[0m
+-rwxr-xr-x 1 preecej users  56527 Dec  7 17:45 [00;32mUtils.pm[0m
+-rwxr-xr-x 1 preecej users 138841 Dec  7 17:46 [00;32mWebUtils.pm[0m
+-rwxr-xr-x 1 preecej users  29284 Dec  7 17:45 [00;32mZinc.pm[0m
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> cd re[K[K[K[K[Kcd Release/
+7]2;preecej@cord3084-pc7:...odules/GKB/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB/Release> ll
+total 40
+-rwxr-xr-x 1 preecej users  5126 Dec  7 17:46 [0m[00;32mConfig.pm[0m
+-rwxr-xr-x 1 preecej users   498 Dec  7 17:45 [00;32mreleaselog.conf[0m
+-rwxr-xr-x 1 preecej users 14585 Dec  7 17:46 [00;32mStep.pm[0m
+drwxr-xr-x 3 preecej users  4096 Dec  7 17:46 [01;34mSteps[0m
+drwxr-xr-x 2 preecej users  4096 Dec  7 17:45 [01;34mt[0m
+-rwxr-xr-x 1 preecej users  3191 Dec  7 17:46 [00;32mUtils.pm[0m
+7]2;preecej@cord3084-pc7:...odules/GKB/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB/Release> cd..
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> ll
+total 1424
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [0m[01;34mAddLinks[0m
+-rwxr-xr-x 1 preecej users 136360 Dec  7 17:45 [00;32mBioMart.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mClipsAdaptor[0m
+-rwxr-xr-x 1 preecej users  23143 Dec  7 17:45 [00;32mClipsAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  10986 Dec 29 21:22 [00;32mCommonUtils.pm[0m
+-rw-r--r-- 1 preecej users   3970 Dec  7 17:46 [00mCommonUtils.t[0m
+drwxr-xr-x 2 preecej users   4096 Dec 26 16:39 [01;34mCompara[0m
+-rwxr-xr-x 1 preecej users   8102 Dec  7 17:45 [00;32mConfig_Orthomcl.pm[0m
+-rwxr-xr-x 1 preecej users  14150 Jan  5 11:52 [00;32mConfig.pm[0m
+-rw-r--r-- 1 preecej users  30802 Jan  4 01:02 [00mConfig_Species.pm[0m
+-rwxr-xr-x 1 preecej users 153157 Dec  7 17:46 [00;32mDBAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  62191 Dec  7 17:45 [00;32mDissect.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:46 [01;34mDocumentGeneration[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mDTreeMaker[0m
+-rwxr-xr-x 1 preecej users   6569 Dec  7 17:45 [00;32mEFO.pm[0m
+-rwxr-xr-x 1 preecej users   6117 Dec  7 17:46 [00;32mEnsEMBLMartUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3580 Dec  7 17:46 [00;32mEnsEMBLUtils.pm[0m
+-rwxr-xr-x 1 preecej users   4154 Dec  7 17:45 [00;32mFileUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3389 Dec  7 17:45 [00;32mFrontPage3.pm[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mGraphics[0m
+-rwxr-xr-x 1 preecej users   6377 Dec  7 17:45 [00;32mHMDB.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mHtmlTreeMaker[0m
+-rwxr-xr-x 1 preecej users  11471 Dec  7 17:45 [00;32mHtmlTreeMaker.pm[0m
+-rwxr-xr-x 1 preecej users   6686 Dec  7 17:45 [00;32mHTMLUtils.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mIdentifierMapper[0m
+-rwxr-xr-x 1 preecej users   3279 Dec  7 17:45 [00;32mInstanceCache.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mInstanceCreator[0m
+-rwxr-xr-x 1 preecej users  45033 Dec  7 17:46 [00;32mInstance.pm[0m
+-rwxr-xr-x 1 preecej users   4365 Dec  7 17:45 [00;32mIntAct.pm[0m
+-rwxr-xr-x 1 preecej users  86815 Dec  7 17:45 [00;32mInteractionGenerator.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mMatchingInstanceHandler[0m
+-rwxr-xr-x 1 preecej users   5293 Dec  7 17:45 [00;32mMatchingInstanceHandler.pm[0m
+-rwxr-xr-x 1 preecej users  25641 Dec  7 17:46 [00;32mNamedInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mNavigationBar[0m
+-rwxr-xr-x 1 preecej users  18479 Dec  7 17:46 [00;32mNewStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users  34151 Dec  7 17:45 [00;32mOntology.pm[0m
+-rwxr-xr-x 1 preecej users 197727 Dec  7 17:46 [00;32mPrettyInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mPSICQUICIndexers[0m
+-rwxr-xr-x 1 preecej users  50286 Dec  7 17:45 [00;32mReactionMap.pm[0m
+-rwxr-xr-x 1 preecej users   2896 Dec  7 17:45 [00;32mReactomeDBAdaptor.pm[0m
+-rw-r--r-- 1 preecej users   1042 Dec  7 17:45 [00mregistry.xml[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:46 [01;34mRelease[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mRender[0m
+-rwxr-xr-x 1 preecej users   7059 Dec  7 17:45 [00;32mSchemaAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users   1987 Dec  7 17:45 [00;32mSchemaClassAttribute.pm[0m
+-rwxr-xr-x 1 preecej users   2042 Dec  7 17:45 [00;32mSchemaClass.pm[0m
+-rwxr-xr-x 1 preecej users   4473 Dec  7 17:45 [00;32mSchema.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSearchUtils[0m
+-rwxr-xr-x 1 preecej users   7629 Dec  7 17:45 [00;32mSearchUtils.pm[0m
+-rw-r--r-- 1 preecej users    545 Dec 23 17:15 [00mSecrets.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSOAPServer[0m
+-rwxr-xr-x 1 preecej users   4535 Dec  7 17:45 [00;32mStableIdentifierDatabase.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mStableIdentifiers[0m
+-rwxr-xr-x 1 preecej users  71233 Dec  7 17:45 [00;32mStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users   3224 Dec  7 17:46 [00;32mURLMaker.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mUtils[0m
+-rwxr-xr-x 1 preecej users   5258 Dec  7 17:45 [00;32mUtils_esther.pm[0m
+-rwxr-xr-x 1 preecej users  56527 Dec  7 17:45 [00;32mUtils.pm[0m
+-rwxr-xr-x 1 preecej users 138841 Dec  7 17:46 [00;32mWebUtils.pm[0m
+-rwxr-xr-x 1 preecej users  29284 Dec  7 17:45 [00;32mZinc.pm[0m
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> cd../
+bash: cd../: No such file or directory
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> ll
+total 1424
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [0m[01;34mAddLinks[0m
+-rwxr-xr-x 1 preecej users 136360 Dec  7 17:45 [00;32mBioMart.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mClipsAdaptor[0m
+-rwxr-xr-x 1 preecej users  23143 Dec  7 17:45 [00;32mClipsAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  10986 Dec 29 21:22 [00;32mCommonUtils.pm[0m
+-rw-r--r-- 1 preecej users   3970 Dec  7 17:46 [00mCommonUtils.t[0m
+drwxr-xr-x 2 preecej users   4096 Dec 26 16:39 [01;34mCompara[0m
+-rwxr-xr-x 1 preecej users   8102 Dec  7 17:45 [00;32mConfig_Orthomcl.pm[0m
+-rwxr-xr-x 1 preecej users  14150 Jan  5 11:52 [00;32mConfig.pm[0m
+-rw-r--r-- 1 preecej users  30802 Jan  4 01:02 [00mConfig_Species.pm[0m
+-rwxr-xr-x 1 preecej users 153157 Dec  7 17:46 [00;32mDBAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users  62191 Dec  7 17:45 [00;32mDissect.pm[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:46 [01;34mDocumentGeneration[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mDTreeMaker[0m
+-rwxr-xr-x 1 preecej users   6569 Dec  7 17:45 [00;32mEFO.pm[0m
+-rwxr-xr-x 1 preecej users   6117 Dec  7 17:46 [00;32mEnsEMBLMartUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3580 Dec  7 17:46 [00;32mEnsEMBLUtils.pm[0m
+-rwxr-xr-x 1 preecej users   4154 Dec  7 17:45 [00;32mFileUtils.pm[0m
+-rwxr-xr-x 1 preecej users   3389 Dec  7 17:45 [00;32mFrontPage3.pm[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:45 [01;34mGraphics[0m
+-rwxr-xr-x 1 preecej users   6377 Dec  7 17:45 [00;32mHMDB.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mHtmlTreeMaker[0m
+-rwxr-xr-x 1 preecej users  11471 Dec  7 17:45 [00;32mHtmlTreeMaker.pm[0m
+-rwxr-xr-x 1 preecej users   6686 Dec  7 17:45 [00;32mHTMLUtils.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mIdentifierMapper[0m
+-rwxr-xr-x 1 preecej users   3279 Dec  7 17:45 [00;32mInstanceCache.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mInstanceCreator[0m
+-rwxr-xr-x 1 preecej users  45033 Dec  7 17:46 [00;32mInstance.pm[0m
+-rwxr-xr-x 1 preecej users   4365 Dec  7 17:45 [00;32mIntAct.pm[0m
+-rwxr-xr-x 1 preecej users  86815 Dec  7 17:45 [00;32mInteractionGenerator.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mMatchingInstanceHandler[0m
+-rwxr-xr-x 1 preecej users   5293 Dec  7 17:45 [00;32mMatchingInstanceHandler.pm[0m
+-rwxr-xr-x 1 preecej users  25641 Dec  7 17:46 [00;32mNamedInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mNavigationBar[0m
+-rwxr-xr-x 1 preecej users  18479 Dec  7 17:46 [00;32mNewStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users  34151 Dec  7 17:45 [00;32mOntology.pm[0m
+-rwxr-xr-x 1 preecej users 197727 Dec  7 17:46 [00;32mPrettyInstance.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mPSICQUICIndexers[0m
+-rwxr-xr-x 1 preecej users  50286 Dec  7 17:45 [00;32mReactionMap.pm[0m
+-rwxr-xr-x 1 preecej users   2896 Dec  7 17:45 [00;32mReactomeDBAdaptor.pm[0m
+-rw-r--r-- 1 preecej users   1042 Dec  7 17:45 [00mregistry.xml[0m
+drwxr-xr-x 4 preecej users   4096 Dec  7 17:46 [01;34mRelease[0m
+drwxr-xr-x 3 preecej users   4096 Dec  7 17:45 [01;34mRender[0m
+-rwxr-xr-x 1 preecej users   7059 Dec  7 17:45 [00;32mSchemaAdaptor.pm[0m
+-rwxr-xr-x 1 preecej users   1987 Dec  7 17:45 [00;32mSchemaClassAttribute.pm[0m
+-rwxr-xr-x 1 preecej users   2042 Dec  7 17:45 [00;32mSchemaClass.pm[0m
+-rwxr-xr-x 1 preecej users   4473 Dec  7 17:45 [00;32mSchema.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSearchUtils[0m
+-rwxr-xr-x 1 preecej users   7629 Dec  7 17:45 [00;32mSearchUtils.pm[0m
+-rw-r--r-- 1 preecej users    545 Dec 23 17:15 [00mSecrets.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:46 [01;34mSOAPServer[0m
+-rwxr-xr-x 1 preecej users   4535 Dec  7 17:45 [00;32mStableIdentifierDatabase.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mStableIdentifiers[0m
+-rwxr-xr-x 1 preecej users  71233 Dec  7 17:45 [00;32mStableIdentifiers.pm[0m
+-rwxr-xr-x 1 preecej users   3224 Dec  7 17:46 [00;32mURLMaker.pm[0m
+drwxr-xr-x 2 preecej users   4096 Dec  7 17:45 [01;34mUtils[0m
+-rwxr-xr-x 1 preecej users   5258 Dec  7 17:45 [00;32mUtils_esther.pm[0m
+-rwxr-xr-x 1 preecej users  56527 Dec  7 17:45 [00;32mUtils.pm[0m
+-rwxr-xr-x 1 preecej users 138841 Dec  7 17:46 [00;32mWebUtils.pm[0m
+-rwxr-xr-x 1 preecej users  29284 Dec  7 17:45 [00;32mZinc.pm[0m
+7]2;preecej@cord3084-pc7:...elease/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules/GKB> cd..
+7]2;preecej@cord3084-pc7:...me/Release/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules> ll
+total 8
+drwxr-xr-x 20 preecej users 4096 Jan  5 12:10 [0m[01;34mGKB[0m
+-rwxr-xr-x  1 preecej users  728 Dec  7 17:45 [00;32minstall_ensembl_api.pl[0m
+7]2;preecej@cord3084-pc7:...me/Release/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/modules> cd..
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> ll
+total 48
+drwxr-xr-x 6 preecej users  4096 Dec  7 17:45 [0m[01;34mjava[0m
+drwxr-xr-x 3 preecej users  4096 Dec  7 17:45 [01;34mmodules[0m
+drwxr-xr-x 3 preecej users  4096 Dec  7 17:46 [01;34mpathway_log_analysis[0m
+-rwxr-xr-x 1 preecej users    38 Dec  7 17:45 [00;32mREADME.md[0m
+drwxr-xr-x 6 preecej users  4096 Dec 12 14:31 [01;34mscripts[0m
+drwxr-xr-x 2 preecej users  4096 Jan  5 11:56 [01;34mslicingTool[0m
+drwxr-xr-x 4 preecej users  4096 Dec  7 17:45 [01;34mthird_party_install[0m
+-rw-r--r-- 1 preecej users 16384 Jan 15 21:19 [00mtypescript[0m
+drwxr-xr-x 6 preecej users  4096 Dec  7 17:45 [01;34mwebsite[0m
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> cd m[Ks[Kscripts/
+csv-heatmap/    orcid/          release/        tomcat_staging/ 
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> cd scripts/release/
+7]2;preecej@cord3084-pc7:...se/scripts/release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts/release> ls
+[0m[01;34madd_links[0m      [01;34mcommit_goa[0m          [01;34mdownload_directory[0m                  [01;34mgo_update[0m           [01;34mncbi[0m            [01;34morthopairs[0m         [01;34msearch_indexer[0m       [01;34msystematically_name[0m   [01;34mupdate_dois[0m         [01;34mupdate_stable_ids[0m
+[01;34manalysis_core[0m  [01;34mcommit_stats_files[0m  [01;34mfireworks_server[0m                    [01;34minstall_release_db[0m  [01;34mobsolete_steps[0m  [01;34mother_identifiers[0m  [01;34mset_email_reminders[0m  [01;34muniprot_update[0m        [01;34mupdate_front_page[0m   [01;34mWebELVTool[0m
+[01;34mbiomodels[0m      [01;34mcvs_update[0m          [01;34mgenerate_stable_ids_orthoinference[0m  [01;34mmsigdb-gsea[0m         [01;34morthodiagrams[0m   [00;32mrelease.pl[0m         [00;32msetup_keypair.pl[0m     [01;34mupdate_config_file[0m    [01;34mupdate_gk_current[0m   [01;34mwebsite_files_update[0m
+[01;34mchebi_update[0m   [01;34mdiagram_json[0m        [01;34mgoa_prepare[0m                         [01;34mmyisam[0m              [01;34morthoinference[0m  [01;34mreroute_requests[0m   [01;34msimplified_database[0m  [00;32mupdateDisplayName.pl[0m  [01;34mupdate_source_code[0m
+7]2;preecej@cord3084-pc7:...se/scripts/release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts/release> ls[Kl
+total 160
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:46 [0m[01;34madd_links[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34manalysis_core[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mbiomodels[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mchebi_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcommit_goa[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcommit_stats_files[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcvs_update[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34mdiagram_json[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mdownload_directory[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34mfireworks_server[0m
+drwxr-xr-x 2 preecej users 4096 Jan  5 12:00 [01;34mgenerate_stable_ids_orthoinference[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mgoa_prepare[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mgo_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34minstall_release_db[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mmsigdb-gsea[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mmyisam[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mncbi[0m
+drwxr-xr-x 6 preecej users 4096 Dec  7 17:46 [01;34mobsolete_steps[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34morthodiagrams[0m
+drwxr-xr-x 4 preecej users 4096 Dec 29 00:02 [01;34morthoinference[0m
+drwxr-xr-x 3 preecej users 4096 Dec 26 16:25 [01;34morthopairs[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mother_identifiers[0m
+-rwxr-xr-x 1 preecej users 5434 Dec  7 17:46 [00;32mrelease.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mreroute_requests[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34msearch_indexer[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mset_email_reminders[0m
+-rwxr-xr-x 1 preecej users 2016 Dec  7 17:45 [00;32msetup_keypair.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34msimplified_database[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34msystematically_name[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34muniprot_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_config_file[0m
+-rwxr-xr-x 1 preecej users 1519 Dec  7 17:45 [00;32mupdateDisplayName.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mupdate_dois[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mupdate_front_page[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_gk_current[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_source_code[0m
+drwxr-xr-x 2 preecej users 4096 Jan  2 23:50 [01;34mupdate_stable_ids[0m
+drwxr-xr-x 5 preecej users 4096 Jan  5 11:55 [01;34mWebELVTool[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mwebsite_files_update[0m
+7]2;preecej@cord3084-pc7:...se/scripts/release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts/release> c
+[3;J[H[2J7]2;preecej@cord3084-pc7:...se/scripts/release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts/release> ll
+total 160
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:46 [0m[01;34madd_links[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34manalysis_core[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mbiomodels[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mchebi_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcommit_goa[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcommit_stats_files[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mcvs_update[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34mdiagram_json[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mdownload_directory[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34mfireworks_server[0m
+drwxr-xr-x 2 preecej users 4096 Jan  5 12:00 [01;34mgenerate_stable_ids_orthoinference[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mgoa_prepare[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mgo_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34minstall_release_db[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mmsigdb-gsea[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mmyisam[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mncbi[0m
+drwxr-xr-x 6 preecej users 4096 Dec  7 17:46 [01;34mobsolete_steps[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34morthodiagrams[0m
+drwxr-xr-x 4 preecej users 4096 Dec 29 00:02 [01;34morthoinference[0m
+drwxr-xr-x 3 preecej users 4096 Dec 26 16:25 [01;34morthopairs[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mother_identifiers[0m
+-rwxr-xr-x 1 preecej users 5434 Dec  7 17:46 [00;32mrelease.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mreroute_requests[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34msearch_indexer[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mset_email_reminders[0m
+-rwxr-xr-x 1 preecej users 2016 Dec  7 17:45 [00;32msetup_keypair.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34msimplified_database[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34msystematically_name[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34muniprot_update[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_config_file[0m
+-rwxr-xr-x 1 preecej users 1519 Dec  7 17:45 [00;32mupdateDisplayName.pl[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mupdate_dois[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mupdate_front_page[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_gk_current[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [01;34mupdate_source_code[0m
+drwxr-xr-x 2 preecej users 4096 Jan  2 23:50 [01;34mupdate_stable_ids[0m
+drwxr-xr-x 5 preecej users 4096 Jan  5 11:55 [01;34mWebELVTool[0m
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:46 [01;34mwebsite_files_update[0m
+7]2;preecej@cord3084-pc7:...se/scripts/release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/scripts/release> cd [K[K[Kcd ../../../graph-core/
+7]2;preecej@cord3084-pc7:...eactome/graph-core]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-core> ll
+total 36
+drwxr-xr-x 3 preecej users  4096 Jan  5 12:57 [0m[01;34mlogging.dir_IS_UNDEFINED[0m
+-rw-r--r-- 1 preecej users 13442 Jan  5 12:52 [00mpom.xml[0m
+-rw-r--r-- 1 preecej users  9087 Jan  5 12:52 [00mREADME.md[0m
+drwxr-xr-x 4 preecej users  4096 Dec  1  2016 [01;34msrc[0m
+7]2;preecej@cord3084-pc7:...eactome/graph-core]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-core> cd src/
+7]2;preecej@cord3084-pc7:...ome/graph-core/src]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-core/src> cd ../../graph-
+graph-core/     graph-importer/ graph-qa/       
+7]2;preecej@cord3084-pc7:...ome/graph-core/src]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-core/src> cd ../../graph-importer/
+7]2;preecej@cord3084-pc7:...ome/graph-importer]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-importer> ll
+total 48
+-rw-r--r-- 1 preecej users 7558 Jan  7 14:54 [0m[00mbatch-importer.iml[0m
+-rw-r--r-- 1 preecej users 3198 Jan  5 14:30 [00mdependency-reduced-pom.xml[0m
+drwxr-xr-x 2 preecej users 4096 Jan  8 15:19 [01;34mlogs[0m
+-rw-r--r-- 1 preecej users 6810 Jan  7 14:53 [00mpom.xml[0m
+-rw-r--r-- 1 preecej users 4905 Jan  5 13:02 [00mREADME.md[0m
+-rwxr-xr-x 1 preecej users 6499 Jan  5 14:01 [00;32msetup-graph.sh[0m
+drwxr-xr-x 3 preecej users 4096 Dec  1  2016 [01;34msrc[0m
+drwxr-xr-x 7 preecej users 4096 Jan  7 14:55 [01;34mtarget[0m
+7]2;preecej@cord3084-pc7:...ome/graph-importer]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-importer> cd [K[K[Kvis[K[Ki setup-graph.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;67r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[67;1H"setup-graph.sh" 189L, 6499C[>c[1;1H[33mif [m[35m${_IMPORT_DATA}[m [33m=[m [33mtrue[m; [33mthen
+[m    [33mecho "Checking if current directory is valid project"
+[m    [33mif ![m mvn [33m-q[m clean package [35m-DskipTests[m; [33mthen[4;9Hif [[m [33m![m [33m-f[m /target/BatchImporter-jar-with-dependencies.jar [33m][m; [33mthen[5;13Hecho "Cloning new repo from git"[m[6;13Hgit clone https://github.com/reactome/graph-importer.git[7;13H[36m_PATH[m=[33m"/graph-importer"[9;13Hecho "Started packaging reactome project"[10;13Hif ![m mvn [33m-q[m [33m-f[m .[35m${_PATH}[m/pom.xml clean package [35m-DskipTests[m; [33mthen[11;17Hecho "An error occurred when packaging the project"[12;17Hexit[m [33m1[13;13Hfi[14;9Hfi
+[m    [33mfi[17;5Hif [[m [33m"[m[35m$_GRAPH_DIR[m[33m"[m [33m==[m [33m"/var/lib/neo4j/data/"[m [33m][m; [33mthen[18;9Hif [msudo service neo4j [33mstatus[m; [33mthen[19;13Hecho "Shutting down Neo4j DB in order to prepare dataimport import"[20;13Hif ![m sudo service neo4j [33mstop[m; [33mthen[21;17Hecho "An error occurred while trying to shut down neo4j db"[22;13Hexit[m [33m1[23;13Hfi[24;9Hfi
+[m    [33mfi[27;5Hif [[m [33m![m [33m-d[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m [33m][m; [33mthen[28;9Hecho "Creating new database folder"[29;9Hif ![m sudo [33mmkdir[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[30;13Hecho "An error occurred while trying to create a new database folder"[31;13Hexit[m [33m1[32;9Hfi
+[m    [33mfi[35;5Hecho "Changing permissions of neo4j graph"
+[m    [33mif ![m sudo chown [33m-R[m [35m${USER}[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[37;9Hecho "An error occurred when trying to change permissions of the neo4j graph"
+[m    [33mfi[40;5Hecho "Started importing data to the neo4j database"
+[m    [33mif ![m java [35m-jar[m .[35m${_PATH}[m/target/BatchImporter-jar-with-dependencies.jar [33m-h[m [35m${_REACTOME_HOST}[m [33m-s[m [35m${_REACTOME_PORT}[m [33m-d[m [35m${_REACTOME_DATABASE}[m [33m-u[m [35m${_REACTOME_USER}[m [33m-p[m [35m${_REACTOME_PASSWORD}[m [33m-n[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m  [33m-S[m  [42;1H[35m${_SPECIES_ID}[m; [33mthen[43;9Hecho "An error occurred during the data import process"[44;9Hexit[m [33m1
+[m    [33mfi
+[m    [33mecho "DataImport finished successfully!"[48;5Hecho "Changing permissions of neo4j graph"
+[m    [33mif ![m sudo chown [33m-R[m [35m${_NEO4J_USER}[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[50;9Hecho "An error occurred when trying to change permissions of the neo4j graph"[51;9Hexit[m [33m1
+[m    [33mfi
+fi
+
+if ![m sudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen
+[m    [33mecho "Starting neo4j database"
+[m    [33mif ![m sudo service neo4j [33mstart[m; [33mthen[58;9Hecho "Neo4j database could not be started"[59;9Hexit[m [33m1
+[m    [33mfi
+fi
+
+if [[m [33m![m [33m-z[m [33m"[m[35m$_PATH[m[33m"[m [33m][m; [33mthen[m
+    sudo [33mrm[m [33m-R[m graph-importer
+[33mfi
+echo "Script finished with"  [m[35m${_PROBLEMS}[m[33m "problems!"[m[67;207H157,5[9CBot]2;setup-graph.sh (~/Development/git/PlantReactome/graph-importer) - VIM[33;5H[?12l[?25h[?25l[67;209H6[32;5H[?12l[?25h[?25l[67;209H5[31;5H[?12l[?25h[?25l[67;209H4[30;5H[?12l[?25h[?25l[67;209H3[29;5H[?12l[?25h[?25l[67;209H2[28;5H[?12l[?25h[?25l[67;209H1[27;5H[?12l[?25h[?25l[67;209H0,0-1[26;1H[?12l[?25h[?25l[67;208H49,5  [25;5H[?12l[?25h[?25l[67;209H8[24;5H[?12l[?25h[?25l[67;209H7[23;5H[?12l[?25h[?25l[67;209H6[22;5H[?12l[?25h[?25l[67;209H5[21;5H[?12l[?25h[?25l[67;209H4[20;5H[?12l[?25h[?25l[67;209H3[19;5H[?12l[?25h[?25l[67;209H2[18;5H[?12l[?25h[?25l[67;209H1[17;5H[?12l[?25h[?25l[67;209H0,0-1[16;1H[?12l[?25h[?25l[67;208H39,5  [15;5H[?12l[?25h[?25l[67;209H8[14;5H[?12l[?25h[?25l[67;209H7[13;5H[?12l[?25h[?25l[67;209H6[12;5H[?12l[?25h[?25l[67;209H5[11;5H[?12l[?25h[?25l[67;209H4[10;5H[?12l[?25h[?25l[67;209H3[9;5H[?12l[?25h[?25l[67;209H2,0-1[8;1H[?12l[?25h[?25l[67;209H1,5  [7;5H[?12l[?25h[?25l[67;209H0[6;5H[?12l[?25h[?25l[67;208H29[5;5H[?12l[?25h[?25l[67;209H8[4;5H[?12l[?25h[?25l[67;209H7[3;5H[?12l[?25h[?25l[67;209H6[2;5H[?12l[?25h[?25l[1;5H[35m[46m{[12C}[m[67;209H5[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[2;5H[35m{[12C}[m[67;1H[K[67;207H124,0-1[7C99%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mfi[m[67;207H[K[67;207H123,2[9C98%[1;2H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mfi[m[67;207H[K[67;207H122,5[9C97%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9Hcurl [33m-H[m [33m"Content-Type: application/json"[m [33m-X[m POST [33m-d[m [33m'{"password":"'[m[35m${_NEO4J_PASSWORD}[m[33m'"}'[m [33m-u[m neo4j:neo4j http://localhost:[33m7474[m/user/neo4j/password [33m>[m/dev/null [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H121,1-8[7C96%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mecho "setting new password for user neo4j"      [m[67;207H[K[67;207H120,1-8[7C95%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mfi[m[67;207H[K[67;207H119,1-8[7C95%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mfi[m[67;207H[K[67;207H118,1-8[7C94%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mexit[m [33m1[m[67;207H[K[67;207H117,1-8[7C93%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mecho "An error occurred while trying to start neo4j"[m[67;207H[K[67;207H116,1-8[7C92%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mif ![m sudo service neo4j [33mstart[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H115,1-8[7C91%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mif ![m sudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H114,1-8[7C91%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9Hsudo [33mrm[m /var/lib/neo4j/data/dbms/auth[67;207H[K[67;207H113,1-8[7C90%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mfi[m[67;207H[K[67;207H112,1-8[7C89%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mfi[m[67;207H[K[67;207H111,5-8[7C88%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mexit[m [33m1[m[67;207H[K[67;207H110,1-8[7C87%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mecho "an error occurred while trying to shut down neo4j db"[m[67;207H[K[67;207H109,5[9C87%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mif ![m sudo service neo4j [33mstop[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H108,5[9C86%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mecho "Shutting down Neo4j DB"[m[67;207H[K[67;207H107,5[9C85%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mif [msudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H106,1-8[7C84%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mecho "removing old authentication"[m[67;207H[K[67;207H105,1-8[7C83%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mif [[m [33m![m [33m-z[m [33m"[m[35m$_NEO4J_PASSWORD[m[33m"[m [33m][m; [33mthen[m[67;207H[K[67;207H104,5[9C83%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "installing neo4j finished"[m[67;207H[K[67;207H103,5[9C82%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo apt-get install neo4j[67;207H[K[67;207H102,5[9C81%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo apt-get update[67;207H[K[67;207H101,5[9C80%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo [33mmv[m /tmp/neo4j.list /etc/apt/sources.list.d[66;1H[34m@                                                                                                                                                                                                                               [m[67;207H[K[67;207H100,5[9C79%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo sh [33m-c[m [33m"echo 'deb http://debian.neo4j.org/repo stable/' >/tmp/neo4j.list"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H99,5[10C79%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo sh [33m-c[m [33m"wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H98,5[10C78%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "start installing neo4j"[m[67;207H[K[67;207H97,5[10C78%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mif [m[35m$[m[35m[46m{[m[35m_INSTALL_NEO4J[m[35m[46m}[m [33m=[m [33mtrue[m; [33mthen[m[67;207H[K[67;207H96,5[10C77%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[2;5H[35m{[14C}[m[67;207H[K[67;207H95,0-1[8C76%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mfi[m;[67;207H[K[67;207H94,3[10C75%[1;3H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mexit[m [33m1[m[67;207H[K[67;207H93,5[10C74%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "[m[35m$usage[m[33m"[m[67;207H[K[67;207H92,5[10C73%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;2H[33mecho "missing argument execution type -i|-j"[m[67;207H[K[67;207H91,5[10C73%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mif ![m [35m$_INSTALL_NEO4J[m && [33m![m [35m$_IMPORT_DATA[m ; [33mthen[m[67;207H[K[67;207H90,5[10C72%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# --- Check if the execution type has been passed --- #[m[67;207H[K[67;207H89,5[10C71%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H88,0-1[8C70%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mshift[m [35m$((OPTIND - [m[33m1[m[35m))[m[67;207H[K[67;207H87,5[10C69%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mdone[m[67;207H[K[67;207H86,4[10C69%[1;4H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;3H[33mesac[m[67;207H[K[67;207H85,5[10C68%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H84,5[10C67%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mexit[m [33m1[m[67;207H[K[67;207H83,5[10C66%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mecho "[m[35m$usage[m[33m" >&2[m[67;207H[K[67;207H82,5[10C65%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;4H\?[33m)[m [33mecho "Invalid option: -[m[35m$OPTARG[m[33m" >&2[m[67;207H[K[67;207H81,5[10C65%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H80,5[10C64%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5HS[33m)[m [36m_SPECIES_ID[m=[35m$OPTARG[m[67;207H[K[67;207H79,5[10C63%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H78,5[10C62%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hn[33m)[m [36m_NEO4J_PASSWORD[m=[35m$OPTARG[m[67;207H[K[67;207H77,5[10C61%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H76,5[10C60%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hm[33m)[m [36m_NEO4J_USER[m=[35m$OPTARG[m[67;207H[K[67;207H75,5[10C60%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H74,5[10C59%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hj[33m)[m [36m_IMPORT_DATA[m=[33mtrue[m[67;207H[K[67;207H73,5[10C58%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H72,5[10C57%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hi[33m)[m [36m_INSTALL_NEO4J[m=[33mtrue[m[67;207H[K[67;207H71,5[10C56%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H70,5[10C56%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5He[33m)[m [36m_GRAPH_NAME[m=[35m$OPTARG[m[67;207H[K[67;207H69,5[10C55%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H68,5[10C54%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hd[33m)[m [36m_GRAPH_DIR[m=[35m$OPTARG[m[67;207H[K[67;207H67,5[10C53%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H66,5[10C52%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hv[33m)[m [36m_REACTOME_PASSWORD[m=[35m$OPTARG[m[67;207H[K[67;207H65,5[10C52%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H64,5[10C51%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hu[33m)[m [36m_REACTOME_USER[m=[35m$OPTARG[m[67;207H[K[67;207H63,5[10C50%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H62,5[10C49%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Ht[33m)[m [36m_REACTOME_DATABASE[m=[35m$OPTARG[m[67;207H[K[67;207H61,5[10C48%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H60,5[10C47%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hs[33m)[m [36m_REACTOME_PORT[m=[35m$OPTARG[m[67;207H[K[67;207H59,5[10C47%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H58,5[10C46%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hr[33m)[m [36m_REACTOME_HOST[m=[35m$OPTARG[m[67;207H[K[67;207H57,5[10C45%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H56,5[10C44%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mexit[m[67;207H[K[67;207H55,5[10C43%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hh[33m)[m [33mecho "[m[35m$usage[m[33m"[m[67;207H[K[67;207H54,5[10C43%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;3H[33mcase[m [33m"[m[35m$option[m[33m"[m [33min[m[67;207H[K[67;207H53,5[10C42%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mwhile getopts ":r:s:t:u:v:d:e:m:n:S:ijh" option; do[m[67;207H[K[67;207H52,5[10C41%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# :h (help) should be at the very end of the while loop[m[67;207H[K[67;207H51,5[10C40%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H50,0-1[8C39%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_PROBLEMS[m=[33m0[m[67;207H[K[67;207H49,5[10C39%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H48,0-1[8C38%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_NEO4J_USER[m=[33m"neo4j"[m[67;207H[K[67;207H47,5[10C37%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_SPECIES_ID[m=[33m48887[m[67;207H[K[67;207H46,5[10C36%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_INSTALL_NEO4J[m=[33mfalse[m[67;207H[K[67;207H45,5[10C35%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_IMPORT_DATA[m=[33mfalse[m[67;207H[K[67;207H44,5[10C34%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_GRAPH_NAME[m=[33m"graph.db"[m[67;207H[K[67;207H43,5[10C34%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_GRAPH_DIR[m=[33m"/var/lib/neo4j/data/databases/"[m[67;207H[K[67;207H42,5[10C33%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_PASSWORD[m=[33m"reactome"[m[67;207H[K[67;207H41,5[10C32%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_USER[m=[33m"reactome"[m[67;207H[K[67;207H40,5[10C31%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_DATABASE[m=[33m"reactome"[m[67;207H[K[67;207H39,5[10C30%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_PORT[m=[33m3306[m[67;207H[K[67;207H38,5[10C30%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_HOST[m=[33m"localhost"[m[67;207H[K[67;207H37,5[10C29%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H36,0-1[8C28%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -n  Neo4j password (only set when neo4j is installed)."[m[67;207H[K[67;207H35,5[10C27%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -m  Neo4j user. DEFAULT: neo4j[m[67;207H[K[67;207H34,5[10C26%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -S  Set reference species. DEFAULT: 48887 (Homo sapiens)[m[67;207H[K[67;207H33,5[10C26%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -i  Install neo4j. DEFAULT: false[m[67;207H[K[67;207H32,5[10C25%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -j  Import Reactome data. DEFAULT: false[m[67;207H[K[67;207H31,5[10C24%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -e  Neo4j name of graph Db. DEFAULT: graph.db[m[67;207H[K[67;207H30,5[10C23%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -d  Neo4j directory of Db. DEFAULT: /var/lib/neo4j/data/[m[67;207H[K[67;207H29,5[10C22%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -v  Reactome database password. DEFAULT: reactome[m[67;207H[K[67;207H28,5[10C21%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -u  Reactome database user. DEFAULT: reactome[m[67;207H[K[67;207H27,5[10C21%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -t  Reactome database name. DEFAULT: reactome[m[67;207H[K[67;207H26,5[10C20%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -s  Reactome database port. DEFAULT: 3306[m[67;207H[K[67;207H25,5[10C19%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -r  Reactome database host. DEFAULT: localhost[m[67;207H[K[67;207H24,5[10C18%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -h  Program help/usage[m[67;207H[K[67;207H23,5[10C17%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mwhere:[m[67;207H[K[67;207H22,5[10C17%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H21,0-1[8C16%[1;1H[?12l[?25h[?25l[1;66r[1;1H[2L[1;67r[1;1H[35m$(basename [m[33m"[m[35m$0[m[33m"[m[35m)[m[33m [-r <reactome_host> -s <reactome_port> -t <reactome_db_name> -u <reactome_db_user> -v <reactome_db_password> -d <neo4j_db_directory> -e <neo4j_db_name> -j <import_data> -i <install_neo4j> -m <neo4j_user> -n  [2;1H<neo4j_password> -S <speciesid>][m[67;207H[K[67;207H20,5[10C15%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H19,0-1[8C14%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mWARNING: If no password is specified the old password will persist.[m[67;207H[K[67;207H18,5[10C13%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mThe neo4j server can be updated without uninstalling it before.[m[67;207H[K[67;207H17,5[10C12%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mThe password will only be updated after installing or updating the neo4j server[m[67;207H[K[67;207H16,5[10C12%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H15,0-1[8C11%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mWARNING: Do not execute as sudo, permission will be asked when required[m[67;207H[K[67;207H14,5[10C10%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mScript for an initial setup and dataimport import of Reactome to the Graph[m[67;207H[K[67;207H13,5[11C9%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36musage[m=[33m"[m[67;207H[K[67;207H12,5[11C8%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H11,0-1[9C8%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#-----------------------------------------------------------[m[67;207H[K[67;207H10,5[11C7%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#  [m[67;207H[K[67;207H9,3[12C6%[1;3H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# Florian Korninger - fkorn@ebi.ac.uk[m[67;207H[K[67;207H8,5[12C5%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# 4 March 2015[m[67;207H[K[67;207H7,5[12C4%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#[m[67;207H[K[67;207H6,1[12C4%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# WARNING: do not execute as sudo, permission will be asked when required[m[67;207H[K[67;207H5,5[12C3%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# Script for an initial setup and dataimport import of Reactome to the Graph[m[67;207H[K[67;207H4,5[12C2%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#-----------------------------------------------------------[m[67;207H[K[67;207H3,5[12C1%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H2,0-1[10C0%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#!/bin/bash[m[67;207H[K[67;207H1,5[11CTop[1;5H[?12l[?25h[?25l[67;207H2,0-1[2;1H[?12l[?25h[?25l[67;207H3,5  [3;5H[?12l[?25h[?25l[67;207H4[4;5H[?12l[?25h[?25l[67;207H5[5;5H[?12l[?25h[?25l[67;207H6,1[6;1H[?12l[?25h[?25l[67;207H7,5[7;5H[?12l[?25h[?25l[67;207H8[8;5H[?12l[?25h[?25l[67;207H9,3[9;3H[?12l[?25h[?25l[67;207H10,5[10;5H[?12l[?25h[?25l[67;208H1,0-1[11;1H[?12l[?25h[?25l[67;208H2,5  [12;5H[?12l[?25h[?25l[67;208H3[13;5H[?12l[?25h[?25l[67;208H4[14;5H[?12l[?25h[?25l[67;208H5,0-1[15;1H[?12l[?25h[?25l[67;208H6,5  [16;5H[?12l[?25h[?25l[67;208H7[17;5H[?12l[?25h[?25l[67;208H8[18;5H[?12l[?25h[?25l[67;208H9,0-1[19;1H[?12l[?25h[?25l[67;207H20,5  [20;5H[?12l[?25h[?25l[67;208H1,0-1[22;1H[?12l[?25h[?25l[67;208H2,5  [23;5H[?12l[?25h[?25l[67;208H3[24;5H[?12l[?25h[?25l[67;208H4[25;5H[?12l[?25h[?25l[67;208H5[26;5H[?12l[?25h[?25l[67;208H6[27;5H[?12l[?25h[?25l[67;208H7[28;5H[?12l[?25h[?25l[67;208H8[29;5H[?12l[?25h[?25l[67;208H9[30;5H[?12l[?25h[?25l[67;207H30[31;5H[?12l[?25h[?25l[67;208H1[32;5H[?12l[?25h[?25l[67;208H2[33;5H[?12l[?25h[?25l[67;208H3[34;5H[?12l[?25h[?25l[67;208H4[35;5H[?12l[?25h[?25l[67;208H5[36;5H[?12l[?25h[?25l[67;208H6,0-1[37;1H[?12l[?25h[?25l[67;208H7,5  [38;5H[?12l[?25h[?25l[67;208H8[39;5H[?12l[?25h[?25l[67;208H9[40;5H[?12l[?25h[?25l[67;207H40[41;5H[?12l[?25h[?25l[67;208H1[42;5H[?12l[?25h[?25l[67;208H2[43;5H[?12l[?25h[?25l[67;208H3[44;5H[?12l[?25h[?25l[67;208H4[45;5H[?12l[?25h[?25l[67;208H5[46;5H[?12l[?25h[?25l[67;208H6[47;5H[?12l[?25h[?25l[67;208H7[48;5H[?12l[?25h[?25l[67;208H8,0-1[49;1H[?12l[?25h[?25l[67;208H9,5  [50;5H[?12l[?25h[?25l[67;207H50,0-1[51;1H[?12l[?25h[?25l[67;208H1,5  [52;5H[?12l[?25h[?25l[67;208H2[53;5H[?12l[?25h[?25l[67;208H3[54;5H[?12l[?25h[?25l[67;208H4[55;5H[?12l[?25h[?25l[67;208H5[56;5H[?12l[?25h[?25l[67;208H6[57;5H[?12l[?25h[?25l[67;208H7[58;5H[?12l[?25h[?25l[67;208H8[59;5H[?12l[?25h[?25l[67;208H9[60;5H[?12l[?25h[?25l[67;207H60[61;5H[?12l[?25h[?25l[67;208H1[62;5H[?12l[?25h[?25l[67;208H2[63;5H[?12l[?25h[?25l[67;208H3[64;5H[?12l[?25h[?25l[67;208H4[65;5H[?12l[?25h[?25l[67;208H5[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H66,5[11C0%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hd[33m)[m [36m_GRAPH_DIR[m=[35m$OPTARG[m[67;207H[K[67;207H67,5[11C1%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H68,5[11C2%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5He[33m)[m [36m_GRAPH_NAME[m=[35m$OPTARG[m[67;207H[K[67;207H69,5[11C3%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H70,5[11C4%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hi[33m)[m [36m_INSTALL_NEO4J[m=[33mtrue[m[67;207H[K[67;207H71,5[11C4%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H72,5[11C5%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hj[33m)[m [36m_IMPORT_DATA[m=[33mtrue[m[67;207H[K[67;207H73,5[11C6%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H74,5[11C7%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hm[33m)[m [36m_NEO4J_USER[m=[35m$OPTARG[m[67;207H[K[67;207H75,5[11C8%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H76,5[11C8%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hn[33m)[m [36m_NEO4J_PASSWORD[m=[35m$OPTARG[m[67;207H[K[67;207H77,5[11C9%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H78,5[10C10%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5HS[33m)[m [36m_SPECIES_ID[m=[35m$OPTARG[m[67;207H[K[67;207H79,5[10C11%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H80,5[10C12%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;4H\?[33m)[m [33mecho "Invalid option: -[m[35m$OPTARG[m[33m" >&2[m[67;207H[K[67;207H81,5[10C12%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33mecho "[m[35m$usage[m[33m" >&2[m[67;207H[K[67;207H82,5[10C13%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33mexit[m [33m1[m[67;207H[K[67;207H83,5[10C14%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;8H[33m;;[m[67;207H[K[67;207H84,5[10C15%[66;5H[?12l[?25h[?25l[1;66r[1;1H[2M[1;67r[65;3H[33mesac
+done[m[67;207H[K[67;207H85,5[10C16%[65;5H[?12l[?25h[?25l[67;208H6,4[66;4H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mshift[m [35m$((OPTIND - [m[33m1[m[35m))[m[67;207H[K[67;207H87,5[10C17%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H88,0-1[8C17%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[36m# --- Check if the execution type has been passed --- #[m[67;207H[K[67;207H89,5[10C18%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mif ![m [35m$_INSTALL_NEO4J[m && [33m![m [35m$_IMPORT_DATA[m ; [33mthen[m[67;207H[K[67;207H90,5[10C19%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;2H[33mecho "missing argument execution type -i|-j"[m[67;207H[K[67;207H91,5[10C20%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "[m[35m$usage[m[33m"[m[67;207H[K[67;207H92,5[10C21%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mexit[m [33m1[m[67;207H[K[67;207H93,5[10C21%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mfi[m;[67;207H[K[67;207H94,3[10C22%[66;3H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H95,0-1[8C23%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mif [m[35m$[m[35m[46m{[m[35m_INSTALL_NEO4J[m[35m[46m}[m [33m=[m [33mtrue[m; [33mthen[m[67;207H[K[67;207H96,5[10C24%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[65;5H[35m{[14C}[m
+    [33mecho "start installing neo4j"[m[67;207H[K[67;207H97,5[10C25%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo sh [33m-c[m [33m"wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H98,5[10C26%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo sh [33m-c[m [33m"echo 'deb http://debian.neo4j.org/repo stable/' >/tmp/neo4j.list"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H99,5[10C26%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo [33mmv[m /tmp/neo4j.list /etc/apt/sources.list.d[67;207H[K[67;207H100,5[9C27%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo apt-get update[67;207H[K[67;207H101,5[9C28%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo apt-get install neo4j[67;207H[K[67;207H102,5[9C29%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "installing neo4j finished"[m[67;207H[K[67;207H103,5[9C30%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif [[m [33m![m [33m-z[m [33m"[m[35m$_NEO4J_PASSWORD[m[33m"[m [33m][m; [33mthen[m[67;207H[K[67;207H104,5[9C30%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "removing old authentication"[m[67;207H[K[67;207H105,1-8[7C31%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mif [msudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H106,1-8[7C32%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mecho "Shutting down Neo4j DB"[m[67;207H[K[67;207H107,5[9C33%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mif ![m sudo service neo4j [33mstop[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H108,5[9C34%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mecho "an error occurred while trying to shut down neo4j db"[m[67;207H[K[67;207H109,5[9C34%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mexit[m [33m1[m[67;207H[K[67;207H110,1-8[7C35%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mfi[m[67;207H[K[67;207H111,5-8[7C36%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mfi[m[67;207H[K[67;207H112,1-8[7C37%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9Hsudo [33mrm[m /var/lib/neo4j/data/dbms/auth[67;207H[K[67;207H113,1-8[7C38%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mif ![m sudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H114,1-8[7C39%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mif ![m sudo service neo4j [33mstart[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H115,1-8[7C39%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mecho "An error occurred while trying to start neo4j"[m[67;207H[K[67;207H116,1-8[7C40%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mexit[m [33m1[m[67;207H[K[67;207H117,1-8[7C41%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mfi[m[67;207H[K[67;207H118,1-8[7C42%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mfi[m[67;207H[K[67;207H119,1-8[7C43%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "setting new password for user neo4j"      [m[67;207H[K[67;207H120,1-8[7C43%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9Hcurl [33m-H[m [33m"Content-Type: application/json"[m [33m-X[m POST [33m-d[m [33m'{"password":"'[m[35m${_NEO4J_PASSWORD}[m[33m'"}'[m [33m-u[m neo4j:neo4j http://localhost:[33m7474[m/user/neo4j/password [33m>[m/dev/null [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H121,1-8[7C44%[66;8H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H122,5[9C45%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mfi[m[67;207H[K[67;207H123,2[9C46%[66;2H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H124,0-1[7C47%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mif [m[35m$[m[35m[46m{[m[35m_IMPORT_DATA[m[35m[46m}[m [33m=[m [33mtrue[m; [33mthen[m[67;207H[K[67;207H125,5[9C47%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[65;5H[35m{[12C}[m
+    [33mecho "Checking if current directory is valid project"[m[67;207H[K[67;207H126,5[9C48%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif ![m mvn [33m-q[m clean package [35m-DskipTests[m; [33mthen[m[67;207H[K[67;207H127,5[9C49%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mif [[m [33m![m [33m-f[m /target/BatchImporter-jar-with-dependencies.jar [33m][m; [33mthen[m[67;207H[K[67;207H128,5[9C50%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mecho "Cloning new repo from git"[m[67;207H[K[67;207H129,5[9C51%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13Hgit clone https://github.com/reactome/graph-importer.git[67;207H[K[67;207H130,5[9C52%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[36m_PATH[m=[33m"/graph-importer"[m[67;207H[K[67;207H131,5[9C52%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H132,0-1[7C53%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mecho "Started packaging reactome project"[m[67;207H[K[67;207H133,5[9C54%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mif ![m mvn [33m-q[m [33m-f[m .[35m${_PATH}[m/pom.xml clean package [35m-DskipTests[m; [33mthen[m[67;207H[K[67;207H134,5[9C55%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mecho "An error occurred when packaging the project"[m[67;207H[K[67;207H135,5[9C56%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mexit[m [33m1[m[67;207H[K[67;207H136,5[9C56%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mfi[m[67;207H[K[67;207H137,5[9C57%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mfi[m[67;207H[K[67;207H138,5[9C58%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H139,5[9C59%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H140,0-1[7C60%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif [[m [33m"[m[35m$_GRAPH_DIR[m[33m"[m [33m==[m [33m"/var/lib/neo4j/data/"[m [33m][m; [33mthen[m[67;207H[K[67;207H141,5[9C60%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mif [msudo service neo4j [33mstatus[m; [33mthen[m[67;207H[K[67;207H142,5[9C61%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mecho "Shutting down Neo4j DB in order to prepare dataimport import"[m[67;207H[K[67;207H143,5[9C62%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mif ![m sudo service neo4j [33mstop[m; [33mthen[m[67;207H[K[67;207H144,5[9C63%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;17H[33mecho "An error occurred while trying to shut down neo4j db"[m[67;207H[K[67;207H145,5[9C64%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mexit[m [33m1[m[67;207H[K[67;207H146,5[9C65%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mfi[m[67;207H[K[67;207H147,5[9C65%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mfi[m[67;207H[K[67;207H148,5[9C66%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H149,5[9C67%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H150,0-1[7C68%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif [[m [33m![m [33m-d[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m [33m][m; [33mthen[m[67;207H[K[67;207H151,5[9C69%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "Creating new database folder"[m[67;207H[K[67;207H152,5[9C69%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mif ![m sudo [33mmkdir[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[m[67;207H[K[67;207H153,5[9C70%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mecho "An error occurred while trying to create a new database folder"[m[67;207H[K[67;207H154,5[9C71%[66;5H[?12l[?25h[?25l[67;209H3[65;5H[?12l[?25h[?25l[67;209H2[64;5H[?12l[?25h[?25l[67;209H1[63;5H[?12l[?25h[?25l[67;209H0,0-1[62;1H[?12l[?25h[?25l[67;208H49,5  [61;5H[?12l[?25h[?25l[67;209H8[60;5H[?12l[?25h[?25l[67;209H7[59;5H[?12l[?25h[?25l[67;209H6[58;5H[?12l[?25h[?25l[67;209H5[57;5H[?12l[?25h[?25l[67;209H4[56;5H[?12l[?25h[?25l[67;209H3[55;5H[?12l[?25h[?25l[67;209H2[54;5H[?12l[?25h[?25l[67;209H1[53;5H[?12l[?25h[?25l[67;209H0,0-1[52;1H[?12l[?25h[?25l[67;208H39,5  [51;5H[?12l[?25h[?25l[67;209H8[50;5H[?12l[?25h[?25l[67;209H7[49;5H[?12l[?25h[?25l[67;209H6[48;5H[?12l[?25h[?25l[67;209H7[49;5H[?12l[?25h[?25l[67;209H8[50;5H[?12l[?25h[?25l[67;209H9[51;5H[?12l[?25h[?25l[67;209H8[50;5H[?12l[?25h[?25l[67;209H7[49;5H[?12l[?25h[?25l[67;209H6[48;5H[?12l[?25h[?25l[67;209H5[47;5H[?12l[?25h[?25l[67;209H4[46;5H[?12l[?25h[?25l[67;209H3[45;5H[?12l[?25h[?25l[67;209H2,0-1[44;1H[?12l[?25h[?25l[67;209H1,5  [43;5H[?12l[?25h[?25l[67;209H0[42;5H[?12l[?25h[?25l[67;208H29[41;5H[?12l[?25h[?25l[67;209H8[40;5H[?12l[?25h[?25l[67;209H7[39;5H[?12l[?25h[?25l[67;209H6[38;5H[?12l[?25h[?25l[37;5H[35m[46m{[12C}[m[67;209H5[37;5H[?12l[?25h[?25l[35m{[12C}[m[67;209H4,0-1[36;1H[?12l[?25h[?25l[67;209H3,2  [35;2H[?12l[?25h[?25l[67;209H2,5[34;5H[?12l[?25h[?25l[67;209H1,1-8[33;8H[?12l[?25h[?25l[67;209H0[32;8H[?12l[?25h[?25l[67;208H19[31;8H[?12l[?25h[?25l[67;209H8[30;8H[?12l[?25h[?25l[67;209H7[29;8H[?12l[?25h[?25l[67;209H6[28;8H[?12l[?25h[?25l[67;209H5[27;8H[?12l[?25h[?25l[67;209H4[26;8H[?12l[?25h[?25l[67;209H3[25;8H[?12l[?25h[?25l[67;209H2[24;8H[?12l[?25h[?25l[67;209H1,5[23;8H[?12l[?25h[?25l[67;209H0,1[22;8H[?12l[?25h[?25l[67;208H09,5  [21;5H[?12l[?25h[?25l[67;209H8[20;5H[?12l[?25h[?25l[67;209H7[19;5H[?12l[?25h[?25l[67;209H6,1-8[18;8H[?12l[?25h[?25l[67;209H5[17;8H[?12l[?25h[?25l[67;209H4,5  [16;5H[?12l[?25h[?25l[67;209H3[15;5H[?12l[?25h[?25l[67;209H4[16;5H[?12l[?25h[?25l[67;209H5,1-8[17;8H[?12l[?25h[?25l[67;209H6[18;8H[?12l[?25h[?25l[67;209H7,5  [19;5H[?12l[?25h[?25l[67;209H8[20;5H[?12l[?25h[?25l[67;209H9[21;5H[?12l[?25h[?25l[67;208H10,1-8[22;8H[?12l[?25h[?25l[67;209H1,5[23;8H[?12l[?25h[?25l[67;209H2,1[24;8H[?12l[?25h[?25l[67;209H3[25;8H[?12l[?25h[?25l[67;209H4[26;8H[?12l[?25h[?25l[67;209H5[27;8H[?12l[?25h[?25l[67;209H6[28;8H[?12l[?25h[?25l[67;209H7[29;8H[?12l[?25h[?25l[67;209H8[30;8H[?12l[?25h[?25l[67;209H9[31;8H[?12l[?25h[?25l[67;208H20[32;8H[?12l[?25h[?25l[67;209H1[33;8H[?12l[?25h[?25l[67;209H2,5  [34;5H[?12l[?25h[?25l[67;209H3,2[35;2H[?12l[?25h[?25l[67;209H4,0-1[36;1H[?12l[?25h[?25l[37;5H[35m[46m{[12C}[m[67;209H5,5  [37;5H[?12l[?25h[?25l[35m{[12C}[m[67;209H6[38;5H[?12l[?25h[?25l[67;209H7[39;5H[?12l[?25h[?25l[67;209H8[40;5H[?12l[?25h[?25l[67;209H9[41;5H[?12l[?25h[?25l[67;208H30[42;5H[?12l[?25h[?25l[67;209H1[43;5H[?12l[?25h[?25l[67;209H2,0-1[44;1H[?12l[?25h[?25l[67;209H3,5  [45;5H[?12l[?25h[?25l[67;209H4[46;5H[?12l[?25h[?25l[67;209H5[47;5H[?12l[?25h[?25l[67;209H6[48;5H[?12l[?25h[?25l[67;209H7[49;5H[?12l[?25h[?25l[67;209H8[50;5H[?12l[?25h[?25l[67;209H9[51;5H[?12l[?25h[?25l[67;208H40,0-1[52;1H[?12l[?25h[?25l[67;209H1,5  [53;5H[?12l[?25h[?25l[67;209H2[54;5H[?12l[?25h[?25l[67;209H3[55;5H[?12l[?25h[?25l[67;209H4[56;5H[?12l[?25h[?25l[67;209H5[57;5H[?12l[?25h[?25l[67;209H6[58;5H[?12l[?25h[?25l[67;209H7[59;5H[?12l[?25h[?25l[67;209H8[60;5H[?12l[?25h[?25l[67;209H9[61;5H[?12l[?25h[?25l[67;208H50,0-1[62;1H[?12l[?25h[?25l[67;209H1,5  [63;5H[?12l[?25h[?25l[67;209H2[64;5H[?12l[?25h[?25l[67;209H3[65;5H[?12l[?25h[?25l[67;209H4[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;13H[33mexit[m [33m1[m[67;207H[K[67;207H155,5[9C72%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mfi[m[67;207H[K[67;207H156,5[9C73%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H157,5[9C73%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H158,0-1[7C74%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "Changing permissions of neo4j graph"[m[67;207H[K[67;207H159,5[9C75%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif ![m sudo chown [33m-R[m [35m${USER}[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[m[67;207H[K[67;207H160,5[9C76%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "An error occurred when trying to change permissions of the neo4j graph"[m[67;207H[K[67;207H161,5[9C77%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H162,5[9C78%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H163,0-1[7C78%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "Started importing data to the neo4j database"[m[67;207H[K[67;207H164,5[9C79%[66;5H[?12l[?25h[?25l[1;66r[1;1H[2M[1;67r[65;5H[33mif ![m java [35m-jar[m .[35m${_PATH}[m/target/BatchImporter-jar-with-dependencies.jar [33m-h[m [35m${_REACTOME_HOST}[m [33m-s[m [35m${_REACTOME_PORT}[m [33m-d[m [35m${_REACTOME_DATABASE}[m [33m-u[m [35m${_REACTOME_USER}[m [33m-p[m [35m${_REACTOME_PASSWORD}[m [33m-n[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m  [33m-S[m  [66;1H[35m${_SPECIES_ID}[m; [33mthen[m[67;207H[K[67;207H165,5[9C80%[65;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "An error occurred during the data import process"[m[67;207H[K[67;207H166,5[9C81%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mexit[m [33m1[m[67;207H[K[67;207H167,5[9C82%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H168,5[9C83%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "DataImport finished successfully!"[m[67;207H[K[67;207H169,5[9C83%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H170,0-1[7C84%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "Changing permissions of neo4j graph"[m[67;207H[K[67;207H171,5[9C85%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif ![m sudo chown [33m-R[m [35m${_NEO4J_USER}[m [35m${_GRAPH_DIR}${_GRAPH_NAME}[m; [33mthen[m[67;207H[K[67;207H172,5[9C86%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "An error occurred when trying to change permissions of the neo4j graph"[m[67;207H[K[67;207H173,5[9C87%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mexit[m [33m1[m[67;207H[K[67;207H174,5[9C87%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H175,5[9C88%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mfi[m[67;207H[K[67;207H176,2[9C89%[66;2H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H177,0-1[7C90%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mif ![m sudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H178,5[9C91%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mecho "Starting neo4j database"[m[67;207H[K[67;207H179,5[9C91%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mif ![m sudo service neo4j [33mstart[m; [33mthen[m[67;207H[K[67;207H180,5[9C92%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mecho "Neo4j database could not be started"[m[67;207H[K[67;207H181,5[9C93%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;9H[33mexit[m [33m1[m[67;207H[K[67;207H182,5[9C94%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5H[33mfi[m[67;207H[K[67;207H183,5[9C95%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mfi[m[67;207H[K[67;207H184,2[9C95%[66;2H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[67;207H[K[67;207H185,0-1[7C96%[66;1H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mif [[m [33m![m [33m-z[m [33m"[m[35m$_PATH[m[33m"[m [33m][m; [33mthen[m[67;207H[K[67;207H186,5[9C97%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;5Hsudo [33mrm[m [33m-R[m graph-importer[67;207H[K[67;207H187,5[9C98%[66;5H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mfi[m[67;207H[K[67;207H188,2[9C99%[66;2H[?12l[?25h[?25l[1;66r[66;1H
+[1;67r[66;1H[33mecho "Script finished with"  [m[35m${_PROBLEMS}[m[33m "problems!"[m[67;207H[K[67;207H189,5[9CBot[66;5H[?12l[?25h[?25l[67;209H8,2[65;2H[?12l[?25h[?25l[67;209H7,5[64;5H[?12l[?25h[?25l[67;209H6[63;5H[?12l[?25h[?25l[67;209H5,0-1[62;1H[?12l[?25h[?25l[67;209H4,2  [61;2H[?12l[?25h[?25l[67;209H3,5[60;5H[?12l[?25h[?25l[67;209H4,2[61;2H[?12l[?25h[?25l[67;209H5,0-1[62;1H[?12l[?25h[?25l[67;209H6,5  [63;5H[?12l[?25h[?25l[67;209H7[64;5H[?12l[?25h[?25l[67;209H8,2[65;2H[?12l[?25h[?25l[67;209H9,5[66;5H[?12l[?25h[?25l[67;209H8,2[65;2H[?12l[?25h[?25l[67;209H7,5[64;5H[?12l[?25h[?25l[67;209H6[63;5H[?12l[?25h[?25l[67;209H5,0-1[62;1H[?12l[?25h[?25l[67;209H4,2  [61;2H[?12l[?25h[?25l[67;209H3,5[60;5H[?12l[?25h[?25l[67;209H2[59;5H[?12l[?25h[?25l[67;209H1[58;5H[?12l[?25h[?25l[67;209H0[57;5H[?12l[?25h[?25l[67;208H79[56;5H[?12l[?25h[?25l[67;209H8[55;5H[?12l[?25h[?25l[67;209H7,0-1[54;1H[?12l[?25h[?25l[67;209H6,2  [53;2H[?12l[?25h[?25l[67;209H5,5[52;5H[?12l[?25h[?25l[67;209H4[51;5H[?12l[?25h[?25l[67;209H3[50;5H[?12l[?25h[?25l[67;209H2[49;5H[?12l[?25h[?25l[67;209H1[48;5H[?12l[?25h[?25l[67;209H0,0-1[47;1H[?12l[?25h[?25l[67;208H69,5  [46;5H[?12l[?25h[?25l[67;209H8[45;5H[?12l[?25h[?25l[67;209H7[44;5H[?12l[?25h[?25l[67;209H6[43;5H[?12l[?25h[?25l[67;209H5[41;5H[?12l[?25h[?25l[67;209H4[40;5H[?12l[?25h[?25l[67;209H3,0-1[39;1H[?12l[?25h[?25l[67;209H2,5  [38;5H[?12l[?25h[?25l[67;209H1[37;5H[?12l[?25h[?25l[67;209H0[36;5H[?12l[?25h[?25l[67;208H59[35;5H[?12l[?25h[?25l[67;209H8,0-1[34;1H[?12l[?25h[?25l[67;209H7,5  [33;5H[?12l[?25h[?25l[67;209H6[32;5H[?12l[?25h[?25l[67;209H5[31;5H[?12l[?25h[?25l[67;209H4[30;5H[?12l[?25h[?25l[67;209H3[29;5H[?12l[?25h[?25l[67;209H2[28;5H[?12l[?25h[?25l[67;209H1[27;5H[?12l[?25h[?25l[67;209H0,0-1[26;1H[?12l[?25h[?25l[67;208H49,5  [25;5H[?12l[?25h[?25l[67;209H8[24;5H[?12l[?25h[?25l[67;209H7[23;5H[?12l[?25h[?25l[67;209H6[22;5H[?12l[?25h[?25l[67;209H5[21;5H[?12l[?25h[?25l[67;209H4[20;5H[?12l[?25h[?25l[67;209H3[19;5H[?12l[?25h[?25l[67;209H2[18;5H[?12l[?25h[?25l[67;209H1[17;5H[?12l[?25h[?25l[67;209H0,0-1[16;1H[?12l[?25h[?25l[67;208H39,5  [15;5H[?12l[?25h[?25l[67;209H8[14;5H[?12l[?25h[?25l[67;209H7[13;5H[?12l[?25h[?25l[67;209H6[12;5H[?12l[?25h[?25l[67;209H5[11;5H[?12l[?25h[?25l[67;209H4[10;5H[?12l[?25h[?25l[67;209H3[9;5H[?12l[?25h[?25l[67;209H2,0-1[8;1H[?12l[?25h[?25l[67;209H1,5  [7;5H[?12l[?25h[?25l[67;209H0[6;5H[?12l[?25h[?25l[67;208H29[5;5H[?12l[?25h[?25l[67;209H8[4;5H[?12l[?25h[?25l[67;209H7[3;5H[?12l[?25h[?25l[67;209H6[2;5H[?12l[?25h[?25l[1;5H[35m[46m{[12C}[m[67;209H5[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[2;5H[35m{[12C}[m[67;207H[K[67;207H124,0-1[7C99%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mfi[m[67;207H[K[67;207H123,2[9C98%[1;2H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mfi[m[67;207H[K[67;207H122,5[9C97%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9Hcurl [33m-H[m [33m"Content-Type: application/json"[m [33m-X[m POST [33m-d[m [33m'{"password":"'[m[35m${_NEO4J_PASSWORD}[m[33m'"}'[m [33m-u[m neo4j:neo4j http://localhost:[33m7474[m/user/neo4j/password [33m>[m/dev/null [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H121,1-8[7C96%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mecho "setting new password for user neo4j"      [m[67;207H[K[67;207H120,1-8[7C95%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mfi[m[67;207H[K[67;207H119,1-8[7C95%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mfi[m[67;207H[K[67;207H118,1-8[7C94%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mexit[m [33m1[m[67;207H[K[67;207H117,1-8[7C93%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mecho "An error occurred while trying to start neo4j"[m[67;207H[K[67;207H116,1-8[7C92%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mif ![m sudo service neo4j [33mstart[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H115,1-8[7C91%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mif ![m sudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H114,1-8[7C91%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9Hsudo [33mrm[m /var/lib/neo4j/data/dbms/auth[67;207H[K[67;207H113,1-8[7C90%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mfi[m[67;207H[K[67;207H112,1-8[7C89%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mfi[m[67;207H[K[67;207H111,5-8[7C88%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mexit[m [33m1[m[67;207H[K[67;207H110,1-8[7C87%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;17H[33mecho "an error occurred while trying to shut down neo4j db"[m[67;207H[K[67;207H109,5[9C87%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mif ![m sudo service neo4j [33mstop[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H108,5[9C86%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;13H[33mecho "Shutting down Neo4j DB"[m[67;207H[K[67;207H107,5[9C85%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mif [msudo service neo4j [33mstatus[m [33m>[m/dev/null [33m2>[m&[33m1[m; [33mthen[m[67;207H[K[67;207H106,1-8[7C84%[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;9H[33mecho "removing old authentication"[m[67;207H[K[67;207H105,1-8[7C83%[1;8H[?12l[?25h[?25l[67;209H6[2;8H[?12l[?25h[?25l[67;209H7,5  [3;5H[?12l[?25h[?25l[67;209H8[4;5H[?12l[?25h[?25l[67;209H9[5;5H[?12l[?25h[?25l[67;208H10,1-8[6;8H[?12l[?25h[?25l[67;209H1,5[7;8H[?12l[?25h[?25l[67;209H2,1[8;8H[?12l[?25h[?25l[67;209H3[9;8H[?12l[?25h[?25l[67;209H4[10;8H[?12l[?25h[?25l[67;209H5[11;8H[?12l[?25h[?25l[67;209H6[12;8H[?12l[?25h[?25l[67;209H7[13;8H[?12l[?25h[?25l[67;209H8[14;8H[?12l[?25h[?25l[67;209H9[15;8H[?12l[?25h[?25l[67;208H20[16;8H[?12l[?25h[?25l[67;209H1[17;8H[?12l[?25h[?25l[67;209H2,5  [18;5H[?12l[?25h[?25l[67;209H3,2[19;2H[?12l[?25h[?25l[67;209H4,0-1[20;1H[?12l[?25h[?25l[21;5H[35m[46m{[12C}[m[67;209H5,5  [21;5H[?12l[?25h[?25l[35m{[12C}[m[67;209H6[22;5H[?12l[?25h[?25l[67;209H7[23;5H[?12l[?25h[?25l[67;209H8[24;5H[?12l[?25h[?25l[67;209H9[25;5H[?12l[?25h[?25l[67;208H30[26;5H[?12l[?25h[?25l[67;209H1[27;5H[?12l[?25h[?25l[67;209H2,0-1[28;1H[?12l[?25h[?25l[67;209H3,5  [29;5H[?12l[?25h[?25l[67;209H4[30;5H[?12l[?25h[?25l[67;209H5[31;5H[?12l[?25h[?25l[67;209H6[32;5H[?12l[?25h[?25l[67;209H7[33;5H[?12l[?25h[?25l[67;209H8[34;5H[?12l[?25h[?25l[67;209H9[35;5H[?12l[?25h[?25l[67;208H40,0-1[36;1H[?12l[?25h[?25l[67;209H1,5  [37;5H[?12l[?25h[?25l[67;209H2[38;5H[?12l[?25h[?25l[67;209H3[39;5H[?12l[?25h[?25l[67;209H4[40;5H[?12l[?25h[?25l[67;209H5[41;5H[?12l[?25h[?25l[67;209H6[42;5H[?12l[?25h[?25l[67;209H7[43;5H[?12l[?25h[?25l[67;209H8[44;5H[?12l[?25h[?25l[67;209H9[45;5H[?12l[?25h[?25l[67;208H50,0-1[46;1H[?12l[?25h[?25l[67;209H1,5  [47;5H[?12l[?25h[?25l[67;209H2[48;5H[?12l[?25h[?25l[67;209H3[49;5H[?12l[?25h[?25l[67;209H4[50;5H[?12l[?25h[?25l[67;209H5[51;5H[?12l[?25h[?25l[67;209H6[52;5H[?12l[?25h[?25l[67;209H7[53;5H[?12l[?25h[?25l[67;209H8,0-1[54;1H[?12l[?25h[?25l[67;209H9,5  [55;5H[?12l[?25h[?25l[67;208H60[56;5H[?12l[?25h[?25l[67;209H1[57;5H[?12l[?25h[?25l[67;209H2[58;5H[?12l[?25h[?25l[67;209H3,0-1[59;1H[?12l[?25h[?25l[67;209H4,5  [60;5H[?12l[?25h[?25l[67;209H5[61;5H[?12l[?25h[?25l[67;209H6[63;5H[?12l[?25h[?25l[67;209H7[64;5H[?12l[?25h[?25l[67;209H8[65;5H[?12l[?25h[?25l[67;209H7[64;5H[?12l[?25h[?25l[67;209H6[63;5H[?12l[?25h[?25l[67;209H5[61;5H[?12l[?25h[?25l[67;209H4[60;5H[?12l[?25h[?25l[67;209H3,0-1[59;1H[?12l[?25h[?25l[67;209H2,5  [58;5H[?12l[?25h[?25l[67;209H1[57;5H[?12l[?25h[?25l[67;209H0[56;5H[?12l[?25h[?25l[67;208H59[55;5H[?12l[?25h[?25l[67;209H8,0-1[54;1H[?12l[?25h[?25l[67;209H7,5  [53;5H[?12l[?25h[?25l[67;209H6[52;5H[?12l[?25h[?25l[67;209H5[51;5H[?12l[?25h[?25l[67;209H4[50;5H[?12l[?25h[?25l[67;209H3[49;5H[?12l[?25h[?25l[67;209H2[48;5H[?12l[?25h[?25l[67;209H1[47;5H[?12l[?25h[?25l[67;209H0,0-1[46;1H[?12l[?25h[?25l[67;208H49,5  [45;5H[?12l[?25h[?25l[67;209H8[44;5H[?12l[?25h[?25l[67;209H7[43;5H[?12l[?25h[?25l[67;209H6[42;5H[?12l[?25h[?25l[67;209H5[41;5H[?12l[?25h[?25l[67;209H4[40;5H[?12l[?25h[?25l[67;209H3[39;5H[?12l[?25h[?25l[67;209H2[38;5H[?12l[?25h[?25l[67;209H1[37;5H[?12l[?25h[?25l[67;209H0,0-1[36;1H[?12l[?25h[?25l[67;208H39,5  [35;5H[?12l[?25h[?25l[67;209H8[34;5H[?12l[?25h[?25l[67;209H7[33;5H[?12l[?25h[?25l[67;209H6[32;5H[?12l[?25h[?25l[67;209H5[31;5H[?12l[?25h[?25l[67;209H4[30;5H[?12l[?25h[?25l[67;209H3[29;5H[?12l[?25h[?25l[67;209H2,0-1[28;1H[?12l[?25h[?25l[67;209H1,5  [27;5H[?12l[?25h[?25l[67;209H0[26;5H[?12l[?25h[?25l[67;208H29[25;5H[?12l[?25h[?25l[67;209H8[24;5H[?12l[?25h[?25l[67;209H7[23;5H[?12l[?25h[?25l[67;209H6[22;5H[?12l[?25h[?25l[21;5H[35m[46m{[12C}[m[67;209H5[21;5H[?12l[?25h[?25l[35m{[12C}[m[67;209H4,0-1[20;1H[?12l[?25h[?25l[67;209H3,2  [19;2H[?12l[?25h[?25l[67;209H2,5[18;5H[?12l[?25h[?25l[67;209H1,1-8[17;8H[?12l[?25h[?25l[67;209H0[16;8H[?12l[?25h[?25l[67;208H19[15;8H[?12l[?25h[?25l[67;209H8[14;8H[?12l[?25h[?25l[67;209H7[13;8H[?12l[?25h[?25l[67;209H6[12;8H[?12l[?25h[?25l[67;209H5[11;8H[?12l[?25h[?25l[67;209H4[10;8H[?12l[?25h[?25l[67;209H3[9;8H[?12l[?25h[?25l[67;209H2[8;8H[?12l[?25h[?25l[67;209H1,5[7;8H[?12l[?25h[?25l[67;209H0,1[6;8H[?12l[?25h[?25l[67;208H09,5  [5;5H[?12l[?25h[?25l[67;209H8[4;5H[?12l[?25h[?25l[67;209H7[3;5H[?12l[?25h[?25l[67;209H6,1-8[2;8H[?12l[?25h[?25l[67;209H5[1;8H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mif [[m [33m![m [33m-z[m [33m"[m[35m$_NEO4J_PASSWORD[m[33m"[m [33m][m; [33mthen[m[67;207H[K[67;207H104,5[9C83%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "installing neo4j finished"[m[67;207H[K[67;207H103,5[9C82%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo apt-get install neo4j[67;207H[K[67;207H102,5[9C81%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo apt-get update[67;207H[K[67;207H101,5[9C80%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo [33mmv[m /tmp/neo4j.list /etc/apt/sources.list.d[66;1H[34m@                                                                                                                                                                                                                               [m[67;207H[K[67;207H100,5[9C79%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo sh [33m-c[m [33m"echo 'deb http://debian.neo4j.org/repo stable/' >/tmp/neo4j.list"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H99,5[10C79%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hsudo sh [33m-c[m [33m"wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -"[m [33m>[m/dev/null [33m2>[m&[33m1[m[67;207H[K[67;207H98,5[10C78%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "start installing neo4j"[m[67;207H[K[67;207H97,5[10C78%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mif [m[35m$[m[35m[46m{[m[35m_INSTALL_NEO4J[m[35m[46m}[m [33m=[m [33mtrue[m; [33mthen[m[67;207H[K[67;207H96,5[10C77%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[2;5H[35m{[14C}[m[67;207H[K[67;207H95,0-1[8C76%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mfi[m;[67;207H[K[67;207H94,3[10C75%[1;3H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mexit[m [33m1[m[67;207H[K[67;207H93,5[10C74%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5H[33mecho "[m[35m$usage[m[33m"[m[67;207H[K[67;207H92,5[10C73%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;2H[33mecho "missing argument execution type -i|-j"[m[67;207H[K[67;207H91,5[10C73%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mif ![m [35m$_INSTALL_NEO4J[m && [33m![m [35m$_IMPORT_DATA[m ; [33mthen[m[67;207H[K[67;207H90,5[10C72%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# --- Check if the execution type has been passed --- #[m[67;207H[K[67;207H89,5[10C71%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H88,0-1[8C70%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mshift[m [35m$((OPTIND - [m[33m1[m[35m))[m[67;207H[K[67;207H87,5[10C69%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mdone[m[67;207H[K[67;207H86,4[10C69%[1;4H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;3H[33mesac[m[67;207H[K[67;207H85,5[10C68%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H84,5[10C67%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mexit[m [33m1[m[67;207H[K[67;207H83,5[10C66%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mecho "[m[35m$usage[m[33m" >&2[m[67;207H[K[67;207H82,5[10C65%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;4H\?[33m)[m [33mecho "Invalid option: -[m[35m$OPTARG[m[33m" >&2[m[67;207H[K[67;207H81,5[10C65%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H80,5[10C64%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5HS[33m)[m [36m_SPECIES_ID[m=[35m$OPTARG[m[67;207H[K[67;207H79,5[10C63%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H78,5[10C62%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hn[33m)[m [36m_NEO4J_PASSWORD[m=[35m$OPTARG[m[67;207H[K[67;207H77,5[10C61%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H76,5[10C60%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hm[33m)[m [36m_NEO4J_USER[m=[35m$OPTARG[m[67;207H[K[67;207H75,5[10C60%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H74,5[10C59%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hj[33m)[m [36m_IMPORT_DATA[m=[33mtrue[m[67;207H[K[67;207H73,5[10C58%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H72,5[10C57%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hi[33m)[m [36m_INSTALL_NEO4J[m=[33mtrue[m[67;207H[K[67;207H71,5[10C56%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H70,5[10C56%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5He[33m)[m [36m_GRAPH_NAME[m=[35m$OPTARG[m[67;207H[K[67;207H69,5[10C55%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H68,5[10C54%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hd[33m)[m [36m_GRAPH_DIR[m=[35m$OPTARG[m[67;207H[K[67;207H67,5[10C53%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H66,5[10C52%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hv[33m)[m [36m_REACTOME_PASSWORD[m=[35m$OPTARG[m[67;207H[K[67;207H65,5[10C52%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H64,5[10C51%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hu[33m)[m [36m_REACTOME_USER[m=[35m$OPTARG[m[67;207H[K[67;207H63,5[10C50%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H62,5[10C49%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Ht[33m)[m [36m_REACTOME_DATABASE[m=[35m$OPTARG[m[67;207H[K[67;207H61,5[10C48%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H60,5[10C47%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hs[33m)[m [36m_REACTOME_PORT[m=[35m$OPTARG[m[67;207H[K[67;207H59,5[10C47%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H58,5[10C46%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hr[33m)[m [36m_REACTOME_HOST[m=[35m$OPTARG[m[67;207H[K[67;207H57,5[10C45%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33m;;[m[67;207H[K[67;207H56,5[10C44%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;8H[33mexit[m[67;207H[K[67;207H55,5[10C43%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;5Hh[33m)[m [33mecho "[m[35m$usage[m[33m"[m[67;207H[K[67;207H54,5[10C43%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;3H[33mcase[m [33m"[m[35m$option[m[33m"[m [33min[m[67;207H[K[67;207H53,5[10C42%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mwhile getopts ":r:s:t:u:v:d:e:m:n:S:ijh" option; do[m[67;207H[K[67;207H52,5[10C41%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# :h (help) should be at the very end of the while loop[m[67;207H[K[67;207H51,5[10C40%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H50,0-1[8C39%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_PROBLEMS[m=[33m0[m[67;207H[K[67;207H49,5[10C39%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H48,0-1[8C38%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_NEO4J_USER[m=[33m"neo4j"[m[67;207H[K[67;207H47,5[10C37%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_SPECIES_ID[m=[33m48887[m[67;207H[K[67;207H46,5[10C36%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_INSTALL_NEO4J[m=[33mfalse[m[67;207H[K[67;207H45,5[10C35%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_IMPORT_DATA[m=[33mfalse[m[67;207H[K[67;207H44,5[10C34%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_GRAPH_NAME[m=[33m"graph.db"[m[67;207H[K[67;207H43,5[10C34%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_GRAPH_DIR[m=[33m"/var/lib/neo4j/data/databases/"[m[67;207H[K[67;207H42,5[10C33%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_PASSWORD[m=[33m"reactome"[m[67;207H[K[67;207H41,5[10C32%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_USER[m=[33m"reactome"[m[67;207H[K[67;207H40,5[10C31%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_DATABASE[m=[33m"reactome"[m[67;207H[K[67;207H39,5[10C30%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_PORT[m=[33m3306[m[67;207H[K[67;207H38,5[10C30%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m_REACTOME_HOST[m=[33m"localhost"[m[67;207H[K[67;207H37,5[10C29%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H36,0-1[8C28%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -n  Neo4j password (only set when neo4j is installed)."[m[67;207H[K[67;207H35,5[10C27%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -m  Neo4j user. DEFAULT: neo4j[m[67;207H[K[67;207H34,5[10C26%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -S  Set reference species. DEFAULT: 48887 (Homo sapiens)[m[67;207H[K[67;207H33,5[10C26%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -i  Install neo4j. DEFAULT: false[m[67;207H[K[67;207H32,5[10C25%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -j  Import Reactome data. DEFAULT: false[m[67;207H[K[67;207H31,5[10C24%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -e  Neo4j name of graph Db. DEFAULT: graph.db[m[67;207H[K[67;207H30,5[10C23%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -d  Neo4j directory of Db. DEFAULT: /var/lib/neo4j/data/[m[67;207H[K[67;207H29,5[10C22%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -v  Reactome database password. DEFAULT: reactome[m[67;207H[K[67;207H28,5[10C21%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -u  Reactome database user. DEFAULT: reactome[m[67;207H[K[67;207H27,5[10C21%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -t  Reactome database name. DEFAULT: reactome[m[67;207H[K[67;207H26,5[10C20%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -s  Reactome database port. DEFAULT: 3306[m[67;207H[K[67;207H25,5[10C19%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -r  Reactome database host. DEFAULT: localhost[m[67;207H[K[67;207H24,5[10C18%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33m    -h  Program help/usage[m[67;207H[K[67;207H23,5[10C17%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mwhere:[m[67;207H[K[67;207H22,5[10C17%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H21,0-1[8C16%[1;1H[?12l[?25h[?25l[1;66r[1;1H[2L[1;67r[1;1H[35m$(basename [m[33m"[m[35m$0[m[33m"[m[35m)[m[33m [-r <reactome_host> -s <reactome_port> -t <reactome_db_name> -u <reactome_db_user> -v <reactome_db_password> -d <neo4j_db_directory> -e <neo4j_db_name> -j <import_data> -i <install_neo4j> -m <neo4j_user> -n  [2;1H<neo4j_password> -S <speciesid>][m[67;207H[K[67;207H20,5[10C15%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H19,0-1[8C14%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mWARNING: If no password is specified the old password will persist.[m[67;207H[K[67;207H18,5[10C13%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mThe neo4j server can be updated without uninstalling it before.[m[67;207H[K[67;207H17,5[10C12%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mThe password will only be updated after installing or updating the neo4j server[m[67;207H[K[67;207H16,5[10C12%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H15,0-1[8C11%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mWARNING: Do not execute as sudo, permission will be asked when required[m[67;207H[K[67;207H14,5[10C10%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[33mScript for an initial setup and dataimport import of Reactome to the Graph[m[67;207H[K[67;207H13,5[11C9%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36musage[m=[33m"[m[67;207H[K[67;207H12,5[11C8%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H11,0-1[9C8%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#-----------------------------------------------------------[m[67;207H[K[67;207H10,5[11C7%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#  [m[67;207H[K[67;207H9,3[12C6%[1;3H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# Florian Korninger - fkorn@ebi.ac.uk[m[67;207H[K[67;207H8,5[12C5%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# 4 March 2015[m[67;207H[K[67;207H7,5[12C4%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#[m[67;207H[K[67;207H6,1[12C4%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# WARNING: do not execute as sudo, permission will be asked when required[m[67;207H[K[67;207H5,5[12C3%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m# Script for an initial setup and dataimport import of Reactome to the Graph[m[67;207H[K[67;207H4,5[12C2%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#-----------------------------------------------------------[m[67;207H[K[67;207H3,5[12C1%[1;5H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[67;207H[K[67;207H2,0-1[10C0%[1;1H[?12l[?25h[?25l[1;66r[1;1H[L[1;67r[1;1H[36m#!/bin/bash[m[67;207H[K[67;207H1,5[11CTop[1;5H[?12l[?25h[?25l[67;207H[K[67;1H:[?12l[?25hq[?25l[?12l[?25h[?25l]2;Release : script – Konsole[67;1H[K[67;1H[?1l>[?12l[?25h[?1049l7]2;preecej@cord3084-pc7:...ome/graph-importer]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/graph-importer> cd ../Release/
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> ll
+total 128
+drwxr-xr-x 6 preecej users  4096 Dec  7 17:45 [0m[01;34mjava[0m
+drwxr-xr-x 3 preecej users  4096 Dec  7 17:45 [01;34mmodules[0m
+drwxr-xr-x 3 preecej users  4096 Dec  7 17:46 [01;34mpathway_log_analysis[0m
+-rwxr-xr-x 1 preecej users    38 Dec  7 17:45 [00;32mREADME.md[0m
+drwxr-xr-x 6 preecej users  4096 Dec 12 14:31 [01;34mscripts[0m
+drwxr-xr-x 2 preecej users  4096 Jan  5 11:56 [01;34mslicingTool[0m
+drwxr-xr-x 4 preecej users  4096 Dec  7 17:45 [01;34mthird_party_install[0m
+-rw-r--r-- 1 preecej users 98304 Jan 15 21:22 [00mtypescript[0m
+drwxr-xr-x 6 preecej users  4096 Dec  7 17:45 [01;34mwebsite[0m
+7]2;preecej@cord3084-pc7:...ntReactome/Release]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release> cd website/
+7]2;preecej@cord3084-pc7:...me/Release/website]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website> ls -l
+total 16
+drwxr-xr-x  2 preecej users 4096 Dec 11 11:33 [0m[01;34mcgi-bin[0m
+drwxr-xr-x  2 preecej users 4096 Dec  7 17:45 [01;34mconf[0m
+drwxr-xr-x 10 preecej users 4096 Dec  7 17:45 [01;34mhtml[0m
+drwxr-xr-x  2 preecej users 4096 Dec  7 17:45 [01;34mlogs[0m
+7]2;preecej@cord3084-pc7:...me/Release/website]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website> cd conf/
+7]2;preecej@cord3084-pc7:...lease/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website/conf> ls
+[0m[00;32mhttpd.conf~[0m  [00;32mreactome.conf[0m  [00mREADME.txt[0m
+7]2;preecej@cord3084-pc7:...lease/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website/conf>  -l[K[K[Kls -l
+total 12
+-rwxr-xr-x 1 preecej users 1822 Dec  7 17:45 [0m[00;32mhttpd.conf~[0m
+-rwxr-xr-x 1 preecej users 1611 Dec  7 17:45 [00;32mreactome.conf[0m
+-rw-r--r-- 1 preecej users  430 Dec  7 17:45 [00mREADME.txt[0m
+7]2;preecej@cord3084-pc7:...lease/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website/conf> vi reactome.conf 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;67r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[67;1H"reactome.conf" 51L, 1611C[>c[1;1H<VirtualHost *:80>
+  DirectoryIndex index.html index.php
+
+  DocumentRoot /usr/local/gkb/website/html
+
+  TransferLog  /usr/local/gkb/website/logs/transfer_log
+  ErrorLog     /usr/local/gkb/website/logs/error_log
+
+  LogFormat "%h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{CONTENT-LENGTH}i\" \"%{cookie}n\""  combined_format
+  CustomLog    /usr/local/gkb/website/logs/extended_log combined_format
+
+  Alias[8C/icons[8C/usr/local/gkb/website/html/icons
+  Alias[8C/images[7C/usr/local/gkb/website/html/images
+  Alias[8C/javascript   /usr/local/gkb/website/html/javascript
+  Alias[8C/figures      /usr/local/gkb/website/images
+  ScriptAlias  /cgi-bin      /usr/local/gkb/website/cgi-bin
+
+  <Directory />[19;7H# required for apache 2.4+[20;7H#Require all granted[21;7HOptions +Includes[22;7HXBitHack on
+  </Directory>
+
+  <Directory "/usr/local/gkb/website/html/download/current/">[26;7HDirectoryIndex index.html[27;7HOptions Indexes FollowSymlinks MultiViews[28;7HAllowOverride None[29;7HOrder allow,deny[30;7HAllow from all[31;7H# required for apache 2.4+[32;7H#Require all granted[33;7HOptions +Includes[34;7HXBitHack on
+  </Directory>
+
+  <Directory "/usr/local/gkb/website/html/wordpress">[38;7HAllowOverride FileInfo
+  </Directory>[42;3HProxyPass[7C/AnalysisService http://localhost:8080/AnalysisService
+  ProxyPass[7C/PathwayBrowser http://localhost:8080/PathwayBrowser
+  ProxyPass[7C/ReactomeRESTfulAPI http://localhost:8080/ReactomeRESTfulAPI
+  ProxyPass[7C/content http://localhost:8080/content[48;3HProxyTimeout 1000
+
+</VirtualHost>
+
+[34m~                                                                                                                                                                                                                               [53;1H~                                                                                                                                                                                                                               [54;1H~                                                                                                                                                                                                                               [55;1H~                                                                                                                                                                                                                               [56;1H~                                                                                                                                                                                                                               [57;1H~                                                                                                                                                                                                                               [58;1H~                                                                                                                                                                                                                               [59;1H~                                                                                                                                                                                                                               [60;1H~                                                                                                                                                                                                                               [61;1H~                                                                                                                                                                                                                               [62;1H~                                                                                                                                                                                                                               [63;1H~                                                                                                                                                                                                                               [64;1H~                                                                                                                                                                                                                               [65;1H~                                                                                                                                                                                                                               [66;1H~                                                                                                                                                                                                                               [m[67;207H46,0-1[8CAll]2;reactome.conf (~/Development/git/PlantReactome/Release/website/conf) - VIM[46;1H[?12l[?25h[?25l[67;208H5,1  [45;1H[?12l[?25h[?25l[67;208H4[44;1H[?12l[?25h[?25l[67;208H3[43;1H[?12l[?25h[?25l[67;208H2[42;1H[?12l[?25h[?25l[67;208H1,0-1[41;1H[?12l[?25h[?25l[67;208H0[40;1H[?12l[?25h[?25l[67;207H39,1  [39;1H[?12l[?25h[?25l[67;208H8[38;1H[?12l[?25h[?25l[67;208H7[37;1H[?12l[?25h[?25l[67;208H6,0-1[36;1H[?12l[?25h[?25l[67;208H5,1  [35;1H[?12l[?25h[?25l[67;208H4[34;1H[?12l[?25h[?25l[67;208H3[33;1H[?12l[?25h[?25l[67;208H2[32;1H[?12l[?25h[?25l[67;208H1[31;1H[?12l[?25h[?25l[67;208H0[30;1H[?12l[?25h[?25l[67;207H29[29;1H[?12l[?25h[?25l[67;208H8[28;1H[?12l[?25h[?25l[67;208H7[27;1H[?12l[?25h[?25l[67;208H6[26;1H[?12l[?25h[?25l[67;208H5[25;1H[?12l[?25h[?25l[67;208H4,0-1[24;1H[?12l[?25h[?25l[67;208H3,1  [23;1H[?12l[?25h[?25l[67;208H2[22;1H[?12l[?25h[?25l[67;208H1[21;1H[?12l[?25h[?25l[67;208H0[20;1H[?12l[?25h[?25l[67;207H19[19;1H[?12l[?25h[?25l[67;208H8[18;1H[?12l[?25h[?25l[67;208H7,0-1[17;1H[?12l[?25h[?25l[67;208H6,1  [16;1H[?12l[?25h[?25l[67;208H5[15;1H[?12l[?25h[?25l[67;208H4[14;1H[?12l[?25h[?25l[67;208H3[13;1H[?12l[?25h[?25l[67;208H2[12;1H[?12l[?25h[?25l[67;208H1,0-1[11;1H[?12l[?25h[?25l[67;208H0,1  [10;1H[?12l[?25h[?25l[67;207H9,1 [9;1H[?12l[?25h[?25l[67;207H8,0-1[8;1H[?12l[?25h[?25l[67;207H7,1  [7;1H[?12l[?25h[?25l[67;207H6[6;1H[?12l[?25h[?25l[67;207H5,0-1[5;1H[?12l[?25h[?25l[67;207H4,1  [4;1H[?12l[?25h[?25l[67;207H3,0-1[3;1H[?12l[?25h[?25l[67;207H2,1  [2;1H[?12l[?25h[?25l[67;207H1[1;1H[?12l[?25h[?25l[67;1H[K[67;1H:[?12l[?25hq[?25l[?12l[?25h[?25l]2;Release : script – Konsole[67;1H[K[67;1H[?1l>[?12l[?25h[?1049l7]2;preecej@cord3084-pc7:...lease/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/website/conf> vi reactome.conf [Kcd ../../tr[Khird_party_install/
+7]2;preecej@cord3084-pc7:...hird_party_install]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install> ll
+total 32
+-rw-r--r-- 1 preecej users 9924 Dec  7 17:45 [0m[00;31mconfig.tar.gz[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34metc[0m
+-rwxr-xr-x 1 preecej users 6578 Dec  7 17:45 [00;32minstall_reactome.sh[0m
+-rw-r--r-- 1 preecej users  357 Dec  7 17:45 [00mREADME.txt[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34musr[0m
+7]2;preecej@cord3084-pc7:...hird_party_install]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install> cd usr/
+7]2;preecej@cord3084-pc7:..._party_install/usr]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr> ll
+total 4
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mlocal[0m
+7]2;preecej@cord3084-pc7:..._party_install/usr]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr> cd local/
+7]2;preecej@cord3084-pc7:..._install/usr/local]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local> ll
+total 4
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mreactomes[0m
+7]2;preecej@cord3084-pc7:..._install/usr/local]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local> cd reactomes/
+7]2;preecej@cord3084-pc7:...sr/local/reactomes]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes> ll
+total 4
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mReactome[0m
+7]2;preecej@cord3084-pc7:...sr/local/reactomes]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes> cd r[K
+7]2;preecej@cord3084-pc7:~]1;cord3084-pc78preecej@cord3084-pc7:~> re[K[Kcd ~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes
+7]2;preecej@cord3084-pc7:...sr/local/reactomes]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes> c
+[3;J[H[2J7]2;preecej@cord3084-pc7:...sr/local/reactomes]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes> ls[K[Kll
+total 4
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mReactome[0m
+7]2;preecej@cord3084-pc7:...sr/local/reactomes]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes> cd Reactome/
+7]2;preecej@cord3084-pc7:...reactomes/Reactome]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome> ll
+total 4
+drwxr-xr-x 4 preecej users 4096 Dec  7 17:45 [0m[01;34mproduction[0m
+7]2;preecej@cord3084-pc7:...reactomes/Reactome]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome> cd production/
+apache-tomcat-7.0.50/ GKB/                  
+7]2;preecej@cord3084-pc7:...reactomes/Reactome]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome> cd production/apache-tomcat-7.0.50/
+7]2;preecej@cord3084-pc7:...ache-tomcat-7.0.50]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/apache-tomcat-7.0.50> ls
+[0m[01;34mconf[0m  [01;34mwebapps[0m
+7]2;preecej@cord3084-pc7:...ache-tomcat-7.0.50]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/apache-tomcat-7.0.50> ll
+total 8
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mconf[0m
+drwxr-xr-x 6 preecej users 4096 Dec  7 17:45 [01;34mwebapps[0m
+7]2;preecej@cord3084-pc7:...ache-tomcat-7.0.50]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/apache-tomcat-7.0.50> cd f[Kconf/
+7]2;preecej@cord3084-pc7:...tomcat-7.0.50/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/apache-tomcat-7.0.50/conf> ll
+total 16
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mCatalina[0m
+-rw-r--r-- 1 preecej users 6435 Dec  7 17:45 [00mserver.xml[0m
+-rw-r--r-- 1 preecej users 1694 Dec  7 17:45 [00mtomcat-users.xml[0m
+7]2;preecej@cord3084-pc7:...tomcat-7.0.50/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/apache-tomcat-7.0.50/conf> cd.[K ../../
+7]2;preecej@cord3084-pc7:...eactome/production]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production> ll
+total 8
+drwxr-xr-x 4 preecej users 4096 Dec  7 17:45 [0m[01;34mapache-tomcat-7.0.50[0m
+drwxr-xr-x 4 preecej users 4096 Dec  7 17:45 [01;34mGKB[0m
+7]2;preecej@cord3084-pc7:...eactome/production]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production> cd GKB/
+7]2;preecej@cord3084-pc7:...ome/production/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB> ll
+total 8
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [0m[01;34mmodules[0m
+drwxr-xr-x 4 preecej users 4096 Dec  7 17:45 [01;34mwebsite[0m
+7]2;preecej@cord3084-pc7:...ome/production/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB> cd website/
+7]2;preecej@cord3084-pc7:...uction/GKB/website]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website> ll
+total 8
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [0m[01;34mconf[0m
+drwxr-xr-x 3 preecej users 4096 Dec  7 17:45 [01;34mhtml[0m
+7]2;preecej@cord3084-pc7:...uction/GKB/website]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website> cd conf/
+7]2;preecej@cord3084-pc7:...n/GKB/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/conf> ll
+total 4
+-rwxr-xr-x 1 preecej users 1545 Dec  7 17:45 [0m[00;32mhttpd.conf[0m
+7]2;preecej@cord3084-pc7:...n/GKB/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/conf> ca[K[Kvi httpd.conf 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;67r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[67;1H"httpd.conf" 48L, 1545C[>c[1;1H[33m<VirtualHost *:80>[m
+  [36mDirectoryIndex[m index.html index.php
+
+  [36mDocumentRoot[m /usr/local/gkb/website/html
+
+  [36mTransferLog[m  /usr/local/gkb/website/logs/transfer_log
+  [36mErrorLog[m     /usr/local/gkb/website/logs/error_log
+
+  [36mLogFormat[m [33m"%h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{CONTENT-LENGTH}i\" \"%{cookie}n\""[m  combined_format
+  [36mCustomLog[m    /usr/local/gkb/website/logs/extended_log combined_format
+
+  [36mAlias[m[8C/icons[8C/usr/local/gkb/website/html/icons
+  [36mAlias[m[8C/images[7C/usr/local/gkb/website/html/images
+  [36mAlias[m[8C/figures      /usr/local/gkb/website/images
+  [36mScriptAlias[m  /cgi-bin      /usr/local/gkb/website/cgi-bin
+
+  [33m<Directory />[m
+[36m      # required for apache 2.4+
+      #Require all granted[20;7HOptions[m [33m+Includes[m[21;7H[36mXBitHack[m [33mon
+[m  [33m</Directory>
+
+[m  [33m<Directory "/usr/local/gkb/website/html/download/current/">[m[25;7H[36mDirectoryIndex[m index.html[26;7H[36mOptions[m [33mIndexes[m [33mFollowSymlinks[m [33mMultiViews[m[27;7H[36mAllowOverride[m [33mNone[m
+[35m      Order [m[33mallow[m[35m,[m[33mdeny[m[29;7H[35mAllow from [m[36mall
+      # required for apache 2.4+
+      #Require all granted[32;7HOptions[m [33m+Includes[m[33;7H[36mXBitHack[m [33mon
+[m  [33m</Directory>
+
+[m  [33m<Directory "/usr/local/gkb/website/html/wordpress">[m[37;7H[36mAllowOverride[m FileInfo
+  [33m</Directory>[m[41;3H[36mProxyPass[m[7C/AnalysisService/ http://localhost:8080/AnalysisService/
+  [36mProxyPass[m[7C/PathwayBrowser/ http://localhost:8080/PathwayBrowser/
+  [36mProxyPass[m[7C/ReactomeRESTfulAPI/ http://localhost:8080/ReactomeRESTfulAPI/
+  [36mProxyPass[m[7C/content/ http://localhost:8080/content/
+
+  [36mProxyTimeout[m 1000
+
+[33m</VirtualHost>[m
+[34m~                                                                                                                                                                                                                               [50;1H~                                                                                                                                                                                                                               [51;1H~                                                                                                                                                                                                                               [52;1H~                                                                                                                                                                                                                               [53;1H~                                                                                                                                                                                                                               [54;1H~                                                                                                                                                                                                                               [55;1H~                                                                                                                                                                                                                               [56;1H~                                                                                                                                                                                                                               [57;1H~                                                                                                                                                                                                                               [58;1H~                                                                                                                                                                                                                               [59;1H~                                                                                                                                                                                                                               [60;1H~                                                                                                                                                                                                                               [61;1H~                                                                                                                                                                                                                               [62;1H~                                                                                                                                                                                                                               [63;1H~                                                                                                                                                                                                                               [64;1H~                                                                                                                                                                                                                               [65;1H~                                                                                                                                                                                                                               [66;1H~                                                                                                                                                                                                                               [m[67;207H1,1[11CAll]2;httpd.conf (~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/conf) - VIM[1;1H[?12l[?25h[?25l[67;1H[K[67;1H:[?12l[?25hq[?25l[?12l[?25h[?25l]2;Release : script – Konsole[67;1H[K[67;1H[?1l>[?12l[?25h[?1049l7]2;preecej@cord3084-pc7:...n/GKB/website/conf]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/conf> vi httpd.conf [K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ../mod[K[K[K[K[K[K[K[K[Kcd ../html/
+7]2;preecej@cord3084-pc7:...n/GKB/website/html]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/html> ll
+total 4
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [0m[01;34mwordpress[0m
+7]2;preecej@cord3084-pc7:...n/GKB/website/html]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/website/html> cd w[K[K[K[Kcd ../../
+7]2;preecej@cord3084-pc7:...ome/production/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB> cd modq
+bash: cd: modq: No such file or directory
+7]2;preecej@cord3084-pc7:...ome/production/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB> cd modq[Kules/
+7]2;preecej@cord3084-pc7:...uction/GKB/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/modules> ll
+total 4
+drwxr-xr-x 2 preecej users 4096 Dec  7 17:45 [0m[01;34mGKB[0m
+7]2;preecej@cord3084-pc7:...uction/GKB/modules]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/modules> cd GKB/
+7]2;preecej@cord3084-pc7:...on/GKB/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/modules/GKB> ll
+total 4
+-rw-r--r-- 1 preecej users 347 Dec  7 17:45 [0m[00mSecrets.pm[0m
+7]2;preecej@cord3084-pc7:...on/GKB/modules/GKB]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production/GKB/modules/GKB> cd.[K ../../../
+7]2;preecej@cord3084-pc7:...eactome/production]1;cord3084-pc78preecej@cord3084-pc7:~/Development/git/PlantReactome/Release/third_party_install/usr/local/reactomes/Reactome/production> c[Kx
+exit
+
+Script done on Wed 17 Jan 2018 02:40:44 PM PST
