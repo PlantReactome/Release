@@ -1,11 +1,12 @@
 #!/bin/python
 """
+NOTE: This script works perfectly well with pathway level files as well (UniProt2PlantReactome.txt, Ensembl2PlantReactome.txt)
 Convert the UniProt entries in UniProt2PlantReactomeReactions.txt to Oryza sativa gene ids. This allows the data to be
 used both by Gramene Search and Ensembl Plants. Make sure there are values in every column; filter out non-rice entries
 that have slipped in via the Reactome export process. Make it optional whether to include MSU and/or RAP ids; at least
 one is required.
 Inputs: UniProt2PlantReactomeReactions.txt, os_loc_2_os_uniprot_rice_slice_17_manual.txt, Ensembl2PlantReactomeReactions.txt
-Output: an expanded Ensembl2PlantReactomeReactions.txt, now including rice entries.
+Output: an expanded Ensembl2PlantReactomeReactions.txt (and/or Ensembl2PlantReactome.txt), now including rice entries.
 """
 
 # modules --------------------------------------------------------------------------------------------------------------
@@ -115,7 +116,7 @@ def map_data_and_generate_extended_file(dict_rice, dict_mappings, rice_source_fi
 
     num_mappings = 0
 
-    ext_out_file = open(output_expanded_reactions_file, 'a');
+    ext_out_file = open(output_expanded_reactions_file, 'a')
 
     for k, v in dict_mappings.items():
         if k in dict_rice:
