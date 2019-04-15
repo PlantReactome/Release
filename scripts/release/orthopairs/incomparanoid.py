@@ -95,7 +95,7 @@ def map_orthologs(file, isInparanoid, threshold) :
         if not isInparanoid:
             if float(cols[2]) < threshold or float(cols[3]) < threshold:
                 continue
-        ref = cols[0].upper()
+        ref = cols[0].upper().rstrip('.1') # remove .1 from LOC entries, if present
         prj = cols[1]
         if ref in dict_genes_to_orthologs:
             dict_genes_to_orthologs[ref][curr_species][0] = dict_genes_to_orthologs[ref][curr_species][0] + 1
@@ -154,7 +154,9 @@ def create_dict_uniprot_map(uniprot_substitution_path) :
         else :
             dict_uniprot_map[loc] = uniprot
     UNI.close()
-    
+
+    #print(dict_uniprot_map)
+
     return dict_uniprot_map
 
 
@@ -176,9 +178,16 @@ def create_inp_map(inparanoid_input_path, dict_uniprot_map) :
         os_locus = cols[0].rstrip("1").rstrip(".")
         # swap loc for uniprot, if specified
         if dict_uniprot_map :
-            os_locus = dict_uniprot_map[os_locus]
+            if os_locus in dict_uniprot_map :
+                os_locus = dict_uniprot_map[os_locus]
+            else :
+                print(os_locus)
+
+        #next line required to trim isoforms from inparanoid projection data
         #prj_locus = cols[1].rsplit("_",1)[0].rsplit(".",1)[0].rsplit("-",1)[0] # remove any isoform suffixes (i.e. '.#', '_T0#', '-#')
+        #prj_locus = cols[1].rsplit(".",1)[0] # remove any '.#' isoform suffixes in select inparanoid results
         prj_locus = cols[1]
+
         if os_locus in dict_inp_map :
             dict_inp_map[os_locus].add(prj_locus)
         else :
@@ -212,7 +221,7 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_
                 if loc_id != "NONE" :
                     canonical = loc_id.split(".")
                     dict_rap_map[rap_id] = canonical[0]
-                    break;                    
+                    break
     RAP_MAP.close()
 
     #for keys, values in dict_rap_map.items() :
@@ -228,37 +237,43 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_
     COUNT_TOTAL_REF_LOCI = len(loci_filter)
 
     #for locus in loci_filter :
-    #    print locus
+    #    print(locus)
 
     ENS = open(ensembl_input_path)
     for line in ENS :
         cols = line.rstrip().split()
         if len(cols) == 5 :
             if dict_uniprot_map :
+                col0 = cols[0].upper()
                 # if this ens os is already in uniprot list
-                if cols[0] in dict_uniprot_map :
+                if col0 in dict_uniprot_map :
                     # get uniprot id and build into ens_map
-                    os_locus = dict_uniprot_map[cols[0]]
+                    os_locus = dict_uniprot_map[col0]
                     # reciprocal identity is >= recip_id%, optional high confidence
-                    if int(cols[2]) >= recip_id and int(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                    #if int(cols[2]) >= recip_id and int(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                    #if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                    if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id :
                         if os_locus in dict_ens_map :
                             dict_ens_map[os_locus].add(cols[1])
                         else :
                             dict_ens_map[os_locus] = set([cols[1]])
                 else :
-                    if cols[0] in dict_rap_map :
-                        os_locus = dict_rap_map[cols[0]]
+                    if col0 in dict_rap_map :
+                        os_locus = dict_rap_map[col0]
                         if os_locus in loci_filter :
                             # swap loc for uniprot
                             os_locus = dict_uniprot_map[os_locus]
                             # reciprocal identity is >= recip_id%, optional high confidence
-                            if int(cols[2]) >= recip_id and int(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                            #if int(cols[2]) >= recip_id and int(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                            #if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id and int(cols[4]) >= is_confident :
+                            if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id :
                                 if os_locus in dict_ens_map :
                                     dict_ens_map[os_locus].add(cols[1])
                                 else :
                                     dict_ens_map[os_locus] = set([cols[1]])
     ENS.close()
     
+    #print(dict_ens_map)
     return dict_ens_map
 
 
@@ -410,7 +425,8 @@ def write_reactome_files(dict_map, reactome_gene_protein_path, reactome_projecti
     
     REACTOME_GENE_PROTEIN_OUT_FILE = open(reactome_gene_protein_path,'w')
     REACTOME_PROJECTION_OUT_FILE = open(reactome_projection_path,'w')
-    for k, v_list in sorted(dict_map.iteritems()) :
+    #for k, v_list in sorted(dict_map.iteritems()) :
+    for k, v_list in sorted(iter(dict_map.items())) :
         REACTOME_PROJECTION_OUT_FILE.write(k + "\t" + " ".join(map(lambda x: x.replace(x, (projection_prefix if projection_prefix else "") + x), v_list)) + "\n")
         for v in v_list :
             if v not in val_set :
@@ -556,12 +572,13 @@ if args.universal:
     directory_inp = args.inparanoid_input_path
     directory_ens = args.ensembl_input_path
 
-    for entry in os.scandir(directory_inp):
-        if args.verbose:
-            print(entry.path)
-        # build via file mapping
-        map_orthologs(entry.path, True, 0)
-        continue
+    if directory_inp:
+        for entry in os.scandir(directory_inp):
+            if args.verbose:
+                print(entry.path)
+            # build via file mapping
+            map_orthologs(entry.path, True, 0)
+            continue
 
     for entry in os.scandir(directory_ens):
         if args.verbose:
