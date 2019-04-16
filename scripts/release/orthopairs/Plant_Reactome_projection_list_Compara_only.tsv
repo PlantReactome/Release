@@ -1,5 +1,4 @@
 Species	Stable ID Abbv	2-Digit Abbv	4-Digit Abbv	Gspecies Abbv	Homology Method	Recip. % identity	Primary External Ref Outgoing Link	Sequence data source	Clade	NCBI	Familiar name
-Actinidia chinensis	ACH	Ac	achi	achinensis	Compara	30	Ensembl Gramene	Ensembl Gramene	d
 Aegilops tauschii	ATA	Ata	atau	athaliana	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Amborella trichopoda	ATR	Atr	atri	atrichopoda	Compara	30	Ensembl Gramene	Ensembl Gramene	a		
 Arabidopsis halleri	AHA	Ah	ahal	ahalleri	Compara	30	Ensembl Gramene	Ensembl Gramene	d	81970	
@@ -39,8 +38,6 @@ Oryza punctata	OPU	Op	opun	opunctata	Compara	40	Ensembl Gramene	Ensembl Gramene	
 Oryza rufipogon	ORU	Or	oruf	orufipogon	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Oryza indica	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m
 Ostreococcus lucimarinus	OLU	Olu	oluc	olucimarinus	Compara	28	Ensembl Gramene	Ensembl Gramene	c		
-Panicum halliifil2	PHA	Ph	phal	phallii_fil2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	206008	Hall's panicgrass
-Panicum halliihal2	PHH	Phh	phvh	phallii_hal2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	1504633	Hall's panicgrass
 Phaseolus vulgaris	PVU	Pv	pvul	pvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3885	
 Physcomitrella patens	PPA	Ppa	ppat	ppatens	Compara	28	Ensembl Gramene	Ensembl Gramene	b		
 Populus trichocarpa	PTI (old: PTR)	Pt	ptri	ptrichocarpa	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
@@ -59,25 +56,3 @@ Vigna angularis	VAN	Va	vang	vangularis	Compara	30	Ensembl Gramene	Ensembl Gramen
 Vigna radiata	VRA	Vr	vrad	vradiata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	157791	mung bean
 Vitis vinifera	VVN (old: VVI)	Vv	vvin	vvinifera	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Zea mays	ZMA	Zm	zmay	zmays	Compara	40	MaizeGDB	Ensembl Gramene	m		
-Arachis duranensis	ADU	Ad	adur	aduranensis	Inparanoid	-	PeanutBase	PeanutBase	d		
-Arachis ipaensis	AIP	Ai	aipa	aipaensis	Inparanoid	-	PeanutBase	PeanutBase	d		
-Capsicum annuum	CAN	Can	cann	cannuum	Inparanoid	-	N/A	PMID: 24441736	d		
-Cicer arietinum	CAR	Ca	cari	carietinum	Inparanoid	-	NCBI	NCBI	d		
-Cajanus cajan	CCA	Cc	ccaj	ccajan	Inparanoid	-	LegumeInfo	LegumeInfo	d		
-Coffea canephora	CCN	Cca	ccan	ccanephora	Inparanoid		N/A	PMID:25190796	d		
-Citrus sinensis	CSI	Cs	csin	csinensis	Inparanoid	-	Phytozome	Phytozome	d		
-Eucalyptus grandis	EGR	Eg	egra	egrandis	Inparanoid	-	Phytozome	Phytozome	d		
-Fragaria vesca	FVE	Fv	fves	fvesca	Inparanoid	-	Phytozome	Phytozome	d		
-Jatropha curcas	JCU	Jc	jcur	jcurcas	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	d		
-Malus domestica	MDO	Md	mdom	mdomestica	Inparanoid	-	Phytozome	PMID: 20802477	d		
-Erythranthe guttata	MGU	Mg	mgut	mguttatus	Inparanoid	-	Phytozome	Phytozome	d	4155	
-Oryza australiensis	OAU	Oa	oaus	oaustraliensis	Inparanoid	-	N/A	OMAP/OGE	m		
-Oryza granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m
-Oryza kasalath	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m
-Oryza minuta	OMI	Omi	omin	ominuta	Inparanoid	-	N/A	OMAP/OGE	m		
-Oryza officinalis	OOF	Oo	ooff	oofficinalis	Inparanoid	-	N/A	OMAP/OGE	m		
-Picea abies	PAB	Pa	pabi	pabies	Inparanoid	-	Congenie	Congenie	p		
-Phoenix dactylifera	PDA	Pd	pdac	pdactylifera	Inparanoid	-	N/A	PMID: 23917264	m		
-Pinus taeda	PTA	Pta	ptae	ptaeda	Inparanoid	-	N/A	TreeBase	p		
-Synechocystis pcc6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b
-Triticum turgidum	TTU	Tt	ttur	tturgidum	Inparanoid	-	N/A	PMID: 23800085	m		
