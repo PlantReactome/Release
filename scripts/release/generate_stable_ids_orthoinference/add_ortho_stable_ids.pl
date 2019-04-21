@@ -225,6 +225,14 @@ sub abbreviate {
 	    $short_name = "MGU";
 	    say "Erythranthe guttata to MGU";
     }
+    if ($_ eq "Panicum hallii FIL2") {
+	    $short_name = "PHA";
+	    say "Panicum hallii FIL2 changed to PHA";
+    }
+    if ($_ eq "Panicum hallii var. hallii HAL2") {
+	    $short_name = "PHH";
+	    say "Panicum hallii var. hallii HAL2 changed to PHH";
+    }
 
     say $short_name;
     return $short_name;

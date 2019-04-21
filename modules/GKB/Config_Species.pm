@@ -11,9 +11,8 @@ use Exporter();
 
 #defines the order in which the species should be handled for orthology inference
 # testing multiple external DBs...
-#@species = qw(osat ccaj jcur egra mgut vang dcar mesc grai csin mdom fves cari ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
-##@species = qw(osat ahal vrad tdic jcur egra mgut vang dcar mesc grai csin mdom fves cari ccaj ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
-@species = qw(osat adur);
+@species = qw(osat achi phal phvh ahal vrad tdic jcur egra mgut vang dcar mesc grai csin mdom fves cari ccaj ccan cann adur aipa pvul alyr bole tcac atha mtru gmax slyc stub ptri pper brap vvin pdac ttur taes macu sita sbic lper zmay bdis tura atau hvul pabi ptae atri ppat smoe crei cmer oluc oaus ogra okas olon omin ooff omer obar oniv obra ogla opun oglu oruf osai spcc bvul bnap tpra ccri ccap csat drot gsul hann lang natt);
+#@species = qw(osat adur);
 #@species = qw(osat jcur mgut egra);
 #@species = qw(osat jcur mesc egra mgut grai csin mdom fves ccaj cari ccan cann adur aipa pvul alyr bole tcac vvin pdac ttur pabi ptae atri ppat smoe crei cmer oluc);
 #@species = qw(osat tcac alyr bole);
@@ -28,6 +27,27 @@ use Exporter();
 #	                                'url' => 'http://ensembl.gramene.org',
 #	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 #	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
+	# # Actinidia chinensis (Ac/achi) - Ensembl
+	         'achi' => {'name' => ['Actinidia chinensis'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Actinidia_chinensis_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
+	# # Panicum hallii (Ph/phal) - Ensembl
+	         'phal' => {'name' => ['Panicum hallii'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Panicum_hallii_fil2_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
+
+	# # Panicum hallii var. hallii (Phh/phvh) - Ensembl
+	         'phvh' => {'name' => ['Panicum hallii var. hallii'],
+	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_panicum_hallii_hal2_PROTEIN'],
+	                                'url' => 'http://ensembl.gramene.org',
+	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
+	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
 
 	# # Arabidopsis halleri (Ah/ahal) - Ensembl
 	         'ahal' => {'name' => ['Arabidopsis halleri'],

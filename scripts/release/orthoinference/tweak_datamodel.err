@@ -1,0 +1,113 @@
+ERROR main::catch {...}  tweak_datamodel.pl (84) 2017/12/23 16:51:30 - Problem creating attribute column definitions for totalProt attribute for Complex class: DBD::mysql::st execute failed: Duplicate column name 'totalProt' at /usr/local/gkb/modules/GKB/DBAdaptor.pm line 487.
+ERROR main::catch {...}  tweak_datamodel.pl (84) 2017/12/29 00:05:58 - Problem creating attribute column definitions for totalProt attribute for Complex class: DBD::mysql::st execute failed: ALTER command denied to user 'react-app-user'@'10.206.24.141' for table 'Complex' at /usr/local/gkb/modules/GKB/DBAdaptor.pm line 487.
+ERROR main::catch {...}  tweak_datamodel.pl (84) 2017/12/29 00:07:47 - Problem creating attribute column definitions for totalProt attribute for Complex class: DBD::mysql::st execute failed: Duplicate column name 'totalProt' at /usr/local/gkb/modules/GKB/DBAdaptor.pm line 487.
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/23 19:10:52 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/25 10:18:24 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/25 10:20:34 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/26 19:40:26 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/26 19:45:03 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/29 13:27:14 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/29 13:28:52 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/29 13:34:57 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/29 13:39:50 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
+ERROR main::catch {...}  tweak_datamodel.pl (70) 2019/01/29 14:13:28 - Problem changing defining attributes: 
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: Your class name DatabaseObject is identical to internal root class name.
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /usr/lib/perl5/site_perl/5.20.1/Bio/Root/Root.pm:449
+STACK: GKB::Ontology::_handle_root_classes /usr/local/gkb/modules/GKB/Ontology.pm:323
+STACK: GKB::Ontology::initiate /usr/local/gkb/modules/GKB/Ontology.pm:259
+STACK: main::try {...}  tweak_datamodel.pl:68
+STACK: Try::Tiny::try /usr/lib/perl5/vendor_perl/5.20.1/Try/Tiny.pm:81
+STACK: tweak_datamodel.pl:71
+-----------------------------------------------------------
