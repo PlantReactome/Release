@@ -80,9 +80,9 @@ def load_mapping_file(mapping_file) :
     count = 0
     fMappings = open(mapping_file)
     for line in fMappings:
-        cols = line.rstrip().split('\t')
-        uniprot_id = cols[1].strip();
-        gene_id = cols[0].strip();
+        cols = line.rstrip().split()
+        uniprot_id = cols[1].strip()
+        gene_id = cols[0].strip()
         count += 1
         if uniprot_id in dict_mappings:  # existing UniProt entry
             dict_mappings[uniprot_id].append(gene_id)  # add'l rice gene id
