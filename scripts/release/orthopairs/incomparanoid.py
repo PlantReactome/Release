@@ -85,7 +85,7 @@ def map_orthologs(file, isInparanoid, threshold) :
     if isInparanoid: # format: os_2_Pinus_taeda.txt
         curr_species = filename.split('_')[2] + " " + filename.split('_')[3].split('.')[0]
     else: # Ensembl, format: AegilopsTauschii_osj.rtm
-        curr_species_prep = re.findall(r'[A-Z](?:[a-z]+|[A-Z]*(?=[A-Z]|$))', filename.split('_')[0])
+        curr_species_prep = re.findall(r'[A-Z](?:[a-z0-9]+|[A-Z0-9]*(?=[A-Z0-9]|$))', filename.split('_')[0])
         curr_species_prep[1] = curr_species_prep[1].lower()
         curr_species = ' '.join(curr_species_prep)
 
@@ -580,13 +580,14 @@ if args.universal:
             map_orthologs(entry.path, True, 0)
             continue
 
-    for entry in os.scandir(directory_ens):
-        if args.verbose:
-            print(entry.path)
-        # build via file mapping
-        #if str(os.path.split(entry.path)[0]).endswith('inp'):
-        map_orthologs(entry.path, False, args.reciprocal_id)
-        continue
+    if directory_ens:
+        for entry in os.scandir(directory_ens):
+            if args.verbose:
+                print(entry.path)
+            # build via file mapping
+            #if str(os.path.split(entry.path)[0]).endswith('inp'):
+            map_orthologs(entry.path, False, args.reciprocal_id)
+            continue
 
     if args.verbose:
         pp.pprint(dict_genes_to_orthologs)
