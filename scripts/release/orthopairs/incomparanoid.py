@@ -63,7 +63,9 @@ def load_genes(filtering_loci_path) :
     # read map file, populate dict (it is possible to have a many-to-1 LOC-to-Uniprot relationship; this is ok for projection inference)
     GENES = open(filtering_loci_path)
     for line in GENES :
-        dict_genes_to_orthologs[line.strip()] = copy.deepcopy(dict_projected_species)
+        locus_id = line.split()[0].strip()
+        uniprot_id = line.split()[1].strip()
+        dict_genes_to_orthologs[locus_id] = [uniprot_id, copy.deepcopy(dict_projected_species)]
     GENES.close()
 
     if args.verbose:
@@ -98,8 +100,8 @@ def map_orthologs(file, isInparanoid, threshold) :
         ref = cols[0].upper().rstrip('.1') # remove .1 from LOC entries, if present
         prj = cols[1]
         if ref in dict_genes_to_orthologs:
-            dict_genes_to_orthologs[ref][curr_species][0] = dict_genes_to_orthologs[ref][curr_species][0] + 1
-            dict_genes_to_orthologs[ref][curr_species][1].append(prj)
+            dict_genes_to_orthologs[ref][1][curr_species][0] = dict_genes_to_orthologs[ref][1][curr_species][0] + 1
+            dict_genes_to_orthologs[ref][1][curr_species][1].append(prj)
 
     CURR_ORTHO.close()
     return
@@ -116,6 +118,7 @@ def write_orthology(output_path, stats_display_format) :
     """
     ORTHO_STATS_FILE = open(output_path,'w')
     # write species as header
+    ORTHO_STATS_FILE.write("\t")
     for k in sorted(dict_projected_species):
         ORTHO_STATS_FILE.write("\t" + k)
     ORTHO_STATS_FILE.write("\n")
@@ -123,9 +126,9 @@ def write_orthology(output_path, stats_display_format) :
     # iter dict
     for k, v in sorted(dict_genes_to_orthologs.items()):
         # write row for each entry, xref species in order of col display
-        ORTHO_STATS_FILE.write(k)
+        ORTHO_STATS_FILE.write(k + "\t" + v[0])
         # write counts or comma-del list or orthologs in each data cell
-        for l, w in sorted(v.items()):
+        for l, w in sorted(v[1].items()):
             if stats_display_format == 'counts':
                 ORTHO_STATS_FILE.write("\t" + str(w[0]))
             else:
@@ -516,7 +519,7 @@ parser = argparse.ArgumentParser(description='Script with different analysis met
 parser.add_argument('-U', '--universal', help='accept directory location(s) for multiple Inparanoid or Ensembl files; file-type and file-number agnostic', action='store_true')
 parser.add_argument('-F', '--stats_display_format', help='write out the counts instead of the actual orthologs', choices=['counts', 'orthologs'], default='counts')
 parser.add_argument('-S', '--projected_species_configs', help='tab file containing projected species and abbvs')
-parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci user for filtering')
+parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci user for filtering') # will contain 2 cols for -U (uniprot and gene id)
 parser.add_argument('-e', '--ensembl_input_path', help='ensembl compara input file')
 parser.add_argument('-i', '--inparanoid_input_path', help='inparanoid supercluster input file')
 parser.add_argument('-m', '--rap_map_path', help='MSU-RAP mapping file')
