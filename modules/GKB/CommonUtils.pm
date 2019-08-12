@@ -271,7 +271,7 @@ sub has_human_source_instance {
     # to see if the event(s) are electronically inferred
     return $instance->inferredFrom->[0] &&
         $instance->inferredFrom->[0]->species->[0] &&
-	#$instance->inferredFrom->[0]->species->[0]->displayName =~ /^Homo sapiens$/i;
+	    #$instance->inferredFrom->[0]->species->[0]->displayName =~ /^Homo sapiens$/i;
         $instance->inferredFrom->[0]->species->[0]->displayName =~ /^Oryza sativa$/i;   # JP - 20190315
 }
 
@@ -503,7 +503,7 @@ sub is_human {
 
     return (
         $instance->species->[0] &&
-	#$instance->species->[0]->displayName eq 'Homo sapiens' &&
+	    #$instance->species->[0]->displayName eq 'Homo sapiens' &&
         $instance->species->[0]->displayName eq 'Oryza sativa' &&
         !($instance->species->[1]) &&
         !(is_chimeric($instance))
@@ -582,4 +582,3 @@ dates_do_not_match
 /;
 
 1;
->>>>>>> upstream/master

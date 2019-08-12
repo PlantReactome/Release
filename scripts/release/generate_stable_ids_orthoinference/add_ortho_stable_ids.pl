@@ -114,7 +114,7 @@ sub get_orthologous_instances {
 sub get_db_ids {
     my $sth = get_api_connections()->{$release_db}->prepare('SELECT DB_ID FROM DatabaseObject WHERE _class = ?');
     my @db_ids;
-    for my $class (classes_with_stable_ids()) 
+    for my $class (classes_with_stable_ids())
     	{
         $sth->execute($class);
         while (my $db_id = $sth->fetchrow_array) {

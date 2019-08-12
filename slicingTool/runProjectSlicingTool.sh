@@ -18,18 +18,18 @@ RUN_CHAR_FIX=$(grep runCharacterFixer slicingTool.prop | grep -v '\#' |perl -pe 
 #    exit
 #fi
 
-echo -n "Would you like to run the version topic comparison between this release and last? (y/n): "
-read ver_topic
-if [[ $ver_topic == y* ]] || [[ $ver_topic == Y* ]]
-then
-    java -jar VersionTopicComparer.jar 2>&1 | tee version_topic_comparison.out
-fi
+#echo -n "Would you like to run the version topic comparison between this release and last? (y/n): "
+#read ver_topic
+#if [[ $ver_topic == y* ]] || [[ $ver_topic == Y* ]]
+#then
+#    java -jar VersionTopicComparer.jar 2>&1 | tee version_topic_comparison.out
+#fi
 
-if [[ $RUN_CHAR_FIX == "true" ]]
-then
-    echo "Fixing bad character sequences."
-    bash ../scripts/fix_characters.sh $CURATOR_DB $CURATOR_HOST $USER $PASS $(pwd) true
-fi
+#if [[ $RUN_CHAR_FIX == "true" ]]
+#then
+#    echo "Fixing bad character sequences."
+#    bash ../scripts/fix_characters.sh $CURATOR_DB $CURATOR_HOST $USER $PASS $(pwd) true
+#fi
 
 if [[ -n $DB && -n $HOST && -n $USER && -n $PASS ]]
 then

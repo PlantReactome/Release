@@ -12,7 +12,6 @@ use GKB::DBAdaptor;
 use GKB::Instance;
 use GKB::Utils_esther;
 use GKB::Config_Species;
-
 use Data::Dumper;
 use Getopt::Long;
 use DBI;
@@ -97,10 +96,10 @@ sub create_db_option_string {
 
      my $logger = get_logger(__PACKAGE__);
 
-     my $db_option_string = "";	
+     my $db_option_string = "";
      foreach my $option_key (keys %{$db_options_hashref}) {
 	  my $option_value = $db_options_hashref->{$option_key};
-	  
+
 	  if ($option_value) {
 	       $db_option_string .= " $option_key $option_value";
 	  }
@@ -134,7 +133,7 @@ sub run {
     my $cmd = shift;
     
     my $logger = get_logger(__PACKAGE__);
-    
+
     $logger->info("Now starting: $cmd\n");
     my $exit_value = system($cmd);
     if ($exit_value != 0) {

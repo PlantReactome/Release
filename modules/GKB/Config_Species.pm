@@ -32,42 +32,42 @@ use Exporter();
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Panicum hallii (Ph/phal) - Ensembl
 	         'phal' => {'name' => ['Panicum hallii'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Panicum_hallii_fil2_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Panicum hallii var. hallii (Phh/phvh) - Ensembl
 	         'phvh' => {'name' => ['Panicum hallii var. hallii'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_panicum_hallii_hal2_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Arabidopsis halleri (Ah/ahal) - Ensembl
 	         'ahal' => {'name' => ['Arabidopsis halleri'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Arabidopsis_halleri_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Triticum dicoccoides (Td/tdic) - Ensembl
 	         'tdic' => {'name' => ['Triticum dicoccoides'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Triticum_dicoccoides_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Vigna radiata (Vr/vrad) - Ensembl
 	         'vrad' => {'name' => ['Vigna radiata'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vigna_radiata_PROTEIN'],
 	                                'url' => 'http://ensembl.gramene.org',
 	                                'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
 	                                'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Vigna angularis (Va/vang) - Ensembl
 	         'vang' => {'name' => ['Vigna angularis'],
 	                    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Vigna_angularis_PROTEIN'],
@@ -209,63 +209,63 @@ use Exporter();
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Chondrus crispus (Ccr/ccri) - Ensembl
 		'ccri' => {'name' => ['Chondrus crispus'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Chondrus_crispus_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Corchorus capsularis (Ccp/ccap) - Ensembl
 		'ccap' => {'name' => ['Corchorus capsularis'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Corchorus_capsularis_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Dioscorea rotundata (Dr/drot) - Ensembl
 		'drot' => {'name' => ['Dioscorea rotundata'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Dioscorea_rotundata_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Galdieria sulphuraria (Gs/gsul) - Ensembl
 		'gsul' => {'name' => ['Galdieria sulphuraria'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Galdieria_sulphuraria_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Helianthus annuus (Ha/hann) - Ensembl
 		'hann' => {'name' => ['Helianthus annuus'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Helianthus_annuus_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Lupinus angustifolius (La/lang) - Ensembl
 		'lang' => {'name' => ['Lupinus angustifolius'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Lupinus_angustifolius_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Nicotiana attenuata (Na/natt) - Ensembl
 		'natt' => {'name' => ['Nicotiana attenuata'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Nicotiana_attenuata_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Gossypium raimondii (Gr/grai) - Ensembl
 		'grai' => {'name' => ['Gossypium raimondii'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Gossypium_raimondii_PROTEIN'],
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Gossypium raimondii (Gr/grai) - Phytozome_Gr
 	#	'grai' => {'name' => ['Gossypium raimondii'],
 	#		    'alt_refdb' => {'dbname' => ['Phytozome_Gr'],
@@ -278,7 +278,7 @@ use Exporter();
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Manihot esculenta (Me/mesc) - Phytozome_Gr
 	#	'mesc' => {'name' => ['Manihot esculenta'],
 	#		    'alt_refdb' => {'dbname' => ['Phytozome_Me'],
@@ -291,7 +291,7 @@ use Exporter();
 				    'url' => 'http://ensembl.gramene.org',
 				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	
+
 	# # Phaseolus vulgaris (Pv/pvul) - Phytozome_Pv
 	#	'pvul' => {'name' => ['Phaseolus vulgaris'],
 	#		    'alt_refdb' => {'dbname' => ['Phytozome_Pv'],
@@ -625,13 +625,80 @@ use Exporter();
 	# # Oryza sativa (reference) - UniProt / Ensembl
 		'osat' => {'name' => ['Oryza sativa'],
 			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Oryza_sativa_PROTEIN'],
-				    'url' => 'http://ensembl.gramene.org',
-				    'access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###',
-   				    'ensg_access' => 'http://ensembl.gramene.org/Gene/Summary?g=###ID###'}},
-	#	  	            'url' => 'http://ensembl.gramene.org/Oryza_sativa',
-	#            		    'access' => 'http://ensembl.gramene.org/Oryza_sativa/Gene/Summary?g=###ID###',
-	#			    'ensg_access' => 'http://ensembl.gramene.org/Oryza_sativa/Gene/Summary?g=###ID###'},
-		);
+                                        'url' => 'http://plants.ensembl.org/Oryza_sativa/Info/Index',
+                                        'access' => 'http://plants.ensembl.org/Oryza_sativa/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://plants.ensembl.org/Oryza_sativa/geneview?gene=###ID###&db=core'},
+			    'group' => 'Fungi/Plants',
+			    'mart_url' => 'http://plants.ensembl.org/biomart/martservice',
+			    'mart_virtual_schema' => 'plant_mart_9',
+			    'mart_group' => 'osativa_eg_gene'},
+		 'pfal' => {'name' => ['Plasmodium falciparum'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_P_falciparum_PROTEIN'],
+                                        'url' => 'http://protists.ensembl.org/Plasmodium_falciparum/Info/Index',
+                                        'access' => 'http://protists.ensembl.org/Plasmodium_falciparum/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://protists.ensembl.org/Plasmodium_falciparum/geneview?gene=###ID###&db=core'},
+                            'alt_refdb' => {'dbname' => ['PlasmoDB'],
+					    'url' => 'http://plasmodb.org',
+					    'access' => 'http://plasmodb.org/plasmodb/servlet/sv?page=gene&source_id=###ID###'},
+                           'group' => 'Eukaryotes',
+			    'mart_url' => 'http://protists.ensembl.org/biomart/martservice',
+			    'mart_virtual_schema' => 'protist_mart_9',
+                            'mart_group' => 'pfalciparum_eg_gene'},
+#                            'mart_group' => 'pfalciparum_gene'},
+		 'rnor' => {'name' => ['Rattus norvegicus'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Rattus_norvegicus_PROTEIN'],
+                                        'url' => 'http://www.ensembl.org/Rattus_norvegicus/Info/Index/',
+                                        'access' => 'http://www.ensembl.org/Rattus_norvegicus/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://www.ensembl.org/Rattus_norvegicus/geneview?gene=###ID###&db=core'},
+                            'group' => 'Vertebrate',
+                            'compara' => 'core',
+                            'mart_group' => 'rnorvegicus_gene_ensembl'},
+                 'scer' => {'name' => ['Saccharomyces cerevisiae'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_S_cerevisiae_PROTEIN'],
+                                        'url' => 'http://fungi.ensembl.org/Saccharomyces_cerevisiae/Info/Index',
+                                        'access' => 'http://fungi.ensembl.org/Saccharomyces_cerevisiae/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://fungi.ensembl.org/Saccharomyces_cerevisiae/geneview?gene=###ID###&db=core'},
+                            'alt_refdb' => {'dbname' => ['SGD', 'Saccharomyces Genome Database'],
+                                        'url' => 'http://www.yeastgenome.org',
+                                        'access' => 'http://db.yeastgenome.org/cgi-bin/locus.pl?locus=###ID###'},
+                            'group' => 'Fungi/Plants',
+                            'mart_group' => 'scerevisiae_eg_gene'},
+                 'spom' => {'name' => ['Schizosaccharomyces pombe'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_S_pombe_PROTEIN'],
+                                        'url' => 'http://fungi.ensembl.org/Schizosaccharomyces_pombe/Info/Index',
+                                        'access' => 'http://fungi.ensembl.org/Schizosaccharomyces_pombe/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://fungi.ensembl.org/Schizosaccharomyces_pombe/geneview?gene=###ID###&db=core'},
+                            'alt_refdb' => {'dbname' => ['GeneDB'],
+                                        'url' => 'http://www.genedb.org/genedb/pombe',
+                                        'access' => 'http://www.genedb.org/genedb/Search?organism=pombe&name=###ID###'},
+                            'group' => 'Fungi/Plants',
+                            'mart_group' => 'spombe_eg_gene'},
+		 'sscr' => {'name' => ['Sus scrofa'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Sus_scrofa_PROTEIN'],
+                                        'url' => 'http://www.ensembl.org/Sus_scrofa/Info/Index/',
+                                        'access' => 'http://www.ensembl.org/Sus_scrofa/Transcript/ProteinSummary?peptide=###ID###',
+                                        'ensg_access' => 'http://www.ensembl.org/Sus_scrofa/geneview?gene=###ID###&db=core'},
+                            'group' => 'Vertebrate',
+                            'mart_group' => 'sscrofa_gene_ensembl',
+                            'compara' => 'core'},
+                 'tgut' => {'name' => ['Taeniopygia guttata'],
+                            'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Taeniopygia_guttata_PROTEIN'],
+                                        'url' => 'http://www.ensembl.org/Taeniopygia_guttata/Info/Index/',
+                                        'access' => 'http://www.ensembl.org/Taeniopygia_guttata/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://www.ensembl.org/Taeniopygia_guttata/geneview?gene=###ID###&db=core'},
+                            'group' => 'Vertebrate',
+                            'mart_group' => 'tguttata_gene_ensembl',
+			    'compara' => 'core'},
+		 'xtro' => {'name' => ['Xenopus tropicalis'],
+			    'refdb' => {'dbname' => ['ENSEMBL', 'Ensembl', 'ENSEMBL_Xenopus_tropicalis_PROTEIN'],
+                                        'url' => 'http://www.ensembl.org/Xenopus_tropicalis/Info/Index/',
+                                        'access' => 'http://www.ensembl.org/Xenopus_tropicalis/Transcript/ProteinSummary?peptide=###ID###',
+					'ensg_access' => 'http://www.ensembl.org/Xenopus_tropicalis/geneview?gene=###ID###&db=core'},
+                            'group' => 'Vertebrate',
+                            'compara' => 'core',
+                            'mart_group' => 'xtropicalis_gene_ensembl'},
+		 );
+
 
 @EXPORT = qw(@species %species_info);
 
