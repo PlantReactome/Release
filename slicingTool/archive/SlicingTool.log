@@ -1,0 +1,68 @@
+2019-01-29 13:54:28,731 [main] INFO  org.gk.slicing.SlicingEngine  - runDumpCommand: mysqldump --skip-lock-tables -d -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw gk_central_011719
+2019-01-29 13:54:30,864 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:30,864 [main] INFO  org.gk.slicing.SlicingEngine  - runDumpCommand: mysqldump --skip-lock-tables -q --add-drop-table -e --add-locks -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw gk_central_011719 DataModel
+2019-01-29 13:54:30,906 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:30,906 [main] INFO  org.gk.slicing.SlicingEngine  - runDumpCommand: mysqldump --skip-lock-tables -q --add-drop-table -e --add-locks -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw gk_central_011719 Ontology
+2019-01-29 13:54:30,975 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:30,975 [main] INFO  org.gk.slicing.SlicingEngine  - createTargetDatabase: mysqladmin -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw create test_slice_oryza_sativa_17
+2019-01-29 13:54:31,053 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:31,053 [main] INFO  org.gk.slicing.SlicingEngine  - runImport: mysql -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw test_slice_oryza_sativa_17
+2019-01-29 13:54:45,379 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:45,379 [main] INFO  org.gk.slicing.SlicingEngine  - runImport: mysql -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw test_slice_oryza_sativa_17
+2019-01-29 13:54:45,690 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:54:45,690 [main] INFO  org.gk.slicing.SlicingEngine  - runImport: mysql -hfloret.cgrb.oregonstate.edu -ureact-app-user -preact-app-user_pw test_slice_oryza_sativa_17
+2019-01-29 13:54:45,897 [main] ERROR org.gk.slicing.SlicingEngine  - 
+2019-01-29 13:55:09,011 [main] INFO  org.gk.slicing.ProjectBasedSlicingEngine  - Total events as specified: 1962
+2019-01-29 13:55:17,881 [main] INFO  org.gk.slicing.ProjectBasedSlicingEngine  - Total instances after figuing out event references: 1975
+2019-01-29 13:58:32,330 [main] INFO  org.gk.slicing.SlicingEngine  - extractReferences(): 37358 instances
+2019-01-29 13:58:32,330 [main] INFO  org.gk.slicing.SlicingEngine  - Time for extractReferences: 194449
+2019-01-29 13:58:32,814 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - Diagram of tyrosine degradation I has an object not in the database: 1130662
+2019-01-29 13:58:33,188 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Cofactor biosyntheses" has a pathway node has no diagram associated: 1119394
+2019-01-29 13:58:33,309 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - Diagram of Mugineic acid biosynthesis has an object not in the database: 1130662
+2019-01-29 13:58:33,395 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Carbohydrate metabolism" has a pathway node has no diagram associated: 1119595
+2019-01-29 13:58:34,263 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of response to cold temperature" has a pathway node has no diagram associated: 8879059
+2019-01-29 13:58:34,264 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of response to cold temperature" has a pathway node has no diagram associated: 8879066
+2019-01-29 13:58:34,265 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of response to cold temperature" has a pathway node has no diagram associated: 8879031
+2019-01-29 13:58:34,291 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Response to phosphate deficiency" has a pathway node has no diagram associated: 9031181
+2019-01-29 13:58:34,292 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Response to phosphate deficiency" has a pathway node has no diagram associated: 9031221
+2019-01-29 13:58:34,297 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030708
+2019-01-29 13:58:34,298 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030565
+2019-01-29 13:58:34,299 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030629
+2019-01-29 13:58:34,300 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030578
+2019-01-29 13:58:34,477 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Flower development" has a pathway node has no diagram associated: 9609145
+2019-01-29 13:58:34,478 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Flower development" has a pathway node has no diagram associated: 9608996
+2019-01-29 13:58:34,479 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Flower development" has a pathway node has no diagram associated: 9609070
+2019-01-29 13:58:34,479 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Flower development" has a pathway node has no diagram associated: 9609126
+2019-01-29 13:58:34,493 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Reproductive meristem phase change" has a pathway node has no diagram associated: 9608699
+2019-01-29 13:58:34,497 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Reproductive meristem phase change" has a pathway node has no diagram associated: 9608726
+2019-01-29 13:58:34,498 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Reproductive meristem phase change" has a pathway node has no diagram associated: 9608685
+2019-01-29 13:58:34,499 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Reproductive meristem phase change" has a pathway node has no diagram associated: 9608751
+2019-01-29 13:58:34,500 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Reproductive meristem phase change" has a pathway node has no diagram associated: 9608637
+2019-01-29 13:58:34,511 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Aleurone layer formation" has a pathway node has no diagram associated: 9623484
+2019-01-29 13:58:34,520 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Regulatory network of nutrient accumulation" has a pathway node has no diagram associated: 9626388
+2019-01-29 13:58:34,525 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Maternal tissue PCD" has a pathway node has no diagram associated: 9623529
+2019-01-29 13:58:34,529 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Cell cycle regulation" has a pathway node has no diagram associated: 9630311
+2019-01-29 13:58:34,540 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Regulation of seed size" has a pathway node has no diagram associated: 9035691
+2019-01-29 13:58:34,544 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Regulation of seed size" has a pathway node has no diagram associated: 9035721
+2019-01-29 13:58:34,545 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Regulation of seed size" has a pathway node has no diagram associated: 9035748
+2019-01-29 13:58:34,546 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Regulation of seed size" has a pathway node has no diagram associated: 9035568
+2019-01-29 13:58:34,572 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - Diagram of Regulation of embryo development has an object not in the database: -148
+2019-01-29 13:58:34,591 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030708
+2019-01-29 13:58:34,592 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030565
+2019-01-29 13:58:34,593 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030629
+2019-01-29 13:58:34,594 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - "Diagram of Primary root development" has a pathway node has no diagram associated: 9030578
+2019-01-29 13:58:34,687 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - 1130662 in Diagram of tyrosine degradation I is not in the slice databasae!
+2019-01-29 13:58:34,840 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - 1130662 in Diagram of Mugineic acid biosynthesis is not in the slice databasae!
+2019-01-29 13:58:34,937 [main] WARN  org.gk.slicing.PathwayDiagramSlicingHelper  - -148 in Diagram of Regulation of embryo development is not in the slice databasae!
+2019-01-29 13:58:34,942 [main] INFO  org.gk.slicing.SlicingEngine  - extractPathwayDiagrams(): 37829
+2019-01-29 13:58:35,283 [main] INFO  org.gk.slicing.SlicingQualityAssay  - validateExistence(): 37824 instances.
+2019-01-29 13:58:35,283 [main] INFO  org.gk.slicing.SlicingQualityAssay  - validateEventsInHierarchy...
+2019-01-29 13:58:35,296 [main] INFO  org.gk.slicing.SlicingQualityAssay  - validateEventsInHierarchy: 0.013 seconds.
+2019-01-29 13:58:35,296 [main] INFO  org.gk.slicing.SlicingQualityAssay  - Events that have not listed in the pathway hierarchy: 13 instances
+2019-01-29 13:58:35,296 [main] INFO  org.gk.slicing.SlicingQualityAssay  - validateAttributes()...
+2019-01-29 13:58:35,397 [main] INFO  org.gk.slicing.SlicingQualityAssay  - validateStableIds()...
+2019-01-29 13:58:35,466 [main] INFO  org.gk.slicing.SlicingEngine  - dumpInstances()...
+2019-01-29 14:02:50,497 [main] INFO  org.gk.slicing.SlicingEngine  - Time for dumpInstances(): 255031
+2019-01-29 14:02:50,515 [main] INFO  org.gk.slicing.SlicingEngine  - set released = true for target database...
+2019-01-29 14:02:55,172 [main] INFO  org.gk.slicing.SlicingEngine  - set released = true for source database...
+2019-01-29 14:02:55,616 [main] INFO  org.gk.slicing.SlicingEngine  - Total time for slicing: 8.557066666666667 minutes
