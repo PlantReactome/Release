@@ -1,21 +1,26 @@
 Species	Stable ID Abbv	2-Digit Abbv	4-Digit Abbv	Gspecies Abbv	Homology Method	Recip. % identity	Primary External Ref Outgoing Link	Sequence data source	Clade	NCBI	Familiar name
+Actinidia chinensis	ACH	Ac	achi	achinensis	Compara	30	Ensembl Gramene	Ensembl Gramene	d		Kiwifruit
 Aegilops tauschii	ATA	Ata	atau	athaliana	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Amborella trichopoda	ATR	Atr	atri	atrichopoda	Compara	30	Ensembl Gramene	Ensembl Gramene	a		
 Arabidopsis halleri	AHA	Ah	ahal	ahalleri	Compara	30	Ensembl Gramene	Ensembl Gramene	d	81970	
 Arabidopsis lyrata	ALY	Al	alyr	alyrata	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Arabidopsis thaliana	ATH	At	atha	atauschii	Compara	30	TAIR	Ensembl Gramene	d		
-Beta vulgaris	BVU	Bv	bvul	bvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
-Brachypodium distachyon	BDI	Bd	bdis	bdistachyon	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
+Beta vulgaris	BVU	Bv	bvul	bvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	161934	
+Brachypodium distachyon	BDI	Bd	bdis	bdistachyon	Compara	40	Ensembl Gramene	Ensembl Gramene	m	15368	
 Brassica napus	BNA	Bn	bnap	bnapus	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Brassica oleracea	BOL	Bo	bole	boleracea	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Brassica rapa	BRA	Br	brap	brapa	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
+Capsicum annuum	CAN	Can	cann	cannuum	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Chlamydomonas reinhardtii	CRE	Cr	crei	creinhardtii	Compara	28	Ensembl Gramene	Ensembl Gramene	c		
 Chondrus crispus	CCR	Ccr	ccri	ccrispus	Compara	28	Ensembl Gramene	Ensembl Gramene	r	2769	carrageen moss
+Coffea canephora	CCN	Cca	ccan	ccanephora	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Corchorus capsularis	CCP	Ccp	ccap	ccapsularis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	210143	white jute
 Cucumis sativus	CSA	Csa	csat	csativus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3659	cucumber
 Cyanidioschyzon merolae	CME	Cm	cmer	cmerolae	Compara	28	Ensembl Gramene	Ensembl Gramene	r		
+Cynara cardunculus var. scolymus	CCD	Ccar			Compara	30	Ensembl Gramene	Ensembl Gramene	d	59895	artichoke
 Daucus carota	DCA	Dc	dcar	dcarota	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4039	wild carrot
 Dioscorea rotundata	DRO	Dr	drot	drotundata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	55577	white guinea yam
+Eragrostis tef	ETE	Et			Compara	40	Ensembl Gramene	Ensembl Gramene	m	110835	teff
 Galdieria sulphuraria	GSU	Gs	gsul	gsulphuraria	Compara	28	Ensembl Gramene	Ensembl Gramene	r	130081	a red algae
 Glycine max	GMA	Gm	gmax	gmax	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Gossypium raimondii	GRA	Gr	grai	graimondii	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
@@ -24,6 +29,7 @@ Hordeum vulgare	HVU	Hv	hvul	hvulgare	Compara	40	Ensembl Gramene	Ensembl Gramene	
 Leersia perrieri	LPE	Lp	lper	lperrieri	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Lupinus angustifolius	LAN	La	lang	langustifolius	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3871	narrow-leaved blue lupine
 Manihot esculenta	MES	Me	mesc	mesculenta	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
+Marchantia polymorpha	MPO	Mp			Compara	28	Ensembl Gramene	Ensembl Gramene	r	3197	liverwort
 Medicago truncatula	MTR	Mt	mtru	mtruncatula	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Musa acuminata	MAC	Ma	macu	macuminata	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Nicotiana attenuata	NAT	Na	natt	nattenuata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	49451	tobacco
@@ -36,13 +42,15 @@ Oryza meridionalis	OME	Ome	omer	omeridionalis	Compara	40	Ensembl Gramene	Ensembl
 Oryza nivara	ONI	On	oniv	onivara	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Oryza punctata	OPU	Op	opun	opunctata	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Oryza rufipogon	ORU	Or	oruf	orufipogon	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
-Oryza indica	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m
+Oryza sativa Indica Group	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Ostreococcus lucimarinus	OLU	Olu	oluc	olucimarinus	Compara	28	Ensembl Gramene	Ensembl Gramene	c		
+Panicum hallii	PHA	Ph	phal	phallii_fil2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	206008	Hall's panicgrass
+Panicum hallii var. hallii	PHH	Phh	phvh	phallii_hal2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	1504633	Hall's panicgrass
 Phaseolus vulgaris	PVU	Pv	pvul	pvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3885	
 Physcomitrella patens	PPA	Ppa	ppat	ppatens	Compara	28	Ensembl Gramene	Ensembl Gramene	b		
 Populus trichocarpa	PTI (old: PTR)	Pt	ptri	ptrichocarpa	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Prunus persica	PPE	Pp	pper	ppersica	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
-Selaginella moellendorffii	SMO	Sm	smoe	smoellendorffii	Compara	28	Ensembl Gramene	Ensembl Gramene	l		
+Selaginella moellendorffii	SMO	Sm	smoe	smoellendorffii	Compara	28	Ensembl Gramene	Ensembl Gramene	l	88036	
 Setaria italica	SIT	Si	sita	sitalica	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Solanum lycopersicum	SLY	Sl	slyc	slycopersicum	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Solanum tuberosum	STU	St	stub	stuberosum	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
@@ -51,6 +59,7 @@ Theobroma cacao	TCA	Tc	tcac	tcacao	Compara	30	Ensembl Gramene	Ensembl Gramene	d
 Trifolium pratense	TPR	Tp	tpra	tpratense	Compara	30	Ensembl Gramene	Ensembl Gramene	d		
 Triticum aestivum	TAE	Ta	taes	taestivum	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Triticum dicoccoides	TDI	Td	tdic	tdicoccoides	Compara	40	Ensembl Gramene	Ensembl Gramene	m	85692	wild emmer wheat
+Triticum turgidum	TTU	Tt	ttur	tturgidum	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Triticum urartu	TUR	Tu	tura	turartu	Compara	40	Ensembl Gramene	Ensembl Gramene	m		
 Vigna angularis	VAN	Va	vang	vangularis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3914	adzuki bean
 Vigna radiata	VRA	Vr	vrad	vradiata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	157791	mung bean
