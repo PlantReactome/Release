@@ -70,7 +70,7 @@ Arachis ipaensis	AIP	Ai	aipa	aipaensis	Inparanoid	-	PeanutBase	PeanutBase	d	1304
 Asparagus officinalis	AOF	Ao	aoff	aofficinalis	Inparanoid	-	Phytozome	Phytozome	m	4686	
 Cajanus cajan	CCA	Cc	ccaj	ccajan	Inparanoid	-	LegumeInfo	LegumeInfo	d	3821	
 Cannabis sativa	CSC	Cnst	cnst	csativa	Inparanoid	-	N/A	JCVI	d	3483	
-Cannabis sativa subsp. Indica	CSK	Csti	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
+Cannabis sativa.subsp.Indica	CSK	Csti	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
 Capsella rubella	CRU	Cru	crub	crubella	Inparanoid	-	Phytozome	Phytozome	d	81985	
 Cicer arietinum	CAR	Ca	cari	carietinum	Inparanoid	-	Phytozome	NCBI	d	3827	
 Citrullus lanatus	CLA	Cl	clan	clanatus	Inparanoid	-	CuGenDB	CuGenDB	d	3654	
@@ -79,20 +79,20 @@ Corchorus olitorius	COL	Co	coli	colitorius	Inparanoid	-	UniProt	NCBI	d	93759
 Erythranthe guttata	MGU	Mg	mgut	mguttatus	Inparanoid	-	Phytozome	Phytozome	d	4155	
 Eucalyptus grandis	EGR	Eg	egra	egrandis	Inparanoid	-	Phytozome	Phytozome	d	71139	
 Fragaria vesca	FVE	Fv	fves	fvesca	Inparanoid	-	Phytozome	Phytozome	d	57918	
-Humulus lupulus haplotig	HLH	Hlh	hluh	hlupulushaplotig	Inparanoid	-	N/A	Hendrix	d	3486	
-Humulus lupulus primary	HLP	Hlp	hlup	hlupulusprimary	Inparanoid	-	N/A	Hendrix	d	1571165	
+Humulus lupulus.haplotig	HLH	Hlh	hluh	hlupulushaplotig	Inparanoid	-	N/A	Hendrix	d	3486	
+Humulus lupulus.primary	HLP	Hlp	hlup	hlupulusprimary	Inparanoid	-	N/A	Hendrix	d	1571165	
 Jatropha curcas	JCU	Jc	jcur	jcurcas	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	d	180498	
 Malus domestica	MDO	Md	mdom	mdomestica	Inparanoid	-	Phytozome	PMID: 20802477	d	3750	
 Nelumbo nucifera	NNU	Nn	nnuc	nnucifera	Inparanoid	-	N/A	iPlant Collaborative	d	4432	
 Oryza australiensis	OAU	Oa	oaus	oaustraliensis	Inparanoid	-	N/A	OMAP/OGE	m	4532	
-Oryza meyeriana var. granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m	110450	
+Oryza meyeriana.var.granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m	110450	
 Oryza minuta	OMI	Omi	omin	ominuta	Inparanoid	-	N/A	OMAP/OGE	m	63629	
 Oryza officinalis	OOF	Oo	ooff	oofficinalis	Inparanoid	-	N/A	OMAP/OGE	m	4535	
-Oryza sativa aus kasalath	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m	1736659	
+Oryza sativa.aus.kasalath	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m	1736659	
 Phoenix dactylifera	PDA	Pd	pdac	pdactylifera	Inparanoid	-	N/A	PMID: 23917264	m	42345	
 Phyllostachys edulis	PED	Pe	pedu	pedulis	Inparanoid	-	Gent-PSB-Plaza	NCGR	m	38705	
 Picea abies	PAB	Pa	pabi	pabies	Inparanoid	-	Congenie	Congenie	p	3329	
 Pinus taeda	PTA	Pta	ptae	ptaeda	Inparanoid	-	N/A	TreeBase	p	3352	
 Salvia hispanica	SHI	Sh	shis	shispanica	Inparanoid	-	N/A	Jaiswal	d	49212	
-Synechocystis sp. PCC 6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b	1148	
+Synechocystis sp.PCC.6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b	1148	
 Zoysia japonica	ZJA	Zj	zjap	zjaponica	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	m	309978	
