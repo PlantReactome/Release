@@ -85,7 +85,7 @@ def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_inp
                       + str(ensembl_release_number) + "_os_2_" + v[1].lower() + "_sorted.tab")
         else:
             inparanoid_species_count += 1
-            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP_" + genus + "_" + species.lower() + ".txt",
+            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP-MSU_" + genus + "_" + species.lower() + ".txt",
                       output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/inparanoid_os_2_" + v[1].lower() + "_sorted.tab")
         if args.verbose:
             print(k,v)

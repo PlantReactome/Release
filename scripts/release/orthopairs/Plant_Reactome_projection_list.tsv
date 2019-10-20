@@ -17,10 +17,10 @@ Coffea canephora	CCN	Cca	ccan	ccanephora	Compara	30	Ensembl Gramene	Ensembl Gram
 Corchorus capsularis	CCP	Ccp	ccap	ccapsularis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	210143	white jute
 Cucumis sativus	CSA	Csa	csat	csativus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3659	cucumber
 Cyanidioschyzon merolae	CME	Cm	cmer	cmerolae	Compara	28	Ensembl Gramene	Ensembl Gramene	r	45157	
-Cynara cardunculus var. scolymus	CCD	Ccar			Compara	30	Ensembl Gramene	Ensembl Gramene	d	59895	artichoke
+Cynara cardunculus var. scolymus	CCD	Ccar	ccar	ccardunculus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	59895	artichoke
 Daucus carota	DCA	Dc	dcar	dcarota	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4039	wild carrot
 Dioscorea rotundata	DRO	Dr	drot	drotundata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	55577	white guinea yam
-Eragrostis tef	ETE	Et			Compara	40	Ensembl Gramene	Ensembl Gramene	m	110835	teff
+Eragrostis tef	ETE	Et	etef	etef	Compara	40	Ensembl Gramene	Ensembl Gramene	m	110835	teff
 Galdieria sulphuraria	GSU	Gs	gsul	gsulphuraria	Compara	28	Ensembl Gramene	Ensembl Gramene	r	130081	a red algae
 Glycine max	GMA	Gm	gmax	gmax	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3847	
 Gossypium raimondii	GRA	Gr	grai	graimondii	Compara	30	Ensembl Gramene	Ensembl Gramene	d	29730	
@@ -29,7 +29,7 @@ Hordeum vulgare	HVU	Hv	hvul	hvulgare	Compara	40	Ensembl Gramene	Ensembl Gramene	
 Leersia perrieri	LPE	Lp	lper	lperrieri	Compara	40	Ensembl Gramene	Ensembl Gramene	m	77586	
 Lupinus angustifolius	LAN	La	lang	langustifolius	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3871	narrow-leaved blue lupine
 Manihot esculenta	MES	Me	mesc	mesculenta	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3983	
-Marchantia polymorpha	MPO	Mp			Compara	28	Ensembl Gramene	Ensembl Gramene	r	3197	liverwort
+Marchantia polymorpha	MPO	Mp	mpol	mpolymorpha	Compara	28	Ensembl Gramene	Ensembl Gramene	r	3197	liverwort
 Medicago truncatula	MTR	Mt	mtru	mtruncatula	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3880	
 Musa acuminata	MAC	Ma	macu	macuminata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4641	
 Nicotiana attenuata	NAT	Na	natt	nattenuata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	49451	tobacco
@@ -69,8 +69,8 @@ Arachis duranensis	ADU	Ad	adur	aduranensis	Inparanoid	-	PeanutBase	PeanutBase	d	
 Arachis ipaensis	AIP	Ai	aipa	aipaensis	Inparanoid	-	PeanutBase	PeanutBase	d	130454	
 Asparagus officinalis	AOF	Ao	aoff	aofficinalis	Inparanoid	-	Phytozome	Phytozome	m	4686	
 Cajanus cajan	CCA	Cc	ccaj	ccajan	Inparanoid	-	LegumeInfo	LegumeInfo	d	3821	
-Cannabis sativa	CSC	Csat	csat	csativa	Inparanoid	-	N/A	JCVI	d	3483	
-Cannabis sativa subsp. Indica	CSK	Csati	csati	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
+Cannabis sativa	CSC	Cnst	cnst	csativa	Inparanoid	-	N/A	JCVI	d	3483	
+Cannabis sativa subsp. Indica	CSK	Csti	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
 Capsella rubella	CRU	Cru	crub	crubella	Inparanoid	-	Phytozome	Phytozome	d	81985	
 Cicer arietinum	CAR	Ca	cari	carietinum	Inparanoid	-	Phytozome	NCBI	d	3827	
 Citrullus lanatus	CLA	Cl	clan	clanatus	Inparanoid	-	CuGenDB	CuGenDB	d	3654	
@@ -79,8 +79,8 @@ Corchorus olitorius	COL	Co	coli	colitorius	Inparanoid	-	UniProt	NCBI	d	93759
 Erythranthe guttata	MGU	Mg	mgut	mguttatus	Inparanoid	-	Phytozome	Phytozome	d	4155	
 Eucalyptus grandis	EGR	Eg	egra	egrandis	Inparanoid	-	Phytozome	Phytozome	d	71139	
 Fragaria vesca	FVE	Fv	fves	fvesca	Inparanoid	-	Phytozome	Phytozome	d	57918	
-Humulus lupulus haplotig	HLH	Hlh	hluph	hlupulushaplotig	Inparanoid	-	N/A	Hendrix	d	3486	
-Humulus lupulus primary	HLP	Hlp	hlupp	hlupulusprimary	Inparanoid	-	N/A	Hendrix	d	1571165	
+Humulus lupulus haplotig	HLH	Hlh	hluh	hlupulushaplotig	Inparanoid	-	N/A	Hendrix	d	3486	
+Humulus lupulus primary	HLP	Hlp	hlup	hlupulusprimary	Inparanoid	-	N/A	Hendrix	d	1571165	
 Jatropha curcas	JCU	Jc	jcur	jcurcas	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	d	180498	
 Malus domestica	MDO	Md	mdom	mdomestica	Inparanoid	-	Phytozome	PMID: 20802477	d	3750	
 Nelumbo nucifera	NNU	Nn	nnuc	nnucifera	Inparanoid	-	N/A	iPlant Collaborative	d	4432	
