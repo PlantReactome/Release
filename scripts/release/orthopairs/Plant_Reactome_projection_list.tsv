@@ -42,10 +42,10 @@ Oryza meridionalis	OME	Ome	omer	omeridionalis	Compara	40	Ensembl Gramene	Ensembl
 Oryza nivara	ONI	On	oniv	onivara	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4536	
 Oryza punctata	OPU	Op	opun	opunctata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4537	
 Oryza rufipogon	ORU	Or	oruf	orufipogon	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4529	
-Oryza sativa Indica Group	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m	39946	
+Oryza Indica	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m	39946	
 Ostreococcus lucimarinus	OLU	Olu	oluc	olucimarinus	Compara	28	Ensembl Gramene	Ensembl Gramene	c	242159	
-Panicum hallii	PHA	Ph	phal	phallii_fil2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	206008	Hall's panicgrass
-Panicum hallii var. hallii	PHH	Phh	phvh	phallii_hal2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	1504633	Hall's panicgrass
+Panicum halliifil2	PHA	Ph	phal	phallii_fil2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	206008	Hall's panicgrass
+Panicum halliihal2	PHH	Phh	phvh	phallii_hal2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	1504633	Hall's panicgrass
 Phaseolus vulgaris	PVU	Pv	pvul	pvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3885	
 Physcomitrella patens	PPA	Ppa	ppat	ppatens	Compara	28	Ensembl Gramene	Ensembl Gramene	b	3218	
 Populus trichocarpa	PTI (old: PTR)	Pt	ptri	ptrichocarpa	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3694	
@@ -69,8 +69,8 @@ Arachis duranensis	ADU	Ad	adur	aduranensis	Inparanoid	-	PeanutBase	PeanutBase	d	
 Arachis ipaensis	AIP	Ai	aipa	aipaensis	Inparanoid	-	PeanutBase	PeanutBase	d	130454	
 Asparagus officinalis	AOF	Ao	aoff	aofficinalis	Inparanoid	-	Phytozome	Phytozome	m	4686	
 Cajanus cajan	CCA	Cc	ccaj	ccajan	Inparanoid	-	LegumeInfo	LegumeInfo	d	3821	
-Cannabis sativa	CSC	Cnst	cnst	csativa	Inparanoid	-	N/A	JCVI	d	3483	
-Cannabis sativa.subsp.Indica	CSK	Csti	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
+Cannabis sativa	CSC	Cns	cnst	csativa	Inparanoid	-	N/A	JCVI	d	3483	
+Cannabis sativa.subsp.Indica	CSK	Cst	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	
 Capsella rubella	CRU	Cru	crub	crubella	Inparanoid	-	Phytozome	Phytozome	d	81985	
 Cicer arietinum	CAR	Ca	cari	carietinum	Inparanoid	-	Phytozome	NCBI	d	3827	
 Citrullus lanatus	CLA	Cl	clan	clanatus	Inparanoid	-	CuGenDB	CuGenDB	d	3654	
