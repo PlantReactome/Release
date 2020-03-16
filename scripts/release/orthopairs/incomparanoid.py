@@ -12,7 +12,7 @@ import pprint
 import re
 import copy
 #from matplotlib_venn import venn2
-#from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 
 #----------------------------------------------------------------------------------------------------------------------
 # globals
@@ -24,7 +24,7 @@ dict_genes_to_orthologs = {}
 
 list_stats = []
 dict_uniprot_map = {}
-dict_ens_map = {}
+dict_rap_map = {} # local MSU-RAP dict, using only filtered canonical LOC loci (lowest available: ".1" is first preference, ".2" second preference, and so on)dict_ens_map = {}
 dict_inp_map = {}
 COUNT_TOTAL_REF_LOCI = 0 # num of TOTAL curated reference loci used to generate orthology projections
 
@@ -51,6 +51,27 @@ def load_configs(projected_species_path):
         pp.pprint(dict_projected_species)
 
     return dict_projected_species
+
+
+#----------------------------------------------------------------------------------------------------------------------
+def load_prots(filtering_loci_path) :
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    create tuple to hold filtering set of proteins and orthologs, load the protein list and the species containers
+    """
+    dict_genes_to_orthologs = {} # local
+    # read map file, populate dict (it is possible to have a many-to-1 LOC-to-Uniprot relationship; this is ok for projection inference)
+    GENES = open(filtering_loci_path)
+    for line in GENES :
+        locus_id = line.split()[0].strip()
+        uniprot_id = line.split()[1].strip()
+        dict_genes_to_orthologs[locus_id] = [uniprot_id, copy.deepcopy(dict_projected_species)]
+    GENES.close()
+
+    if args.verbose:
+        pp.pprint(dict_genes_to_orthologs)
+
+    return dict_genes_to_orthologs
 
 
 #----------------------------------------------------------------------------------------------------------------------
@@ -199,9 +220,37 @@ def create_inp_map(inparanoid_input_path, dict_uniprot_map) :
     
     return dict_inp_map
 
+#----------------------------------------------------------------------------------------------------------------------
+def create_rap_map(rap_map_path) :
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    generate MSU-RAP map used as pre-filter against set of curated Plant Reactome reference loci
+    (genes. transcripts, or proteins)
+    """
+
+    # generate internal MSU-RAP map
+    RAP_MAP = open(rap_map_path)
+    for line in RAP_MAP:
+        if line.strip() != "" :
+            cols = line.rstrip().split()
+            rap_id = cols[0].upper()
+
+            set_loc_ids = set(cols[1].upper().split(","))
+            # select only the first locus, if it exists
+            for loc_id in set_loc_ids :
+                if loc_id != "NONE" :
+                    canonical = loc_id.split(".")
+                    dict_rap_map[rap_id] = canonical[0]
+                    break
+    RAP_MAP.close()
+
+    #for keys, values in dict_rap_map.items() :
+    #print(keys + " | " + values)
+    return dict_rap_map
+
 
 #----------------------------------------------------------------------------------------------------------------------
-def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_id, dict_uniprot_map, is_confident) :
+def create_ens_map(filtering_loci_path, ensembl_input_path, dict_rap_map, recip_id, dict_uniprot_map, is_confident) :
 #----------------------------------------------------------------------------------------------------------------------
     """
     open the ensemble plants and rap::irgsp mapping files and generate a hash mapping of reference to projected loci where 
@@ -209,6 +258,7 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_
     reference loci
     """
     dict_ens_map = {} # local ensembl orthology dict
+    """
     dict_rap_map = {} # local MSU-RAP dict, using only filtered canonical LOC loci (lowest available: ".1" is first preference, ".2" second preference, and so on)
 
     # generate internal MSU-RAP map    
@@ -229,7 +279,7 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_
 
     #for keys, values in dict_rap_map.items() :
     #    print(keys + " | " + values)
-
+    """
     # generate ref loci filter 
     FILTER = open(filtering_loci_path)
     loci_filter = set()
@@ -278,6 +328,46 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, rap_map_path, recip_
     
     #print(dict_ens_map)
     return dict_ens_map
+
+#----------------------------------------------------------------------------------------------------------------------
+def append_rna_ens_map(dict_ens_map, filtering_loci_path, ensembl_input_path, dict_rap_map, recip_id) :
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    different iteration and flavor for transcripts.
+    open the ensemble plants and rap::irgsp mapping files and generate a hash mapping of reference to projected loci where
+    reciprocal identity is >= recip_id% and confidence is high. also pre-filter against set of curated Plant Reactome
+    reference loci
+    """
+    # generate ref loci filter
+    FILTER = open(filtering_loci_path)
+    loci_filter = set()
+    for line in FILTER :
+        loci_filter.add(line.rstrip())
+
+    global COUNT_TOTAL_REF_LOCI
+    COUNT_TOTAL_REF_LOCI = len(loci_filter)
+
+    #for locus in loci_filter :
+    #    print(locus)
+
+    ENS = open(ensembl_input_path)
+    for line in ENS :
+        cols = line.rstrip().split()
+        if len(cols) == 5:
+            col0 = cols[0].upper()
+            if col0 in dict_rap_map:
+                os_locus = dict_rap_map[col0]
+                if os_locus in loci_filter:
+                    # reciprocal identity is >= recip_id%
+                    if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id:
+                        if os_locus in dict_ens_map :
+                            dict_ens_map[os_locus].add(cols[1])
+                        else:
+                            dict_ens_map[os_locus] = set([cols[1]])
+    ENS.close()
+
+    print(dict_ens_map)
+
 
 
 #----------------------------------------------------------------------------------------------------------------------
@@ -519,7 +609,7 @@ parser = argparse.ArgumentParser(description='Script with different analysis met
 parser.add_argument('-U', '--universal', help='accept directory location(s) for multiple Inparanoid or Ensembl files; file-type and file-number agnostic', action='store_true')
 parser.add_argument('-F', '--stats_display_format', help='write out the counts instead of the actual orthologs', choices=['counts', 'orthologs'], default='counts')
 parser.add_argument('-S', '--projected_species_configs', help='tab file containing projected species and abbvs')
-parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci user for filtering') # will contain 2 cols for -U (uniprot and gene id)
+parser.add_argument('-f', '--filtering_loci_path', help='list of curated reference loci used for filtering') # will contain 2 cols for -U (uniprot and gene id)
 parser.add_argument('-e', '--ensembl_input_path', help='ensembl compara input file')
 parser.add_argument('-i', '--inparanoid_input_path', help='inparanoid supercluster input file')
 parser.add_argument('-m', '--rap_map_path', help='MSU-RAP mapping file')
@@ -567,9 +657,7 @@ if args.universal:
     dict_projected_species = load_configs(args.projected_species_configs)
 
     # read in gene file (even if it's not technically needed for the inparanoid data, which is currently pre-filtered)
-    dict_genes_to_orthologs = load_genes(args.filtering_loci_path)
-
-    #quit()
+    dict_genes_to_orthologs = load_prots(args.filtering_loci_path)
 
     # iter: build a map of entries against ortho files (culled from directory)
     directory_inp = args.inparanoid_input_path
@@ -609,7 +697,11 @@ else:
     if (args.inparanoid_input_path):
         dict_inp_map = create_inp_map(args.inparanoid_input_path, dict_uniprot_map)
     if (args.ensembl_input_path) :
-        dict_ens_map = create_ens_map(args.filtering_loci_path, args.ensembl_input_path, args.rap_map_path, args.reciprocal_id, dict_uniprot_map, 1 if args.confidence_high else 0)
+        dict_rap_map = create_rap_map(args.rap_map_path)
+        dict_ens_map = create_ens_map(args.filtering_loci_path, args.ensembl_input_path, dict_rap_map, args.reciprocal_id, dict_uniprot_map, 1 if args.confidence_high else 0)
+
+        transcript_path = "/home/preecej/Documents/projects/plant_reactome/new_features/orthoinference_rna_dna/slice_10_dnarna_map/slice_10_rna_sorted.txt"
+        append_rna_ens_map(dict_ens_map, transcript_path, args.ensembl_input_path, dict_rap_map, args.reciprocal_id)
 
     # generate stats and output them; assumes both inparanoid and ensembl data have been provided
     if (args.comparison_file_path) :
@@ -628,4 +720,3 @@ else:
 #----------------------------------------------------------------------------------------------------------------------
 # end
 #----------------------------------------------------------------------------------------------------------------------
-
