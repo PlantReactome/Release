@@ -54,7 +54,7 @@ def load_configs(projected_species_path):
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def load_prots(filtering_loci_path) :
+def load_prots(filtering_loci_path):
 #----------------------------------------------------------------------------------------------------------------------
     """
     create tuple to hold filtering set of proteins and orthologs, load the protein list and the species containers
@@ -75,7 +75,7 @@ def load_prots(filtering_loci_path) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def load_genes(filtering_loci_path) :
+def load_genes(filtering_loci_path):
 #----------------------------------------------------------------------------------------------------------------------
     """
     create tuple to hold filtering set of genes and orthologs, load the gene list and the species containers
@@ -96,7 +96,7 @@ def load_genes(filtering_loci_path) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def map_orthologs(file, isInparanoid, threshold) :
+def map_orthologs(file, isInparanoid, threshold):
 #----------------------------------------------------------------------------------------------------------------------
     """
     - if ensembl -> load ensembl file and look up
@@ -130,7 +130,7 @@ def map_orthologs(file, isInparanoid, threshold) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def write_orthology(output_path, stats_display_format) :
+def write_orthology(output_path, stats_display_format):
 #----------------------------------------------------------------------------------------------------------------------
     """
     :param output_path
@@ -160,7 +160,7 @@ def write_orthology(output_path, stats_display_format) :
     return
 
 #----------------------------------------------------------------------------------------------------------------------
-def create_dict_uniprot_map(uniprot_substitution_path) :
+def create_dict_uniprot_map(uniprot_substitution_path):
 #----------------------------------------------------------------------------------------------------------------------
     """
     create reference-to-uniprot mapping dictionary
@@ -185,7 +185,7 @@ def create_dict_uniprot_map(uniprot_substitution_path) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def create_inp_map(inparanoid_input_path, dict_uniprot_map) :
+def create_inp_map(inparanoid_input_path, dict_uniprot_map):
 #----------------------------------------------------------------------------------------------------------------------
     """
     open the inparanoid file (which is already loci-filtered for curated reference set and does not require RAP-to-MSU back-conversion) and generate a 2-col mapping of PRJ to LOC loci
@@ -221,7 +221,7 @@ def create_inp_map(inparanoid_input_path, dict_uniprot_map) :
     return dict_inp_map
 
 #----------------------------------------------------------------------------------------------------------------------
-def create_rap_map(rap_map_path) :
+def create_rap_map(rap_map_path):
 #----------------------------------------------------------------------------------------------------------------------
     """
     generate MSU-RAP map used as pre-filter against set of curated Plant Reactome reference loci
@@ -250,7 +250,7 @@ def create_rap_map(rap_map_path) :
 
 
 #----------------------------------------------------------------------------------------------------------------------
-def create_ens_map(filtering_loci_path, ensembl_input_path, dict_rap_map, recip_id, dict_uniprot_map, is_confident) :
+def create_ens_map(filtering_loci_path, ensembl_input_path, dict_rap_map, recip_id, dict_uniprot_map, is_confident):
 #----------------------------------------------------------------------------------------------------------------------
     """
     open the ensemble plants and rap::irgsp mapping files and generate a hash mapping of reference to projected loci where 
@@ -330,7 +330,7 @@ def create_ens_map(filtering_loci_path, ensembl_input_path, dict_rap_map, recip_
     return dict_ens_map
 
 #----------------------------------------------------------------------------------------------------------------------
-def append_rna_ens_map(dict_ens_map, filtering_loci_path, ensembl_input_path, dict_rap_map, recip_id) :
+def append_rna_ens_map(dict_ens_map, filtering_loci_path, ensembl_input_path, recip_id):
 #----------------------------------------------------------------------------------------------------------------------
     """
     different iteration and flavor for transcripts.
@@ -347,26 +347,59 @@ def append_rna_ens_map(dict_ens_map, filtering_loci_path, ensembl_input_path, di
     global COUNT_TOTAL_REF_LOCI
     COUNT_TOTAL_REF_LOCI = len(loci_filter)
 
-    #for locus in loci_filter :
+    #for locus in loci_filter:
     #    print(locus)
 
     ENS = open(ensembl_input_path)
     for line in ENS :
         cols = line.rstrip().split()
         if len(cols) == 5:
-            col0 = cols[0].upper()
-            if col0 in dict_rap_map:
-                os_locus = dict_rap_map[col0]
-                if os_locus in loci_filter:
-                    # reciprocal identity is >= recip_id%
-                    if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id:
-                        if os_locus in dict_ens_map :
-                            dict_ens_map[os_locus].add(cols[1])
-                        else:
-                            dict_ens_map[os_locus] = set([cols[1]])
+            os_locus = cols[0].upper().replace("G","T")
+            if os_locus in loci_filter: # now holds transcript ids
+                # reciprocal identity is >= recip_id%
+                if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id:
+                    if os_locus in dict_ens_map :
+                        dict_ens_map[os_locus].add(cols[1])
+                    else:
+                        dict_ens_map[os_locus] = set([cols[1]])
     ENS.close()
 
-    print(dict_ens_map)
+
+
+#----------------------------------------------------------------------------------------------------------------------
+def append_dna_ens_map(dict_ens_map, filtering_loci_path, ensembl_input_path, recip_id):
+#----------------------------------------------------------------------------------------------------------------------
+    """
+    different iteration and flavor for genes.
+    open the ensemble plants and rap::irgsp mapping files and generate a hash mapping of reference to projected loci where
+    reciprocal identity is >= recip_id% and confidence is high. also pre-filter against set of curated Plant Reactome
+    reference loci
+    """
+    # generate ref loci filter
+    FILTER = open(filtering_loci_path)
+    loci_filter = set()
+    for line in FILTER :
+        loci_filter.add(line.rstrip())
+
+    global COUNT_TOTAL_REF_LOCI
+    COUNT_TOTAL_REF_LOCI = len(loci_filter)
+
+    #for locus in loci_filter:
+    #    print(locus)
+
+    ENS = open(ensembl_input_path)
+    for line in ENS :
+        cols = line.rstrip().split()
+        if len(cols) == 5:
+            os_locus = cols[0].upper()
+            if os_locus in loci_filter: # now holds transcript ids
+                # reciprocal identity is >= recip_id%
+                if float(cols[2]) >= recip_id and float(cols[3]) >= recip_id:
+                    if os_locus in dict_ens_map :
+                        dict_ens_map[os_locus].add(cols[1])
+                    else:
+                        dict_ens_map[os_locus] = set([cols[1]])
+    ENS.close()
 
 
 
@@ -638,7 +671,7 @@ args = parser.parse_args()
 if args.verbose:
     print(args)
 
-# Ssample calls:
+# Sample calls:
 #   Directory call:
 #       python incomparanoid.py -U -S <species_config_file> -f <gene_list> -e <ensembl_dir> -i <inp_dir> -s <output file> -r <recip_id> [-F (counts|orthologs)]
 #   Inparanoid single file:
@@ -676,7 +709,7 @@ if args.universal:
             if args.verbose:
                 print(entry.path)
             # build via file mapping
-            #if str(os.path.split(entry.path)[0]).endswith('inp'):
+            # if str(os.path.split(entry.path)[0]).endswith('inp'):
             map_orthologs(entry.path, False, args.reciprocal_id)
             continue
 
@@ -694,17 +727,19 @@ else:
         dict_uniprot_map = create_dict_uniprot_map(args.uniprot_substitution)
 
     # create projection maps
-    if (args.inparanoid_input_path):
+    if args.inparanoid_input_path:
         dict_inp_map = create_inp_map(args.inparanoid_input_path, dict_uniprot_map)
-    if (args.ensembl_input_path) :
+    if args.ensembl_input_path:
         dict_rap_map = create_rap_map(args.rap_map_path)
         dict_ens_map = create_ens_map(args.filtering_loci_path, args.ensembl_input_path, dict_rap_map, args.reciprocal_id, dict_uniprot_map, 1 if args.confidence_high else 0)
 
-        transcript_path = "/home/preecej/Documents/projects/plant_reactome/new_features/orthoinference_rna_dna/slice_10_dnarna_map/slice_10_rna_sorted.txt"
-        append_rna_ens_map(dict_ens_map, transcript_path, args.ensembl_input_path, dict_rap_map, args.reciprocal_id)
+        transcript_path = "/Users/preecej/Documents/projects/plant_reactome/new_features/orthoinference_rna_dna/slice_10_dnarna_map/slice_10_rna_sorted.txt"
+        append_rna_ens_map(dict_ens_map, transcript_path, args.ensembl_input_path, args.reciprocal_id)
+        gene_path = "/Users/preecej/Documents/projects/plant_reactome/new_features/orthoinference_rna_dna/slice_10_dnarna_map/slice_10_dna_sorted.txt"
+        append_dna_ens_map(dict_ens_map, gene_path, args.ensembl_input_path, args.reciprocal_id)
 
     # generate stats and output them; assumes both inparanoid and ensembl data have been provided
-    if (args.comparison_file_path) :
+    if args.comparison_file_path:
         all_venn_data = compare_maps(dict_ens_map, dict_inp_map, args.comparison_file_path, args.ensembl_output_path, args.inparanoid_output_path)
 
     if args.generate_reactome_output == 'ensembl' :
@@ -713,10 +748,10 @@ else:
         write_reactome_files(dict_inp_map, args.reactome_gene_protein_path, args.reactome_projection_path, args.projection_prefix)
 
     # NOTE: requires local matplotlib backend configuration
-    if args.venn_diagram :
-        generate_venn(all_venn_data[0], all_venn_data[2], ['red', 'yellow', 'orange', 'blue', 'lime'], 1, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
-        generate_venn(all_venn_data[1], all_venn_data[2], ['green', 'yellow', 'lightgreen', 'blue', 'lime'], 0, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
+    # if args.venn_diagram:
+    #    generate_venn(all_venn_data[0], all_venn_data[2], ['red', 'yellow', 'orange', 'blue', 'lime'], 1, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
+    #    generate_venn(all_venn_data[1], all_venn_data[2], ['green', 'yellow', 'lightgreen', 'blue', 'lime'], 0, args.ref_species, args.proj_species, args.reciprocal_id, 1 if args.confidence_high else 0, args.venn_output_path)
 
-#----------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
 # end
-#----------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------
