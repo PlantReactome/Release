@@ -1,0 +1,109 @@
+Species	Stable ID Abbv	2-Digit Abbv	4-Digit Abbv	Gspecies Abbv	Homology Method	Recip. % identity	Primary External Ref Outgoing Link	Sequence data source	Clade	NCBI	Familiar name or description
+Oryza sativa	OSA	Os	osat	osativa	Reference	N/A	UniProt	Ensembl Gramene	R	4530	rice
+Chara braunii	CBA	Cb	cbra	cbraunii	Compara	28	Ensembl Gramene	Ensembl Gramene	c	69332	Braun's stonewort
+Citrus clementina	CCL	Ccl	ccle	cclementina	Compara	30	Ensembl Gramene	Ensembl Gramene	d	85681	clementine
+Ipomoea triloba	ITR	It	itri	itriloba	Compara	30	Ensembl Gramene	Ensembl Gramene	d	35885	morning glory
+Olea europaea sylvestris	OEU	Oe	oeur	oeuropaea	Compara	30	Ensembl Gramene	Ensembl Gramene	d	158386	wild olive tree
+Pistacia vera	PVE	Pve	pver	pvera	Compara	30	Ensembl Gramene	Ensembl Gramene	d	55513	pistachio
+Prunus avium	PAV	Pav	pavi	pavium	Compara	30	Ensembl Gramene	Ensembl Gramene	d	42229	sweet cherry
+Prunus dulcis	PDU	Pdu	pdul	pdulcis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3755	almond
+Ananas comosus	ACO	Aco	acom	acomosus	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4615	pineapple
+Eragrostis curvula	ECU	Ec	ecur	ecurvula	Compara	40	Ensembl Gramene	Ensembl Gramene	m	38414	weeping lovegrass
+Saccharum spontaneum	SSP	Ss	sspo	sspontaneum	Compara	40	Ensembl Gramene	Ensembl Gramene	m	62335	fodder cane
+Physcomitrella patens	PPA	Ppa	ppat	ppatens	Compara	28	Ensembl Gramene	Ensembl Gramene	b	3218	spreading earthmoss
+Chlamydomonas reinhardtii	CRE	Cr	crei	creinhardtii	Compara	28	Ensembl Gramene	Ensembl Gramene	c	3055	a green algae
+Ostreococcus lucimarinus	OLU	Olu	oluc	olucimarinus	Compara	28	Ensembl Gramene	Ensembl Gramene	c	242159	a green algae
+Selaginella moellendorffii	SMO	Sm	smoe	smoellendorffii	Compara	28	Ensembl Gramene	Ensembl Gramene	l	88036	a lycophyte
+Chondrus crispus	CCR	Ccr	ccri	ccrispus	Compara	28	Ensembl Gramene	Ensembl Gramene	r	2769	carrageen moss
+Cyanidioschyzon merolae	CME	Cm	cmer	cmerolae	Compara	28	Ensembl Gramene	Ensembl Gramene	r	45157	a red algae
+Galdieria sulphuraria	GSU	Gs	gsul	gsulphuraria	Compara	28	Ensembl Gramene	Ensembl Gramene	r	130081	a red algae
+Marchantia polymorpha	MPO	Mp	mpol	mpolymorpha	Compara	28	Ensembl Gramene	Ensembl Gramene	r	3197	liverwort
+Amborella trichopoda	ATR	Atr	atri	atrichopoda	Compara	30	Ensembl Gramene	Ensembl Gramene	a	13333	amborella
+Actinidia chinensis	ACH	Ac	achi	achinensis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3625	kiwifruit
+Arabidopsis halleri	AHA	Ah	ahal	ahalleri	Compara	30	Ensembl Gramene	Ensembl Gramene	d	81970	relative to A. thaliana
+Arabidopsis lyrata	ALY	Al	alyr	alyrata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	59689	relative to A. thaliana
+Arabidopsis thaliana	ATH	At	atha	atauschii	Compara	30	TAIR	Ensembl Gramene	d	3702	thale cress
+Beta vulgaris	BVU	Bv	bvul	bvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	161934	beet
+Brassica napus	BNA	Bn	bnap	bnapus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3708	rapeseed
+Brassica oleracea	BOL	Bo	bole	boleracea	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3712	wild cabbage
+Brassica rapa	BRA	Br	brap	brapa	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3711	canola
+Capsicum annuum	CAN	Can	cann	cannuum	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4072	peppers
+Coffea canephora	CCN	Cca	ccan	ccanephora	Compara	30	Ensembl Gramene	Ensembl Gramene	d	49390	coffee
+Corchorus capsularis	CCP	Ccp	ccap	ccapsularis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	210143	white jute
+Cucumis sativus	CSA	Csa	csat	csativus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3659	cucumber
+Cynara cardunculus var. scolymus	CCD	Ccar	ccar	ccardunculus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	59895	artichoke
+Daucus carota	DCA	Dc	dcar	dcarota	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4039	carrot
+Glycine max	GMA	Gm	gmax	gmax	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3847	soybean
+Gossypium raimondii	GRA	Gr	grai	graimondii	Compara	30	Ensembl Gramene	Ensembl Gramene	d	29730	cotton
+Helianthus annuus	HAN	Ha	hann	hannuus	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4232	sunflower
+Lupinus angustifolius	LAN	La	lang	langustifolius	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3871	narrow-leaved blue lupine
+Manihot esculenta	MES	Me	mesc	mesculenta	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3983	cassava
+Medicago truncatula	MTR	Mt	mtru	mtruncatula	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3880	barrelclover
+Nicotiana attenuata	NAT	Na	natt	nattenuata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	49451	tobacco
+Phaseolus vulgaris	PVU	Pv	pvul	pvulgaris	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3885	common bean
+Populus trichocarpa	PTI (old: PTR)	Pt	ptri	ptrichocarpa	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3694	poplar, cottonwood
+Prunus persica	PPE	Pp	pper	ppersica	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3760	peach
+Solanum lycopersicum	SLY	Sl	slyc	slycopersicum	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4081	tomato
+Solanum tuberosum	STU	St	stub	stuberosum	Compara	30	Ensembl Gramene	Ensembl Gramene	d	4113	potato
+Theobroma cacao (var. Criollo)	TCA	Tc	tcac	tcacao	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3641	cocoa
+Trifolium pratense	TPR	Tp	tpra	tpratense	Compara	30	Ensembl Gramene	Ensembl Gramene	d	57577	red clover
+Vigna angularis	VAN	Va	vang	vangularis	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3914	adzuki bean
+Vigna radiata	VRA	Vr	vrad	vradiata	Compara	30	Ensembl Gramene	Ensembl Gramene	d	157791	mung bean
+Vitis vinifera	VVN (old: VVI)	Vv	vvin	vvinifera	Compara	30	Ensembl Gramene	Ensembl Gramene	d	29760	grape
+Malus domestica	MDO	Md	mdom	mdomestica	Compara	30	Ensembl Gramene	Ensembl Gramene	d	3750	Golden apple
+Aegilops tauschii	ATA	Ata	atau	athaliana	Compara	40	Ensembl Gramene	Ensembl Gramene	m	37682	Tausch's goatgrass
+Brachypodium distachyon	BDI	Bd	bdis	bdistachyon	Compara	40	Ensembl Gramene	Ensembl Gramene	m	15368	false brome
+Dioscorea rotundata	DRO	Dr	drot	drotundata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	55577	white guinea yam
+Eragrostis tef	ETE	Et	etef	etef	Compara	40	Ensembl Gramene	Ensembl Gramene	m	110835	teff
+Hordeum vulgare	HVU	Hv	hvul	hvulgare	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4513	barley
+Leersia perrieri	LPE	Lp	lper	lperrieri	Compara	40	Ensembl Gramene	Ensembl Gramene	m	77586	cutgrass
+Musa acuminata	MAC	Ma	macu	macuminata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4641	banana
+Oryza barthii	OBA	Oba	obar	obarthii	Compara	40	Ensembl Gramene	Ensembl Gramene	m	65489	wild African rice
+Oryza brachyantha	OBR	Obr	obra	obrachyantha	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4533	a rice
+Oryza glaberrima	OGL	Ogla	ogla	oglaberrima	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4538	African rice
+Oryza glumaepatula	OGU	Oglu	oglu	oglumaepatula	Compara	40	Ensembl Gramene	Ensembl Gramene	m	40148	brownbeard rice
+Oryza longistaminata	OLO	Ol	olon	olongistaminata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4528	longstamen rice
+Oryza meridionalis	OME	Ome	omer	omeridionalis	Compara	40	Ensembl Gramene	Ensembl Gramene	m	40149	a rice
+Oryza nivara	ONI	On	oniv	onivara	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4536	a rice
+Oryza punctata	OPU	Op	opun	opunctata	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4537	red rice
+Oryza rufipogon	ORU	Or	oruf	orufipogon	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4529	a rice
+Oryza sativa Indica Group	OSI	Osi	osai	oindica	Compara	40	Ensembl Gramene	Ensembl Gramene	m	39946	lowland Asian rice
+Panicum hallii	PHA	Ph	phal	phallii_fil2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	206008	Hall's panicgrass
+Panicum hallii var. hallii	PHH	Phh	phvh	phallii_hal2	Compara	40	Ensembl Gramene	Ensembl Gramene	m	1504633	Hall's panicgrass
+Setaria italica	SIT	Si	sita	sitalica	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4555	foxtail millet
+Sorghum bicolor	SBI	Sb	sbic	sbicolor	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4558	sorghum
+Triticum aestivum	TAE	Ta	taes	taestivum	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4565	bread wheat
+Triticum dicoccoides	TDI	Td	tdic	tdicoccoides	Compara	40	Ensembl Gramene	Ensembl Gramene	m	85692	wild emmer wheat
+Triticum turgidum *	TTU	Tt	ttur	tturgidum	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4571	durum wheat
+Triticum urartu	TUR	Tu	tura	turartu	Compara	40	Ensembl Gramene	Ensembl Gramene	m	4572	red wild einkorn wheat
+Zea mays	ZMA	Zm	zmay	zmays	Compara	40	MaizeGDB	Ensembl Gramene	m	4577	corn
+Synechocystis sp. PCC 6803	SPC	Sp	spcc	spcc6803	Inparanoid	-	MicrobeDB	Jaiswal	b	1148	a cyanobacteria
+Arachis duranensis	ADU	Ad	adur	aduranensis	Inparanoid	-	PeanutBase	PeanutBase	d	130453	an herb (ancestor to peanut)
+Arachis ipaensis	AIP	Ai	aipa	aipaensis	Inparanoid	-	PeanutBase	PeanutBase	d	130454	an herb (ancestor to peanut)
+Cajanus cajan	CCA	Cc	ccaj	ccajan	Inparanoid	-	LegumeInfo	LegumeInfo	d	3821	pigeonpea
+Cannabis sativa	CSC	Cns	cnst	csativa	Inparanoid	-	N/A	JCVI	d	3483	cannabis
+Cannabis sativa subsp. Indica	CSK	Cst	csti	csativaindica	Inparanoid	-	CCBR-UToronto	CCBR-UToronto	d	1302822	cannabis cultivar
+Capsella rubella	CRU	Cru	crub	crubella	Inparanoid	-	Phytozome	Phytozome	d	81985	pink shepherd's-purse
+Cicer arietinum	CAR	Ca	cari	carietinum	Inparanoid	-	Phytozome	NCBI	d	3827	chickpea
+Citrullus lanatus	CLA	Cl	clan	clanatus	Inparanoid	-	CuGenDB	CuGenDB	d	3654	watermelon
+Citrus sinensis	CSI	Cs	csin	csinensis	Inparanoid	-	Phytozome	Phytozome	d	2711	orange
+Corchorus olitorius	COL	Co	coli	colitorius	Inparanoid	-	UniProt	NCBI	d	93759	jute mallow
+Erythranthe guttata	MGU	Mg	mgut	mguttatus	Inparanoid	-	Phytozome	Phytozome	d	4155	seep monkeyflower
+Eucalyptus grandis	EGR	Eg	egra	egrandis	Inparanoid	-	Phytozome	Phytozome	d	71139	eucalyptus
+Fragaria vesca	FVE	Fv	fves	fvesca	Inparanoid	-	Phytozome	Phytozome	d	57918	strawberry
+Humulus lupulus haplotig	HLH	Hlh	hluh	hlupulushaplotig	Inparanoid	-	N/A	Hendrix	d	3486	hops
+Humulus lupulus primary	HLP	Hlp	hlup	hlupulusprimary	Inparanoid	-	N/A	Hendrix	d	1571165	hops
+Jatropha curcas	JCU	Jc	jcur	jcurcas	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	d	180498	physic nut
+Nelumbo nucifera	NNU	Nn	nnuc	nnucifera	Inparanoid	-	N/A	iPlant Collaborative	d	4432	lotus
+Salvia hispanica	SHI	Sh	shis	shispanica	Inparanoid	-	N/A	Jaiswal	d	49212	chia
+Asparagus officinalis	AOF	Ao	aoff	aofficinalis	Inparanoid	-	Phytozome	Phytozome	m	4686	asparagus
+Oryza australiensis	OAU	Oa	oaus	oaustraliensis	Inparanoid	-	N/A	OMAP/OGE	m	4532	a rice
+Oryza meyeriana var. granulata	OGR	Ogr	ogra	ogranulata	Inparanoid	-	N/A	OMAP/OGE	m	110450	a rice
+Oryza minuta	OMI	Omi	omin	ominuta	Inparanoid	-	N/A	OMAP/OGE	m	63629	a rice
+Oryza officinalis	OOF	Oo	ooff	oofficinalis	Inparanoid	-	N/A	OMAP/OGE	m	4535	a rice
+Oryza sativa aus kasalath	OKA	Ok	okas	okasalath	Inparanoid	-	N/A	PMID: 24578372	m	1736659	a rice
+Phoenix dactylifera	PDA	Pd	pdac	pdactylifera	Inparanoid	-	N/A	PMID: 23917264	m	42345	date palm
+Phyllostachys edulis	PED	Pe	pedu	pedulis	Inparanoid	-	Gent-PSB-Plaza	NCGR	m	38705	bamboo
+Zoysia japonica	ZJA	Zj	zjap	zjaponica	Inparanoid	-	KDRI (Kazusa)	KDRI (Kazusa)	m	309978	Korean lawngrass
+Picea abies	PAB	Pa	pabi	pabies	Inparanoid	-	Congenie	Congenie	p	3329	Norway spruce
+Pinus taeda	PTA	Pta	ptae	ptaeda	Inparanoid	-	N/A	TreeBase	p	3352	loblolly pine
