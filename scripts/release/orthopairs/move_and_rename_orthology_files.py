@@ -1,4 +1,4 @@
-#!/bin/python
+#!env python3
 """
 Distribute orthology files from both Ensembl Compara and Inparanoid downloads. Move and rename, based on config file
 of projected species abbvs.
@@ -12,6 +12,7 @@ import sys
 import argparse
 import pprint
 import re
+from pathlib import Path
 
 # globals --------------------------------------------------------------------------------------------------------------
 
@@ -80,12 +81,14 @@ def rename_and_deploy(dict_projected_species, ensembl_input_path, inparanoid_inp
         species = k.split(' ')[1].title()  # uc 1st char
         if v[4] == "Compara":
             ensembl_species_count += 1
+            Path(output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1]).mkdir(parents=True, exist_ok=True)
             shutil.copy2(ensembl_input_path + "/" + genus + species + "_osj.rtm",
                       output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/ensembl_plants_"
                       + str(ensembl_release_number) + "_os_2_" + v[1].lower() + "_sorted.tab")
         else:
             inparanoid_species_count += 1
-            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP_" + genus + "_" + species.lower() + ".txt",
+            Path(output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1]).mkdir(parents=True, exist_ok=True)
+            shutil.copy2(inparanoid_input_path + "/Oryza_sativa.japonica.IRGSP-MSU_" + genus + "_" + species.lower() + ".txt",
                       output_orthopair_path + "/slice_" + str(slice_version_number) + "/" + v[1] + "/inparanoid_os_2_" + v[1].lower() + "_sorted.tab")
         if args.verbose:
             print(k,v)
