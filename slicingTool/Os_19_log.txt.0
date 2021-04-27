@@ -1,0 +1,238 @@
+Instance existence checking:
+Instance with DB_ID "1385639" is used but not in table DatabaseObject!
+Instance with DB_ID "1400788" is used but not in table DatabaseObject!
+Instance with DB_ID "1400785" is used but not in table DatabaseObject!
+Instance with DB_ID "1400784" is used but not in table DatabaseObject!
+Instance with DB_ID "1400787" is used but not in table DatabaseObject!
+
+UNLISTED	event	species
+UNLISTED	Reaction	1120219	H2O+allantoate->(S)-ureidoglycolate+urea	Oryza sativa
+UNLISTED	Reaction	1120348	(S)-ureidoglycolate+NAD(P)+->NAD(P)H+oxalurate	Oryza sativa
+
+ATTRIBUTE_REMOVED	attClass	attDbId	attName	attribute	class	dbId	name
+ATTRIBUTE_REMOVED	Reaction	1119988	nicotinate riboside+ATP->nicotinate nucleotide+ADP	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121646	Nicotinamide-nucleotide amidase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120353	Nicotinate phosphoribosyltransferase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120353	Nicotinate phosphoribosyltransferase	precedingEvent	Reaction	1119766	Nicotinate-nucleotide adenylyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120055	Adenylylsulfate reductase	precedingEvent	Reaction	1119748	sulfate+ATP->diphosphate+adenosine 5'-phosphosulfate
+ATTRIBUTE_REMOVED	Reaction	1121242	sucrose+H2O->D-fructose+alpha-D-glucose	precedingEvent	Reaction	1119802	alpha-D-glucose + ATP => alpha-D-glucose 6-phosphate + ADP [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121285	Glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) (phosphorylating)	precedingEvent	Reaction	1119869	D-glyceraldehyde 3-phosphate <=> dihydroxyacetone phosphate [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121381	Thymidylate synthase	precedingEvent	Reaction	1120019	dihydrofolate reductase
+ATTRIBUTE_REMOVED	Reaction	1121381	Thymidylate synthase	precedingEvent	Reaction	1120019	dihydrofolate reductase
+ATTRIBUTE_REMOVED	Reaction	1120695	Phosphoketolase	precedingEvent	Reaction	1120053	D-glyceraldehyde 3-phosphate + NAD+ + orthophosphate <=> 1,3-bisphospho-D-glycerate + NADH + H+ [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121082	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+H2O+a protein disulfide->2-C-methyl-D-erythritol-2,4-cyclodiphosphate+a protein dithiol	precedingEvent	Reaction	1120070	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+NAD(P)H+H+->dimethylallyl-PP+NAD(P)++H2O
+ATTRIBUTE_REMOVED	Reaction	1121001	carbamoyl-phosphate synthetase I	precedingEvent	Reaction	1120119	ornithine carbamoyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121289	UDP-glucose--hexose-1-phosphate uridylyltransferase	precedingEvent	Reaction	1120124	UDP-glucose 4-epimerase
+ATTRIBUTE_REMOVED	Reaction	1120933	Glutamate dehydrogenase (NAD(P)+)	precedingEvent	Reaction	1120144	glutamate 5-kinase
+ATTRIBUTE_REMOVED	Reaction	1121116	Quinate dehydrogenase (pyrroloquinoline-quinone)	precedingEvent	Reaction	1120129	3-dehydroquinate dehydratase
+ATTRIBUTE_REMOVED	Reaction	1121230	Glycerophosphodiester phosphodiesterase	precedingEvent	Reaction	1120169	Glycerol-3-phosphate dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121315	Glycolate dehydrogenase	precedingEvent	Reaction	1120212	Conversion of glyoxylate to 2-hydroxy-3-oxopropanoic acid
+ATTRIBUTE_REMOVED	Reaction	1121399	Glutathione dehydrogenase (ascorbate)	precedingEvent	Reaction	1120206	Glutathione-disulfide reductase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	1120232	Formate--tetrahydrofolate ligase
+ATTRIBUTE_REMOVED	Reaction	1120978	an oxidized ferroprotein (Fe III)+a ubiquinol->a reduced ferroprotein (Fe II)+a ubiquinone	precedingEvent	Reaction	1120286	succinate + ubiquinone => fumarate + ubiquinol
+ATTRIBUTE_REMOVED	Reaction	1120062	Ubiquinol--cytochrome c reductase	precedingEvent	Reaction	1120286	succinate + ubiquinone => fumarate + ubiquinol
+ATTRIBUTE_REMOVED	Reaction	1120497	nitrile hydratase	precedingEvent	Reaction	1120306	indole acetamide hydrolase/amidase
+ATTRIBUTE_REMOVED	Reaction	1119855	PROLINE-MULTI	precedingEvent	Reaction	1120302	ornithine aminotransferase
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	1120328	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1120946	tetrahydrodipicolinate+L-glutamate+H2O->L,L-diaminopimelate+alpha-ketoglutarate	precedingEvent	Reaction	1120389	diaminopimelate epimerase
+ATTRIBUTE_REMOVED	Reaction	1121583	5-formyltetrahydrofolate cyclo-ligase	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1120916	Methylenetetrahydrofolate dehydrogenase (NADP+)	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1120916	Methylenetetrahydrofolate dehydrogenase (NADP+)	precedingEvent	Reaction	1120397	methenyltetrahydrofolate cyclohydrolase
+ATTRIBUTE_REMOVED	Reaction	1121553	glutamate synthase (NADPH)	precedingEvent	Reaction	1120434	Aspartate aminotransferase
+ATTRIBUTE_REMOVED	Reaction	1120300	Protein-N(PI)-phosphohistidine-sugar phosphotransferase	precedingEvent	Reaction	1120505	D-fructose-6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP  [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1120216	Fructose-bisphosphatase	precedingEvent	Reaction	1120505	D-fructose-6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP  [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1119695	Fructokinase	precedingEvent	Reaction	1120505	D-fructose-6-phosphate + ATP => D-fructose 1,6-bisphosphate + ADP  [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121536	pyruvate synthase	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1119809	acetoacetyl-CoA+NADH->3-hydroxybutyryl-CoA+NAD+	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120368	Acetaldehyde dehydrogenase (acetylating)	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121515	Acetate CoA-transferase	precedingEvent	Reaction	1120481	Acetyl-CoA C-acetyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120568	Cystathionine beta-synthase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120553	O-acetyl-L-homoserine+L-cysteine->cystathionine+acetate	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120553	O-acetyl-L-homoserine+L-cysteine->cystathionine+acetate	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1121211	O-succinylhomoserine (thiol)-lyase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1120568	Cystathionine beta-synthase	precedingEvent	Reaction	1120657	cystathionine beta-lyase
+ATTRIBUTE_REMOVED	Reaction	1119731	Sulfite reductase (NADPH)	precedingEvent	Reaction	1120775	O-acetyl-L-homoserine+hydrogen sulfide->L-homocysteine+acetate
+ATTRIBUTE_REMOVED	Reaction	1120034	Glyceraldehyde-3-phosphate dehydrogenase (NADP+)	precedingEvent	Reaction	1120820	3-phospho-D-glycerate <=> 2-phospho-D-glycerate [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1120801	glycine+tetrahydrofolate+NAD+->ammonia+5,10-methylene-THF+CO2+NADH
+ATTRIBUTE_REMOVED	Reaction	1120180	nitrate reductase (NADH)	precedingEvent	Reaction	1120926	nitrite+a reduced ferredoxin->ammonia+H2O+an oxidized ferredoxin
+ATTRIBUTE_REMOVED	Reaction	1120258	Hexokinase	precedingEvent	Reaction	1120975	Glucose-6-phosphate isomerase
+ATTRIBUTE_REMOVED	Reaction	1120216	Fructose-bisphosphatase	precedingEvent	Reaction	1120975	Glucose-6-phosphate isomerase
+ATTRIBUTE_REMOVED	Reaction	1120195	hypoxanthine+H2O->H++xanthine	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1120852	hypoxanthine+NAD++H2O->xanthine+NADH+H+	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1119668	xanthosine+H2O->D-ribose+xanthine	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121551	Guanine deaminase	precedingEvent	Reaction	1121055	Xanthine dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1119801	Pyruvate,water dikinase	precedingEvent	Reaction	1121029	phosphoenolpyruvate + ADP => pyruvate + ATP [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1120486	geranyl-PP+H2O->(-)-alpha-terpineol+diphosphate	precedingEvent	Reaction	1121036	(-)-alpha-terpineol->1,8-cineole
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120242	Sarcosine oxidase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121174	Glycine hydroxymethyltransferase
+ATTRIBUTE_REMOVED	Reaction	1119694	FADH2+acrylyl-CoA->FAD+propionyl-CoA	precedingEvent	Reaction	1121218	acrylyl-CoA+H2O->3-hydroxypropionyl-CoA
+ATTRIBUTE_REMOVED	Reaction	1119933	Choline kinase	precedingEvent	Reaction	1121268	phosphoryl-choline+CTP->CDP-choline+diphosphate
+ATTRIBUTE_REMOVED	Reaction	1120699	Spermidine dehydrogenase	precedingEvent	Reaction	1121291	4-aminobutanal->1-pyrroline+H2O
+ATTRIBUTE_REMOVED	Reaction	1121082	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+H2O+a protein disulfide->2-C-methyl-D-erythritol-2,4-cyclodiphosphate+a protein dithiol	precedingEvent	Reaction	1121343	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate+NAD(P)H+H+->delta3-isopentenyl-PP+NAD(P)++H2O
+ATTRIBUTE_REMOVED	Reaction	1121192	Phosphoribosylamine--glycine ligase	precedingEvent	Reaction	1121522	phosphoribosylglycinamide formyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121192	Phosphoribosylamine--glycine ligase	precedingEvent	Reaction	1121522	phosphoribosylglycinamide formyltransferase
+ATTRIBUTE_REMOVED	Reaction	1120435	Homoisocitrate dehydrogenase	precedingEvent	Reaction	1121512	alpha-aminoadipate + alpha-ketoglutarate ---> alpha-ketoadipate + L-Glu
+ATTRIBUTE_REMOVED	Reaction	1120982	Succinate dehydrogenase	precedingEvent	Reaction	1121548	fumarate + H2O <=> malate
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	1121647	Methionine adenosyltransferase
+ATTRIBUTE_REMOVED	Reaction	1121553	glutamate synthase (NADPH)	precedingEvent	Reaction	5654751	Aspartate aminotransferase 
+ATTRIBUTE_REMOVED	Pathway	1119622	Arginine biosynthesis II (acetyl cycle)	hasEvent	Pathway	5655122	Amino acid biosynthesis
+ATTRIBUTE_REMOVED	Pathway	1119354	Asparagine biosynthesis III	hasEvent	Pathway	5655122	Amino acid biosynthesis
+ATTRIBUTE_REMOVED	Pathway	9641042	OsNAC5_transcription_network_involved in drought and high salinity tolerance	hasEvent	Pathway	8932729	Responses to stimuli: abiotic stimuli and stresses
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398358	KNApSAcK:C00007617
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398385	KNApSAcK:C00000219
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398951	KNApSAcK:C00007519
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1398953	KNApSAcK:C00007518
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1399631	KNApSAcK:C00007476
+ATTRIBUTE_REMOVED	Pathway	72766	Translation	inferredFrom	Pathway	2972871	Protein metabolism: translation
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400336	KNApSAcK:C00000365
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400463	KNApSAcK:C00007321
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1400611	KNApSAcK:C00000947
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1401031	KNApSAcK:C00007647
+ATTRIBUTE_REMOVED	ReferenceDatabase	1385639	null	referenceDatabase	DatabaseIdentifier	1401337	KNApSAcK:C00007320
+ATTRIBUTE_REMOVED	Reaction	1121694	2-oxoglutarate decarboxylase	precedingEvent	Reaction	4752561	succinate-semialdehyde-thiamine PPi+isochorismate->2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate+thiamine diphosphate+pyruvate
+ATTRIBUTE_REMOVED	Reaction	1120946	tetrahydrodipicolinate+L-glutamate+H2O->L,L-diaminopimelate+alpha-ketoglutarate	precedingEvent	Reaction	5606486	diaminopimelate epimerase plastidic
+ATTRIBUTE_REMOVED	Reaction	1120078	Transketolase	precedingEvent	Reaction	5149647	Ribose 5-phosphate epimerase
+ATTRIBUTE_REMOVED	Reaction	1120078	Transketolase	precedingEvent	Reaction	5149647	Ribose 5-phosphate epimerase
+ATTRIBUTE_REMOVED	Reaction	1120216	Fructose-bisphosphatase	precedingEvent	Reaction	5149642	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1120216	Fructose-bisphosphatase	precedingEvent	Reaction	5149642	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	5149642	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121285	Glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) (phosphorylating)	precedingEvent	Reaction	5149641	D-glyceraldehyde 3-phosphate <=> dihydroxyacetone phosphate
+ATTRIBUTE_REMOVED	Reaction	1119817	dihydroxy-acetone-phosphate+D-erythrose-4-phosphate->D-sedoheptulose-1,7-bisphosphate	precedingEvent	Reaction	5149654	Sedoheptulose-bisphosphatase
+ATTRIBUTE_REMOVED	Reaction	1119907	Transketolase	precedingEvent	Reaction	5149666	ribulose phosphate 3-epimerase
+ATTRIBUTE_REMOVED	Reaction	1121314	Ribose 5-phosphate epimerase	precedingEvent	Reaction	5149666	ribulose phosphate 3-epimerase
+ATTRIBUTE_REMOVED	Reaction	1120078	Transketolase	precedingEvent	Reaction	5149666	ribulose phosphate 3-epimerase
+ATTRIBUTE_REMOVED	Reaction	1120576	Glycerone kinase	precedingEvent	Reaction	5149667	Fructose 1,6-bisphosphate <=> dihydroxyacetone phosphate + glyceraldehyde 3-phosphate
+ATTRIBUTE_REMOVED	Reaction	1120156	Phosphoribulokinase	precedingEvent	Reaction	5149664	Ribulose-bisphosphate carboxylase
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121622	ribulose phosphate 3-epimerase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1119670	Transaldolase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121622	ribulose phosphate 3-epimerase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121313	Phosphopentomutase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121314	Ribose 5-phosphate epimerase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1120973	Sedoheptulose-bisphosphatase	precedingEvent	Reaction	5149665	Transketolase
+ATTRIBUTE_REMOVED	Reaction	1121622	ribulose phosphate 3-epimerase	precedingEvent	Reaction	5149692	Phosphoribulokinase
+ATTRIBUTE_REMOVED	Reaction	1121314	Ribose 5-phosphate epimerase	precedingEvent	Reaction	5149692	Phosphoribulokinase
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	9025232	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1120533	Hypoxanthine phosphoribosyltransferase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121347	IMP cyclohydrolase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121130	AMP deaminase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	Reaction	1121260	Inosine kinase	precedingEvent	Reaction	9025234	IMP dehydrogenase
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400788	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400787	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400785	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	DatabaseIdentifier	1400784	null	crossReference	ReferenceMolecule	1423499	2-aminoadipic acid [ChEBI:37024]
+ATTRIBUTE_REMOVED	Reaction	1119722	Trimethylsulfonium--tetrahydrofolate N-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120242	Sarcosine oxidase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1119858	Formyltetrahydrofolate deformylase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1120400	5-methyltetrahydrofolate--homocysteine S-methyltransferase	precedingEvent	Reaction	2871176	Glycine hydroxymethyltransferase II
+ATTRIBUTE_REMOVED	Reaction	1121285	Glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) (phosphorylating)	precedingEvent	Reaction	1168476	dihydroxyacetone phosphate <=> D-glyceraldehyde 3-phosphate [cytosol]
+ATTRIBUTE_REMOVED	Reaction	1121242	sucrose+H2O->D-fructose+alpha-D-glucose	precedingEvent	Reaction	1168664	alpha-D-glucose + ATP => alpha-D-glucose 6-phosphate + ADP [plastid]
+ATTRIBUTE_REMOVED	Reaction	1121553	glutamate synthase (NADPH)	precedingEvent	Reaction	5631999	Conversion of L-Glu to L-Asp
+ATTRIBUTE_REMOVED	Reaction	1121001	carbamoyl-phosphate synthetase I	precedingEvent	Reaction	5633269	ornithine carbamoyltransferase (L-ornithine to L-citrulline)
+ATTRIBUTE_REMOVED	Reaction	1119855	PROLINE-MULTI	precedingEvent	Reaction	5633265	ornithine aminotransferase (L-glutamate-5-semialdehyde to L-ornithine)
+ATTRIBUTE_REMOVED	Pathway	68962	Activation of the pre-replicative complex	inferredFrom	Pathway	1112959	DNA replication: activation of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	68962	Activation of the pre-replicative complex	orthologousEvent	Pathway	1112959	DNA replication: activation of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	1112941	Assembly of the pre-replicative complex	precedingEvent	Pathway	1112959	DNA replication: activation of the pre-replicative complex
+ATTRIBUTE_REMOVED	Pathway	156842	Eukaryotic Translation Elongation	inferredFrom	Pathway	1112987	Translation elongation
+ATTRIBUTE_REMOVED	Pathway	156842	Eukaryotic Translation Elongation	orthologousEvent	Pathway	1112987	Translation elongation
+ATTRIBUTE_REMOVED	Pathway	1112980	Eukaryotic translation initiation	precedingEvent	Pathway	1112987	Translation elongation
+ATTRIBUTE_REMOVED	Pathway	72695	Formation of the ternary complex, and subsequently, the 43S complex	inferredFrom	Pathway	1112990	Formation of the ternary complex, and subsequently, the 43S complex
+ATTRIBUTE_REMOVED	Pathway	72695	Formation of the ternary complex, and subsequently, the 43S complex	orthologousEvent	Pathway	1112990	Formation of the ternary complex, and subsequently, the 43S complex
+ATTRIBUTE_REMOVED	Pathway	72764	Eukaryotic Translation Termination	inferredFrom	Pathway	1112991	Translation termination
+ATTRIBUTE_REMOVED	Pathway	72764	Eukaryotic Translation Termination	orthologousEvent	Pathway	1112991	Translation termination
+ATTRIBUTE_REMOVED	Pathway	72662	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S	inferredFrom	Pathway	1112963	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
+ATTRIBUTE_REMOVED	Pathway	72662	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S	orthologousEvent	Pathway	1112963	Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S
+ATTRIBUTE_REMOVED	Pathway	72731	Recycling of eIF2:GDP	inferredFrom	Pathway	1112965	Recycling of eIF2:GDP
+ATTRIBUTE_REMOVED	Pathway	72731	Recycling of eIF2:GDP	orthologousEvent	Pathway	1112965	Recycling of eIF2:GDP
+ATTRIBUTE_REMOVED	Pathway	72737	Cap-dependent Translation Initiation	inferredFrom	Pathway	1112967	Cap-dependent translation initiation
+ATTRIBUTE_REMOVED	Pathway	72737	Cap-dependent Translation Initiation	orthologousEvent	Pathway	1112967	Cap-dependent translation initiation
+ATTRIBUTE_REMOVED	Pathway	72702	Ribosomal scanning and start codon recognition	inferredFrom	Pathway	1112968	Ribosomal scanning and start codon recognition
+ATTRIBUTE_REMOVED	Pathway	72702	Ribosomal scanning and start codon recognition	orthologousEvent	Pathway	1112968	Ribosomal scanning and start codon recognition
+ATTRIBUTE_REMOVED	Pathway	72689	Formation of a pool of free 40S subunits	inferredFrom	Pathway	1112971	Formation of a pool of free 40S subunits
+ATTRIBUTE_REMOVED	Pathway	72689	Formation of a pool of free 40S subunits	orthologousEvent	Pathway	1112971	Formation of a pool of free 40S subunits
+ATTRIBUTE_REMOVED	Pathway	204005	COPII-mediated vesicle transport	inferredFrom	Pathway	1112998	Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
+ATTRIBUTE_REMOVED	Pathway	204005	COPII-mediated vesicle transport	orthologousEvent	Pathway	1112998	Intracellular transport: COPII (Coat Protein 2) mediated vesicle transport
+ATTRIBUTE_REMOVED	Reaction	68919	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7	inferredFrom	Reaction	1113078	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7
+ATTRIBUTE_REMOVED	Reaction	68919	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7	orthologousEvent	Reaction	1113078	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7
+ATTRIBUTE_REMOVED	Reaction	1113094	Mcm2-7 associates with the Cdt1:CDC6:ORC:origin complex, forming the pre-replicative complex (preRC)	precedingEvent	Reaction	1113078	Mcm10 associates with the pre-replicative complex, stabilizing Mcm2-7
+ATTRIBUTE_REMOVED	Reaction	68960	DNA polymerase epsilon binds at the origin	inferredFrom	Reaction	1113084	DNA polymerase epsilon binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68960	DNA polymerase epsilon binds at the origin	orthologousEvent	Reaction	1113084	DNA polymerase epsilon binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68916	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin	inferredFrom	Reaction	1113056	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68916	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin	orthologousEvent	Reaction	1113056	DNA Replication Factor A (RPA) associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	156912	Peptide transfer from P-site tRNA to the A-site tRNA	inferredFrom	Reaction	1113109	Peptide transfer from P-site tRNA to the A-site tRNA
+ATTRIBUTE_REMOVED	Reaction	156912	Peptide transfer from P-site tRNA to the A-site tRNA	orthologousEvent	Reaction	1113109	Peptide transfer from P-site tRNA to the A-site tRNA
+ATTRIBUTE_REMOVED	Reaction	72631	Formation of the cap-binding eIF4F complex	inferredFrom	Reaction	1113118	Formation of the cap-binding eIF4F complex
+ATTRIBUTE_REMOVED	Reaction	72631	Formation of the cap-binding eIF4F complex	orthologousEvent	Reaction	1113118	Formation of the cap-binding eIF4F complex
+ATTRIBUTE_REMOVED	Reaction	68917	Cdc45 associates with the pre-replicative complex at the origin	inferredFrom	Reaction	1113091	Cdc45 associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68917	Cdc45 associates with the pre-replicative complex at the origin	orthologousEvent	Reaction	1113091	Cdc45 associates with the pre-replicative complex at the origin
+ATTRIBUTE_REMOVED	Reaction	68914	DNA polymerase alpha:primase binds at the origin	inferredFrom	Reaction	1113092	DNA polymerase alpha:primase binds at the origin
+ATTRIBUTE_REMOVED	Reaction	68914	DNA polymerase alpha:primase binds at the origin	orthologousEvent	Reaction	1113092	DNA polymerase alpha:primase binds at the origin
+ATTRIBUTE_REMOVED	Reaction	156923	Hydrolysis of eEF1A:GTP	inferredFrom	Reaction	1113143	Hydrolysis of eEF1A:GTP
+ATTRIBUTE_REMOVED	Reaction	156923	Hydrolysis of eEF1A:GTP	orthologousEvent	Reaction	1113143	Hydrolysis of eEF1A:GTP
+ATTRIBUTE_REMOVED	Reaction	72670	Formation of eIF2:GDP:eIF2B intermediate	inferredFrom	Reaction	1113148	Formation of eIF2:GDP:eIF2B intermediate
+ATTRIBUTE_REMOVED	Reaction	72670	Formation of eIF2:GDP:eIF2B intermediate	orthologousEvent	Reaction	1113148	Formation of eIF2:GDP:eIF2B intermediate
+ATTRIBUTE_REMOVED	Reaction	72635	eIF4F binds to mRNP	inferredFrom	Reaction	1113121	eIF4F binds to mRNP
+ATTRIBUTE_REMOVED	Reaction	72635	eIF4F binds to mRNP	orthologousEvent	Reaction	1113121	eIF4F binds to mRNP
+ATTRIBUTE_REMOVED	Reaction	72697	Start codon recognition	inferredFrom	Reaction	1113125	Start codon recognition
+ATTRIBUTE_REMOVED	Reaction	72697	Start codon recognition	orthologousEvent	Reaction	1113125	Start codon recognition
+ATTRIBUTE_REMOVED	Reaction	72669	Met-tRNAi binds to eIF2:GTP to form the ternary complex	inferredFrom	Reaction	1113126	Met-tRNAi binds to eIF2:GTP to form the ternary complex
+ATTRIBUTE_REMOVED	Reaction	72669	Met-tRNAi binds to eIF2:GTP to form the ternary complex	orthologousEvent	Reaction	1113126	Met-tRNAi binds to eIF2:GTP to form the ternary complex
+ATTRIBUTE_REMOVED	Reaction	141673	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex	inferredFrom	Reaction	1113127	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141673	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex	orthologousEvent	Reaction	1113127	GTP Hydrolysis by eRF3 bound to the eRF1:mRNA:polypeptide:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	72673	Release of 40S and 60S subunits from the 80S ribosome 	inferredFrom	Reaction	1113128	Release of 40S and 60S subunits from the 80S ribosome 
+ATTRIBUTE_REMOVED	Reaction	72673	Release of 40S and 60S subunits from the 80S ribosome 	orthologousEvent	Reaction	1113128	Release of 40S and 60S subunits from the 80S ribosome 
+ATTRIBUTE_REMOVED	Reaction	141671	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex	inferredFrom	Reaction	1113130	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141671	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex	orthologousEvent	Reaction	1113130	Polypeptide release from the eRF3-GDP:eRF1:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	72621	Ribosomal scanning 	inferredFrom	Reaction	1113169	Ribosomal scanning 
+ATTRIBUTE_REMOVED	Reaction	72621	Ribosomal scanning 	orthologousEvent	Reaction	1113169	Ribosomal scanning 
+ATTRIBUTE_REMOVED	Reaction	72663	De novo formation of eIF2:GTP	inferredFrom	Reaction	1113171	De novo formation of eIF2:GTP
+ATTRIBUTE_REMOVED	Reaction	72663	De novo formation of eIF2:GTP	orthologousEvent	Reaction	1113171	De novo formation of eIF2:GTP
+ATTRIBUTE_REMOVED	Reaction	156909	eEF1A complexes with GTP	inferredFrom	Reaction	1113176	eEF1A complexes with GTP
+ATTRIBUTE_REMOVED	Reaction	156909	eEF1A complexes with GTP	orthologousEvent	Reaction	1113176	eEF1A complexes with GTP
+ATTRIBUTE_REMOVED	Reaction	156930	GTP-binding activates eEF2	inferredFrom	Reaction	1113179	GTP-binding activates eEF2
+ATTRIBUTE_REMOVED	Reaction	156930	GTP-binding activates eEF2	orthologousEvent	Reaction	1113179	GTP-binding activates eEF2
+ATTRIBUTE_REMOVED	Reaction	156907	Aminoacyl-tRNA  binds to the ribosome at the A-site	inferredFrom	Reaction	1113153	Aminoacyl-tRNA  binds to the ribosome at the A-site
+ATTRIBUTE_REMOVED	Reaction	156907	Aminoacyl-tRNA  binds to the ribosome at the A-site	orthologousEvent	Reaction	1113153	Aminoacyl-tRNA  binds to the ribosome at the A-site
+ATTRIBUTE_REMOVED	Reaction	72722	eIF2 activation	inferredFrom	Reaction	1113161	eIF2 activation
+ATTRIBUTE_REMOVED	Reaction	72722	eIF2 activation	orthologousEvent	Reaction	1113161	eIF2 activation
+ATTRIBUTE_REMOVED	Reaction	141691	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex	inferredFrom	Reaction	1113163	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	141691	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex	orthologousEvent	Reaction	1113163	GTP bound eRF3:eRF1 complex binds the peptidyl tRNA:mRNA:80S Ribosome complex
+ATTRIBUTE_REMOVED	Reaction	72676	eIF3 and eIF1A bind to the 40S subunit	inferredFrom	Reaction	1113204	eIF3 and eIF1A bind to the 40S subunit
+ATTRIBUTE_REMOVED	Reaction	72676	eIF3 and eIF1A bind to the 40S subunit	orthologousEvent	Reaction	1113204	eIF3 and eIF1A bind to the 40S subunit
+ATTRIBUTE_REMOVED	Reaction	156915	Translocation of ribosome by 3 bases in the 3' direction	inferredFrom	Reaction	1113205	Translocation of ribosome by 3 bases in the 3' direction
+ATTRIBUTE_REMOVED	Reaction	156915	Translocation of ribosome by 3 bases in the 3' direction	orthologousEvent	Reaction	1113205	Translocation of ribosome by 3 bases in the 3' direction
+ATTRIBUTE_REMOVED	Reaction	72691	Formation of the 43S pre-initiation complex	inferredFrom	Reaction	1113212	Formation of the 43S pre-initiation complex
+ATTRIBUTE_REMOVED	Reaction	72691	Formation of the 43S pre-initiation complex	orthologousEvent	Reaction	1113212	Formation of the 43S pre-initiation complex
+ATTRIBUTE_REMOVED	Reaction	203973	Vesicle budding	inferredFrom	Reaction	1113215	Vesicle budding
+ATTRIBUTE_REMOVED	Reaction	203973	Vesicle budding	orthologousEvent	Reaction	1113215	Vesicle budding
+ATTRIBUTE_REMOVED	Reaction	156908	eEF1A:GTP:aminoacyl tRNA ternary complex formation.	inferredFrom	Reaction	1113186	eEF1A:GTP:aminoacyl tRNA ternary complex formation.
+ATTRIBUTE_REMOVED	Reaction	156908	eEF1A:GTP:aminoacyl tRNA ternary complex formation.	orthologousEvent	Reaction	1113186	eEF1A:GTP:aminoacyl tRNA ternary complex formation.
+ATTRIBUTE_REMOVED	Reaction	203979	Coat Assembly	inferredFrom	Reaction	1113218	Coat Assembly
+ATTRIBUTE_REMOVED	Reaction	203979	Coat Assembly	orthologousEvent	Reaction	1113218	Coat Assembly
+ATTRIBUTE_REMOVED	Reaction	5694527	Loss of SAR1B GTPase	inferredFrom	Reaction	1113220	Loss of Sar1p GTPase
+ATTRIBUTE_REMOVED	Reaction	204008	SEC31:SEC13 and v-SNARE recruitment	inferredFrom	Reaction	1113221	Cargo, Sec31p:Sec13p, and v-SNARE recruitment
+ATTRIBUTE_REMOVED	Reaction	204008	SEC31:SEC13 and v-SNARE recruitment	orthologousEvent	Reaction	1113221	Cargo, Sec31p:Sec13p, and v-SNARE recruitment
+
+StableIdentifier checking...
+Total instances requiring stableIdentifiers but not having them: 0
